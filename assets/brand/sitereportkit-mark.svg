@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">SiteReportKit mark</title>
+  <desc id="desc">Outlined report page with an integrated site pin and amber field annotation stroke.</desc>
+  <path
+    d="M18 8h24l10 10v30L32 60 18 48z"
+    fill="none"
+    stroke="#0A2342"
+    stroke-width="4.8"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M42 8v10h10"
+    fill="none"
+    stroke="#0A2342"
+    stroke-width="4.8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M26 38 40 24"
+    fill="none"
+    stroke="#F59E0B"
+    stroke-width="5.4"
+    stroke-linecap="round"
+  />
+  <path
+    d="M26 44h14"
+    fill="none"
+    stroke="#CBD2D9"
+    stroke-width="4.8"
+    stroke-linecap="round"
+  />
+  <circle
+    cx="32"
+    cy="49"
+    r="4.2"
+    fill="#F7F8F6"
+    stroke="#0A2342"
+    stroke-width="4.2"
+  />
+</svg>
