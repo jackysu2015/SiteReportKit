@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-12T04:48:47.137927Z",
+  "marketCount": 8,
+  "markets": [
+    {
+      "market": "en-US",
+      "locale": "en-US",
+      "projectId": "marketing-en-US",
+      "projectName": "Cedar Ridge Apartment Turnover",
+      "reportType": "punchList",
+      "paperSize": "letter",
+      "pdf": "output/localized-samples/en-US/cedar-ridge-punch-list.pdf",
+      "pdfBytes": 1122113,
+      "csv": "output/localized-samples/en-US/cedar-ridge-punch-list.csv",
+      "csvBytes": 2672,
+      "fictionalSampleData": true
+    },
+    {
+      "market": "en-GB",
+      "locale": "en-GB",
+      "projectId": "marketing-en-GB",
+      "projectName": "Willow Mews Handover",
+      "reportType": "snaggingReport",
+      "paperSize": "a4",
+      "pdf": "output/localized-samples/en-GB/willow-mews-snagging.pdf",
+      "pdfBytes": 1121407,
+      "csv": "output/localized-samples/en-GB/willow-mews-snagging.csv",
+      "csvBytes": 2529,
+      "fictionalSampleData": true
+    },
+    {
+      "market": "zh-Hans",
+      "locale": "zh-Hans",
+      "projectId": "marketing-zh-Hans",
+      "projectName": "云栖花园 3 号楼交付验收",
+      "reportType": "defectList",
+      "paperSize": "a4",
+      "pdf": "output/localized-samples/zh-Hans/yunqi-huayuan-zhenggai.pdf",
+      "pdfBytes": 1166321,
+      "csv": "output/localized-samples/zh-Hans/yunqi-huayuan-zhenggai.csv",
+      "csvBytes": 2539,
+      "fictionalSampleData": true
+    },
+    {
+      "market": "ja",
+      "locale": "ja-JP",
+      "projectId": "marketing-ja",
+      "projectName": "青葉レジデンス竣工検査",
+      "reportType": "defectList",
+      "paperSize": "a4",
+      "pdf": "output/localized-samples/ja/aoba-residence-kakunin.pdf",
+      "pdfBytes": 1161968,
+      "csv": "output/localized-samples/ja/aoba-residence-kakunin.csv",
+      "csvBytes": 2877,
+      "fictionalSampleData": true
+    },
+    {
+      "market": "de-DE",
+      "locale": "de-DE",
+      "projectId": "marketing-de-DE",
+      "projectName": "Wohnpark Lindenhof Abnahme",
+      "reportType": "defectList",
+      "paperSize": "a4",
+      "pdf": "output/localized-samples/de-DE/wohnpark-lindenhof-maengelliste.pdf",
+      "pdfBytes": 1122094,
+      "csv": "output/localized-samples/de-DE/wohnpark-lindenhof-maengelliste.csv",
+      "csvBytes": 2827,
+      "fictionalSampleData": true
+    },
+    {
+      "market": "fr-FR",
+      "locale": "fr-FR",
+      "projectId": "marketing-fr-FR",
+      "projectName": "Résidence des Tilleuls — Réception",
+      "reportType": "defectList",
+      "paperSize": "a4",
+      "pdf": "output/localized-samples/fr-FR/residence-tilleuls-reserves.pdf",
+      "pdfBytes": 1123256,
+      "csv": "output/localized-samples/fr-FR/residence-tilleuls-reserves.csv",
+      "csvBytes": 2932,
+      "fictionalSampleData": true
+    },
+    {
+      "market": "es-MX",
+      "locale": "es-MX",
+      "projectId": "marketing-es-MX",
+      "projectName": "Residencial Jacarandas — Entrega",
+      "reportType": "punchList",
+      "paperSize": "letter",
+      "pdf": "output/localized-samples/es-MX/residencial-jacarandas-pendientes.pdf",
+      "pdfBytes": 1122232,
+      "csv": "output/localized-samples/es-MX/residencial-jacarandas-pendientes.csv",
+      "csvBytes": 2844,
+      "fictionalSampleData": true
+    },
+    {
+      "market": "pt-BR",
+      "locale": "pt-BR",
+      "projectId": "marketing-pt-BR",
+      "projectName": "Residencial Ipê — Vistoria de Entrega",
+      "reportType": "defectList",
+      "paperSize": "a4",
+      "pdf": "output/localized-samples/pt-BR/residencial-ipe-pendencias.pdf",
+      "pdfBytes": 1123548,
+      "csv": "output/localized-samples/pt-BR/residencial-ipe-pendencias.csv",
+      "csvBytes": 2881,
+      "fictionalSampleData": true
+    }
+  ]
+}

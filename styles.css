@@ -215,7 +215,7 @@ a {
 .hero-copy {
   position: relative;
   z-index: 4;
-  max-width: 610px;
+  max-width: 560px;
 }
 
 .eyebrow {
@@ -240,8 +240,9 @@ p {
 
 h1 {
   margin: 0;
-  font-size: clamp(3.4rem, 7.2vw, 5.9rem);
-  line-height: 0.92;
+  max-width: 560px;
+  font-size: clamp(2.8rem, 4.8vw, 4.65rem);
+  line-height: 0.96;
   letter-spacing: 0;
   overflow-wrap: normal;
   word-break: normal;
@@ -273,7 +274,7 @@ h4 {
 .hero-lede {
   max-width: 590px;
   margin: 28px 0 0;
-  font-size: clamp(1.45rem, 3vw, 2.25rem);
+  font-size: clamp(1.2rem, 2.2vw, 1.7rem);
   line-height: 1.13;
   font-weight: 800;
 }
@@ -355,7 +356,7 @@ h4 {
   position: relative;
   z-index: 5;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1px;
   margin: -36px clamp(20px, 5vw, 72px) 0;
   background: var(--line);
@@ -719,6 +720,121 @@ h4 {
   border-top: 4px solid var(--blue);
 }
 
+.markets {
+  background: var(--white);
+}
+
+.app-proof {
+  background: var(--navy-deep);
+  color: var(--white);
+}
+
+.app-proof .section-heading p:not(.eyebrow) {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.app-proof .eyebrow,
+.app-proof-grid span {
+  color: #fbbf24;
+}
+
+.app-proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.app-proof-grid article {
+  display: grid;
+  grid-template-columns: minmax(130px, 0.72fr) minmax(0, 1fr);
+  align-items: center;
+  min-height: 390px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+
+.app-proof-grid img {
+  align-self: end;
+  width: 100%;
+  max-height: 390px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.app-proof-grid article > div {
+  padding: 24px;
+}
+
+.app-proof-grid span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 0.76rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.app-proof-grid h3 {
+  font-size: 1.25rem;
+}
+
+.app-proof-grid p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.market-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.market-grid a {
+  display: grid;
+  gap: 9px;
+  min-height: 230px;
+  align-content: end;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-top: 5px solid var(--navy);
+  border-radius: var(--radius);
+  background: var(--paper);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.market-grid a:nth-child(2) {
+  border-top-color: var(--copper);
+}
+
+.market-grid a:nth-child(3) {
+  border-top-color: var(--blue);
+}
+
+.market-grid a:hover,
+.market-grid a:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 38px rgba(5, 20, 38, 0.12);
+  outline: none;
+}
+
+.market-grid span {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.market-grid strong {
+  color: var(--navy-deep);
+  font-size: clamp(1.35rem, 2.5vw, 2rem);
+}
+
+.market-grid small {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
 .sample-downloads {
   display: grid;
   grid-template-columns: minmax(0, 0.85fr) minmax(320px, 1.15fr);
@@ -772,7 +888,7 @@ h4 {
 
 .pricing {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+  grid-template-columns: minmax(260px, 0.7fr) minmax(560px, 1.3fr);
   gap: clamp(28px, 6vw, 78px);
   align-items: center;
   background: var(--white);
@@ -784,12 +900,35 @@ h4 {
   font-size: 1.05rem;
 }
 
-.pricing-panel {
+.pricing-compare {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.plan-card {
+  display: flex;
+  flex-direction: column;
   padding: 28px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--paper);
-  box-shadow: 0 18px 50px rgba(5, 20, 38, 0.1);
+}
+
+.plan-card-pro {
+  border-top: 5px solid var(--copper);
+  background: var(--navy-deep);
+  color: var(--white);
+  box-shadow: 0 18px 50px rgba(5, 20, 38, 0.15);
+}
+
+.plan-card-pro .plan-label,
+.plan-card-pro .price {
+  color: var(--white);
+}
+
+.plan-card-pro .price span {
+  color: rgba(255, 255, 255, 0.72);
 }
 
 .plan-label {
@@ -811,7 +950,7 @@ h4 {
   font-weight: 700;
 }
 
-.pricing-panel ul {
+.plan-card ul {
   display: grid;
   gap: 10px;
   margin: 0 0 26px;
@@ -819,12 +958,12 @@ h4 {
   list-style: none;
 }
 
-.pricing-panel li {
+.plan-card li {
   position: relative;
   padding-left: 24px;
 }
 
-.pricing-panel li::before {
+.plan-card li::before {
   content: "";
   position: absolute;
   left: 0;
@@ -833,6 +972,86 @@ h4 {
   height: 9px;
   border-radius: 50%;
   background: var(--navy);
+}
+
+.plan-card .button {
+  width: 100%;
+  margin-top: auto;
+}
+
+.plan-card-pro li::before {
+  background: var(--gold);
+}
+
+.launch-note {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.faq {
+  background: var(--paper);
+}
+
+.faq-list {
+  max-width: 920px;
+  margin-top: 38px;
+  border-top: 1px solid var(--line);
+}
+
+.faq-list details {
+  padding: 22px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.faq-list summary {
+  color: var(--navy-deep);
+  font-size: 1.08rem;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.faq-list p {
+  max-width: 760px;
+  margin: 12px 0 0;
+  color: var(--muted);
+}
+
+.phone-handoff {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
+  gap: clamp(36px, 7vw, 96px);
+  align-items: center;
+  background: var(--white);
+}
+
+.phone-handoff-copy > p:not(.eyebrow, .handoff-note) {
+  max-width: 720px;
+  margin: 20px 0 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.phone-handoff figure {
+  margin: 0;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+  text-align: center;
+}
+
+.phone-handoff figure img {
+  width: min(100%, 232px);
+  margin: auto;
+}
+
+.phone-handoff figcaption,
+.handoff-note {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 0.84rem;
 }
 
 .final-cta {
@@ -945,12 +1164,13 @@ h4 {
   }
 
   .hero-copy {
-    max-width: 590px;
+    max-width: 540px;
   }
 
   .report-lab,
   .feature-grid,
-  .use-case-grid {
+  .use-case-grid,
+  .app-proof-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1034,8 +1254,14 @@ h4 {
   .section-heading,
   .workflow-layout,
   .sample-downloads,
-  .pricing {
+  .pricing,
+  .phone-handoff,
+  .market-grid {
     grid-template-columns: 1fr;
+  }
+
+  .pricing-compare {
+    grid-template-columns: 1fr 1fr;
   }
 
   .trust-strip {
@@ -1069,8 +1295,14 @@ h4 {
 
   .hero-proof,
   .feature-grid,
-  .use-case-grid {
+  .use-case-grid,
+  .app-proof-grid,
+  .pricing-compare {
     grid-template-columns: 1fr;
+  }
+
+  .app-proof-grid article {
+    min-height: 330px;
   }
 
   .document-frame {
