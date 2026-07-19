@@ -1,61 +1,485 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="hu">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Helyszíni hibák és PDF-ek | SiteReportKit</title>
-  <meta name="description" content="Rögzítse a hibákat fotókkal és jelölésekkel, rendezze a hibalistát, majd készítsen PDF- vagy CSV-jelentést a helyszínen.">
-  <link rel="canonical" href="https://sitereportkit.com/hu/">
-  <link rel="alternate" hreflang="x-default" href="https://sitereportkit.com/">
-  <link rel="alternate" hreflang="ar-SA" href="https://sitereportkit.com/ar-SA/">
-  <link rel="alternate" hreflang="ca" href="https://sitereportkit.com/ca/">
-  <link rel="alternate" hreflang="cs" href="https://sitereportkit.com/cs/">
-  <link rel="alternate" hreflang="da" href="https://sitereportkit.com/da/">
-  <link rel="alternate" hreflang="de-DE" href="https://sitereportkit.com/de-DE/">
-  <link rel="alternate" hreflang="el" href="https://sitereportkit.com/el/">
-  <link rel="alternate" hreflang="en-US" href="https://sitereportkit.com/en-US/">
-  <link rel="alternate" hreflang="es-MX" href="https://sitereportkit.com/es-MX/">
-  <link rel="alternate" hreflang="fi" href="https://sitereportkit.com/fi/">
-  <link rel="alternate" hreflang="fr-FR" href="https://sitereportkit.com/fr-FR/">
-  <link rel="alternate" hreflang="he" href="https://sitereportkit.com/he/">
-  <link rel="alternate" hreflang="hi" href="https://sitereportkit.com/hi/">
-  <link rel="alternate" hreflang="hr" href="https://sitereportkit.com/hr/">
-  <link rel="alternate" hreflang="hu" href="https://sitereportkit.com/hu/">
-  <link rel="alternate" hreflang="id" href="https://sitereportkit.com/id/">
-  <link rel="alternate" hreflang="it" href="https://sitereportkit.com/it/">
-  <link rel="alternate" hreflang="ja" href="https://sitereportkit.com/ja/">
-  <link rel="alternate" hreflang="ko" href="https://sitereportkit.com/ko/">
-  <link rel="alternate" hreflang="ms" href="https://sitereportkit.com/ms/">
-  <link rel="alternate" hreflang="nl-NL" href="https://sitereportkit.com/nl-NL/">
-  <link rel="alternate" hreflang="no" href="https://sitereportkit.com/no/">
-  <link rel="alternate" hreflang="pl" href="https://sitereportkit.com/pl/">
-  <link rel="alternate" hreflang="pt-BR" href="https://sitereportkit.com/pt-BR/">
-  <link rel="alternate" hreflang="ro" href="https://sitereportkit.com/ro/">
-  <link rel="alternate" hreflang="ru" href="https://sitereportkit.com/ru/">
-  <link rel="alternate" hreflang="sk" href="https://sitereportkit.com/sk/">
-  <link rel="alternate" hreflang="sv" href="https://sitereportkit.com/sv/">
-  <link rel="alternate" hreflang="th" href="https://sitereportkit.com/th/">
-  <link rel="alternate" hreflang="tr" href="https://sitereportkit.com/tr/">
-  <link rel="alternate" hreflang="uk" href="https://sitereportkit.com/uk/">
-  <link rel="alternate" hreflang="vi" href="https://sitereportkit.com/vi/">
-  <link rel="alternate" hreflang="zh-Hans" href="https://sitereportkit.com/zh-Hans/">
-  <link rel="alternate" hreflang="zh-Hant" href="https://sitereportkit.com/zh-Hant/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="SiteReportKit">
-  <meta property="og:title" content="Helyszíni hibák és PDF-ek | SiteReportKit">
-  <meta property="og:description" content="Rögzítse a hibákat fotókkal és jelölésekkel, rendezze a hibalistát, majd készítsen PDF- vagy CSV-jelentést a helyszínen.">
-  <meta property="og:url" content="https://sitereportkit.com/hu/">
-  <meta property="og:image" content="https://sitereportkit.com/assets/reports/samples/en-US/report-cover.png">
-  <link rel="icon" href="../assets/brand/sitereportkit-favicon.png">
-  <link rel="stylesheet" href="../marketing-pages.css?v=20260711">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SiteReportKit","applicationCategory":"BusinessApplication","operatingSystem":"iOS","description":"Rögzítse a hibákat fotókkal és jelölésekkel, rendezze a hibalistát, majd készítsen PDF- vagy CSV-jelentést a helyszínen.","url":"https://sitereportkit.com/hu/"}</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>SiteReportKit | Professzionális ütéslista és gusztustalan jelentések</title>
+<meta content="A SiteReportKit offline lyukasztási listákat hoz létre adatvédelmi szempontból biztonságos fényképjelöléssel, mérésekkel, auditálható átadás-átvételekkel, valamint professzionális PDF-, XLSX- és CSV-exportálásokkal." name="description"/>
+<meta content="#0A2342" name="theme-color"/>
+<meta content="SiteReportKit" property="og:title"/>
+<meta content="Hozzon létre professzionális lyukasztólista PDF-eket, mielőtt elhagyná a webhelyet." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://sitereportkit.com/hu/" property="og:url"/>
+<meta content="https://sitereportkit.com/assets/reports/report-cover.png?v=20260710-separated-samples" property="og:image"/>
+<link href="https://sitereportkit.com/hu/" rel="canonical"/><link href="https://sitereportkit.com/" hreflang="x-default" rel="alternate"/><link href="https://sitereportkit.com/ar-SA/" hreflang="ar-SA" rel="alternate"/><link href="https://sitereportkit.com/ca/" hreflang="ca" rel="alternate"/><link href="https://sitereportkit.com/cs/" hreflang="cs" rel="alternate"/><link href="https://sitereportkit.com/da/" hreflang="da" rel="alternate"/><link href="https://sitereportkit.com/de-DE/" hreflang="de-DE" rel="alternate"/><link href="https://sitereportkit.com/el/" hreflang="el" rel="alternate"/><link href="https://sitereportkit.com/en-US/" hreflang="en-US" rel="alternate"/><link href="https://sitereportkit.com/es-MX/" hreflang="es-MX" rel="alternate"/><link href="https://sitereportkit.com/fi/" hreflang="fi" rel="alternate"/><link href="https://sitereportkit.com/fr-FR/" hreflang="fr-FR" rel="alternate"/><link href="https://sitereportkit.com/he/" hreflang="he" rel="alternate"/><link href="https://sitereportkit.com/hi/" hreflang="hi" rel="alternate"/><link href="https://sitereportkit.com/hr/" hreflang="hr" rel="alternate"/><link href="https://sitereportkit.com/hu/" hreflang="hu" rel="alternate"/><link href="https://sitereportkit.com/id/" hreflang="id" rel="alternate"/><link href="https://sitereportkit.com/it/" hreflang="it" rel="alternate"/><link href="https://sitereportkit.com/ja/" hreflang="ja" rel="alternate"/><link href="https://sitereportkit.com/ko/" hreflang="ko" rel="alternate"/><link href="https://sitereportkit.com/ms/" hreflang="ms" rel="alternate"/><link href="https://sitereportkit.com/nl-NL/" hreflang="nl-NL" rel="alternate"/><link href="https://sitereportkit.com/no/" hreflang="no" rel="alternate"/><link href="https://sitereportkit.com/pl/" hreflang="pl" rel="alternate"/><link href="https://sitereportkit.com/pt-BR/" hreflang="pt-BR" rel="alternate"/><link href="https://sitereportkit.com/ro/" hreflang="ro" rel="alternate"/><link href="https://sitereportkit.com/ru/" hreflang="ru" rel="alternate"/><link href="https://sitereportkit.com/sk/" hreflang="sk" rel="alternate"/><link href="https://sitereportkit.com/sv/" hreflang="sv" rel="alternate"/><link href="https://sitereportkit.com/th/" hreflang="th" rel="alternate"/><link href="https://sitereportkit.com/tr/" hreflang="tr" rel="alternate"/><link href="https://sitereportkit.com/uk-UA/" hreflang="uk" rel="alternate"/><link href="https://sitereportkit.com/vi/" hreflang="vi" rel="alternate"/><link href="https://sitereportkit.com/zh-Hans/" hreflang="zh-Hans" rel="alternate"/><link href="https://sitereportkit.com/zh-Hant/" hreflang="zh-Hant" rel="alternate"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/assets/brand/sitereportkit-favicon.png?v=20260708-exact-logo" rel="icon" type="image/png"/>
+<link href="/styles.css?v=20260710-separated-samples" rel="stylesheet"/>
+<script defer="" src="/script.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SiteReportKit","applicationCategory":"BusinessApplication","operatingSystem":"iOS","description":"Offline első ütési lista, elakadások, hibák és lezárások jelentése professzionális PDF, XLSX és CSV exporttal.","url":"https://sitereportkit.com/hu/","featureList":["Offline probléma rögzítése","Roncsolásmentes fényképjelölés","PDF, XLSX és CSV export","Adatvédelmi elmosódás és mérési megjegyzések","Időbélyegzett tevékenység és zárolt probléma átadások","Három aláírás beviteli mód","SHA-256 bizonyítási integritásrekordok","Vállalkozói akciólisták","Lezárási bizonyíték","Helyi projektarchívum"],"publisher":{"@type":"Organization","name":"SiteReportKit","url":"https://sitereportkit.com/hu/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Működik a SiteReportKit fiók nélkül?","acceptedAnswer":{"@type":"Answer","text":"Igen. Az alapvető projektrögzítés, a helyi tárolás, a jelentés-előnézet és a mintamunkafolyamatok nem igényelnek fiókot."}},{"@type":"Question","name":"Dolgozhatok offline?","acceptedAnswer":{"@type":"Answer","text":"Igen. A projektrögzítést, a fényképeket, a jelöléseket és a jelentéskészítést úgy tervezték, hogy helyileg működjenek. A bolti vásárláshoz vagy visszaállításhoz továbbra is hálózati kapcsolat szükséges."}},{"@type":"Question","name":"Mit tartalmaz az ingyenes export?","acceptedAnswer":{"@type":"Answer","text":"A Free összesen három PDF-, XLSX- vagy CSV-fájl exportálást tartalmaz a SiteReportKit Free márkajelzéssel. Az előzetesek és a helyi projektek korlátlanok maradnak."}}]}</script>
 </head>
 <body>
-  <header class="site-header"><a class="brand" href="../"><img src="../assets/brand/sitereportkit-wordmark.png" alt="SiteReportKit" width="224" height="49"></a><label><span class="sr-only">Language</span><select onchange="if(this.value)location.href=this.value"><option value="/ar-SA/">العربية</option><option value="/ca/">Català</option><option value="/cs/">Čeština</option><option value="/da/">Dansk</option><option value="/de-DE/">Deutsch</option><option value="/el/">Ελληνικά</option><option value="/en-US/">English</option><option value="/es-MX/">Español</option><option value="/fi/">Suomi</option><option value="/fr-FR/">Français</option><option value="/he/">עברית</option><option value="/hi/">हिन्दी</option><option value="/hr/">Hrvatski</option><option value="/hu/" selected>Magyar</option><option value="/id/">Bahasa Indonesia</option><option value="/it/">Italiano</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/ms/">Bahasa Melayu</option><option value="/nl-NL/">Nederlands</option><option value="/no/">Norsk</option><option value="/pl/">Polski</option><option value="/pt-BR/">Português</option><option value="/ro/">Română</option><option value="/ru/">Русский</option><option value="/sk/">Slovenčina</option><option value="/sv/">Svenska</option><option value="/th/">ไทย</option><option value="/tr/">Türkçe</option><option value="/uk/">Українська</option><option value="/vi/">Tiếng Việt</option><option value="/zh-Hans/">简体中文</option><option value="/zh-Hant/">繁體中文</option></select></label></header>
-  <main>
-    <section class="hero"><div class="hero-inner"><div><p class="eyebrow">SiteReportKit</p><h1>Helyszíni hibák és PDF-ek</h1><p class="hero-lede">Rögzítse a hibákat fotókkal és jelölésekkel, rendezze a hibalistát, majd készítsen PDF- vagy CSV-jelentést a helyszínen.</p><div class="actions"><a class="button button-primary" href="https://apps.apple.com/app/id6788361013">App Store</a><a class="button button-secondary" href="../downloads/samples/en-US/sample-report.pdf">PDF</a></div></div><img src="../assets/reports/samples/en-US/report-cover.png" alt="SiteReportKit" width="993" height="1404"></div></section>
-    <section class="section section-white"><div class="section-inner"><div class="related-grid"><article class="related-card"><h2>Rögzítse a helyszíni hibákat</h2></article><article class="related-card"><h2>Rendezze a javítási listát</h2></article><article class="related-card"><h2>Készítsen igényes PDF-et</h2></article></div><div class="prose"><p>Alakítsa a helyszíni bejárást áttekinthető, professzionális jelentéssé. A SiteReportKit internetkapcsolat nélkül is működik, és műszaki ellenőrzéshez, hibalistákhoz, műszaki átadáshoz és lezáráshoz készült.</p><p>Minden tételnél rögzíthető a hely, szakág, súlyosság, felelős, határidő, állapot, fotó, képaláírás és az eredeti képet nem módosító jelölés. Kereshet és szűrhet, egyszerre több tétel állapotát frissítheti, valamint rendezheti a javítási megjegyzéseket és az ellenőrzési előzményeket.</p><p>Exportáljon igényes PDF-jelentéseket, kivitelezői feladatlistákat, lezárási dokumentációt és CSV-hibajegyzékeket. Válasszon elrendezést, adjon hozzá céges arculatot, és készítsen listákat terület vagy felelős szerint. Az alapvető munkához nem kell fiók.</p><p>Az alapvető jelöléseken túl adatvédelmi elmosást és méretjelölést is használhat. Exportáljon szerkeszthető XLSX-munkafüzeteket, valamint PDF- és CSV-fájlokat, kövesse az időbélyeges megjegyzéseket és eseményeket, és cseréljen zárolt átadási csomagokat a visszaküldött frissítések egyesítésével. Az aláírás rajzolható, gépelhető vagy importálható. Az eredeti bizonyítékok SHA-256 integritási rekordot kapnak.</p></div></div></section>
-  </main>
-  <footer class="site-footer"><div class="footer-inner"><strong>SiteReportKit</strong><nav class="footer-links"><a href="../privacy/">Privacy</a><a href="../support/">Support</a></nav></div></footer>
+<header class="site-header" data-header="">
+<a aria-label="SiteReportKit főoldal" class="brand" href="#top">
+<img alt="SiteReportKit" class="brand-logo" height="49" src="/assets/brand/sitereportkit-wordmark.png?v=20260708-exact-logo" width="224"/>
+</a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" data-nav-toggle="" type="button">
+<span class="sr-only">Navigáció megnyitása</span>
+<span></span>
+<span></span>
+<span></span>
+</button>
+<nav class="site-nav" data-nav="" id="site-nav">
+<a href="#reports">Jelentések</a>
+<a href="#workflow">Munkafolyamat</a>
+<a href="/hu/sample-reports/">Minták</a>
+<a href="#markets">Piacok</a>
+<a href="#pricing">Árképzés</a>
+
+<label class="language-switcher"><span aria-hidden="true" class="language-switcher-icon">🌐</span><span class="sr-only">Language</span><select aria-label="Language" onchange="if(this.value)location.href=this.value"><option value="/ar-SA/">العربية</option><option value="/ca/">Català</option><option value="/cs/">Čeština</option><option value="/da/">Dansk</option><option value="/de-DE/">Deutsch</option><option value="/el/">Ελληνικά</option><option value="/en-US/">English</option><option value="/es-MX/">Español</option><option value="/fi/">Suomi</option><option value="/fr-FR/">Français</option><option value="/he/">עברית</option><option value="/hi/">हिन्दी</option><option value="/hr/">Hrvatski</option><option selected="" value="/hu/">Magyar</option><option value="/id/">Bahasa Indonesia</option><option value="/it/">Italiano</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/ms/">Bahasa Melayu</option><option value="/nl-NL/">Nederlands</option><option value="/no/">Norsk</option><option value="/pl/">Polski</option><option value="/pt-BR/">Português</option><option value="/ro/">Română</option><option value="/ru/">Русский</option><option value="/sk/">Slovenčina</option><option value="/sv/">Svenska</option><option value="/th/">ไทย</option><option value="/tr/">Türkçe</option><option value="/uk-UA/">Українська</option><option value="/vi/">Tiếng Việt</option><option value="/zh-Hans/">简体中文</option><option value="/zh-Hant/">繁體中文</option></select></label><a class="nav-cta" data-campaign="homepage-nav" data-cta="sample-report" data-destination="pdf" data-placement="header" href="/downloads/sample-snagging-report.pdf">Minta PDF</a>
+</nav>
+</header>
+
+<main id="top">
+<section aria-labelledby="hero-title" class="hero">
+<div aria-hidden="true" class="hero-media">
+<img alt="" class="hero-page hero-page-main" src="/assets/reports/report-cover.png?v=20260710-separated-samples"/>
+<img alt="" class="hero-page hero-page-side" src="/assets/reports/report-issue-evidence.png?v=20260710-separated-samples"/>
+<img alt="" class="hero-page hero-page-back" src="/assets/reports/action-list-cover.png?v=20260710-separated-samples"/>
+</div>
+<div class="hero-copy">
+<p class="eyebrow">Offline-első mező jelentés</p>
+<h1 id="hero-title">Fejezd be a végigjátszást. Indulás előtt küldje el a jelentést.</h1>
+<p class="hero-lede">A SiteReportKit a helyszíni bizonyítékokat professzionális átadássá változtatja.</p>
+<p class="hero-support">
+            Rögzítsen védhető bizonyítékokat, jelölje ki a felelősséget, és exportáljon márkás PDF, XLSX vagy CSV szállítmányokat – offline, fiók nélkül.
+          </p>
+<div aria-label="Elsődleges műveletek" class="hero-actions">
+<a class="button button-primary" data-campaign="homepage-hero-sample" data-cta="sample-report" data-destination="pdf" data-placement="hero" data-report-kind="interior-handover" href="/downloads/sample-interior-handover-report.pdf">Mintajelentés letöltése</a>
+<a class="button button-secondary" data-campaign="homepage-hero-action-list" data-cta="sample-report" data-destination="pdf" data-placement="hero" data-report-kind="contractor-action-list" href="/downloads/sample-snag-action-list.pdf">Lásd a vállalkozói műveletek listáját</a>
+</div>
+<dl aria-label="Termékjellemzők" class="hero-proof">
+<div>
+<dt>Offline módban működik</dt>
+<dd>Sétáljon tovább, ha a jel lecsökken</dd>
+</div>
+<div>
+<dt>Nincs szükség fiókra</dt>
+<dd>Rögzítse helyben, és exportálja, ha kész</dd>
+</div>
+<div>
+<dt>PDF + XLSX + CSV</dt>
+<dd>Jelentések, szerkeszthető munkafüzetek és regiszterek</dd>
+</div>
+</dl>
+</div>
+</section>
+<section aria-label="Alaptermék ígéret" class="trust-strip">
+<p>Rögzítse a helyszíni bizonyítékokat.</p>
+<p>Felelősség hozzárendelése.</p>
+<p>Exportálja az átadást.</p>
+</section>
+<section aria-labelledby="reports-title" class="section report-showcase" id="reports">
+<div class="section-heading">
+<p class="eyebrow">Valódi minta kimenet</p>
+<h2 id="reports-title">Két külön jelentés két nagyon eltérő helyszíni látogatásról.</h2>
+<p>
+            A belső átadás-átvétel és az aktív építési ellenőrzés elkülönül a rögzítéstől az exportálásig. Mindegyiknek saját projektje, kiadási indexe, bizonyítékkészlete, cselekvési listája és letölthető jelentése van.
+          </p>
+</div>
+<div aria-label="Mintajelentéstípusok" class="report-edition-grid">
+<article class="report-edition">
+<div class="report-edition-media">
+<img alt="Maple Row belső átadás-átvételi jelentés borítója" height="1404" src="/assets/reports/report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<div class="report-edition-copy">
+<p class="report-type">Belső átadás</p>
+<h3>Maple Row átadás</h3>
+<p>Öt belső akadozó elem, beleértve a burkolatokat, a fényezést, az elektromos ellenőrzéseket, az ajtókat és az ügyfél változtatási kérelmét.</p>
+<div aria-label="Belső jelentés összefoglalója" class="report-edition-facts">
+<span>5 gubanc</span>
+<span>9 oldal</span>
+<span>Csak belső bizonyítékok</span>
+</div>
+<div class="report-edition-actions">
+<a class="button button-primary" href="/downloads/sample-interior-handover-report.pdf">Belső PDF</a>
+<a class="button button-secondary" href="/downloads/sample-snag-action-list.pdf">Belső intézkedések listája</a>
+</div>
+</div>
+</article>
+<article class="report-edition report-edition-construction">
+<div class="report-edition-media">
+<img alt="Harbour Point építési vizsgálati hibajelentés borítója" height="1404" src="/assets/reports/construction-report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<div class="report-edition-copy">
+<p class="report-type">Aktív építkezés</p>
+<h3>Kikötőponti építési ellenőrzés</h3>
+<p>Hat építési hiba a homlokzati tűzvédelemre, betonozásra, vízelvezetésre, ideiglenes munkákra, falazatra és tető vízszigetelésére.</p>
+<div aria-label="Építési jelentés összefoglalója" class="report-edition-facts">
+<span>6 hiba</span>
+<span>10 oldal</span>
+<span>Csak építési bizonyíték</span>
+</div>
+<div class="report-edition-actions">
+<a class="button button-primary" href="/downloads/sample-construction-defect-report.pdf">Építőipari PDF</a>
+<a class="button button-secondary" href="/downloads/sample-construction-defect-action-list.pdf">Építési akciólista</a>
+</div>
+</div>
+</article>
+</div>
+<div class="report-lab">
+<figure class="report-preview">
+<div class="report-preview-top">
+<span>Minta kliens PDF</span>
+<a href="/downloads/sample-interior-handover-report.pdf">Letöltés</a>
+</div>
+<div class="document-frame">
+<img alt="A SiteReportKit minta belső elakadási jelentés borítója összefoglalóval és hibaindexszel" height="1404" src="/assets/reports/report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<figcaption>
+<strong>Teljes ügyféljelentés</strong>
+<span>Borító, összefoglaló, bökkenő index, probléma részletei, bizonyítékfotók és feliratkozásra kész formázás.</span>
+</figcaption>
+</figure>
+<div aria-label="Mintajelentés-nézetek" class="sample-stack">
+<div class="sample-stack-heading">
+<p class="eyebrow">Az exporton belül</p>
+<h3>Strukturált bizonyíték, nem egy PDF-be dobott kameratekercs.</h3>
+</div>
+<article class="sample-row">
+<img alt="Belső probléma részletes oldala, amelyen látható a szükséges intézkedés, a bizonyíték fotója, a tulajdonos, az állapot és a határidő" height="1404" src="/assets/reports/report-issue-evidence.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Bizonyítékok kiadása</h4>
+<p>Minden gubanc együtt tartja a fényképet, a feliratot, a tulajdonost, a súlyosságot, az állapotot és a szükséges műveletet.</p>
+</div>
+</article>
+<article class="sample-row">
+<img alt="A SiteReportKit által generált belső vállalkozói akciólista PDF-borítója és a kiemelkedő hibák összefoglalója" height="1404" src="/assets/reports/action-list-cover.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Vállalkozói műveletek listája</h4>
+<p>Szűrés csak a tételek megnyitásához, és minden kereskedéshez adjon egy fókuszált munkakört.</p>
+</div>
+</article>
+<article class="sample-row">
+<img alt="Belső zárási bizonyíték oldal, amely a fénykép és a felbontási megjegyzés után látható" height="1404" src="/assets/reports/report-after-evidence.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Zárópróba</h4>
+<p>A megoldott tételek közé tartozik az átvételi jegyzet és az utólagos fényképek a tiszta átadás-átvétel érdekében.</p>
+</div>
+</article>
+<div aria-label="Mintaletöltések" class="sample-actions">
+<a class="button button-primary" href="/downloads/sample-interior-handover-report.pdf">Belső PDF</a>
+<a class="button button-secondary" href="/downloads/sample-snag-action-list.pdf">Akciólista</a>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="workflow-title" class="section workflow" id="workflow">
+<div class="section-heading compact">
+<p class="eyebrow">Helyszíni sétákhoz készült</p>
+<h2 id="workflow-title">A helyszíni bizonyítéktól a jelentésig három lépésben.</h2>
+</div>
+<div class="workflow-layout">
+<ol class="workflow-list">
+<li>
+<span>01</span>
+<div>
+<h3>Rögzítse a helyszíni bizonyítékokat</h3>
+<p>Adjon hozzá problémákat séta közben, fényképekkel, roncsolásmentes jelölésekkel, területtel, kereskedéssel, súlyossággal és egyértelmű lépésekkel.</p>
+</div>
+</li>
+<li>
+<span>02</span>
+<div>
+<h3>Felelősség hozzárendelése</h3>
+<p>Állítsa be a tulajdonost, a határidőt, a prioritást és az állapotot, majd szűrje a munkát vállalkozó, szakma vagy terület szerint.</p>
+</div>
+</li>
+<li>
+<span>03</span>
+<div>
+<h3>Exportálja az átadást</h3>
+<p>Indulás előtt tekintse meg és ossza meg a teljes ügyfél-PDF-et, a vállalkozói műveletek listáját, a lezárási jelentést vagy a CSV-problémák nyilvántartását.</p>
+</div>
+</li>
+</ol>
+<figure class="closeout-preview">
+<img alt="Lezárási jelentés oldal megoldott tétel bizonyítékokkal és kijelentkezésre kész formázással" height="1404" src="/assets/reports/closeout-report-page.png?v=20260710-separated-samples" width="993"/>
+<figcaption>Zárójelentés bizonyítékai határozati megjegyzésekkel.</figcaption>
+</figure>
+</div>
+</section>
+<section aria-labelledby="app-proof-title" class="section app-proof">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Bizonyíték az alkalmazásból</p>
+<h2 id="app-proof-title">A helyszíni séta köré épült, nem az irodai rendszergazdára.</h2>
+</div>
+<p>Ezek valódi termékképernyők a jelenlegi mobilépítésből. A rögzítés, a felelősség és a jelentés az első fényképtől a végső átadásig kapcsolatban marad.</p>
+</div>
+<div class="app-proof-grid">
+<article>
+<img alt="SiteReportKit mobil fotójelölő munkafolyamat építési bizonyítékokkal" height="2868" src="/assets/app/photo-markup.png" width="1320"/>
+<div><span>Rögzítés</span><h3>Jelölje be a pontos hibát</h3><p>Őrizze meg az eredeti bizonyítékot, miközben világos vizuális jelölést ad hozzá a munkát végző személyhez.</p></div>
+</article>
+<article>
+<img alt="A SiteReportKit mobil vállalkozói műveletlista exportálási lehetőségei" height="2868" src="/assets/app/action-lists.png" width="1320"/>
+<div><span>Hozzárendelés</span><h3>A munka hatóköre tulajdonos vagy terület szerint</h3><p>Adjon minden vállalkozónak egy fókuszált listát anélkül, hogy felfedné a nem kapcsolódó projektelemeket.</p></div>
+</article>
+<article>
+<img alt="SiteReportKit mobil PDF jelentés előnézeti és exportálási munkafolyamat" height="2868" src="/assets/app/pdf-export.png" width="1320"/>
+<div><span>Exportálás</span><h3>Tekintse meg a jelentést a helyszínen</h3><p>Tekintse át az ügyfél PDF-fájlját, mielőtt megosztaná, amíg a bemutató környezet még friss.</p></div>
+</article>
+</div>
+</section>
+<section aria-labelledby="markets-title" class="section markets" id="markets">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Helyi terminológiához készült</p>
+<h2 id="markets-title">Ugyanaz a terepi munkafolyamat, kifejezve az Ön piacának működését.</h2>
+</div>
+<p>Válassza ki az ügyfelek és a vállalkozók által elvárt terminológiát és papírformátumot. Ezek az oldalak termékbeállításokat és példákat írnak le, nem a helyi hatósági tanúsítványokat.</p>
+</div>
+<div class="market-grid">
+<a data-campaign="homepage-market-us" data-cta="market-entry" data-destination="guide" data-market="us" data-placement="homepage" href="/hu/us/punch-list-app/">
+<span>Egyesült Államok</span>
+<strong>Lyuklisták · Letter</strong>
+<small>Az ütési sétákhoz, a kereskedelmi tulajdonjoghoz és az alvállalkozói bezáráshoz.</small>
+</a>
+<a data-campaign="homepage-market-uk" data-cta="market-entry" data-destination="guide" data-market="uk" data-placement="homepage" href="/hu/uk/snagging-app/">
+<span>Egyesült Királyság</span>
+<strong>Csökkenő · A4</strong>
+<small>Új építésű átadás-átvételekhez, helyszíni szemlékhez és hibajelentésekhez.</small>
+</a>
+<a data-campaign="homepage-market-au" data-cta="market-entry" data-destination="guide" data-market="au" data-placement="homepage" href="/hu/au/defect-list-app/">
+<span>Ausztrália</span>
+<strong>Hibalisták · A4</strong>
+<small>Építői akciókhoz, kereskedésekhez és gyakorlati befejezéshez.</small>
+</a>
+</div>
+</section>
+<section aria-labelledby="features-title" class="section features">
+<div class="section-heading compact">
+<p class="eyebrow">Miért választják a csapatok?</p>
+<h2 id="features-title">Fókuszált jelentéskészítő eszköz egy másik építkezési csomag helyett.</h2>
+</div>
+<div class="feature-grid">
+<article>
+<h3>Alapértelmezés szerint offline</h3>
+<p>A projektek és a média a rögzítés során helyi szinten maradnak, így a rossz jel a helyszínen nem akadályozza a jelentést.</p>
+</article>
+<article>
+<h3>Szakmai bizonyítékok nyoma</h3>
+<p>Őrizze meg az eredetiket az SHA-256 integritási rekordokkal, homályosítsa el a privát részleteket, adjon hozzá méréseket, és tartsa a szerkesztett jelöléseket a lezárási bizonyítékok mellett.</p>
+</article>
+<article>
+<h3>Rugalmas terminológia</h3>
+<p>Támogatja a lyukasztási listákat, a hibajelentéseket, a hibalistákat, a megfigyeléseket, a helyszíni auditokat és a karbantartási sétákat.</p>
+</article>
+<article>
+<h3>Intézhető átadások</h3>
+<p>Küldje el a zárolt probléma átadásait, egyesítse a visszaküldött frissítéseket, kövesse az időbélyeggel ellátott megjegyzéseket és tevékenységeket, majd exportálja a hatályos XLSX-regisztereket vagy lezáró csomagokat.</p>
+</article>
+<article>
+<h3>Rugalmas kijelentkezés</h3>
+<p>Rajzoljon aláírást, generáljon egyet egy begépelt névből, vagy importáljon egy jóváhagyott aláírási képet az ellenőr és az ügyfél bejelentkezéséhez.</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="use-cases-title" class="section use-cases" id="use-cases">
+<div class="section-heading">
+<p class="eyebrow">Használati esetek</p>
+<h2 id="use-cases-title">Azoknak, akiknek szükségük van a jelentésre, amíg a látogatás még friss.</h2>
+</div>
+<div class="use-case-grid">
+<article>
+<h3>Építésellenőrök</h3>
+<p>Készítsen finomított ügyfél-PDF-eket márkás borítólapokkal, korlátozási szöveggel, kiadási indexekkel és fényképes bizonyítékokkal.</p>
+</article>
+<article>
+<h3>Építészek és tervezők</h3>
+<p>Rögzítse a helyszíni megfigyeléseket terület szerint, és küldjön a vállalkozóknak egy tiszta műveletlistát táblázattisztítás nélkül.</p>
+</article>
+<article>
+<h3>Vállalkozók és telephelyvezetők</h3>
+<p>Futtasson átadási sétákat, jelöljön ki kereskedelmi felelősséget, jelölje ki a nyomkövetést, és exportáljon hatókörű listákat az alvállalkozók számára.</p>
+</article>
+<article>
+<h3>Ingatlanokkal és létesítményekkel foglalkozó csapatok</h3>
+<p>Dokumentumkarbantartási problémák, bizonyítékok előtt és után, ismétlődő hibák és archiválható projektrekordok.</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="downloads-title" class="section sample-downloads">
+<div>
+<p class="eyebrow">Mintaletöltések</p>
+<h2 id="downloads-title">Ellenőrizze a kimenetet, mielőtt kipróbálná az alkalmazást.</h2>
+</div>
+<div class="download-list">
+<a href="/downloads/sample-interior-handover-report.pdf">
+<strong>Belső átadás-átvételi jelentés PDF</strong>
+<span>Öt beltéri akadozó tárgy</span>
+</a>
+<a href="/downloads/sample-construction-defect-report.pdf">
+<strong>Építési hibajelentés PDF</strong>
+<span>Hat aktív építési hiba</span>
+</a>
+<a href="/downloads/sample-snag-action-list.pdf">
+<strong>Vállalkozói intézkedéslista PDF</strong>
+<span>Nyitott tételek szállítási csapatok számára</span>
+</a>
+<a href="/downloads/sample-closeout-report.pdf">
+<strong>Zárójelentés PDF</strong>
+<span>Megoldott problémák és bizonyítékok</span>
+</a>
+<a href="/downloads/sample-issue-register.csv">
+<strong>Regiszter a CSV-ben</strong>
+<span>Belső jelentés táblázat exportálása</span>
+</a>
+<a href="/downloads/sample-construction-issue-register.csv">
+<strong>Építési problémák nyilvántartása CSV</strong>
+<span>Építési jelentés táblázat exportálása</span>
+</a>
+</div>
+</section>
+<section aria-labelledby="pricing-title" class="section pricing" id="pricing">
+<div class="pricing-copy">
+<p class="eyebrow">Egyszerű helyi árképzés</p>
+<h2 id="pricing-title">Kezdje ingyen. Nyissa meg egyszer a tiszta professzionális exportot.</h2>
+<p>
+            Minden alapvető munkafolyamatot helyileg használjon fiók létrehozása nélkül. Az ingyenes összesen három vízjeles fájl exportálást tartalmaz. A tervezett Pro bevezetés 9,99 USD értékű egyszeri, boltban visszaállítható vásárlás a támogatott mobiláruház-felépítéseken – előfizetés nélkül. A végleges, lokalizált kirakati árak adótól és pénznemtől függően változhatnak.
+          </p>
+</div>
+<div aria-label="Ingyenes és Pro összehasonlítás" class="pricing-compare">
+<article class="plan-card">
+<p class="plan-label">Ingyenes</p>
+<p class="price">$0 <span>helyi használatra</span></p>
+<ul>
+<li>Korlátlan számú helyi projekt és előzetes</li>
+<li>Összesen 3 vízjellel ellátott PDF/XLSX/CSV export</li>
+<li>Mező alapjelentéssablonja</li>
+<li>Normál fényképelrendezés</li>
+</ul>
+<a class="button button-secondary" data-campaign="homepage-pricing-sample" data-cta="sample-report" data-destination="pdf" data-placement="pricing" href="/downloads/sample-interior-handover-report.pdf">Vizsgálja meg a kimenetet</a>
+</article>
+<article class="plan-card plan-card-pro">
+<p class="plan-label">Egyéni Pro</p>
+<p class="price">$9.99 <span>egyszeri indítási célpont</span></p>
+<ul>
+<li>Korlátlan tiszta PDF, XLSX és CSV exportálás</li>
+<li>Egyedi logó és cégmárka</li>
+<li>Adatvédelmi elmosódás, mérések és bizonyítékok integritása</li>
+<li>Zárolt probléma átadások és tevékenységelőzmények</li>
+<li>Rajzolt, gépelt vagy importált aláírások</li>
+</ul>
+<a class="button button-primary" data-campaign="homepage-pricing" data-cta="early-access" data-destination="email" data-placement="pricing" href="mailto:hello@sitereportkit.com?subject=SiteReportKit%20early%20access">Korai hozzáférés kérése</a>
+</article>
+<p class="launch-note">Az App Store bevezetése folyamatban van. A kirakat végleges árát és elérhetőségét az élő listán erősítjük meg. A Pro nem tartalmazza a fiókokat, a felhőszinkronizálást vagy a csapatmunkaterületeket.</p>
+</div>
+</section>
+<section aria-labelledby="faq-title" class="section faq">
+<div class="section-heading compact">
+<p class="eyebrow">Gyakori kérdések</p>
+<h2 id="faq-title">Ismerje meg, mit csinál az alkalmazás, mielőtt a helyszínen helyezné el.</h2>
+</div>
+<div class="faq-list">
+<details>
+<summary>Működik a SiteReportKit fiók nélkül?</summary>
+<p>Igen. Az alapvető projektrögzítés, a helyi tárolás, a jelentés-előnézet és a mintamunkafolyamatok nem igényelnek fiókot.</p>
+</details>
+<details>
+<summary>Dolgozhatok offline?</summary>
+<p>Igen. A projektrögzítést, a fényképeket, a jelöléseket és a jelentéskészítést úgy tervezték, hogy helyileg működjenek. A bolti vásárláshoz vagy visszaállításhoz továbbra is hálózati kapcsolat szükséges.</p>
+</details>
+<details>
+<summary>Mit tartalmaz az ingyenes export?</summary>
+<p>A Free összesen három PDF-, XLSX- vagy CSV-fájl exportálást tartalmaz a SiteReportKit Free márkajelzéssel. Az előzetesek és a helyi projektek korlátlanok maradnak.</p>
+</details>
+<details>
+<summary>A SiteReportKit egy teljes körű építésfelügyeleti platform?</summary>
+<p>Nem. Szándékosan a gyors terepi rögzítésre és a professzionális átadási jelentésekre összpontosít, BIM, RFI-k, ütemezések vagy valós idejű csapatkoordináció nélkül.</p>
+</details>
+</div>
+</section>
+<section aria-labelledby="phone-handoff-title" class="section phone-handoff">
+<div class="phone-handoff-copy">
+<p class="eyebrow">Folytassa a telefonján</p>
+<h2 id="phone-handoff-title">Vigye magával a munkafolyamat mintáját.</h2>
+<p>Olvassa be a kódot a SiteReportKit megnyitásához telefonján, vagy nyisson meg egy előre kitöltött szöveges üzenetet, amelyet elküldhet magának. Mindkét link kampánycímkéket használ marketing cookie-k nélkül.</p>
+<div class="hero-actions">
+<a class="button button-primary" data-campaign="homepage-phone-handoff" data-cta="phone-handoff" data-destination="sms" data-placement="homepage" href="sms:?&amp;body=Open%20SiteReportKit%20on%20your%20phone%3A%20https%3A%2F%2Fsitereportkit.com%2F%3Fsrc%3Dsms%26campaign%3Dhomepage-phone-handoff">Küldje el a linket saját magának</a>
+<a class="button button-secondary" data-campaign="homepage-phone-handoff" data-cta="early-access" data-destination="email" data-placement="phone-handoff" href="mailto:hello@sitereportkit.com?subject=SiteReportKit%20launch%20updates">Indítási frissítések letöltése</a>
+</div>
+<p class="handoff-note">Az SMS gomb csak az eszköz üzenetíróját nyitja meg. A SiteReportKit nem kap telefonszámot. Az ellenőrzött áruház linkje a jóváhagyást követően felváltja ezt a bevezetés előtti célhelyet.</p>
+</div>
+<figure>
+<img alt="QR-kód a SiteReportKit webhely megnyitásához telefonon" height="232" src="/assets/brand/phone-handoff-qr.svg" width="232"/>
+<figcaption>Nyissa meg az indítás előtti webhelyet a telefonján</figcaption>
+</figure>
+</section>
+<section aria-labelledby="final-cta-title" class="final-cta">
+<img alt="" height="103" src="/assets/brand/sitereportkit-mark.png?v=20260708-exact-logo" width="64"/>
+<h2 id="final-cta-title">Készítse el a jelentést, mielőtt a munka elhagyja a fejét.</h2>
+<p>A SiteReportKit elsőként a gyors, helyi, professzionális mobilwebhely-jelentések körébe tartozik, az asztali és webes munkafolyamatokkal azután, hogy az alapvető helyszíni munkafolyamat stabilizálódik.</p>
+<div class="hero-actions">
+<a class="button button-primary" data-cta="final_interior_sample" href="/downloads/sample-interior-handover-report.pdf">Belső minta</a>
+<a class="button button-secondary" data-cta="final_construction_sample" href="/downloads/sample-construction-defect-report.pdf">Építési minta</a>
+<a class="button button-secondary" data-cta="final_contact" href="mailto:hello@sitereportkit.com">Kapcsolat</a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div>
+<img alt="SiteReportKit" height="40" src="/assets/brand/sitereportkit-wordmark.png?v=20260708-exact-logo" width="184"/>
+<p>Offline első ütési lista, elakadások, hibák és bezárások jelentése.</p>
+</div>
+<nav aria-label="Lábléc-navigáció">
+<a href="#reports">Jelentések</a>
+<a href="#workflow">Munkafolyamat</a>
+<a href="#use-cases">Használati esetek</a>
+<a href="/hu/sample-reports/">Mintajelentések</a>
+<a href="/hu/resources/punch-list-vs-snag-list-vs-defect-list/">Terminológiai útmutató</a>
+<a href="/hu/pricing/">Árképzés</a>
+<a href="/downloads/sample-snagging-report.pdf">Minta PDF</a>
+<a href="/hu/support/">Támogatás</a>
+<a href="/hu/privacy/">Adatvédelem</a>
+</nav>
+</footer>
 </body>
 </html>
+

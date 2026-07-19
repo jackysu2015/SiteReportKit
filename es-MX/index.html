@@ -1,61 +1,485 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="es-MX">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Inspecciones e informes PDF | SiteReportKit</title>
-  <meta name="description" content="Registra hallazgos con fotos y anotaciones, organiza la lista de pendientes y genera informes PDF o CSV desde la obra.">
-  <link rel="canonical" href="https://sitereportkit.com/es-MX/">
-  <link rel="alternate" hreflang="x-default" href="https://sitereportkit.com/">
-  <link rel="alternate" hreflang="ar-SA" href="https://sitereportkit.com/ar-SA/">
-  <link rel="alternate" hreflang="ca" href="https://sitereportkit.com/ca/">
-  <link rel="alternate" hreflang="cs" href="https://sitereportkit.com/cs/">
-  <link rel="alternate" hreflang="da" href="https://sitereportkit.com/da/">
-  <link rel="alternate" hreflang="de-DE" href="https://sitereportkit.com/de-DE/">
-  <link rel="alternate" hreflang="el" href="https://sitereportkit.com/el/">
-  <link rel="alternate" hreflang="en-US" href="https://sitereportkit.com/en-US/">
-  <link rel="alternate" hreflang="es-MX" href="https://sitereportkit.com/es-MX/">
-  <link rel="alternate" hreflang="fi" href="https://sitereportkit.com/fi/">
-  <link rel="alternate" hreflang="fr-FR" href="https://sitereportkit.com/fr-FR/">
-  <link rel="alternate" hreflang="he" href="https://sitereportkit.com/he/">
-  <link rel="alternate" hreflang="hi" href="https://sitereportkit.com/hi/">
-  <link rel="alternate" hreflang="hr" href="https://sitereportkit.com/hr/">
-  <link rel="alternate" hreflang="hu" href="https://sitereportkit.com/hu/">
-  <link rel="alternate" hreflang="id" href="https://sitereportkit.com/id/">
-  <link rel="alternate" hreflang="it" href="https://sitereportkit.com/it/">
-  <link rel="alternate" hreflang="ja" href="https://sitereportkit.com/ja/">
-  <link rel="alternate" hreflang="ko" href="https://sitereportkit.com/ko/">
-  <link rel="alternate" hreflang="ms" href="https://sitereportkit.com/ms/">
-  <link rel="alternate" hreflang="nl-NL" href="https://sitereportkit.com/nl-NL/">
-  <link rel="alternate" hreflang="no" href="https://sitereportkit.com/no/">
-  <link rel="alternate" hreflang="pl" href="https://sitereportkit.com/pl/">
-  <link rel="alternate" hreflang="pt-BR" href="https://sitereportkit.com/pt-BR/">
-  <link rel="alternate" hreflang="ro" href="https://sitereportkit.com/ro/">
-  <link rel="alternate" hreflang="ru" href="https://sitereportkit.com/ru/">
-  <link rel="alternate" hreflang="sk" href="https://sitereportkit.com/sk/">
-  <link rel="alternate" hreflang="sv" href="https://sitereportkit.com/sv/">
-  <link rel="alternate" hreflang="th" href="https://sitereportkit.com/th/">
-  <link rel="alternate" hreflang="tr" href="https://sitereportkit.com/tr/">
-  <link rel="alternate" hreflang="uk" href="https://sitereportkit.com/uk/">
-  <link rel="alternate" hreflang="vi" href="https://sitereportkit.com/vi/">
-  <link rel="alternate" hreflang="zh-Hans" href="https://sitereportkit.com/zh-Hans/">
-  <link rel="alternate" hreflang="zh-Hant" href="https://sitereportkit.com/zh-Hant/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="SiteReportKit">
-  <meta property="og:title" content="Inspecciones e informes PDF | SiteReportKit">
-  <meta property="og:description" content="Registra hallazgos con fotos y anotaciones, organiza la lista de pendientes y genera informes PDF o CSV desde la obra.">
-  <meta property="og:url" content="https://sitereportkit.com/es-MX/">
-  <meta property="og:image" content="https://sitereportkit.com/assets/reports/samples/es-MX/report-cover.png">
-  <link rel="icon" href="../assets/brand/sitereportkit-favicon.png">
-  <link rel="stylesheet" href="../marketing-pages.css?v=20260711">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SiteReportKit","applicationCategory":"BusinessApplication","operatingSystem":"iOS","description":"Registra hallazgos con fotos y anotaciones, organiza la lista de pendientes y genera informes PDF o CSV desde la obra.","url":"https://sitereportkit.com/es-MX/"}</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>SiteReportKit | Lista de tareas pendientes profesionales e informes de problemas</title>
+<meta content="SiteReportKit crea listas de tareas fuera de línea con marcado de fotografías, mediciones, transferencias auditables y exportaciones profesionales de PDF, XLSX y CSV que protegen la privacidad." name="description"/>
+<meta content="#0A2342" name="theme-color"/>
+<meta content="SiteReportKit" property="og:title"/>
+<meta content="Cree archivos PDF de listas de tareas pendientes profesionales antes de abandonar el sitio." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://sitereportkit.com/es-MX/" property="og:url"/>
+<meta content="https://sitereportkit.com/assets/reports/report-cover.png?v=20260710-separated-samples" property="og:image"/>
+<link href="https://sitereportkit.com/es-MX/" rel="canonical"/><link href="https://sitereportkit.com/" hreflang="x-default" rel="alternate"/><link href="https://sitereportkit.com/ar-SA/" hreflang="ar-SA" rel="alternate"/><link href="https://sitereportkit.com/ca/" hreflang="ca" rel="alternate"/><link href="https://sitereportkit.com/cs/" hreflang="cs" rel="alternate"/><link href="https://sitereportkit.com/da/" hreflang="da" rel="alternate"/><link href="https://sitereportkit.com/de-DE/" hreflang="de-DE" rel="alternate"/><link href="https://sitereportkit.com/el/" hreflang="el" rel="alternate"/><link href="https://sitereportkit.com/en-US/" hreflang="en-US" rel="alternate"/><link href="https://sitereportkit.com/es-MX/" hreflang="es-MX" rel="alternate"/><link href="https://sitereportkit.com/fi/" hreflang="fi" rel="alternate"/><link href="https://sitereportkit.com/fr-FR/" hreflang="fr-FR" rel="alternate"/><link href="https://sitereportkit.com/he/" hreflang="he" rel="alternate"/><link href="https://sitereportkit.com/hi/" hreflang="hi" rel="alternate"/><link href="https://sitereportkit.com/hr/" hreflang="hr" rel="alternate"/><link href="https://sitereportkit.com/hu/" hreflang="hu" rel="alternate"/><link href="https://sitereportkit.com/id/" hreflang="id" rel="alternate"/><link href="https://sitereportkit.com/it/" hreflang="it" rel="alternate"/><link href="https://sitereportkit.com/ja/" hreflang="ja" rel="alternate"/><link href="https://sitereportkit.com/ko/" hreflang="ko" rel="alternate"/><link href="https://sitereportkit.com/ms/" hreflang="ms" rel="alternate"/><link href="https://sitereportkit.com/nl-NL/" hreflang="nl-NL" rel="alternate"/><link href="https://sitereportkit.com/no/" hreflang="no" rel="alternate"/><link href="https://sitereportkit.com/pl/" hreflang="pl" rel="alternate"/><link href="https://sitereportkit.com/pt-BR/" hreflang="pt-BR" rel="alternate"/><link href="https://sitereportkit.com/ro/" hreflang="ro" rel="alternate"/><link href="https://sitereportkit.com/ru/" hreflang="ru" rel="alternate"/><link href="https://sitereportkit.com/sk/" hreflang="sk" rel="alternate"/><link href="https://sitereportkit.com/sv/" hreflang="sv" rel="alternate"/><link href="https://sitereportkit.com/th/" hreflang="th" rel="alternate"/><link href="https://sitereportkit.com/tr/" hreflang="tr" rel="alternate"/><link href="https://sitereportkit.com/uk-UA/" hreflang="uk" rel="alternate"/><link href="https://sitereportkit.com/vi/" hreflang="vi" rel="alternate"/><link href="https://sitereportkit.com/zh-Hans/" hreflang="zh-Hans" rel="alternate"/><link href="https://sitereportkit.com/zh-Hant/" hreflang="zh-Hant" rel="alternate"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/assets/brand/sitereportkit-favicon.png?v=20260708-exact-logo" rel="icon" type="image/png"/>
+<link href="/styles.css?v=20260710-separated-samples" rel="stylesheet"/>
+<script defer="" src="/script.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SiteReportKit","applicationCategory":"Aplicación Empresarial","operatingSystem":"iOS","description":"Informes de listas de pendientes, problemas, defectos y cierres sin conexión con exportaciones profesionales en PDF, XLSX y CSV.","url":"https://sitereportkit.com/es-MX/","featureList":["Captura de problemas sin conexión","Marcado fotográfico no destructivo","Exportaciones de PDF, XLSX y CSV","Desenfoque de privacidad y anotaciones de medición","Actividad con marca de tiempo y transferencias de problemas bloqueados","Tres métodos de entrada de firma","Registros de integridad de evidencia SHA-256","Listas de acciones del contratista","Evidencia de cierre","Archivos de proyectos locales"],"publisher":{"@type":"Organization","name":"SiteReportKit","url":"https://sitereportkit.com/es-MX/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿SiteReportKit funciona sin una cuenta?","acceptedAnswer":{"@type":"Answer","text":"Sí. La captura de proyectos principales, el almacenamiento local, la vista previa de informes y los flujos de trabajo de muestra no requieren una cuenta."}},{"@type":"Question","name":"¿Puedo trabajar sin conexión?","acceptedAnswer":{"@type":"Answer","text":"Sí. La captura de proyectos, las fotografías, el marcado y la generación de informes están diseñados para funcionar localmente. Aún se requiere una conexión de red para comprar o restaurar en la tienda."}},{"@type":"Question","name":"¿Qué incluye una exportación Libre?","acceptedAnswer":{"@type":"Answer","text":"Gratis incluye tres exportaciones de archivos PDF, XLSX o CSV en total con la marca SiteReportKit Free. Las vistas previas y los proyectos locales siguen siendo ilimitados."}}]}</script>
 </head>
 <body>
-  <header class="site-header"><a class="brand" href="../"><img src="../assets/brand/sitereportkit-wordmark.png" alt="SiteReportKit" width="224" height="49"></a><label><span class="sr-only">Language</span><select onchange="if(this.value)location.href=this.value"><option value="/ar-SA/">العربية</option><option value="/ca/">Català</option><option value="/cs/">Čeština</option><option value="/da/">Dansk</option><option value="/de-DE/">Deutsch</option><option value="/el/">Ελληνικά</option><option value="/en-US/">English</option><option value="/es-MX/" selected>Español</option><option value="/fi/">Suomi</option><option value="/fr-FR/">Français</option><option value="/he/">עברית</option><option value="/hi/">हिन्दी</option><option value="/hr/">Hrvatski</option><option value="/hu/">Magyar</option><option value="/id/">Bahasa Indonesia</option><option value="/it/">Italiano</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/ms/">Bahasa Melayu</option><option value="/nl-NL/">Nederlands</option><option value="/no/">Norsk</option><option value="/pl/">Polski</option><option value="/pt-BR/">Português</option><option value="/ro/">Română</option><option value="/ru/">Русский</option><option value="/sk/">Slovenčina</option><option value="/sv/">Svenska</option><option value="/th/">ไทย</option><option value="/tr/">Türkçe</option><option value="/uk/">Українська</option><option value="/vi/">Tiếng Việt</option><option value="/zh-Hans/">简体中文</option><option value="/zh-Hant/">繁體中文</option></select></label></header>
-  <main>
-    <section class="hero"><div class="hero-inner"><div><p class="eyebrow">SiteReportKit</p><h1>Inspecciones e informes PDF</h1><p class="hero-lede">Registra hallazgos con fotos y anotaciones, organiza la lista de pendientes y genera informes PDF o CSV desde la obra.</p><div class="actions"><a class="button button-primary" href="https://apps.apple.com/app/id6788361013">App Store</a><a class="button button-secondary" href="../downloads/samples/es-MX/sample-report.pdf">PDF</a></div></div><img src="../assets/reports/samples/es-MX/report-cover.png" alt="SiteReportKit" width="993" height="1404"></div></section>
-    <section class="section section-white"><div class="section-inner"><div class="related-grid"><article class="related-card"><h2>Registra hallazgos en obra</h2></article><article class="related-card"><h2>Ordena tus pendientes</h2></article><article class="related-card"><h2>Exporta informes PDF</h2></article></div><div class="prose"><p>Convierte un recorrido de obra en un informe claro y profesional. SiteReportKit funciona sin conexión y está diseñado para inspecciones, listas de pendientes, defectos, entregas y cierres.</p><p>Documenta cada hallazgo con ubicación, oficio, gravedad, responsable, fecha límite, estado, fotos, pies de foto y anotaciones que conservan la foto original. Busca y filtra la lista, actualiza varios elementos y conserva las notas de corrección y el historial de revisión.</p><p>Exporta informes PDF, listas de acciones para contratistas, informes de cierre y registros CSV. Elige el diseño, agrega la identidad de tu empresa y crea listas por zona o responsable. Las funciones locales principales no requieren una cuenta.</p><p>Ve más allá de las anotaciones básicas con desenfoque de privacidad y mediciones. Exporta libros XLSX editables, además de PDF y CSV; sigue comentarios y actividad con fecha y hora; y envía entregas bloqueadas que integran las actualizaciones devueltas. Dibuja, escribe o importa firmas. La evidencia original conserva registros de integridad SHA-256.</p></div></div></section>
-  </main>
-  <footer class="site-footer"><div class="footer-inner"><strong>SiteReportKit</strong><nav class="footer-links"><a href="../privacy/">Privacy</a><a href="../support/">Support</a></nav></div></footer>
+<header class="site-header" data-header="">
+<a aria-label="Inicio de SiteReportKit" class="brand" href="#top">
+<img alt="SiteReportKit" class="brand-logo" height="49" src="/assets/brand/sitereportkit-wordmark.png?v=20260708-exact-logo" width="224"/>
+</a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" data-nav-toggle="" type="button">
+<span class="sr-only">Abrir navegación</span>
+<span></span>
+<span></span>
+<span></span>
+</button>
+<nav class="site-nav" data-nav="" id="site-nav">
+<a href="#reports">Informes</a>
+<a href="#workflow">Flujo de trabajo</a>
+<a href="/es-MX/sample-reports/">Muestras</a>
+<a href="#markets">Mercados</a>
+<a href="#pricing">Precios</a>
+
+<label class="language-switcher"><span aria-hidden="true" class="language-switcher-icon">🌐</span><span class="sr-only">Language</span><select aria-label="Language" onchange="if(this.value)location.href=this.value"><option value="/ar-SA/">العربية</option><option value="/ca/">Català</option><option value="/cs/">Čeština</option><option value="/da/">Dansk</option><option value="/de-DE/">Deutsch</option><option value="/el/">Ελληνικά</option><option value="/en-US/">English</option><option selected="" value="/es-MX/">Español</option><option value="/fi/">Suomi</option><option value="/fr-FR/">Français</option><option value="/he/">עברית</option><option value="/hi/">हिन्दी</option><option value="/hr/">Hrvatski</option><option value="/hu/">Magyar</option><option value="/id/">Bahasa Indonesia</option><option value="/it/">Italiano</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/ms/">Bahasa Melayu</option><option value="/nl-NL/">Nederlands</option><option value="/no/">Norsk</option><option value="/pl/">Polski</option><option value="/pt-BR/">Português</option><option value="/ro/">Română</option><option value="/ru/">Русский</option><option value="/sk/">Slovenčina</option><option value="/sv/">Svenska</option><option value="/th/">ไทย</option><option value="/tr/">Türkçe</option><option value="/uk-UA/">Українська</option><option value="/vi/">Tiếng Việt</option><option value="/zh-Hans/">简体中文</option><option value="/zh-Hant/">繁體中文</option></select></label><a class="nav-cta" data-campaign="homepage-nav" data-cta="sample-report" data-destination="pdf" data-placement="header" href="/downloads/sample-snagging-report.pdf">PDF de muestra</a>
+</nav>
+</header>
+
+<main id="top">
+<section aria-labelledby="hero-title" class="hero">
+<div aria-hidden="true" class="hero-media">
+<img alt="" class="hero-page hero-page-main" src="/assets/reports/report-cover.png?v=20260710-separated-samples"/>
+<img alt="" class="hero-page hero-page-side" src="/assets/reports/report-issue-evidence.png?v=20260710-separated-samples"/>
+<img alt="" class="hero-page hero-page-back" src="/assets/reports/action-list-cover.png?v=20260710-separated-samples"/>
+</div>
+<div class="hero-copy">
+<p class="eyebrow">Informes de campo sin conexión</p>
+<h1 id="hero-title">Finaliza el recorrido. Envía el informe antes de partir.</h1>
+<p class="hero-lede">SiteReportKit convierte la evidencia del sitio en una transferencia profesional.</p>
+<p class="hero-support">
+            Capture pruebas defendibles, asigne responsabilidades y exporte entregables PDF, XLSX o CSV de marca, sin conexión y sin necesidad de cuenta.
+          </p>
+<div aria-label="Acciones primarias" class="hero-actions">
+<a class="button button-primary" data-campaign="homepage-hero-sample" data-cta="sample-report" data-destination="pdf" data-placement="hero" data-report-kind="interior-handover" href="/downloads/sample-interior-handover-report.pdf">Descargar informe de muestra</a>
+<a class="button button-secondary" data-campaign="homepage-hero-action-list" data-cta="sample-report" data-destination="pdf" data-placement="hero" data-report-kind="contractor-action-list" href="/downloads/sample-snag-action-list.pdf">Ver lista de acciones del contratista</a>
+</div>
+<dl aria-label="Productos destacados" class="hero-proof">
+<div>
+<dt>Funciona sin conexión</dt>
+<dd>Sigue caminando cuando baje la señal</dd>
+</div>
+<div>
+<dt>No se requiere cuenta</dt>
+<dd>Capture localmente y exporte cuando esté listo</dd>
+</div>
+<div>
+<dt>PDF+XLSX+CSV</dt>
+<dd>Informes, libros de trabajo y registros editables</dd>
+</div>
+</dl>
+</div>
+</section>
+<section aria-label="Promesa principal del producto" class="trust-strip">
+<p>Captura de evidencia del sitio.</p>
+<p>Asignar responsabilidad.</p>
+<p>Exporta la transferencia.</p>
+</section>
+<section aria-labelledby="reports-title" class="section report-showcase" id="reports">
+<div class="section-heading">
+<p class="eyebrow">Salida de muestra real</p>
+<h2 id="reports-title">Dos informes distintos para dos visitas al sitio muy diferentes.</h2>
+<p>
+            La entrega interior y la inspección activa de la construcción permanecen separadas de la captura hasta la exportación. Cada uno tiene su propio proyecto, índice de problemas, conjunto de evidencia, lista de acciones e informe descargable.
+          </p>
+</div>
+<div aria-label="Tipos de informes de muestra" class="report-edition-grid">
+<article class="report-edition">
+<div class="report-edition-media">
+<img alt="Portada del informe de entrega del interior de Maple Row" height="1404" src="/assets/reports/report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<div class="report-edition-copy">
+<p class="report-type">Entrega interior</p>
+<h3>Entrega de fila de arce</h3>
+<p>Cinco elementos internos que cubren acabados, pintura, revisiones eléctricas, puertas y una solicitud de cambio de cliente.</p>
+<div aria-label="Resumen del informe interior" class="report-edition-facts">
+<span>5 inconvenientes</span>
+<span>9 páginas</span>
+<span>Solo evidencia interior</span>
+</div>
+<div class="report-edition-actions">
+<a class="button button-primary" href="/downloads/sample-interior-handover-report.pdf">PDF interiores</a>
+<a class="button button-secondary" href="/downloads/sample-snag-action-list.pdf">Lista de acciones interiores</a>
+</div>
+</div>
+</article>
+<article class="report-edition report-edition-construction">
+<div class="report-edition-media">
+<img alt="Portada del informe de defectos de inspección de construcción de Harbor Point" height="1404" src="/assets/reports/construction-report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<div class="report-edition-copy">
+<p class="report-type">Construcción activa</p>
+<h3>Inspección de construcción de Harbor Point</h3>
+<p>Seis defectos constructivos que abarcan cortafuegos de fachada, hormigón, drenaje, obras provisionales, albañilería e impermeabilización de cubiertas.</p>
+<div aria-label="Resumen del informe de construcción" class="report-edition-facts">
+<span>6 defectos</span>
+<span>10 páginas</span>
+<span>Solo evidencia de construcción</span>
+</div>
+<div class="report-edition-actions">
+<a class="button button-primary" href="/downloads/sample-construction-defect-report.pdf">PDF de construcción</a>
+<a class="button button-secondary" href="/downloads/sample-construction-defect-action-list.pdf">Lista de acciones de construcción</a>
+</div>
+</div>
+</article>
+</div>
+<div class="report-lab">
+<figure class="report-preview">
+<div class="report-preview-top">
+<span>PDF de cliente de muestra</span>
+<a href="/downloads/sample-interior-handover-report.pdf">Descargar</a>
+</div>
+<div class="document-frame">
+<img alt="Muestra de portada de informe de problemas interiores de SiteReportKit con resumen e índice de problemas" height="1404" src="/assets/reports/report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<figcaption>
+<strong>Informe completo del cliente</strong>
+<span>Portada, resumen, índice de inconvenientes, detalles del problema, fotografías de evidencia y formato listo para firmar.</span>
+</figcaption>
+</figure>
+<div aria-label="Vistas de informes de muestra" class="sample-stack">
+<div class="sample-stack-heading">
+<p class="eyebrow">Dentro de la exportación</p>
+<h3>Evidencia estructurada, no un rollo de cámara volcado en un PDF.</h3>
+</div>
+<article class="sample-row">
+<img alt="Página de detalles del problema interior que muestra la acción requerida, fotografía de evidencia, propietario, estado y fecha de vencimiento" height="1404" src="/assets/reports/report-issue-evidence.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Emitir evidencia</h4>
+<p>Cada problema mantiene juntos la foto, el título, el propietario, la gravedad, el estado y la acción requerida.</p>
+</div>
+</article>
+<article class="sample-row">
+<img alt="Lista de acciones del contratista de interiores Portada en PDF y resumen de inconvenientes destacados generado por SiteReportKit" height="1404" src="/assets/reports/action-list-cover.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Lista de acciones del contratista</h4>
+<p>Filtrar para abrir solo elementos y entregar a cada operación un alcance de trabajo enfocado.</p>
+</div>
+</article>
+<article class="sample-row">
+<img alt="Página de evidencia de cierre interior que muestra la foto posterior y la nota de resolución" height="1404" src="/assets/reports/report-after-evidence.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Prueba de liquidación</h4>
+<p>Los elementos resueltos incluyen notas de aceptación y fotografías posteriores para un seguimiento limpio de la entrega.</p>
+</div>
+</article>
+<div aria-label="Descargas de muestra" class="sample-actions">
+<a class="button button-primary" href="/downloads/sample-interior-handover-report.pdf">PDF interiores</a>
+<a class="button button-secondary" href="/downloads/sample-snag-action-list.pdf">Lista de acciones</a>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="workflow-title" class="section workflow" id="workflow">
+<div class="section-heading compact">
+<p class="eyebrow">Creado para paseos por el sitio</p>
+<h2 id="workflow-title">De la evidencia del sitio a un informe en tres pasos.</h2>
+</div>
+<div class="workflow-layout">
+<ol class="workflow-list">
+<li>
+<span>01</span>
+<div>
+<h3>Captura de evidencia del sitio</h3>
+<p>Agregue problemas mientras camina, con fotografías, marcas no destructivas, área, comercio, gravedad y una acción clara requerida.</p>
+</div>
+</li>
+<li>
+<span>02</span>
+<div>
+<h3>Asignar responsabilidad</h3>
+<p>Establece propietario, fecha de vencimiento, prioridad y estado, luego filtra el trabajo por contratista, oficio o área.</p>
+</div>
+</li>
+<li>
+<span>03</span>
+<div>
+<h3>Exportar el traspaso</h3>
+<p>Obtenga una vista previa y comparta un PDF completo del cliente, una lista de acciones de contratistas específicas, un informe de cierre o un registro de problemas CSV antes de partir.</p>
+</div>
+</li>
+</ol>
+<figure class="closeout-preview">
+<img alt="Página de informe de cierre con evidencia de elementos resueltos y formato listo para aprobar" height="1404" src="/assets/reports/closeout-report-page.png?v=20260710-separated-samples" width="993"/>
+<figcaption>Evidencia del informe de cierre con notas de resolución.</figcaption>
+</figure>
+</div>
+</section>
+<section aria-labelledby="app-proof-title" class="section app-proof">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Prueba desde la aplicación</p>
+<h2 id="app-proof-title">Construido alrededor del paseo del sitio, no del administrador de la oficina.</h2>
+</div>
+<p>Estas son pantallas de productos reales de la versión móvil actual. La captura, la responsabilidad y los informes permanecen conectados desde la primera foto hasta la entrega final.</p>
+</div>
+<div class="app-proof-grid">
+<article>
+<img alt="Flujo de trabajo de marcado de fotografías móviles de SiteReportKit con evidencia de construcción" height="2868" src="/assets/app/photo-markup.png" width="1320"/>
+<div><span>Captura</span><h3>Marcar el defecto exacto</h3><p>Conserve la evidencia original mientras agrega marcas visuales claras para la persona que realiza el trabajo.</p></div>
+</article>
+<article>
+<img alt="Opciones de exportación de la lista de acciones del contratista móvil de SiteReportKit" height="2868" src="/assets/app/action-lists.png" width="1320"/>
+<div><span>Asignar</span><h3>Alcance del trabajo por propietario o área</h3><p>Proporcione a cada contratista una lista enfocada sin exponer elementos del proyecto no relacionados.</p></div>
+</article>
+<article>
+<img alt="Vista previa del informe PDF móvil de SiteReportKit y flujo de trabajo de exportación" height="2868" src="/assets/app/pdf-export.png" width="1320"/>
+<div><span>Exportar</span><h3>Vista previa del informe en sitio</h3><p>Revise el PDF del cliente antes de compartirlo, mientras el contexto del tutorial aún esté actualizado.</p></div>
+</article>
+</div>
+</section>
+<section aria-labelledby="markets-title" class="section markets" id="markets">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Creado para terminología local</p>
+<h2 id="markets-title">El mismo flujo de trabajo de campo, expresa la forma en que funciona su mercado.</h2>
+</div>
+<p>Elija la terminología y el formato de papel que esperan sus clientes y contratistas. Estas páginas describen configuraciones y ejemplos de productos, no la certificación regulatoria local.</p>
+</div>
+<div class="market-grid">
+<a data-campaign="homepage-market-us" data-cta="market-entry" data-destination="guide" data-market="us" data-placement="homepage" href="/es-MX/us/punch-list-app/">
+<span>Estados Unidos</span>
+<strong>Listas de pendientes · Carta</strong>
+<small>Para caminatas de perforación, propiedad comercial y liquidación de subcontratistas.</small>
+</a>
+<a data-campaign="homepage-market-uk" data-cta="market-entry" data-destination="guide" data-market="uk" data-placement="homepage" href="/es-MX/uk/snagging-app/">
+<span>Reino Unido</span>
+<strong>Enganche · A4</strong>
+<small>Para entregas de nuevas construcciones, inspecciones de sitios e informes de problemas.</small>
+</a>
+<a data-campaign="homepage-market-au" data-cta="market-entry" data-destination="guide" data-market="au" data-placement="homepage" href="/es-MX/au/defect-list-app/">
+<span>Australia</span>
+<strong>Listas de defectos · A4</strong>
+<small>Para acciones de constructores, alcances comerciales y paseos prácticos de finalización.</small>
+</a>
+</div>
+</section>
+<section aria-labelledby="features-title" class="section features">
+<div class="section-heading compact">
+<p class="eyebrow">Por qué los equipos lo eligen</p>
+<h2 id="features-title">Una herramienta de informes enfocada en lugar de otra suite de construcción.</h2>
+</div>
+<div class="feature-grid">
+<article>
+<h3>Primero sin conexión de forma predeterminada</h3>
+<p>Los proyectos y los medios permanecen locales durante la captura, por lo que una mala señal en el sitio no bloquea el informe.</p>
+</article>
+<article>
+<h3>Rastro de evidencia profesional</h3>
+<p>Conserve originales con registros de integridad SHA-256, difumine detalles privados, agregue medidas y mantenga marcas editadas junto a la evidencia de cierre.</p>
+</article>
+<article>
+<h3>Terminología flexible</h3>
+<p>Admite listas de tareas pendientes, informes de problemas, listas de defectos, observaciones, auditorías del sitio y recorridos de mantenimiento.</p>
+</article>
+<article>
+<h3>Transferencias procesables</h3>
+<p>Envíe transferencias de problemas bloqueados, combine actualizaciones devueltas, siga los comentarios y la actividad con marca de tiempo y luego exporte registros XLSX con alcance o paquetes de cierre.</p>
+</article>
+<article>
+<h3>Aprobación flexible</h3>
+<p>Dibuje una firma, genere una a partir de un nombre escrito o importe una imagen de firma aprobada para la aprobación del inspector y del cliente.</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="use-cases-title" class="section use-cases" id="use-cases">
+<div class="section-heading">
+<p class="eyebrow">Casos de uso</p>
+<h2 id="use-cases-title">Para las personas que necesitan que el informe esté terminado mientras la visita aún está fresca.</h2>
+</div>
+<div class="use-case-grid">
+<article>
+<h3>Inspectores de construcción</h3>
+<p>Produzca archivos PDF de cliente pulidos con portadas de marca, texto de limitaciones, índices de problemas y evidencia fotográfica.</p>
+</article>
+<article>
+<h3>Arquitectos y diseñadores</h3>
+<p>Capture observaciones del sitio por área y envíe a los contratistas una lista de acciones limpia sin necesidad de limpiar una hoja de cálculo.</p>
+</article>
+<article>
+<h3>Contratistas y administradores de obra</h3>
+<p>Ejecute recorridos de traspaso, asigne responsabilidad comercial, realice un seguimiento del cierre y exporte listas de alcance para subcontratistas.</p>
+</article>
+<article>
+<h3>Equipos de propiedades e instalaciones</h3>
+<p>Problemas de mantenimiento de documentos, evidencia antes y después, defectos recurrentes y registros de proyectos archivables.</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="downloads-title" class="section sample-downloads">
+<div>
+<p class="eyebrow">Descargas de muestra</p>
+<h2 id="downloads-title">Inspecciona el resultado antes de probar la aplicación.</h2>
+</div>
+<div class="download-list">
+<a href="/downloads/sample-interior-handover-report.pdf">
+<strong>Informe de entrega interior en PDF</strong>
+<span>Cinco elementos que se enganchan en el interior</span>
+</a>
+<a href="/downloads/sample-construction-defect-report.pdf">
+<strong>Informe de defectos de construcción PDF</strong>
+<span>Seis defectos de construcción del sitio activo</span>
+</a>
+<a href="/downloads/sample-snag-action-list.pdf">
+<strong>Lista de acciones del contratista PDF</strong>
+<span>Elementos abiertos para equipos de entrega</span>
+</a>
+<a href="/downloads/sample-closeout-report.pdf">
+<strong>Informe de cierre en PDF</strong>
+<span>Problemas resueltos y evidencia</span>
+</a>
+<a href="/downloads/sample-issue-register.csv">
+<strong>Registro de emisión CSV</strong>
+<span>Exportación de hoja de cálculo de informes interiores</span>
+</a>
+<a href="/downloads/sample-construction-issue-register.csv">
+<strong>Registro de problemas de construcción CSV</strong>
+<span>Exportación de hoja de cálculo de informe de construcción</span>
+</a>
+</div>
+</section>
+<section aria-labelledby="pricing-title" class="section pricing" id="pricing">
+<div class="pricing-copy">
+<p class="eyebrow">Precios locales simples</p>
+<h2 id="pricing-title">Comienza gratis. Desbloquee exportaciones profesionales limpias una vez.</h2>
+<p>
+            Utilice cada flujo de trabajo de campo principal localmente sin crear una cuenta. Gratis incluye tres exportaciones totales de archivos con marcas de agua. El lanzamiento Pro planificado es una compra única de USD 9,99 que se puede restaurar en la tienda en versiones de tienda móviles compatibles, sin suscripción. El precio final localizado en la tienda puede variar según el impuesto y la moneda.
+          </p>
+</div>
+<div aria-label="Comparación gratuita y Pro" class="pricing-compare">
+<article class="plan-card">
+<p class="plan-label">Gratis</p>
+<p class="price">$0 <span>uso local</span></p>
+<ul>
+<li>Proyectos locales ilimitados y vistas previas</li>
+<li>3 exportaciones totales de PDF/XLSX/CSV con marca de agua</li>
+<li>Plantilla de informe básico de campo</li>
+<li>Diseño de fotografía estándar</li>
+</ul>
+<a class="button button-secondary" data-campaign="homepage-pricing-sample" data-cta="sample-report" data-destination="pdf" data-placement="pricing" href="/downloads/sample-interior-handover-report.pdf">Inspeccionar la salida</a>
+</article>
+<article class="plan-card plan-card-pro">
+<p class="plan-label">Individual Profesional</p>
+<p class="price">$9.99 <span>objetivo de lanzamiento único</span></p>
+<ul>
+<li>Exportaciones limpias ilimitadas de PDF, XLSX y CSV</li>
+<li>Logotipo personalizado y marca de la empresa.</li>
+<li>Desenfoque de privacidad, mediciones e integridad de evidencia</li>
+<li>Traspasos de problemas bloqueados e historial de actividades</li>
+<li>Firmas dibujadas, mecanografiadas o importadas</li>
+</ul>
+<a class="button button-primary" data-campaign="homepage-pricing" data-cta="early-access" data-destination="email" data-placement="pricing" href="mailto:hello@sitereportkit.com?subject=SiteReportKit%20early%20access">Solicitar acceso anticipado</a>
+</article>
+<p class="launch-note">Lanzamiento de la App Store en progreso. El precio final de la tienda y la disponibilidad se confirmarán en el anuncio en vivo. Pro no incluye cuentas, sincronización en la nube ni espacios de trabajo en equipo.</p>
+</div>
+</section>
+<section aria-labelledby="faq-title" class="section faq">
+<div class="section-heading compact">
+<p class="eyebrow">Preguntas comunes</p>
+<h2 id="faq-title">Sepa lo que hace la aplicación antes de llevarla al sitio.</h2>
+</div>
+<div class="faq-list">
+<details>
+<summary>¿SiteReportKit funciona sin una cuenta?</summary>
+<p>Sí. La captura de proyectos principales, el almacenamiento local, la vista previa de informes y los flujos de trabajo de muestra no requieren una cuenta.</p>
+</details>
+<details>
+<summary>¿Puedo trabajar sin conexión?</summary>
+<p>Sí. La captura de proyectos, las fotografías, el marcado y la generación de informes están diseñados para funcionar localmente. Aún se requiere una conexión de red para comprar o restaurar en la tienda.</p>
+</details>
+<details>
+<summary>¿Qué incluye una exportación Libre?</summary>
+<p>Gratis incluye tres exportaciones de archivos PDF, XLSX o CSV en total con la marca SiteReportKit Free. Las vistas previas y los proyectos locales siguen siendo ilimitados.</p>
+</details>
+<details>
+<summary>¿SiteReportKit es una plataforma completa de gestión de construcción?</summary>
+<p>No. Se centra intencionalmente en la captura rápida de campo y en informes de transferencia profesionales, sin BIM, RFI, cronogramas ni coordinación de equipos en tiempo real.</p>
+</details>
+</div>
+</section>
+<section aria-labelledby="phone-handoff-title" class="section phone-handoff">
+<div class="phone-handoff-copy">
+<p class="eyebrow">Continúa en tu teléfono</p>
+<h2 id="phone-handoff-title">Lleve consigo el flujo de trabajo de muestra.</h2>
+<p>Escanea el código para abrir SiteReportKit en tu teléfono, o abre un mensaje de texto precargado que puedes enviarte a ti mismo. Ambos enlaces utilizan etiquetas de campaña sin cookies de marketing.</p>
+<div class="hero-actions">
+<a class="button button-primary" data-campaign="homepage-phone-handoff" data-cta="phone-handoff" data-destination="sms" data-placement="homepage" href="sms:?&amp;body=Open%20SiteReportKit%20on%20your%20phone%3A%20https%3A%2F%2Fsitereportkit.com%2F%3Fsrc%3Dsms%26campaign%3Dhomepage-phone-handoff">Envíate el enlace por mensaje de texto</a>
+<a class="button button-secondary" data-campaign="homepage-phone-handoff" data-cta="early-access" data-destination="email" data-placement="phone-handoff" href="mailto:hello@sitereportkit.com?subject=SiteReportKit%20launch%20updates">Obtén actualizaciones de lanzamiento</a>
+</div>
+<p class="handoff-note">El botón SMS solo abre el redactor de mensajes de tu dispositivo. SiteReportKit no recibe un número de teléfono. El enlace de la tienda verificada reemplazará este destino previo al lanzamiento después de la aprobación.</p>
+</div>
+<figure>
+<img alt="Código QR para abrir el sitio web SiteReportKit en un teléfono" height="232" src="/assets/brand/phone-handoff-qr.svg" width="232"/>
+<figcaption>Abre el sitio de prelanzamiento en tu teléfono</figcaption>
+</figure>
+</section>
+<section aria-labelledby="final-cta-title" class="final-cta">
+<img alt="" height="103" src="/assets/brand/sitereportkit-mark.png?v=20260708-exact-logo" width="64"/>
+<h2 id="final-cta-title">Cree el informe antes de que el trabajo abandone su cabeza.</h2>
+<p>SiteReportKit se lanza primero en torno a informes de sitios móviles rápidos, locales y profesionales, con flujos de trabajo con capacidad para escritorio y web planificados después de que el flujo de trabajo de campo principal sea estable.</p>
+<div class="hero-actions">
+<a class="button button-primary" data-cta="final_interior_sample" href="/downloads/sample-interior-handover-report.pdf">Muestra interior</a>
+<a class="button button-secondary" data-cta="final_construction_sample" href="/downloads/sample-construction-defect-report.pdf">Muestra de construcción</a>
+<a class="button button-secondary" data-cta="final_contact" href="mailto:hello@sitereportkit.com">Contacto</a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div>
+<img alt="SiteReportKit" height="40" src="/assets/brand/sitereportkit-wordmark.png?v=20260708-exact-logo" width="184"/>
+<p>Informes de lista de tareas pendientes, problemas, defectos y cierres sin conexión.</p>
+</div>
+<nav aria-label="Navegación de pie de página">
+<a href="#reports">Informes</a>
+<a href="#workflow">Flujo de trabajo</a>
+<a href="#use-cases">Casos de uso</a>
+<a href="/es-MX/sample-reports/">Informes de muestra</a>
+<a href="/es-MX/resources/punch-list-vs-snag-list-vs-defect-list/">Guía terminológica</a>
+<a href="/es-MX/pricing/">Precios</a>
+<a href="/downloads/sample-snagging-report.pdf">PDF de muestra</a>
+<a href="/es-MX/support/">Soporte</a>
+<a href="/es-MX/privacy/">Privacidad</a>
+</nav>
+</footer>
 </body>
 </html>
+

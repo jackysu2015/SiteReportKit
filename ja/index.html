@@ -1,61 +1,485 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>現場検査とPDF報告書 | SiteReportKit</title>
-  <meta name="description" content="写真と注釈で現場の不具合を記録し、是正リストを整理。現場でそのまま PDF 報告書や CSV 台帳を作成できます。">
-  <link rel="canonical" href="https://sitereportkit.com/ja/">
-  <link rel="alternate" hreflang="x-default" href="https://sitereportkit.com/">
-  <link rel="alternate" hreflang="ar-SA" href="https://sitereportkit.com/ar-SA/">
-  <link rel="alternate" hreflang="ca" href="https://sitereportkit.com/ca/">
-  <link rel="alternate" hreflang="cs" href="https://sitereportkit.com/cs/">
-  <link rel="alternate" hreflang="da" href="https://sitereportkit.com/da/">
-  <link rel="alternate" hreflang="de-DE" href="https://sitereportkit.com/de-DE/">
-  <link rel="alternate" hreflang="el" href="https://sitereportkit.com/el/">
-  <link rel="alternate" hreflang="en-US" href="https://sitereportkit.com/en-US/">
-  <link rel="alternate" hreflang="es-MX" href="https://sitereportkit.com/es-MX/">
-  <link rel="alternate" hreflang="fi" href="https://sitereportkit.com/fi/">
-  <link rel="alternate" hreflang="fr-FR" href="https://sitereportkit.com/fr-FR/">
-  <link rel="alternate" hreflang="he" href="https://sitereportkit.com/he/">
-  <link rel="alternate" hreflang="hi" href="https://sitereportkit.com/hi/">
-  <link rel="alternate" hreflang="hr" href="https://sitereportkit.com/hr/">
-  <link rel="alternate" hreflang="hu" href="https://sitereportkit.com/hu/">
-  <link rel="alternate" hreflang="id" href="https://sitereportkit.com/id/">
-  <link rel="alternate" hreflang="it" href="https://sitereportkit.com/it/">
-  <link rel="alternate" hreflang="ja" href="https://sitereportkit.com/ja/">
-  <link rel="alternate" hreflang="ko" href="https://sitereportkit.com/ko/">
-  <link rel="alternate" hreflang="ms" href="https://sitereportkit.com/ms/">
-  <link rel="alternate" hreflang="nl-NL" href="https://sitereportkit.com/nl-NL/">
-  <link rel="alternate" hreflang="no" href="https://sitereportkit.com/no/">
-  <link rel="alternate" hreflang="pl" href="https://sitereportkit.com/pl/">
-  <link rel="alternate" hreflang="pt-BR" href="https://sitereportkit.com/pt-BR/">
-  <link rel="alternate" hreflang="ro" href="https://sitereportkit.com/ro/">
-  <link rel="alternate" hreflang="ru" href="https://sitereportkit.com/ru/">
-  <link rel="alternate" hreflang="sk" href="https://sitereportkit.com/sk/">
-  <link rel="alternate" hreflang="sv" href="https://sitereportkit.com/sv/">
-  <link rel="alternate" hreflang="th" href="https://sitereportkit.com/th/">
-  <link rel="alternate" hreflang="tr" href="https://sitereportkit.com/tr/">
-  <link rel="alternate" hreflang="uk" href="https://sitereportkit.com/uk/">
-  <link rel="alternate" hreflang="vi" href="https://sitereportkit.com/vi/">
-  <link rel="alternate" hreflang="zh-Hans" href="https://sitereportkit.com/zh-Hans/">
-  <link rel="alternate" hreflang="zh-Hant" href="https://sitereportkit.com/zh-Hant/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="SiteReportKit">
-  <meta property="og:title" content="現場検査とPDF報告書 | SiteReportKit">
-  <meta property="og:description" content="写真と注釈で現場の不具合を記録し、是正リストを整理。現場でそのまま PDF 報告書や CSV 台帳を作成できます。">
-  <meta property="og:url" content="https://sitereportkit.com/ja/">
-  <meta property="og:image" content="https://sitereportkit.com/assets/reports/samples/ja/report-cover.png">
-  <link rel="icon" href="../assets/brand/sitereportkit-favicon.png">
-  <link rel="stylesheet" href="../marketing-pages.css?v=20260711">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SiteReportKit","applicationCategory":"BusinessApplication","operatingSystem":"iOS","description":"写真と注釈で現場の不具合を記録し、是正リストを整理。現場でそのまま PDF 報告書や CSV 台帳を作成できます。","url":"https://sitereportkit.com/ja/"}</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>SiteReportKit |プロフェッショナルなパンチリストと引っ掛かりレポート</title>
+<meta content="SiteReportKit は、プライバシーに配慮した写真マークアップ、測定、監査可能なハンドオフ、プロフェッショナルな PDF、XLSX、および CSV エクスポートを備えたオフライン パンチ リストを作成します。" name="description"/>
+<meta content="#0A2342" name="theme-color"/>
+<meta content="SiteReportKit" property="og:title"/>
+<meta content="サイトを離れる前に、プロフェッショナルなパンチ リスト PDF を作成します。" property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://sitereportkit.com/ja/" property="og:url"/>
+<meta content="https://sitereportkit.com/assets/reports/report-cover.png?v=20260710-separated-samples" property="og:image"/>
+<link href="https://sitereportkit.com/ja/" rel="canonical"/><link href="https://sitereportkit.com/" hreflang="x-default" rel="alternate"/><link href="https://sitereportkit.com/ar-SA/" hreflang="ar-SA" rel="alternate"/><link href="https://sitereportkit.com/ca/" hreflang="ca" rel="alternate"/><link href="https://sitereportkit.com/cs/" hreflang="cs" rel="alternate"/><link href="https://sitereportkit.com/da/" hreflang="da" rel="alternate"/><link href="https://sitereportkit.com/de-DE/" hreflang="de-DE" rel="alternate"/><link href="https://sitereportkit.com/el/" hreflang="el" rel="alternate"/><link href="https://sitereportkit.com/en-US/" hreflang="en-US" rel="alternate"/><link href="https://sitereportkit.com/es-MX/" hreflang="es-MX" rel="alternate"/><link href="https://sitereportkit.com/fi/" hreflang="fi" rel="alternate"/><link href="https://sitereportkit.com/fr-FR/" hreflang="fr-FR" rel="alternate"/><link href="https://sitereportkit.com/he/" hreflang="he" rel="alternate"/><link href="https://sitereportkit.com/hi/" hreflang="hi" rel="alternate"/><link href="https://sitereportkit.com/hr/" hreflang="hr" rel="alternate"/><link href="https://sitereportkit.com/hu/" hreflang="hu" rel="alternate"/><link href="https://sitereportkit.com/id/" hreflang="id" rel="alternate"/><link href="https://sitereportkit.com/it/" hreflang="it" rel="alternate"/><link href="https://sitereportkit.com/ja/" hreflang="ja" rel="alternate"/><link href="https://sitereportkit.com/ko/" hreflang="ko" rel="alternate"/><link href="https://sitereportkit.com/ms/" hreflang="ms" rel="alternate"/><link href="https://sitereportkit.com/nl-NL/" hreflang="nl-NL" rel="alternate"/><link href="https://sitereportkit.com/no/" hreflang="no" rel="alternate"/><link href="https://sitereportkit.com/pl/" hreflang="pl" rel="alternate"/><link href="https://sitereportkit.com/pt-BR/" hreflang="pt-BR" rel="alternate"/><link href="https://sitereportkit.com/ro/" hreflang="ro" rel="alternate"/><link href="https://sitereportkit.com/ru/" hreflang="ru" rel="alternate"/><link href="https://sitereportkit.com/sk/" hreflang="sk" rel="alternate"/><link href="https://sitereportkit.com/sv/" hreflang="sv" rel="alternate"/><link href="https://sitereportkit.com/th/" hreflang="th" rel="alternate"/><link href="https://sitereportkit.com/tr/" hreflang="tr" rel="alternate"/><link href="https://sitereportkit.com/uk-UA/" hreflang="uk" rel="alternate"/><link href="https://sitereportkit.com/vi/" hreflang="vi" rel="alternate"/><link href="https://sitereportkit.com/zh-Hans/" hreflang="zh-Hans" rel="alternate"/><link href="https://sitereportkit.com/zh-Hant/" hreflang="zh-Hant" rel="alternate"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/assets/brand/sitereportkit-favicon.png?v=20260708-exact-logo" rel="icon" type="image/png"/>
+<link href="/styles.css?v=20260710-separated-samples" rel="stylesheet"/>
+<script defer="" src="/script.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SiteReportKit","applicationCategory":"ビジネスアプリケーション","operatingSystem":"iOS","description":"プロフェッショナルな PDF、XLSX、CSV エクスポートを使用した、オフラインファーストのパンチ リスト、ひっかかり、欠陥、見切りレポート。","url":"https://sitereportkit.com/ja/","featureList":["オフラインの問題のキャプチャ","非破壊写真マークアップ","PDF、XLSX、および CSV のエクスポート","プライバシーの曖昧さと測定の注釈","タイムスタンプ付きアクティビティとロックされた問題の引き継ぎ","3 つの署名入力方法","SHA-256 証拠整合性レコード","請負業者のアクションリスト","完封証拠","ローカル プロジェクト アーカイブ"],"publisher":{"@type":"Organization","name":"SiteReportKit","url":"https://sitereportkit.com/ja/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"SiteReportKit はアカウントなしで動作しますか?","acceptedAnswer":{"@type":"Answer","text":"はい。コア プロジェクトのキャプチャ、ローカル ストレージ、レポート プレビュー、サンプル ワークフローにはアカウントは必要ありません。"}},{"@type":"Question","name":"オフラインで作業できますか?","acceptedAnswer":{"@type":"Answer","text":"はい。プロジェクトのキャプチャ、写真、マークアップ、レポート生成はローカルで動作するように設計されています。ストアでの購入または復元には、引き続きネットワーク接続が必要です。"}},{"@type":"Question","name":"無料エクスポートには何が含まれますか?","acceptedAnswer":{"@type":"Answer","text":"無料版には、SiteReportKit Free ブランドを使用した合計 3 つの PDF、XLSX、または CSV ファイルのエクスポートが含まれています。プレビューとローカル プロジェクトは無制限のままです。"}}]}</script>
 </head>
 <body>
-  <header class="site-header"><a class="brand" href="../"><img src="../assets/brand/sitereportkit-wordmark.png" alt="SiteReportKit" width="224" height="49"></a><label><span class="sr-only">Language</span><select onchange="if(this.value)location.href=this.value"><option value="/ar-SA/">العربية</option><option value="/ca/">Català</option><option value="/cs/">Čeština</option><option value="/da/">Dansk</option><option value="/de-DE/">Deutsch</option><option value="/el/">Ελληνικά</option><option value="/en-US/">English</option><option value="/es-MX/">Español</option><option value="/fi/">Suomi</option><option value="/fr-FR/">Français</option><option value="/he/">עברית</option><option value="/hi/">हिन्दी</option><option value="/hr/">Hrvatski</option><option value="/hu/">Magyar</option><option value="/id/">Bahasa Indonesia</option><option value="/it/">Italiano</option><option value="/ja/" selected>日本語</option><option value="/ko/">한국어</option><option value="/ms/">Bahasa Melayu</option><option value="/nl-NL/">Nederlands</option><option value="/no/">Norsk</option><option value="/pl/">Polski</option><option value="/pt-BR/">Português</option><option value="/ro/">Română</option><option value="/ru/">Русский</option><option value="/sk/">Slovenčina</option><option value="/sv/">Svenska</option><option value="/th/">ไทย</option><option value="/tr/">Türkçe</option><option value="/uk/">Українська</option><option value="/vi/">Tiếng Việt</option><option value="/zh-Hans/">简体中文</option><option value="/zh-Hant/">繁體中文</option></select></label></header>
-  <main>
-    <section class="hero"><div class="hero-inner"><div><p class="eyebrow">SiteReportKit</p><h1>現場検査とPDF報告書</h1><p class="hero-lede">写真と注釈で現場の不具合を記録し、是正リストを整理。現場でそのまま PDF 報告書や CSV 台帳を作成できます。</p><div class="actions"><a class="button button-primary" href="https://apps.apple.com/app/id6788361013">App Store</a><a class="button button-secondary" href="../downloads/samples/ja/sample-report.pdf">PDF</a></div></div><img src="../assets/reports/samples/ja/report-cover.png" alt="SiteReportKit" width="993" height="1404"></div></section>
-    <section class="section section-white"><div class="section-inner"><div class="related-grid"><article class="related-card"><h2>現場で不具合を記録</h2></article><article class="related-card"><h2>是正項目をすっきり整理</h2></article><article class="related-card"><h2>見やすいPDF報告書を出力</h2></article></div><div class="prose"><p>現場巡回の記録を、見やすく専門的な報告書に。SiteReportKit は、現場検査、不具合・是正リスト、引き渡し検査、完了確認に適した、オフラインでも使える現場検査アプリです。</p><p>各項目に場所、工種、重要度、担当者、期限、ステータス、写真、説明を記録し、元の写真を保持したまま注釈を追加できます。項目の検索・絞り込み、ステータスの一括更新、是正メモや確認履歴の管理にも対応します。</p><p>PDF 検査報告書、施工会社向け是正リスト、完了報告書、CSV 台帳を出力。報告書のレイアウトを選び、会社ロゴなどのブランド要素を追加できます。エリア別・担当者別のリストも作成可能です。主要機能はアカウント登録なしで利用でき、オフラインでも作業できます。</p><p>基本的な注釈に加え、プライバシーぼかしと寸法注釈に対応。PDF・CSVだけでなく編集可能なXLSXも出力できます。日時付きコメントとアクティビティを追跡し、ロックされた項目引き渡しを送付して返却内容を統合できます。署名は手書き・氏名入力・画像取込に対応。元の証拠写真にはSHA-256整合性記録を保持します。</p></div></div></section>
-  </main>
-  <footer class="site-footer"><div class="footer-inner"><strong>SiteReportKit</strong><nav class="footer-links"><a href="../privacy/">Privacy</a><a href="../support/">Support</a></nav></div></footer>
+<header class="site-header" data-header="">
+<a aria-label="SiteReportKit ホーム" class="brand" href="#top">
+<img alt="SiteReportKit" class="brand-logo" height="49" src="/assets/brand/sitereportkit-wordmark.png?v=20260708-exact-logo" width="224"/>
+</a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" data-nav-toggle="" type="button">
+<span class="sr-only">ナビゲーションを開く</span>
+<span></span>
+<span></span>
+<span></span>
+</button>
+<nav class="site-nav" data-nav="" id="site-nav">
+<a href="#reports">レポート</a>
+<a href="#workflow">ワークフロー</a>
+<a href="/ja/sample-reports/">サンプル</a>
+<a href="#markets">市場</a>
+<a href="#pricing">価格</a>
+
+<label class="language-switcher"><span aria-hidden="true" class="language-switcher-icon">🌐</span><span class="sr-only">Language</span><select aria-label="Language" onchange="if(this.value)location.href=this.value"><option value="/ar-SA/">العربية</option><option value="/ca/">Català</option><option value="/cs/">Čeština</option><option value="/da/">Dansk</option><option value="/de-DE/">Deutsch</option><option value="/el/">Ελληνικά</option><option value="/en-US/">English</option><option value="/es-MX/">Español</option><option value="/fi/">Suomi</option><option value="/fr-FR/">Français</option><option value="/he/">עברית</option><option value="/hi/">हिन्दी</option><option value="/hr/">Hrvatski</option><option value="/hu/">Magyar</option><option value="/id/">Bahasa Indonesia</option><option value="/it/">Italiano</option><option selected="" value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/ms/">Bahasa Melayu</option><option value="/nl-NL/">Nederlands</option><option value="/no/">Norsk</option><option value="/pl/">Polski</option><option value="/pt-BR/">Português</option><option value="/ro/">Română</option><option value="/ru/">Русский</option><option value="/sk/">Slovenčina</option><option value="/sv/">Svenska</option><option value="/th/">ไทย</option><option value="/tr/">Türkçe</option><option value="/uk-UA/">Українська</option><option value="/vi/">Tiếng Việt</option><option value="/zh-Hans/">简体中文</option><option value="/zh-Hant/">繁體中文</option></select></label><a class="nav-cta" data-campaign="homepage-nav" data-cta="sample-report" data-destination="pdf" data-placement="header" href="/downloads/sample-snagging-report.pdf">サンプル PDF</a>
+</nav>
+</header>
+
+<main id="top">
+<section aria-labelledby="hero-title" class="hero">
+<div aria-hidden="true" class="hero-media">
+<img alt="" class="hero-page hero-page-main" src="/assets/reports/report-cover.png?v=20260710-separated-samples"/>
+<img alt="" class="hero-page hero-page-side" src="/assets/reports/report-issue-evidence.png?v=20260710-separated-samples"/>
+<img alt="" class="hero-page hero-page-back" src="/assets/reports/action-list-cover.png?v=20260710-separated-samples"/>
+</div>
+<div class="hero-copy">
+<p class="eyebrow">オフラインファーストのフィールドレポート</p>
+<h1 id="hero-title">ウォークスルーを終了します。出発前にレポートを送信してください。</h1>
+<p class="hero-lede">SiteReportKit は現場の証拠を専門的な引き渡しに変えます。</p>
+<p class="hero-support">
+            弁護可能な証拠を取得し、責任を割り当て、ブランド化された PDF、XLSX、または CSV 成果物をオフラインでアカウント不要でエクスポートします。
+          </p>
+<div aria-label="主なアクション" class="hero-actions">
+<a class="button button-primary" data-campaign="homepage-hero-sample" data-cta="sample-report" data-destination="pdf" data-placement="hero" data-report-kind="interior-handover" href="/downloads/sample-interior-handover-report.pdf">サンプルレポートのダウンロード</a>
+<a class="button button-secondary" data-campaign="homepage-hero-action-list" data-cta="sample-report" data-destination="pdf" data-placement="hero" data-report-kind="contractor-action-list" href="/downloads/sample-snag-action-list.pdf">請負業者のアクションリストを参照</a>
+</div>
+<dl aria-label="商品のハイライト" class="hero-proof">
+<div>
+<dt>オフラインでも動作します</dt>
+<dd>信号がなくなっても歩き続けてください</dd>
+</div>
+<div>
+<dt>アカウントは必要ありません</dt>
+<dd>ローカルでキャプチャし、準備ができたらエクスポートします</dd>
+</div>
+<div>
+<dt>PDF + XLSX + CSV</dt>
+<dd>レポート、編集可能なワークブック、およびレジスター</dd>
+</div>
+</dl>
+</div>
+</section>
+<section aria-label="コア製品の約束" class="trust-strip">
+<p>現場の証拠をキャプチャします。</p>
+<p>責任を割り当てます。</p>
+<p>ハンドオフをエクスポートします。</p>
+</section>
+<section aria-labelledby="reports-title" class="section report-showcase" id="reports">
+<div class="section-heading">
+<p class="eyebrow">実際のサンプル出力</p>
+<h2 id="reports-title">2 つのまったく異なるサイト訪問に関する 2 つの異なるレポート。</h2>
+<p>
+            内部の引き渡しとアクティブな建設検査は、収集から輸出までとは別に行われます。それぞれに独自のプロジェクト、問題インデックス、証拠セット、アクション リスト、ダウンロード可能なレポートがあります。
+          </p>
+</div>
+<div aria-label="サンプルレポートタイプ" class="report-edition-grid">
+<article class="report-edition">
+<div class="report-edition-media">
+<img alt="メイプルロウ内装引き渡しレポート表紙" height="1404" src="/assets/reports/report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<div class="report-edition-copy">
+<p class="report-type">内装引き渡し</p>
+<h3>メイプルロウ引き渡し</h3>
+<p>仕上げ、塗装、電気チェック、ドア、クライアント変更要求をカバーする 5 つのインテリアの引っ掛かりアイテム。</p>
+<div aria-label="内部レポート概要" class="report-edition-facts">
+<span>5 つの障害</span>
+<span>9ページ</span>
+<span>内部証拠のみ</span>
+</div>
+<div class="report-edition-actions">
+<a class="button button-primary" href="/downloads/sample-interior-handover-report.pdf">内部PDF</a>
+<a class="button button-secondary" href="/downloads/sample-snag-action-list.pdf">内部アクション一覧</a>
+</div>
+</div>
+</article>
+<article class="report-edition report-edition-construction">
+<div class="report-edition-media">
+<img alt="ハーバーポイント建設検査欠陥報告書表紙" height="1404" src="/assets/reports/construction-report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<div class="report-edition-copy">
+<p class="report-type">アクティブ構築</p>
+<h3>ハーバーポイント建設検査</h3>
+<p>ファサードの防火、コンクリート、排水、仮設工事、石材、屋根の防水を含む 6 つの建設欠陥。</p>
+<div aria-label="施工報告書概要" class="report-edition-facts">
+<span>6 つの欠陥</span>
+<span>10ページ</span>
+<span>建設証拠のみ</span>
+</div>
+<div class="report-edition-actions">
+<a class="button button-primary" href="/downloads/sample-construction-defect-report.pdf">構造PDF</a>
+<a class="button button-secondary" href="/downloads/sample-construction-defect-action-list.pdf">建設アクションリスト</a>
+</div>
+</div>
+</article>
+</div>
+<div class="report-lab">
+<figure class="report-preview">
+<div class="report-preview-top">
+<span>サンプルクライアント PDF</span>
+<a href="/downloads/sample-interior-handover-report.pdf">ダウンロード</a>
+</div>
+<div class="document-frame">
+<img alt="SiteReportKit サンプル内部障害レポート カバー (概要と障害インデックス付き)" height="1404" src="/assets/reports/report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<figcaption>
+<strong>完全なクライアントレポート</strong>
+<span>表紙、概要、問題索引、問題の詳細、証拠写真、およびサインオフ可能な形式。</span>
+</figcaption>
+</figure>
+<div aria-label="サンプル レポート ビュー" class="sample-stack">
+<div class="sample-stack-heading">
+<p class="eyebrow">エクスポートの内部</p>
+<h3>PDF にダンプされたカメラロールではなく、構造化された証拠。</h3>
+</div>
+<article class="sample-row">
+<img alt="必要な対応、証拠写真、所有者、ステータス、期限を示す内装問題の詳細ページ" height="1404" src="/assets/reports/report-issue-evidence.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>証拠を発行する</h4>
+<p>各スナッグには、写真、キャプション、所有者、重大度、ステータス、および必要なアクションがまとめて保存されます。</p>
+</div>
+</article>
+<article class="sample-row">
+<img alt="SiteReportKit によって生成された内装請負業者のアクション リスト PDF カバーと未解決の障害の概要" height="1404" src="/assets/reports/action-list-cover.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>請負業者のアクションリスト</h4>
+<p>フィルターを適用してアイテムのみをオープンし、各取引に焦点を当てた作業範囲を割り当てます。</p>
+</div>
+</article>
+<article class="sample-row">
+<img alt="内装見切り証拠ページにアフター写真と解決メモが表示されています" height="1404" src="/assets/reports/report-after-evidence.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>見切り証拠</h4>
+<p>解決済みの項目には、受領書と引き渡し後のきれいな証跡の写真が含まれます。</p>
+</div>
+</article>
+<div aria-label="サンプルのダウンロード" class="sample-actions">
+<a class="button button-primary" href="/downloads/sample-interior-handover-report.pdf">内部PDF</a>
+<a class="button button-secondary" href="/downloads/sample-snag-action-list.pdf">是正リスト</a>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="workflow-title" class="section workflow" id="workflow">
+<div class="section-heading compact">
+<p class="eyebrow">敷地内散策用に構築</p>
+<h2 id="workflow-title">現場証拠からレポートまで 3 つのステップで作成します。</h2>
+</div>
+<div class="workflow-layout">
+<ol class="workflow-list">
+<li>
+<span>01</span>
+<div>
+<h3>現場の証拠を捕捉</h3>
+<p>歩きながら、写真、非破壊マークアップ、エリア、トレード、重大度、および必要な明確なアクションを含めて問題を追加します。</p>
+</div>
+</li>
+<li>
+<span>02</span>
+<div>
+<h3>責任の割り当て</h3>
+<p>所有者、期日、優先順位、ステータスを設定し、請負業者、取引先、または地域ごとに作業をフィルタリングします。</p>
+</div>
+</li>
+<li>
+<span>03</span>
+<div>
+<h3>ハンドオフをエクスポートする</h3>
+<p>出発前に、完全なクライアント PDF、範囲指定された請負業者アクション リスト、完了レポート、または CSV 問題記録をプレビューして共有します。</p>
+</div>
+</li>
+</ol>
+<figure class="closeout-preview">
+<img alt="解決済みアイテムの証拠とサインオフ準備が整った書式を備えたクローズアウト レポート ページ" height="1404" src="/assets/reports/closeout-report-page.png?v=20260710-separated-samples" width="993"/>
+<figcaption>解決メモを含むクローズアウトレポートの証拠。</figcaption>
+</figure>
+</div>
+</section>
+<section aria-labelledby="app-proof-title" class="section app-proof">
+<div class="section-heading">
+<div>
+<p class="eyebrow">アプリからの証明</p>
+<h2 id="app-proof-title">オフィス管理者ではなく、サイトの散策を中心に構築されています。</h2>
+</div>
+<p>これらは、現在のモバイル ビルドの実際の製品画面です。最初の写真から最終的な引き渡しまで、撮影、責任、報告はつながったままになります。</p>
+</div>
+<div class="app-proof-grid">
+<article>
+<img alt="建設証拠を含む SiteReportKit モバイル写真マークアップ ワークフロー" height="2868" src="/assets/app/photo-markup.png" width="1320"/>
+<div><span>キャプチャ</span><h3>正確な欠陥をマークします</h3><p>元の証拠を保存しながら、作業を行う人のために明確な視覚的マークアップを追加します。</p></div>
+</article>
+<article>
+<img alt="SiteReportKit モバイル請負業者アクション リストのエクスポート オプション" height="2868" src="/assets/app/action-lists.png" width="1320"/>
+<div><span>割り当て</span><h3>所有者またはエリアごとの作業範囲</h3><p>無関係なプロジェクト項目を公開せずに、各請負業者に焦点を絞ったリストを提供します。</p></div>
+</article>
+<article>
+<img alt="SiteReportKit モバイル PDF レポートのプレビューとエクスポートのワークフロー" height="2868" src="/assets/app/pdf-export.png" width="1320"/>
+<div><span>エクスポート</span><h3>サイトでレポートをプレビューする</h3><p>ウォークスルー コンテキストがまだ新しいうちに、共有する前にクライアント PDF を確認してください。</p></div>
+</article>
+</div>
+</section>
+<section aria-labelledby="markets-title" class="section markets" id="markets">
+<div class="section-heading">
+<div>
+<p class="eyebrow">現地の用語に合わせて構築</p>
+<h2 id="markets-title">同じフィールドのワークフローで、市場の仕組みを表現しました。</h2>
+</div>
+<p>クライアントや請負業者が期待する用語と用紙形式を選択してください。これらのページでは、地域の規制認証ではなく、製品の設定と例について説明します。</p>
+</div>
+<div class="market-grid">
+<a data-campaign="homepage-market-us" data-cta="market-entry" data-destination="guide" data-market="us" data-placement="homepage" href="/ja/us/punch-list-app/">
+<span>米国</span>
+<strong>パンチリスト・レター</strong>
+<small>パンチウォーク、取引所有権、下請け業者の見切り用。</small>
+</a>
+<a data-campaign="homepage-market-uk" data-cta="market-entry" data-destination="guide" data-market="uk" data-placement="homepage" href="/ja/uk/snagging-app/">
+<span>イギリス</span>
+<strong>ひっかかり・A4</strong>
+<small>新築引き渡し、現場検査、障害レポート用。</small>
+</a>
+<a data-campaign="homepage-market-au" data-cta="market-entry" data-destination="guide" data-market="au" data-placement="homepage" href="/ja/au/defect-list-app/">
+<span>オーストラリア</span>
+<strong>欠陥リスト・A4</strong>
+<small>ビルダーアクション、トレードス​​コープ、および実践的な完了ウォーク用。</small>
+</a>
+</div>
+</section>
+<section aria-labelledby="features-title" class="section features">
+<div class="section-heading compact">
+<p class="eyebrow">チームがそれを選ぶ理由</p>
+<h2 id="features-title">別の構築スイートの代わりに焦点を絞ったレポート ツール。</h2>
+</div>
+<div class="feature-grid">
+<article>
+<h3>デフォルトではオフラインファースト</h3>
+<p>キャプチャ中、プロジェクトとメディアはローカルに留まるため、サイトの信号が悪くてもレポートがブロックされることはありません。</p>
+</article>
+<article>
+<h3>専門的な証拠の証跡</h3>
+<p>SHA-256 整合性レコードでオリジナルを保存し、プライベートな詳細をぼかし、測定値を追加し、編集されたマークアップを終了証拠の横に保持します。</p>
+</article>
+<article>
+<h3>柔軟な用語</h3>
+<p>パンチ リスト、引っ掛かりレポート、欠陥リスト、観察、サイト監査、およびメンテナンス ウォークをサポートします。</p>
+</article>
+<article>
+<h3>実用的なハンドオフ</h3>
+<p>ロックされた問題のハンドオフを送信し、返された更新をマージし、タイムスタンプ付きのコメントとアクティビティを追跡し、スコープ指定された XLSX レジスタまたはクローズアウト パックをエクスポートします。</p>
+</article>
+<article>
+<h3>柔軟なサインオフ</h3>
+<p>署名を描画するか、入力された名前から署名を生成するか、検査官とクライアントのサインオフのために承認された署名画像をインポートします。</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="use-cases-title" class="section use-cases" id="use-cases">
+<div class="section-heading">
+<p class="eyebrow">使用例</p>
+<h2 id="use-cases-title">訪問がまだ新しいうちにレポートを完成させる必要がある人向け。</h2>
+</div>
+<div class="use-case-grid">
+<article>
+<h3>建築検査員</h3>
+<p>ブランドの表紙、制限事項のテキスト、問題の索引、証拠写真を含む、洗練されたクライアント用 PDF を作成します。</p>
+</article>
+<article>
+<h3>建築家およびデザイナー</h3>
+<p>エリアごとに現場の観察を収集し、スプレッドシートのクリーンアップを行わずにクリーンなアクションリストを請負業者に送信します。</p>
+</article>
+<article>
+<h3>請負業者および現場管理者</h3>
+<p>引き継ぎウォークを実行し、貿易責任を割り当て、取引終了を追跡し、下請け業者の範囲指定されたリストをエクスポートします。</p>
+</article>
+<article>
+<h3>不動産および施設チーム</h3>
+<p>メンテナンスの問題、前後の証拠、再発する欠陥、およびアーカイブ可能なプロジェクト記録を文書化します。</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="downloads-title" class="section sample-downloads">
+<div>
+<p class="eyebrow">サンプルのダウンロード</p>
+<h2 id="downloads-title">アプリを試す前に出力を検査してください。</h2>
+</div>
+<div class="download-list">
+<a href="/downloads/sample-interior-handover-report.pdf">
+<strong>内装引き渡し報告書 PDF</strong>
+<span>室内ひっかかりアイテム5選</span>
+</a>
+<a href="/downloads/sample-construction-defect-report.pdf">
+<strong>施工不良報告書 PDF</strong>
+<span>6 つのアクティブサイト建設欠陥</span>
+</a>
+<a href="/downloads/sample-snag-action-list.pdf">
+<strong>契約者アクションリスト PDF</strong>
+<span>配送チーム向けのオープンアイテム</span>
+</a>
+<a href="/downloads/sample-closeout-report.pdf">
+<strong>決算レポート PDF</strong>
+<span>解決された問題と証拠</span>
+</a>
+<a href="/downloads/sample-issue-register.csv">
+<strong>発行登録CSV</strong>
+<span>内部レポート スプレッドシートのエクスポート</span>
+</a>
+<a href="/downloads/sample-construction-issue-register.csv">
+<strong>工事発行登録簿CSV</strong>
+<span>建設報告書スプレッドシートのエクスポート</span>
+</a>
+</div>
+</section>
+<section aria-labelledby="pricing-title" class="section pricing" id="pricing">
+<div class="pricing-copy">
+<p class="eyebrow">シンプルな現地価格設定</p>
+<h2 id="pricing-title">無料で始めましょう。クリーンなプロフェッショナル エクスポートのロックを 1 回解除します。</h2>
+<p>
+            アカウントを作成せずに、すべてのコア フィールド ワークフローをローカルで使用します。無料には、合計 3 つの透かし入りファイルのエクスポートが含まれます。計画されている Pro のリリースは、サポートされているモバイル ストア ビルドでのストアでの復元可能な 9.99 ドルの 1 回限りの購入であり、サブスクリプションは必要ありません。最終的なローカライズされた店頭価格は税金や通貨によって異なる場合があります。
+          </p>
+</div>
+<div aria-label="無料とプロの比較" class="pricing-compare">
+<article class="plan-card">
+<p class="plan-label">無料</p>
+<p class="price">$0 <span>ローカル使用</span></p>
+<ul>
+<li>無制限のローカル プロジェクトとプレビュー</li>
+<li>合計 3 つの透かし入り PDF/XLSX/CSV エクスポート</li>
+<li>フィールド基本レポートテンプレート</li>
+<li>標準写真レイアウト</li>
+</ul>
+<a class="button button-secondary" data-campaign="homepage-pricing-sample" data-cta="sample-report" data-destination="pdf" data-placement="pricing" href="/downloads/sample-interior-handover-report.pdf">出力を検査する</a>
+</article>
+<article class="plan-card plan-card-pro">
+<p class="plan-label">個人プロ</p>
+<p class="price">$9.99 <span>1 回限りの起動ターゲット</span></p>
+<ul>
+<li>無制限のクリーンな PDF、XLSX、CSV エクスポート</li>
+<li>カスタムロゴと会社ブランディング</li>
+<li>プライバシーの曖昧さ、測定、証拠の完全性</li>
+<li>ロックされた問題の引き継ぎとアクティビティ履歴</li>
+<li>描画、入力、またはインポートされた署名</li>
+</ul>
+<a class="button button-primary" data-campaign="homepage-pricing" data-cta="early-access" data-destination="email" data-placement="pricing" href="mailto:hello@sitereportkit.com?subject=SiteReportKit%20early%20access">早期アクセスをリクエストする</a>
+</article>
+<p class="launch-note">App Store の起動が進行中です。最終的な店頭価格と在庫状況はライブリストで確認されます。 Pro には、アカウント、クラウド同期、チーム ワークスペースは含まれません。</p>
+</div>
+</section>
+<section aria-labelledby="faq-title" class="section faq">
+<div class="section-heading compact">
+<p class="eyebrow">よくある質問</p>
+<h2 id="faq-title">アプリを現場に持ち込む前に、アプリが何をするのかを理解してください。</h2>
+</div>
+<div class="faq-list">
+<details>
+<summary>SiteReportKit はアカウントなしで動作しますか?</summary>
+<p>はい。コア プロジェクトのキャプチャ、ローカル ストレージ、レポート プレビュー、サンプル ワークフローにはアカウントは必要ありません。</p>
+</details>
+<details>
+<summary>オフラインで作業できますか?</summary>
+<p>はい。プロジェクトのキャプチャ、写真、マークアップ、レポート生成はローカルで動作するように設計されています。ストアでの購入または復元には、引き続きネットワーク接続が必要です。</p>
+</details>
+<details>
+<summary>無料エクスポートには何が含まれますか?</summary>
+<p>無料版には、SiteReportKit Free ブランドを使用した合計 3 つの PDF、XLSX、または CSV ファイルのエクスポートが含まれています。プレビューとローカル プロジェクトは無制限のままです。</p>
+</details>
+<details>
+<summary>SiteReportKit は完全な建設管理プラットフォームですか?</summary>
+<p>いいえ。意図的に、BIM、RFI、スケジュール、またはリアルタイムのチーム調整を行わず、迅速な現場キャプチャと専門的な引き継ぎレポートに重点を置いています。</p>
+</details>
+</div>
+</section>
+<section aria-labelledby="phone-handoff-title" class="section phone-handoff">
+<div class="phone-handoff-copy">
+<p class="eyebrow">携帯電話で続行</p>
+<h2 id="phone-handoff-title">サンプル ワークフローをご持参ください。</h2>
+<p>コードをスキャンして携帯電話で SiteReportKit を開くか、事前に入力されたテキスト メッセージを開いて自分に送信できます。どちらのリンクも、マーケティング Cookie を使用せずにキャンペーン ラベルを使用します。</p>
+<div class="hero-actions">
+<a class="button button-primary" data-campaign="homepage-phone-handoff" data-cta="phone-handoff" data-destination="sms" data-placement="homepage" href="sms:?&amp;body=Open%20SiteReportKit%20on%20your%20phone%3A%20https%3A%2F%2Fsitereportkit.com%2F%3Fsrc%3Dsms%26campaign%3Dhomepage-phone-handoff">自分宛てにリンクをテキストメッセージで送信します</a>
+<a class="button button-secondary" data-campaign="homepage-phone-handoff" data-cta="early-access" data-destination="email" data-placement="phone-handoff" href="mailto:hello@sitereportkit.com?subject=SiteReportKit%20launch%20updates">起動に関する最新情報を入手する</a>
+</div>
+<p class="handoff-note">SMS ボタンはデバイスのメッセージ コンポーザーのみを開きます。 SiteReportKit は電話番号を受け取りません。承認後、検証済みのストア リンクがこの発売前のリンク先に置き換えられます。</p>
+</div>
+<figure>
+<img alt="携帯電話で SiteReportKit Web サイトを開くための QR コード" height="232" src="/assets/brand/phone-handoff-qr.svg" width="232"/>
+<figcaption>携帯電話で発売前サイトを開きます</figcaption>
+</figure>
+</section>
+<section aria-labelledby="final-cta-title" class="final-cta">
+<img alt="" height="103" src="/assets/brand/sitereportkit-mark.png?v=20260708-exact-logo" width="64"/>
+<h2 id="final-cta-title">仕事のことが頭から離れる前にレポートを作成してください。</h2>
+<p>SiteReportKit は、コア フィールド ワークフローが安定した後に予定されているデスクトップおよび Web 対応のワークフローを備えた、高速でローカルなプロフェッショナルなモバイル サイト レポートを中心に最初に開始されます。</p>
+<div class="hero-actions">
+<a class="button button-primary" data-cta="final_interior_sample" href="/downloads/sample-interior-handover-report.pdf">内装サンプル</a>
+<a class="button button-secondary" data-cta="final_construction_sample" href="/downloads/sample-construction-defect-report.pdf">施工サンプル</a>
+<a class="button button-secondary" data-cta="final_contact" href="mailto:hello@sitereportkit.com">お問い合わせ</a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div>
+<img alt="SiteReportKit" height="40" src="/assets/brand/sitereportkit-wordmark.png?v=20260708-exact-logo" width="184"/>
+<p>オフラインファーストのパンチリスト、引っ掛かり、欠陥、およびクローズアウトレポート。</p>
+</div>
+<nav aria-label="フッターナビゲーション">
+<a href="#reports">レポート</a>
+<a href="#workflow">ワークフロー</a>
+<a href="#use-cases">使用例</a>
+<a href="/ja/sample-reports/">サンプルレポート</a>
+<a href="/ja/resources/punch-list-vs-snag-list-vs-defect-list/">用語ガイド</a>
+<a href="/ja/pricing/">価格</a>
+<a href="/downloads/sample-snagging-report.pdf">サンプル PDF</a>
+<a href="/ja/support/">サポート</a>
+<a href="/ja/privacy/">プライバシー</a>
+</nav>
+</footer>
 </body>
 </html>
+

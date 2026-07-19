@@ -1,61 +1,485 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="zh-Hans">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>现场巡检与PDF报告 | SiteReportKit</title>
-  <meta name="description" content="用照片和标注记录现场问题，整理缺陷与整改清单，现场即可导出专业的 PDF 报告或 CSV 台账。">
-  <link rel="canonical" href="https://sitereportkit.com/zh-Hans/">
-  <link rel="alternate" hreflang="x-default" href="https://sitereportkit.com/">
-  <link rel="alternate" hreflang="ar-SA" href="https://sitereportkit.com/ar-SA/">
-  <link rel="alternate" hreflang="ca" href="https://sitereportkit.com/ca/">
-  <link rel="alternate" hreflang="cs" href="https://sitereportkit.com/cs/">
-  <link rel="alternate" hreflang="da" href="https://sitereportkit.com/da/">
-  <link rel="alternate" hreflang="de-DE" href="https://sitereportkit.com/de-DE/">
-  <link rel="alternate" hreflang="el" href="https://sitereportkit.com/el/">
-  <link rel="alternate" hreflang="en-US" href="https://sitereportkit.com/en-US/">
-  <link rel="alternate" hreflang="es-MX" href="https://sitereportkit.com/es-MX/">
-  <link rel="alternate" hreflang="fi" href="https://sitereportkit.com/fi/">
-  <link rel="alternate" hreflang="fr-FR" href="https://sitereportkit.com/fr-FR/">
-  <link rel="alternate" hreflang="he" href="https://sitereportkit.com/he/">
-  <link rel="alternate" hreflang="hi" href="https://sitereportkit.com/hi/">
-  <link rel="alternate" hreflang="hr" href="https://sitereportkit.com/hr/">
-  <link rel="alternate" hreflang="hu" href="https://sitereportkit.com/hu/">
-  <link rel="alternate" hreflang="id" href="https://sitereportkit.com/id/">
-  <link rel="alternate" hreflang="it" href="https://sitereportkit.com/it/">
-  <link rel="alternate" hreflang="ja" href="https://sitereportkit.com/ja/">
-  <link rel="alternate" hreflang="ko" href="https://sitereportkit.com/ko/">
-  <link rel="alternate" hreflang="ms" href="https://sitereportkit.com/ms/">
-  <link rel="alternate" hreflang="nl-NL" href="https://sitereportkit.com/nl-NL/">
-  <link rel="alternate" hreflang="no" href="https://sitereportkit.com/no/">
-  <link rel="alternate" hreflang="pl" href="https://sitereportkit.com/pl/">
-  <link rel="alternate" hreflang="pt-BR" href="https://sitereportkit.com/pt-BR/">
-  <link rel="alternate" hreflang="ro" href="https://sitereportkit.com/ro/">
-  <link rel="alternate" hreflang="ru" href="https://sitereportkit.com/ru/">
-  <link rel="alternate" hreflang="sk" href="https://sitereportkit.com/sk/">
-  <link rel="alternate" hreflang="sv" href="https://sitereportkit.com/sv/">
-  <link rel="alternate" hreflang="th" href="https://sitereportkit.com/th/">
-  <link rel="alternate" hreflang="tr" href="https://sitereportkit.com/tr/">
-  <link rel="alternate" hreflang="uk" href="https://sitereportkit.com/uk/">
-  <link rel="alternate" hreflang="vi" href="https://sitereportkit.com/vi/">
-  <link rel="alternate" hreflang="zh-Hans" href="https://sitereportkit.com/zh-Hans/">
-  <link rel="alternate" hreflang="zh-Hant" href="https://sitereportkit.com/zh-Hant/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="SiteReportKit">
-  <meta property="og:title" content="现场巡检与PDF报告 | SiteReportKit">
-  <meta property="og:description" content="用照片和标注记录现场问题，整理缺陷与整改清单，现场即可导出专业的 PDF 报告或 CSV 台账。">
-  <meta property="og:url" content="https://sitereportkit.com/zh-Hans/">
-  <meta property="og:image" content="https://sitereportkit.com/assets/reports/samples/zh-Hans/report-cover.png">
-  <link rel="icon" href="../assets/brand/sitereportkit-favicon.png">
-  <link rel="stylesheet" href="../marketing-pages.css?v=20260711">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SiteReportKit","applicationCategory":"BusinessApplication","operatingSystem":"iOS","description":"用照片和标注记录现场问题，整理缺陷与整改清单，现场即可导出专业的 PDF 报告或 CSV 台账。","url":"https://sitereportkit.com/zh-Hans/"}</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>SiteReportKit |专业的打孔清单和堵塞报告</title>
+<meta content="SiteReportKit 使用隐私安全的照片标记、测量、可审核的交接以及专业的 PDF、XLSX 和 CSV 导出来创建离线遗留问题清单。" name="description"/>
+<meta content="#0A2342" name="theme-color"/>
+<meta content="SiteReportKit" property="og:title"/>
+<meta content="在离开现场之前创建专业的遗留问题清单 PDF。" property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://sitereportkit.com/zh-Hans/" property="og:url"/>
+<meta content="https://sitereportkit.com/assets/reports/report-cover.png?v=20260710-separated-samples" property="og:image"/>
+<link href="https://sitereportkit.com/zh-Hans/" rel="canonical"/><link href="https://sitereportkit.com/" hreflang="x-default" rel="alternate"/><link href="https://sitereportkit.com/ar-SA/" hreflang="ar-SA" rel="alternate"/><link href="https://sitereportkit.com/ca/" hreflang="ca" rel="alternate"/><link href="https://sitereportkit.com/cs/" hreflang="cs" rel="alternate"/><link href="https://sitereportkit.com/da/" hreflang="da" rel="alternate"/><link href="https://sitereportkit.com/de-DE/" hreflang="de-DE" rel="alternate"/><link href="https://sitereportkit.com/el/" hreflang="el" rel="alternate"/><link href="https://sitereportkit.com/en-US/" hreflang="en-US" rel="alternate"/><link href="https://sitereportkit.com/es-MX/" hreflang="es-MX" rel="alternate"/><link href="https://sitereportkit.com/fi/" hreflang="fi" rel="alternate"/><link href="https://sitereportkit.com/fr-FR/" hreflang="fr-FR" rel="alternate"/><link href="https://sitereportkit.com/he/" hreflang="he" rel="alternate"/><link href="https://sitereportkit.com/hi/" hreflang="hi" rel="alternate"/><link href="https://sitereportkit.com/hr/" hreflang="hr" rel="alternate"/><link href="https://sitereportkit.com/hu/" hreflang="hu" rel="alternate"/><link href="https://sitereportkit.com/id/" hreflang="id" rel="alternate"/><link href="https://sitereportkit.com/it/" hreflang="it" rel="alternate"/><link href="https://sitereportkit.com/ja/" hreflang="ja" rel="alternate"/><link href="https://sitereportkit.com/ko/" hreflang="ko" rel="alternate"/><link href="https://sitereportkit.com/ms/" hreflang="ms" rel="alternate"/><link href="https://sitereportkit.com/nl-NL/" hreflang="nl-NL" rel="alternate"/><link href="https://sitereportkit.com/no/" hreflang="no" rel="alternate"/><link href="https://sitereportkit.com/pl/" hreflang="pl" rel="alternate"/><link href="https://sitereportkit.com/pt-BR/" hreflang="pt-BR" rel="alternate"/><link href="https://sitereportkit.com/ro/" hreflang="ro" rel="alternate"/><link href="https://sitereportkit.com/ru/" hreflang="ru" rel="alternate"/><link href="https://sitereportkit.com/sk/" hreflang="sk" rel="alternate"/><link href="https://sitereportkit.com/sv/" hreflang="sv" rel="alternate"/><link href="https://sitereportkit.com/th/" hreflang="th" rel="alternate"/><link href="https://sitereportkit.com/tr/" hreflang="tr" rel="alternate"/><link href="https://sitereportkit.com/uk-UA/" hreflang="uk" rel="alternate"/><link href="https://sitereportkit.com/vi/" hreflang="vi" rel="alternate"/><link href="https://sitereportkit.com/zh-Hans/" hreflang="zh-Hans" rel="alternate"/><link href="https://sitereportkit.com/zh-Hant/" hreflang="zh-Hant" rel="alternate"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/assets/brand/sitereportkit-favicon.png?v=20260708-exact-logo" rel="icon" type="image/png"/>
+<link href="/styles.css?v=20260710-separated-samples" rel="stylesheet"/>
+<script defer="" src="/script.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SiteReportKit","applicationCategory":"商业应用","operatingSystem":"iOS","description":"通过专业的 PDF、XLSX 和 CSV 导出功能，实现离线优先的未清清单、钩丝、缺陷和收尾报告。","url":"https://sitereportkit.com/zh-Hans/","featureList":["离线问题捕获","无损照片标记","PDF、XLSX 和 CSV 导出","隐私模糊和测量注释","带时间戳的活动和锁定的问题移交","三种签名输入法","SHA-256 证据完整性记录","承包商行动清单","收尾证据","本地项目档案"],"publisher":{"@type":"Organization","name":"SiteReportKit","url":"https://sitereportkit.com/zh-Hans/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"SiteReportKit 是否可以在没有帐户的情况下工作？","acceptedAnswer":{"@type":"Answer","text":"是的。核心项目捕获、本地存储、报告预览和示例工作流程不需要帐户。"}},{"@type":"Question","name":"我可以离线工作吗？","acceptedAnswer":{"@type":"Answer","text":"是的。项目捕获、照片、标记和报告生成旨在本地工作。商店购买或恢复仍需要网络连接。"}},{"@type":"Question","name":"免费出口包括什么？","acceptedAnswer":{"@type":"Answer","text":"免费包括三个带有 SiteReportKit Free 品牌的 PDF、XLSX 或 CSV 文件导出。预览和本地项目仍然不受限制。"}}]}</script>
 </head>
 <body>
-  <header class="site-header"><a class="brand" href="../"><img src="../assets/brand/sitereportkit-wordmark.png" alt="SiteReportKit" width="224" height="49"></a><label><span class="sr-only">Language</span><select onchange="if(this.value)location.href=this.value"><option value="/ar-SA/">العربية</option><option value="/ca/">Català</option><option value="/cs/">Čeština</option><option value="/da/">Dansk</option><option value="/de-DE/">Deutsch</option><option value="/el/">Ελληνικά</option><option value="/en-US/">English</option><option value="/es-MX/">Español</option><option value="/fi/">Suomi</option><option value="/fr-FR/">Français</option><option value="/he/">עברית</option><option value="/hi/">हिन्दी</option><option value="/hr/">Hrvatski</option><option value="/hu/">Magyar</option><option value="/id/">Bahasa Indonesia</option><option value="/it/">Italiano</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/ms/">Bahasa Melayu</option><option value="/nl-NL/">Nederlands</option><option value="/no/">Norsk</option><option value="/pl/">Polski</option><option value="/pt-BR/">Português</option><option value="/ro/">Română</option><option value="/ru/">Русский</option><option value="/sk/">Slovenčina</option><option value="/sv/">Svenska</option><option value="/th/">ไทย</option><option value="/tr/">Türkçe</option><option value="/uk/">Українська</option><option value="/vi/">Tiếng Việt</option><option value="/zh-Hans/" selected>简体中文</option><option value="/zh-Hant/">繁體中文</option></select></label></header>
-  <main>
-    <section class="hero"><div class="hero-inner"><div><p class="eyebrow">SiteReportKit</p><h1>现场巡检与PDF报告</h1><p class="hero-lede">用照片和标注记录现场问题，整理缺陷与整改清单，现场即可导出专业的 PDF 报告或 CSV 台账。</p><div class="actions"><a class="button button-primary" href="https://apps.apple.com/app/id6788361013">App Store</a><a class="button button-secondary" href="../downloads/samples/zh-Hans/sample-report.pdf">PDF</a></div></div><img src="../assets/reports/samples/zh-Hans/report-cover.png" alt="SiteReportKit" width="993" height="1404"></div></section>
-    <section class="section section-white"><div class="section-inner"><div class="related-grid"><article class="related-card"><h2>现场快速记录问题</h2></article><article class="related-card"><h2>清晰整理缺陷清单</h2></article><article class="related-card"><h2>导出专业PDF报告</h2></article></div><div class="prose"><p>将现场巡查记录快速整理成清晰、专业的报告。SiteReportKit 是一款支持离线使用的现场巡检工具，适用于工程缺陷、整改清单、交付验收和收尾复查。</p><p>为每个问题记录位置、工种、严重程度、负责人、截止日期、状态、照片和说明，并在保留原图的前提下添加标注。可搜索和筛选问题、批量更新状态，并完整保存整改说明与审核记录。</p><p>导出完整的 PDF 报告、承包商整改清单、收尾报告和 CSV 问题台账。可选择报告版式、加入公司标识，并按区域或负责人生成专项清单。核心功能无需账号，离线也能使用。</p><p>不止于普通标注：支持隐私模糊和测量标注，并可导出可编辑的 XLSX 工作簿、PDF 与 CSV。通过带时间戳的评论和活动时间线追踪过程，以锁定的问题交接包发出任务并合并回传更新。签名可手写、输入姓名或导入图片；原始证据会保留 SHA-256 完整性记录。</p></div></div></section>
-  </main>
-  <footer class="site-footer"><div class="footer-inner"><strong>SiteReportKit</strong><nav class="footer-links"><a href="../privacy/">Privacy</a><a href="../support/">Support</a></nav></div></footer>
+<header class="site-header" data-header="">
+<a aria-label="SiteReportKit 主页" class="brand" href="#top">
+<img alt="SiteReportKit" class="brand-logo" height="49" src="/assets/brand/sitereportkit-wordmark.png?v=20260708-exact-logo" width="224"/>
+</a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" data-nav-toggle="" type="button">
+<span class="sr-only">打开导航</span>
+<span></span>
+<span></span>
+<span></span>
+</button>
+<nav class="site-nav" data-nav="" id="site-nav">
+<a href="#reports">报告</a>
+<a href="#workflow">工作流程</a>
+<a href="/zh-Hans/sample-reports/">样品</a>
+<a href="#markets">市场</a>
+<a href="#pricing">定价</a>
+
+<label class="language-switcher"><span aria-hidden="true" class="language-switcher-icon">🌐</span><span class="sr-only">Language</span><select aria-label="Language" onchange="if(this.value)location.href=this.value"><option value="/ar-SA/">العربية</option><option value="/ca/">Català</option><option value="/cs/">Čeština</option><option value="/da/">Dansk</option><option value="/de-DE/">Deutsch</option><option value="/el/">Ελληνικά</option><option value="/en-US/">English</option><option value="/es-MX/">Español</option><option value="/fi/">Suomi</option><option value="/fr-FR/">Français</option><option value="/he/">עברית</option><option value="/hi/">हिन्दी</option><option value="/hr/">Hrvatski</option><option value="/hu/">Magyar</option><option value="/id/">Bahasa Indonesia</option><option value="/it/">Italiano</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/ms/">Bahasa Melayu</option><option value="/nl-NL/">Nederlands</option><option value="/no/">Norsk</option><option value="/pl/">Polski</option><option value="/pt-BR/">Português</option><option value="/ro/">Română</option><option value="/ru/">Русский</option><option value="/sk/">Slovenčina</option><option value="/sv/">Svenska</option><option value="/th/">ไทย</option><option value="/tr/">Türkçe</option><option value="/uk-UA/">Українська</option><option value="/vi/">Tiếng Việt</option><option selected="" value="/zh-Hans/">简体中文</option><option value="/zh-Hant/">繁體中文</option></select></label><a class="nav-cta" data-campaign="homepage-nav" data-cta="sample-report" data-destination="pdf" data-placement="header" href="/downloads/sample-snagging-report.pdf">示例 PDF</a>
+</nav>
+</header>
+
+<main id="top">
+<section aria-labelledby="hero-title" class="hero">
+<div aria-hidden="true" class="hero-media">
+<img alt="" class="hero-page hero-page-main" src="/assets/reports/report-cover.png?v=20260710-separated-samples"/>
+<img alt="" class="hero-page hero-page-side" src="/assets/reports/report-issue-evidence.png?v=20260710-separated-samples"/>
+<img alt="" class="hero-page hero-page-back" src="/assets/reports/action-list-cover.png?v=20260710-separated-samples"/>
+</div>
+<div class="hero-copy">
+<p class="eyebrow">离线优先现场报告</p>
+<h1 id="hero-title">完成演练。离开前发送报告。</h1>
+<p class="hero-lede">SiteReportKit 将现场证据转变为专业的交接。</p>
+<p class="hero-support">
+            捕获可靠的证据、分配责任并导出品牌 PDF、XLSX 或 CSV 可交付成果 — 离线，无需帐户。
+          </p>
+<div aria-label="主要行动" class="hero-actions">
+<a class="button button-primary" data-campaign="homepage-hero-sample" data-cta="sample-report" data-destination="pdf" data-placement="hero" data-report-kind="interior-handover" href="/downloads/sample-interior-handover-report.pdf">下载样本报告</a>
+<a class="button button-secondary" data-campaign="homepage-hero-action-list" data-cta="sample-report" data-destination="pdf" data-placement="hero" data-report-kind="contractor-action-list" href="/downloads/sample-snag-action-list.pdf">查看承包商行动列表</a>
+</div>
+<dl aria-label="产品亮点" class="hero-proof">
+<div>
+<dt>离线工作</dt>
+<dd>信号消失时继续行走</dd>
+</div>
+<div>
+<dt>无需帐户</dt>
+<dd>本地捕获并在准备好后导出</dd>
+</div>
+<div>
+<dt>PDF + XLSX + CSV</dt>
+<dd>报告、可编辑工作簿和寄存器</dd>
+</div>
+</dl>
+</div>
+</section>
+<section aria-label="核心产品承诺" class="trust-strip">
+<p>捕获现场证据。</p>
+<p>分配责任。</p>
+<p>导出切换。</p>
+</section>
+<section aria-labelledby="reports-title" class="section report-showcase" id="reports">
+<div class="section-heading">
+<p class="eyebrow">真实样本输出</p>
+<h2 id="reports-title">两个截然不同的站点访问的两个不同的报告。</h2>
+<p>
+            内部移交和主动施工检查与通过导出进行的捕获分开。每个都有自己的项目、问题索引、证据集、行动列表和可下载的报告。
+          </p>
+</div>
+<div aria-label="示例报告类型" class="report-edition-grid">
+<article class="report-edition">
+<div class="report-edition-media">
+<img alt="枫树行室内移交报告封面" height="1404" src="/assets/reports/report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<div class="report-edition-copy">
+<p class="report-type">内部交接</p>
+<h3>枫树行移交</h3>
+<p>五个内部障碍物，包括饰面、油漆、电气检查、门和客户变更请求。</p>
+<div aria-label="内部报告摘要" class="report-edition-facts">
+<span>5 个障碍</span>
+<span>9 页</span>
+<span>仅内部证据</span>
+</div>
+<div class="report-edition-actions">
+<a class="button button-primary" href="/downloads/sample-interior-handover-report.pdf">室内 PDF</a>
+<a class="button button-secondary" href="/downloads/sample-snag-action-list.pdf">内部动作列表</a>
+</div>
+</div>
+</article>
+<article class="report-edition report-edition-construction">
+<div class="report-edition-media">
+<img alt="港点施工检查缺陷报告封面" height="1404" src="/assets/reports/construction-report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<div class="report-edition-copy">
+<p class="report-type">积极施工</p>
+<h3>港点施工检查</h3>
+<p>六项施工缺陷，涉及外墙防火、混凝土、排水、临时工程、砌体、屋顶防水等。</p>
+<div aria-label="施工报告摘要" class="report-edition-facts">
+<span>6 个缺陷</span>
+<span>10 页</span>
+<span>仅施工证据</span>
+</div>
+<div class="report-edition-actions">
+<a class="button button-primary" href="/downloads/sample-construction-defect-report.pdf">施工 PDF</a>
+<a class="button button-secondary" href="/downloads/sample-construction-defect-action-list.pdf">施工行动清单</a>
+</div>
+</div>
+</article>
+</div>
+<div class="report-lab">
+<figure class="report-preview">
+<div class="report-preview-top">
+<span>客户端 PDF 示例</span>
+<a href="/downloads/sample-interior-handover-report.pdf">下载</a>
+</div>
+<div class="document-frame">
+<img alt="SiteReportKit 示例内部障碍报告封面，包含摘要和障碍索引" height="1404" src="/assets/reports/report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<figcaption>
+<strong>完整的客户报告</strong>
+<span>封面、摘要、障碍索引、问题详细信息、证据照片和签字就绪格式。</span>
+</figcaption>
+</figure>
+<div aria-label="报告视图示例" class="sample-stack">
+<div class="sample-stack-heading">
+<p class="eyebrow">导出内部</p>
+<h3>结构化证据，而不是转储到 PDF 中的相机胶卷。</h3>
+</div>
+<article class="sample-row">
+<img alt="内部问题详细信息页面显示所需采取的行动、证据照片、所有者、状态和截止日期" height="1404" src="/assets/reports/report-issue-evidence.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>发出证据</h4>
+<p>每个障碍都将照片、标题、所有者、严重性、状态和所需的操作放在一起。</p>
+</div>
+</article>
+<article class="sample-row">
+<img alt="室内承包商行动列表 PDF 封面和由 SiteReportKit 生成的突出障碍摘要" height="1404" src="/assets/reports/action-list-cover.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>承包商行动清单</h4>
+<p>过滤仅打开项目，并为每个交易指定一个重点工作范围。</p>
+</div>
+</article>
+<article class="sample-row">
+<img alt="内部收尾证据页显示照片和分辨率注释后" height="1404" src="/assets/reports/report-after-evidence.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>清仓证明</h4>
+<p>已解决的项目包括验收单和用于清晰交接轨迹的照片。</p>
+</div>
+</article>
+<div aria-label="示例下载" class="sample-actions">
+<a class="button button-primary" href="/downloads/sample-interior-handover-report.pdf">室内 PDF</a>
+<a class="button button-secondary" href="/downloads/sample-snag-action-list.pdf">整改清单</a>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="workflow-title" class="section workflow" id="workflow">
+<div class="section-heading compact">
+<p class="eyebrow">专为现场散步而设计</p>
+<h2 id="workflow-title">从现场证据到报告只需三个步骤。</h2>
+</div>
+<div class="workflow-layout">
+<ol class="workflow-list">
+<li>
+<span>01</span>
+<div>
+<h3>捕获现场证据</h3>
+<p>在您行走时添加问题，包括照片、非破坏性标记、区域、贸易、严重性和所需的明确行动。</p>
+</div>
+</li>
+<li>
+<span>02</span>
+<div>
+<h3>分配责任</h3>
+<p>设置所有者、截止日期、优先级和状态，然后按承包商、行业或区域过滤工作。</p>
+</div>
+</li>
+<li>
+<span>03</span>
+<div>
+<h3>导出切换</h3>
+<p>在离开之前预览并共享完整的客户 PDF、范围承包商行动列表、收尾报告或 CSV 问题登记册。</p>
+</div>
+</li>
+</ol>
+<figure class="closeout-preview">
+<img alt="收尾报告页面，包含已解决的项目证据和签字就绪格式" height="1404" src="/assets/reports/closeout-report-page.png?v=20260710-separated-samples" width="993"/>
+<figcaption>收尾报告证据及决议说明。</figcaption>
+</figure>
+</div>
+</section>
+<section aria-labelledby="app-proof-title" class="section app-proof">
+<div class="section-heading">
+<div>
+<p class="eyebrow">应用程序的证明</p>
+<h2 id="app-proof-title">围绕站点步行构建，而不是办公室管理。</h2>
+</div>
+<p>这些是当前移动版本的真实产品屏幕。从第一张照片到最终交接，捕捉、责任和报告始终保持联系。</p>
+</div>
+<div class="app-proof-grid">
+<article>
+<img alt="SiteReportKit 移动照片标记工作流程及施工证据" height="2868" src="/assets/app/photo-markup.png" width="1320"/>
+<div><span>捕捉</span><h3>标记确切的缺陷</h3><p>保留原始证据，同时为工作人员添加清晰的视觉标记。</p></div>
+</article>
+<article>
+<img alt="SiteReportKit 移动承包商操作列表导出选项" height="2868" src="/assets/app/action-lists.png" width="1320"/>
+<div><span>分配</span><h3>按业主或区域划分工作范围</h3><p>为每个承包商提供一份重点列表，而不暴露不相关的项目项目。</p></div>
+</article>
+<article>
+<img alt="SiteReportKit 移动 PDF 报告预览和导出工作流程" height="2868" src="/assets/app/pdf-export.png" width="1320"/>
+<div><span>导出</span><h3>现场预览报告</h3><p>在共享之前查看客户端 PDF，同时演练上下文仍然新鲜。</p></div>
+</article>
+</div>
+</section>
+<section aria-labelledby="markets-title" class="section markets" id="markets">
+<div class="section-heading">
+<div>
+<p class="eyebrow">专为本地术语而建</p>
+<h2 id="markets-title">相同的现场工作流程，表达了您的市场运作方式。</h2>
+</div>
+<p>选择您的客户和承包商期望的术语和纸张格式。这些页面描述产品设置和示例，而不是当地监管认证。</p>
+</div>
+<div class="market-grid">
+<a data-campaign="homepage-market-us" data-cta="market-entry" data-destination="guide" data-market="us" data-placement="homepage" href="/zh-Hans/us/punch-list-app/">
+<span>美国</span>
+<strong>打孔清单·信</strong>
+<small>用于冲压行走、贸易所有权和分包商结清。</small>
+</a>
+<a data-campaign="homepage-market-uk" data-cta="market-entry" data-destination="guide" data-market="uk" data-placement="homepage" href="/zh-Hans/uk/snagging-app/">
+<span>英国</span>
+<strong>勾丝·A4</strong>
+<small>用于新建移交、现场检查和故障报告。</small>
+</a>
+<a data-campaign="homepage-market-au" data-cta="market-entry" data-destination="guide" data-market="au" data-placement="homepage" href="/zh-Hans/au/defect-list-app/">
+<span>澳大利亚</span>
+<strong>缺陷清单·A4</strong>
+<small>用于建设者行动、贸易范围和实际完成步行。</small>
+</a>
+</div>
+</section>
+<section aria-labelledby="features-title" class="section features">
+<div class="section-heading compact">
+<p class="eyebrow">为什么团队选择它</p>
+<h2 id="features-title">一个专注的报告工具，而不是另一个构建套件。</h2>
+</div>
+<div class="feature-grid">
+<article>
+<h3>默认情况下离线优先</h3>
+<p>项目和媒体在捕获期间保持在本地，因此现场信号不佳不会阻止报告。</p>
+</article>
+<article>
+<h3>专业证据追踪</h3>
+<p>保留带有 SHA-256 完整性记录的原件、模糊私人细节、添加测量值，并在收尾证据旁边保留编辑过的标记。</p>
+</article>
+<article>
+<h3>灵活的术语</h3>
+<p>支持遗留问题清单、堵塞报告、缺陷清单、观察、现场审核和维护巡查。</p>
+</article>
+<article>
+<h3>可操作的移交</h3>
+<p>发送锁定的问题交接，合并返回的更新，遵循带时间戳的评论和活动，然后导出范围内的 XLSX 寄存器或收尾包。</p>
+</article>
+<article>
+<h3>灵活签核</h3>
+<p>绘制签名，根据输入的姓名生成签名，或导入经批准的签名图像以供检查员和客户签字。</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="use-cases-title" class="section use-cases" id="use-cases">
+<div class="section-heading">
+<p class="eyebrow">用例</p>
+<h2 id="use-cases-title">对于那些需要在访问仍然新鲜时完成报告的人。</h2>
+</div>
+<div class="use-case-grid">
+<article>
+<h3>建筑检查员</h3>
+<p>制作精美的客户 PDF，其中包含品牌封面、限制文本、问题索引和照片证据。</p>
+</article>
+<article>
+<h3>建筑师和设计师</h3>
+<p>按区域捕获现场观察结果，并向承包商发送一份清洁行动列表，无需清理电子表格。</p>
+</article>
+<article>
+<h3>承包商和现场经理</h3>
+<p>运行移交巡视、分配贸易责任、跟踪收尾以及分包商的出口范围列表。</p>
+</article>
+<article>
+<h3>物业和设施团队</h3>
+<p>文档维护问题、前后证据、重复出现的缺陷和可存档的项目记录。</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="downloads-title" class="section sample-downloads">
+<div>
+<p class="eyebrow">示例下载</p>
+<h2 id="downloads-title">在尝试该应用程序之前检查输出。</h2>
+</div>
+<div class="download-list">
+<a href="/downloads/sample-interior-handover-report.pdf">
+<strong>内部移交报告 PDF</strong>
+<span>五个室内障碍物</span>
+</a>
+<a href="/downloads/sample-construction-defect-report.pdf">
+<strong>施工缺陷报告 PDF</strong>
+<span>六大活动场地建设缺陷</span>
+</a>
+<a href="/downloads/sample-snag-action-list.pdf">
+<strong>承包商行动清单 PDF</strong>
+<span>交付团队的未清项目</span>
+</a>
+<a href="/downloads/sample-closeout-report.pdf">
+<strong>收尾报告 PDF</strong>
+<span>已解决的问题和证据</span>
+</a>
+<a href="/downloads/sample-issue-register.csv">
+<strong>发行登记 CSV</strong>
+<span>内部报告电子表格导出</span>
+</a>
+<a href="/downloads/sample-construction-issue-register.csv">
+<strong>施工问题登记 CSV</strong>
+<span>施工报告电子表格导出</span>
+</a>
+</div>
+</section>
+<section aria-labelledby="pricing-title" class="section pricing" id="pricing">
+<div class="pricing-copy">
+<p class="eyebrow">简单的本地定价</p>
+<h2 id="pricing-title">自由开始。一次解锁干净的专业出口。</h2>
+<p>
+            在本地使用每个核心现场工作流程，无需创建帐户。免费包括总共三个带水印的文件导出。计划推出的 Pro 版是一次性、可在支持的移动商店版本上通过商店恢复购买的，无需订阅，价格为 9.99 美元。最终的本地店面定价可能会因税收和货币的不同而有所不同。
+          </p>
+</div>
+<div aria-label="免费版和专业版比较" class="pricing-compare">
+<article class="plan-card">
+<p class="plan-label">免费</p>
+<p class="price">$0 <span>本地使用</span></p>
+<ul>
+<li>无限本地项目和预览</li>
+<li>总共 3 个带水印的 PDF/XLSX/CSV 导出</li>
+<li>现场基础报告模板</li>
+<li>标准照片布局</li>
+</ul>
+<a class="button button-secondary" data-campaign="homepage-pricing-sample" data-cta="sample-report" data-destination="pdf" data-placement="pricing" href="/downloads/sample-interior-handover-report.pdf">检查输出</a>
+</article>
+<article class="plan-card plan-card-pro">
+<p class="plan-label">个人职业选手</p>
+<p class="price">$9.99 <span>一次性启动目标</span></p>
+<ul>
+<li>无限制的干净 PDF、XLSX 和 CSV 导出</li>
+<li>自定义徽标和公司品牌</li>
+<li>隐私模糊、测量和证据完整性</li>
+<li>锁定问题交接和活动历史记录</li>
+<li>绘制、键入或导入的签名</li>
+</ul>
+<a class="button button-primary" data-campaign="homepage-pricing" data-cta="early-access" data-destination="email" data-placement="pricing" href="mailto:hello@sitereportkit.com?subject=SiteReportKit%20early%20access">请求提前访问</a>
+</article>
+<p class="launch-note">App Store 正在启动。最终店面价格和供应情况将在实时列表中确认。专业版不包括帐户、云同步或团队工作区。</p>
+</div>
+</section>
+<section aria-labelledby="faq-title" class="section faq">
+<div class="section-heading compact">
+<p class="eyebrow">常见问题</p>
+<h2 id="faq-title">在将应用程序带到现场之前了解该应用程序的用途。</h2>
+</div>
+<div class="faq-list">
+<details>
+<summary>SiteReportKit 是否可以在没有帐户的情况下工作？</summary>
+<p>是的。核心项目捕获、本地存储、报告预览和示例工作流程不需要帐户。</p>
+</details>
+<details>
+<summary>我可以离线工作吗？</summary>
+<p>是的。项目捕获、照片、标记和报告生成旨在本地工作。商店购买或恢复仍需要网络连接。</p>
+</details>
+<details>
+<summary>免费出口包括什么？</summary>
+<p>免费包括三个带有 SiteReportKit Free 品牌的 PDF、XLSX 或 CSV 文件导出。预览和本地项目仍然不受限制。</p>
+</details>
+<details>
+<summary>SiteReportKit 是一个完整的施工管理平台吗？</summary>
+<p>否。它特意专注于快速现场捕获和专业交接报告，没有 BIM、RFI、时间表或实时团队协调。</p>
+</details>
+</div>
+</section>
+<section aria-labelledby="phone-handoff-title" class="section phone-handoff">
+<div class="phone-handoff-copy">
+<p class="eyebrow">在您的手机上继续</p>
+<h2 id="phone-handoff-title">随身携带示例工作流程。</h2>
+<p>扫描代码以在手机上打开 SiteReportKit，或打开您可以发送给自己的预填充短信。这两个链接都使用没有营销 cookie 的活动标签。</p>
+<div class="hero-actions">
+<a class="button button-primary" data-campaign="homepage-phone-handoff" data-cta="phone-handoff" data-destination="sms" data-placement="homepage" href="sms:?&amp;body=Open%20SiteReportKit%20on%20your%20phone%3A%20https%3A%2F%2Fsitereportkit.com%2F%3Fsrc%3Dsms%26campaign%3Dhomepage-phone-handoff">将链接发短信给自己</a>
+<a class="button button-secondary" data-campaign="homepage-phone-handoff" data-cta="early-access" data-destination="email" data-placement="phone-handoff" href="mailto:hello@sitereportkit.com?subject=SiteReportKit%20launch%20updates">获取启动更新</a>
+</div>
+<p class="handoff-note">短信按钮仅打开您设备的消息编辑器。 SiteReportKit 没有收到电话号码。经过验证的商店链接将在获得批准后取代此预发布目的地。</p>
+</div>
+<figure>
+<img alt="用于在手机上打开 SiteReportKit 网站的二维码" height="232" src="/assets/brand/phone-handoff-qr.svg" width="232"/>
+<figcaption>在手机上打开预发布网站</figcaption>
+</figure>
+</section>
+<section aria-labelledby="final-cta-title" class="final-cta">
+<img alt="" height="103" src="/assets/brand/sitereportkit-mark.png?v=20260708-exact-logo" width="64"/>
+<h2 id="final-cta-title">在工作离开您的头脑之前创建报告。</h2>
+<p>SiteReportKit 首先围绕快速、本地、专业的移动网站报告推出，并在核心现场工作流程稳定后计划支持桌面和 Web 的工作流程。</p>
+<div class="hero-actions">
+<a class="button button-primary" data-cta="final_interior_sample" href="/downloads/sample-interior-handover-report.pdf">内饰样本</a>
+<a class="button button-secondary" data-cta="final_construction_sample" href="/downloads/sample-construction-defect-report.pdf">施工样本</a>
+<a class="button button-secondary" data-cta="final_contact" href="mailto:hello@sitereportkit.com">联系方式</a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div>
+<img alt="SiteReportKit" height="40" src="/assets/brand/sitereportkit-wordmark.png?v=20260708-exact-logo" width="184"/>
+<p>离线优先遗留问题清单、障碍、缺陷和收尾报告。</p>
+</div>
+<nav aria-label="页脚导航">
+<a href="#reports">报告</a>
+<a href="#workflow">工作流程</a>
+<a href="#use-cases">用例</a>
+<a href="/zh-Hans/sample-reports/">报告样本</a>
+<a href="/zh-Hans/resources/punch-list-vs-snag-list-vs-defect-list/">术语指南</a>
+<a href="/zh-Hans/pricing/">定价</a>
+<a href="/downloads/sample-snagging-report.pdf">示例 PDF</a>
+<a href="/zh-Hans/support/">支持</a>
+<a href="/zh-Hans/privacy/">隐私</a>
+</nav>
+</footer>
 </body>
 </html>
+

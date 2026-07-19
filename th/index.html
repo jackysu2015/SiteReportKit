@@ -1,61 +1,485 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="th">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>ตรวจหน้างานและรายงาน PDF | SiteReportKit</title>
-  <meta name="description" content="บันทึกข้อบกพร่องด้วยภาพถ่ายและเครื่องหมาย จัดระเบียบรายการแก้ไข แล้วสร้างรายงาน PDF หรือ CSV ได้จากหน้างาน">
-  <link rel="canonical" href="https://sitereportkit.com/th/">
-  <link rel="alternate" hreflang="x-default" href="https://sitereportkit.com/">
-  <link rel="alternate" hreflang="ar-SA" href="https://sitereportkit.com/ar-SA/">
-  <link rel="alternate" hreflang="ca" href="https://sitereportkit.com/ca/">
-  <link rel="alternate" hreflang="cs" href="https://sitereportkit.com/cs/">
-  <link rel="alternate" hreflang="da" href="https://sitereportkit.com/da/">
-  <link rel="alternate" hreflang="de-DE" href="https://sitereportkit.com/de-DE/">
-  <link rel="alternate" hreflang="el" href="https://sitereportkit.com/el/">
-  <link rel="alternate" hreflang="en-US" href="https://sitereportkit.com/en-US/">
-  <link rel="alternate" hreflang="es-MX" href="https://sitereportkit.com/es-MX/">
-  <link rel="alternate" hreflang="fi" href="https://sitereportkit.com/fi/">
-  <link rel="alternate" hreflang="fr-FR" href="https://sitereportkit.com/fr-FR/">
-  <link rel="alternate" hreflang="he" href="https://sitereportkit.com/he/">
-  <link rel="alternate" hreflang="hi" href="https://sitereportkit.com/hi/">
-  <link rel="alternate" hreflang="hr" href="https://sitereportkit.com/hr/">
-  <link rel="alternate" hreflang="hu" href="https://sitereportkit.com/hu/">
-  <link rel="alternate" hreflang="id" href="https://sitereportkit.com/id/">
-  <link rel="alternate" hreflang="it" href="https://sitereportkit.com/it/">
-  <link rel="alternate" hreflang="ja" href="https://sitereportkit.com/ja/">
-  <link rel="alternate" hreflang="ko" href="https://sitereportkit.com/ko/">
-  <link rel="alternate" hreflang="ms" href="https://sitereportkit.com/ms/">
-  <link rel="alternate" hreflang="nl-NL" href="https://sitereportkit.com/nl-NL/">
-  <link rel="alternate" hreflang="no" href="https://sitereportkit.com/no/">
-  <link rel="alternate" hreflang="pl" href="https://sitereportkit.com/pl/">
-  <link rel="alternate" hreflang="pt-BR" href="https://sitereportkit.com/pt-BR/">
-  <link rel="alternate" hreflang="ro" href="https://sitereportkit.com/ro/">
-  <link rel="alternate" hreflang="ru" href="https://sitereportkit.com/ru/">
-  <link rel="alternate" hreflang="sk" href="https://sitereportkit.com/sk/">
-  <link rel="alternate" hreflang="sv" href="https://sitereportkit.com/sv/">
-  <link rel="alternate" hreflang="th" href="https://sitereportkit.com/th/">
-  <link rel="alternate" hreflang="tr" href="https://sitereportkit.com/tr/">
-  <link rel="alternate" hreflang="uk" href="https://sitereportkit.com/uk/">
-  <link rel="alternate" hreflang="vi" href="https://sitereportkit.com/vi/">
-  <link rel="alternate" hreflang="zh-Hans" href="https://sitereportkit.com/zh-Hans/">
-  <link rel="alternate" hreflang="zh-Hant" href="https://sitereportkit.com/zh-Hant/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="SiteReportKit">
-  <meta property="og:title" content="ตรวจหน้างานและรายงาน PDF | SiteReportKit">
-  <meta property="og:description" content="บันทึกข้อบกพร่องด้วยภาพถ่ายและเครื่องหมาย จัดระเบียบรายการแก้ไข แล้วสร้างรายงาน PDF หรือ CSV ได้จากหน้างาน">
-  <meta property="og:url" content="https://sitereportkit.com/th/">
-  <meta property="og:image" content="https://sitereportkit.com/assets/reports/samples/en-US/report-cover.png">
-  <link rel="icon" href="../assets/brand/sitereportkit-favicon.png">
-  <link rel="stylesheet" href="../marketing-pages.css?v=20260711">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SiteReportKit","applicationCategory":"BusinessApplication","operatingSystem":"iOS","description":"บันทึกข้อบกพร่องด้วยภาพถ่ายและเครื่องหมาย จัดระเบียบรายการแก้ไข แล้วสร้างรายงาน PDF หรือ CSV ได้จากหน้างาน","url":"https://sitereportkit.com/th/"}</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>SiteReportKit | รายการเจาะมืออาชีพและรายงานที่ขัดขวาง</title>
+<meta content="SiteReportKit สร้างรายการเจาะลึกแบบออฟไลน์พร้อมมาร์กอัปรูปภาพที่ไม่ละเมิดความเป็นส่วนตัว การวัด การแฮนด์ออฟที่ตรวจสอบได้ และการส่งออก PDF, XLSX และ CSV แบบมืออาชีพ" name="description"/>
+<meta content="#0A2342" name="theme-color"/>
+<meta content="SiteReportKit" property="og:title"/>
+<meta content="สร้าง PDF รายการเจาะมืออาชีพก่อนออกจากไซต์" property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://sitereportkit.com/th/" property="og:url"/>
+<meta content="https://sitereportkit.com/assets/reports/report-cover.png?v=20260710-separated-samples" property="og:image"/>
+<link href="https://sitereportkit.com/th/" rel="canonical"/><link href="https://sitereportkit.com/" hreflang="x-default" rel="alternate"/><link href="https://sitereportkit.com/ar-SA/" hreflang="ar-SA" rel="alternate"/><link href="https://sitereportkit.com/ca/" hreflang="ca" rel="alternate"/><link href="https://sitereportkit.com/cs/" hreflang="cs" rel="alternate"/><link href="https://sitereportkit.com/da/" hreflang="da" rel="alternate"/><link href="https://sitereportkit.com/de-DE/" hreflang="de-DE" rel="alternate"/><link href="https://sitereportkit.com/el/" hreflang="el" rel="alternate"/><link href="https://sitereportkit.com/en-US/" hreflang="en-US" rel="alternate"/><link href="https://sitereportkit.com/es-MX/" hreflang="es-MX" rel="alternate"/><link href="https://sitereportkit.com/fi/" hreflang="fi" rel="alternate"/><link href="https://sitereportkit.com/fr-FR/" hreflang="fr-FR" rel="alternate"/><link href="https://sitereportkit.com/he/" hreflang="he" rel="alternate"/><link href="https://sitereportkit.com/hi/" hreflang="hi" rel="alternate"/><link href="https://sitereportkit.com/hr/" hreflang="hr" rel="alternate"/><link href="https://sitereportkit.com/hu/" hreflang="hu" rel="alternate"/><link href="https://sitereportkit.com/id/" hreflang="id" rel="alternate"/><link href="https://sitereportkit.com/it/" hreflang="it" rel="alternate"/><link href="https://sitereportkit.com/ja/" hreflang="ja" rel="alternate"/><link href="https://sitereportkit.com/ko/" hreflang="ko" rel="alternate"/><link href="https://sitereportkit.com/ms/" hreflang="ms" rel="alternate"/><link href="https://sitereportkit.com/nl-NL/" hreflang="nl-NL" rel="alternate"/><link href="https://sitereportkit.com/no/" hreflang="no" rel="alternate"/><link href="https://sitereportkit.com/pl/" hreflang="pl" rel="alternate"/><link href="https://sitereportkit.com/pt-BR/" hreflang="pt-BR" rel="alternate"/><link href="https://sitereportkit.com/ro/" hreflang="ro" rel="alternate"/><link href="https://sitereportkit.com/ru/" hreflang="ru" rel="alternate"/><link href="https://sitereportkit.com/sk/" hreflang="sk" rel="alternate"/><link href="https://sitereportkit.com/sv/" hreflang="sv" rel="alternate"/><link href="https://sitereportkit.com/th/" hreflang="th" rel="alternate"/><link href="https://sitereportkit.com/tr/" hreflang="tr" rel="alternate"/><link href="https://sitereportkit.com/uk-UA/" hreflang="uk" rel="alternate"/><link href="https://sitereportkit.com/vi/" hreflang="vi" rel="alternate"/><link href="https://sitereportkit.com/zh-Hans/" hreflang="zh-Hans" rel="alternate"/><link href="https://sitereportkit.com/zh-Hant/" hreflang="zh-Hant" rel="alternate"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/assets/brand/sitereportkit-favicon.png?v=20260708-exact-logo" rel="icon" type="image/png"/>
+<link href="/styles.css?v=20260710-separated-samples" rel="stylesheet"/>
+<script defer="" src="/script.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SiteReportKit","applicationCategory":"แอปพลิเคชั่นธุรกิจ","operatingSystem":"iOS","description":"รายการเจาะลึกแบบออฟไลน์ อุปสรรค ข้อบกพร่อง และการรายงานการปิดการขายด้วยการส่งออก PDF, XLSX และ CSV แบบมืออาชีพ","url":"https://sitereportkit.com/th/","featureList":["การบันทึกปัญหาแบบออฟไลน์","มาร์กอัปภาพถ่ายแบบไม่ทำลาย","การส่งออก PDF, XLSX และ CSV","การเบลอความเป็นส่วนตัวและคำอธิบายประกอบการวัด","กิจกรรมที่มีการประทับเวลาและการมอบหมายปัญหาที่ถูกล็อค","วิธีการป้อนลายเซ็นสามวิธี","บันทึกความสมบูรณ์ของหลักฐาน SHA-256","รายการดำเนินการของผู้รับเหมา","หลักฐานการปิดการขาย","ที่เก็บถาวรโครงการในเครื่อง"],"publisher":{"@type":"Organization","name":"SiteReportKit","url":"https://sitereportkit.com/th/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"SiteReportKit ทำงานโดยไม่มีบัญชีหรือไม่","acceptedAnswer":{"@type":"Answer","text":"ใช่ การจับภาพโปรเจ็กต์หลัก พื้นที่จัดเก็บในเครื่อง การแสดงตัวอย่างรายงาน และเวิร์กโฟลว์ตัวอย่างไม่จำเป็นต้องมีบัญชี"}},{"@type":"Question","name":"ฉันสามารถทำงานแบบออฟไลน์ได้หรือไม่?","acceptedAnswer":{"@type":"Answer","text":"ใช่ การจับภาพโปรเจ็กต์ รูปภาพ มาร์กอัป และการสร้างรายงานได้รับการออกแบบมาให้ทำงานในพื้นที่ ยังคงจำเป็นต้องมีการเชื่อมต่อเครือข่ายสำหรับการซื้อหรือกู้คืนร้านค้า"}},{"@type":"Question","name":"การส่งออกฟรีประกอบด้วยอะไรบ้าง","acceptedAnswer":{"@type":"Answer","text":"ฟรีรวมการส่งออกไฟล์ PDF, XLSX หรือ CSV ทั้งหมดสามไฟล์พร้อมการสร้างแบรนด์ SiteReportKit ฟรี การแสดงตัวอย่างและโปรเจ็กต์ในท้องถิ่นยังคงไม่จำกัด"}}]}</script>
 </head>
 <body>
-  <header class="site-header"><a class="brand" href="../"><img src="../assets/brand/sitereportkit-wordmark.png" alt="SiteReportKit" width="224" height="49"></a><label><span class="sr-only">Language</span><select onchange="if(this.value)location.href=this.value"><option value="/ar-SA/">العربية</option><option value="/ca/">Català</option><option value="/cs/">Čeština</option><option value="/da/">Dansk</option><option value="/de-DE/">Deutsch</option><option value="/el/">Ελληνικά</option><option value="/en-US/">English</option><option value="/es-MX/">Español</option><option value="/fi/">Suomi</option><option value="/fr-FR/">Français</option><option value="/he/">עברית</option><option value="/hi/">हिन्दी</option><option value="/hr/">Hrvatski</option><option value="/hu/">Magyar</option><option value="/id/">Bahasa Indonesia</option><option value="/it/">Italiano</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/ms/">Bahasa Melayu</option><option value="/nl-NL/">Nederlands</option><option value="/no/">Norsk</option><option value="/pl/">Polski</option><option value="/pt-BR/">Português</option><option value="/ro/">Română</option><option value="/ru/">Русский</option><option value="/sk/">Slovenčina</option><option value="/sv/">Svenska</option><option value="/th/" selected>ไทย</option><option value="/tr/">Türkçe</option><option value="/uk/">Українська</option><option value="/vi/">Tiếng Việt</option><option value="/zh-Hans/">简体中文</option><option value="/zh-Hant/">繁體中文</option></select></label></header>
-  <main>
-    <section class="hero"><div class="hero-inner"><div><p class="eyebrow">SiteReportKit</p><h1>ตรวจหน้างานและรายงาน PDF</h1><p class="hero-lede">บันทึกข้อบกพร่องด้วยภาพถ่ายและเครื่องหมาย จัดระเบียบรายการแก้ไข แล้วสร้างรายงาน PDF หรือ CSV ได้จากหน้างาน</p><div class="actions"><a class="button button-primary" href="https://apps.apple.com/app/id6788361013">App Store</a><a class="button button-secondary" href="../downloads/samples/en-US/sample-report.pdf">PDF</a></div></div><img src="../assets/reports/samples/en-US/report-cover.png" alt="SiteReportKit" width="993" height="1404"></div></section>
-    <section class="section section-white"><div class="section-inner"><div class="related-grid"><article class="related-card"><h2>บันทึกข้อบกพร่องหน้างาน</h2></article><article class="related-card"><h2>จัดระเบียบรายการแก้ไข</h2></article><article class="related-card"><h2>ส่งออกรายงาน PDF มืออาชีพ</h2></article></div><div class="prose"><p>เปลี่ยนการเดินตรวจหน้างานให้เป็นรายงานที่ชัดเจนและเป็นมืออาชีพ SiteReportKit ออกแบบมาให้ใช้งานออฟไลน์เป็นหลัก เหมาะสำหรับการตรวจหน้างาน รายการข้อบกพร่อง การส่งมอบ และการปิดงาน</p><p>บันทึกแต่ละข้อบกพร่องพร้อมตำแหน่ง หมวดงาน ระดับความรุนแรง ผู้รับผิดชอบ วันครบกำหนด สถานะ ภาพถ่ายหลักฐาน คำบรรยาย และเครื่องหมายที่ไม่เปลี่ยนแปลงภาพต้นฉบับ ค้นหาและกรองรายการ อัปเดตหลายรายการ และจัดเก็บบันทึกการแก้ไขกับประวัติการตรวจสอบ</p><p>ส่งออกรายงาน PDF รายการดำเนินการสำหรับผู้รับเหมา รายงานปิดงาน และทะเบียนข้อบกพร่อง CSV เลือกรูปแบบ เพิ่มอัตลักษณ์บริษัท และสร้างรายการตามพื้นที่หรือผู้รับผิดชอบ ขั้นตอนการทำงานหลักในเครื่องไม่ต้องใช้บัญชี</p><p>ใช้งานได้มากกว่าการทำเครื่องหมายทั่วไปด้วยการเบลอข้อมูลส่วนตัวและคำอธิบายการวัด ส่งออกสมุดงาน XLSX ที่แก้ไขได้ รวมทั้ง PDF และ CSV ติดตามความคิดเห็นและกิจกรรมพร้อมเวลา และแลกเปลี่ยนแพ็กเกจส่งมอบที่ล็อกไว้ซึ่งรวมการอัปเดตที่ส่งกลับ วาด พิมพ์ หรือนำเข้าลายเซ็นได้ หลักฐานต้นฉบับเก็บบันทึกความสมบูรณ์ SHA-256</p></div></div></section>
-  </main>
-  <footer class="site-footer"><div class="footer-inner"><strong>SiteReportKit</strong><nav class="footer-links"><a href="../privacy/">Privacy</a><a href="../support/">Support</a></nav></div></footer>
+<header class="site-header" data-header="">
+<a aria-label="หน้าแรกของ SiteReportKit" class="brand" href="#top">
+<img alt="SiteReportKit" class="brand-logo" height="49" src="/assets/brand/sitereportkit-wordmark.png?v=20260708-exact-logo" width="224"/>
+</a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" data-nav-toggle="" type="button">
+<span class="sr-only">เปิดการนำทาง</span>
+<span></span>
+<span></span>
+<span></span>
+</button>
+<nav class="site-nav" data-nav="" id="site-nav">
+<a href="#reports">รายงาน</a>
+<a href="#workflow">เวิร์กโฟลว์</a>
+<a href="/th/sample-reports/">ตัวอย่าง</a>
+<a href="#markets">ตลาด</a>
+<a href="#pricing">ราคา</a>
+
+<label class="language-switcher"><span aria-hidden="true" class="language-switcher-icon">🌐</span><span class="sr-only">Language</span><select aria-label="Language" onchange="if(this.value)location.href=this.value"><option value="/ar-SA/">العربية</option><option value="/ca/">Català</option><option value="/cs/">Čeština</option><option value="/da/">Dansk</option><option value="/de-DE/">Deutsch</option><option value="/el/">Ελληνικά</option><option value="/en-US/">English</option><option value="/es-MX/">Español</option><option value="/fi/">Suomi</option><option value="/fr-FR/">Français</option><option value="/he/">עברית</option><option value="/hi/">हिन्दी</option><option value="/hr/">Hrvatski</option><option value="/hu/">Magyar</option><option value="/id/">Bahasa Indonesia</option><option value="/it/">Italiano</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/ms/">Bahasa Melayu</option><option value="/nl-NL/">Nederlands</option><option value="/no/">Norsk</option><option value="/pl/">Polski</option><option value="/pt-BR/">Português</option><option value="/ro/">Română</option><option value="/ru/">Русский</option><option value="/sk/">Slovenčina</option><option value="/sv/">Svenska</option><option selected="" value="/th/">ไทย</option><option value="/tr/">Türkçe</option><option value="/uk-UA/">Українська</option><option value="/vi/">Tiếng Việt</option><option value="/zh-Hans/">简体中文</option><option value="/zh-Hant/">繁體中文</option></select></label><a class="nav-cta" data-campaign="homepage-nav" data-cta="sample-report" data-destination="pdf" data-placement="header" href="/downloads/sample-snagging-report.pdf">ตัวอย่าง PDF</a>
+</nav>
+</header>
+
+<main id="top">
+<section aria-labelledby="hero-title" class="hero">
+<div aria-hidden="true" class="hero-media">
+<img alt="" class="hero-page hero-page-main" src="/assets/reports/report-cover.png?v=20260710-separated-samples"/>
+<img alt="" class="hero-page hero-page-side" src="/assets/reports/report-issue-evidence.png?v=20260710-separated-samples"/>
+<img alt="" class="hero-page hero-page-back" src="/assets/reports/action-list-cover.png?v=20260710-separated-samples"/>
+</div>
+<div class="hero-copy">
+<p class="eyebrow">การรายงานภาคสนามแบบออฟไลน์เป็นอันดับแรก</p>
+<h1 id="hero-title">เสร็จสิ้นการฝึกปฏิบัติ ส่งรายงานก่อนออกเดินทาง</h1>
+<p class="hero-lede">SiteReportKit เปลี่ยนหลักฐานของไซต์ให้เป็นการส่งต่ออย่างมืออาชีพ</p>
+<p class="hero-support">
+            บันทึกหลักฐานที่สามารถป้องกันได้ มอบหมายความรับผิดชอบ และส่งออกเอกสาร PDF, XLSX หรือ CSV ที่มีแบรนด์ - ออฟไลน์ โดยไม่ต้องใช้บัญชี
+          </p>
+<div aria-label="การดำเนินการหลัก" class="hero-actions">
+<a class="button button-primary" data-campaign="homepage-hero-sample" data-cta="sample-report" data-destination="pdf" data-placement="hero" data-report-kind="interior-handover" href="/downloads/sample-interior-handover-report.pdf">ดาวน์โหลดรายงานตัวอย่าง</a>
+<a class="button button-secondary" data-campaign="homepage-hero-action-list" data-cta="sample-report" data-destination="pdf" data-placement="hero" data-report-kind="contractor-action-list" href="/downloads/sample-snag-action-list.pdf">ดูรายการดำเนินการของผู้รับเหมา</a>
+</div>
+<dl aria-label="จุดเด่นของผลิตภัณฑ์" class="hero-proof">
+<div>
+<dt>ทำงานแบบออฟไลน์</dt>
+<dd>เดินต่อไปเมื่อสัญญาณลดลง</dd>
+</div>
+<div>
+<dt>ไม่จำเป็นต้องมีบัญชี</dt>
+<dd>จับภาพในเครื่องและส่งออกเมื่อพร้อม</dd>
+</div>
+<div>
+<dt>PDF + XLSX + CSV</dt>
+<dd>รายงาน สมุดงานที่แก้ไขได้ และรีจิสเตอร์</dd>
+</div>
+</dl>
+</div>
+</section>
+<section aria-label="คำมั่นสัญญาผลิตภัณฑ์หลัก" class="trust-strip">
+<p>เก็บหลักฐานของไซต์</p>
+<p>มอบหมายความรับผิดชอบ</p>
+<p>ส่งออกแฮนด์ออฟ</p>
+</section>
+<section aria-labelledby="reports-title" class="section report-showcase" id="reports">
+<div class="section-heading">
+<p class="eyebrow">เอาต์พุตตัวอย่างจริง</p>
+<h2 id="reports-title">รายงานที่แตกต่างกันสองฉบับสำหรับการเข้าชมไซต์สองครั้งที่แตกต่างกันมาก</h2>
+<p>
+            การส่งมอบภายในและการตรวจสอบการก่อสร้างที่ใช้งานอยู่แยกจากการจับผ่านการส่งออก แต่ละโครงการมีโครงการ ดัชนีประเด็น ชุดหลักฐาน รายการดำเนินการ และรายงานที่สามารถดาวน์โหลดได้
+          </p>
+</div>
+<div aria-label="ตัวอย่างประเภทรายงาน" class="report-edition-grid">
+<article class="report-edition">
+<div class="report-edition-media">
+<img alt="ปกรายงานการส่งต่อภายใน Maple Row" height="1404" src="/assets/reports/report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<div class="report-edition-copy">
+<p class="report-type">ส่งมอบภายใน</p>
+<h3>การส่งมอบแถวเมเปิ้ล</h3>
+<p>สิ่งของที่ขัดขวางภายในห้ารายการ ครอบคลุมถึงการตกแต่ง งานสี เช็คไฟฟ้า ประตู และคำขอเปลี่ยนจากลูกค้า</p>
+<div aria-label="รายงานสรุปภายใน" class="report-edition-facts">
+<span>5 อุปสรรค์</span>
+<span>9 หน้า</span>
+<span>หลักฐานภายในเท่านั้น</span>
+</div>
+<div class="report-edition-actions">
+<a class="button button-primary" href="/downloads/sample-interior-handover-report.pdf">ภายใน PDF</a>
+<a class="button button-secondary" href="/downloads/sample-snag-action-list.pdf">รายการการดำเนินการภายใน</a>
+</div>
+</div>
+</article>
+<article class="report-edition report-edition-construction">
+<div class="report-edition-media">
+<img alt="ปกรายงานข้อบกพร่องการตรวจสอบการก่อสร้าง Harbour Point" height="1404" src="/assets/reports/construction-report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<div class="report-edition-copy">
+<p class="report-type">โครงสร้างที่ใช้งานอยู่</p>
+<h3>การตรวจสอบการก่อสร้างจุดท่าเรือ</h3>
+<p>ข้อบกพร่องในการก่อสร้าง 6 ข้อ ครอบคลุมถึงระบบดับเพลิงด้านหน้าอาคาร คอนกรีต การระบายน้ำ งานชั่วคราว งานก่ออิฐ และงานกันซึมหลังคา</p>
+<div aria-label="สรุปรายงานการก่อสร้าง" class="report-edition-facts">
+<span>ข้อบกพร่อง 6 รายการ</span>
+<span>10 หน้า</span>
+<span>หลักฐานการก่อสร้างเท่านั้น</span>
+</div>
+<div class="report-edition-actions">
+<a class="button button-primary" href="/downloads/sample-construction-defect-report.pdf">การก่อสร้าง PDF</a>
+<a class="button button-secondary" href="/downloads/sample-construction-defect-action-list.pdf">รายการดำเนินการก่อสร้าง</a>
+</div>
+</div>
+</article>
+</div>
+<div class="report-lab">
+<figure class="report-preview">
+<div class="report-preview-top">
+<span>ตัวอย่าง PDF ของไคลเอ็นต์</span>
+<a href="/downloads/sample-interior-handover-report.pdf">ดาวน์โหลด</a>
+</div>
+<div class="document-frame">
+<img alt="ตัวอย่างรายงานการขัดขวางภายใน SiteReportKit พร้อมข้อมูลสรุปและดัชนีอุปสรรค" height="1404" src="/assets/reports/report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<figcaption>
+<strong>รายงานลูกค้าฉบับเต็ม</strong>
+<span>ปก สรุป ดัชนีอุปสรรค รายละเอียดประเด็น รูปถ่ายหลักฐาน และการจัดรูปแบบพร้อมลงนาม</span>
+</figcaption>
+</figure>
+<div aria-label="มุมมองรายงานตัวอย่าง" class="sample-stack">
+<div class="sample-stack-heading">
+<p class="eyebrow">ภายในการส่งออก</p>
+<h3>หลักฐานที่มีโครงสร้าง ไม่ใช่ม้วนฟิล์มที่เทลงใน PDF</h3>
+</div>
+<article class="sample-row">
+<img alt="หน้ารายละเอียดปัญหาภายในที่แสดงการดำเนินการที่จำเป็น ภาพถ่ายหลักฐาน เจ้าของ สถานะ และวันครบกำหนด" height="1404" src="/assets/reports/report-issue-evidence.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>ออกหลักฐาน</h4>
+<p>อุปสรรค์แต่ละอย่างจะเก็บรูปภาพ คำบรรยาย เจ้าของ ความร้ายแรง สถานะ และการดำเนินการที่จำเป็นไว้ด้วยกัน</p>
+</div>
+</article>
+<article class="sample-row">
+<img alt="รายการดำเนินการของผู้รับเหมาตกแต่งภายใน ปก PDF และสรุปอุปสรรคที่โดดเด่นที่สร้างโดย SiteReportKit" height="1404" src="/assets/reports/action-list-cover.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>รายการดำเนินการของผู้รับเหมา</h4>
+<p>กรองเพื่อเปิดรายการเท่านั้นและมอบขอบเขตงานที่มุ่งเน้นให้กับแต่ละการค้า</p>
+</div>
+</article>
+<article class="sample-row">
+<img alt="หน้าหลักฐานการปิดภายในแสดงอยู่หลังภาพถ่ายและบันทึกการแก้ไข" height="1404" src="/assets/reports/report-after-evidence.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>หลักฐานการปิดการขาย</h4>
+<p>รายการที่ได้รับการแก้ไขจะรวมถึงบันทึกการยอมรับและภาพถ่ายหลังสำหรับเส้นทางการส่งมอบที่สะอาดตา</p>
+</div>
+</article>
+<div aria-label="ตัวอย่างการดาวน์โหลด" class="sample-actions">
+<a class="button button-primary" href="/downloads/sample-interior-handover-report.pdf">ภายใน PDF</a>
+<a class="button button-secondary" href="/downloads/sample-snag-action-list.pdf">รายการดำเนินการ</a>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="workflow-title" class="section workflow" id="workflow">
+<div class="section-heading compact">
+<p class="eyebrow">สร้างมาเพื่อการเดินสำรวจสถานที่</p>
+<h2 id="workflow-title">จากหลักฐานของสถานที่สู่รายงานในสามขั้นตอน</h2>
+</div>
+<div class="workflow-layout">
+<ol class="workflow-list">
+<li>
+<span>01</span>
+<div>
+<h3>เก็บหลักฐานของไซต์</h3>
+<p>เพิ่มปัญหาในขณะที่คุณเดิน โดยระบุรูปภาพ มาร์กอัปที่ไม่ทำลาย พื้นที่ การค้า ความเข้มงวด และการดำเนินการที่ชัดเจน</p>
+</div>
+</li>
+<li>
+<span>02</span>
+<div>
+<h3>มอบหมายความรับผิดชอบ</h3>
+<p>กำหนดเจ้าของ วันครบกำหนด ลำดับความสำคัญ และสถานะ จากนั้นกรองงานตามผู้รับเหมา การค้า หรือพื้นที่</p>
+</div>
+</li>
+<li>
+<span>03</span>
+<div>
+<h3>ส่งออกแฮนด์ออฟ</h3>
+<p>ดูตัวอย่างและแบ่งปันไฟล์ PDF ของลูกค้าแบบเต็ม รายการการดำเนินการของผู้รับเหมาที่กำหนดขอบเขต รายงานการปิดการขาย หรือการลงทะเบียนปัญหา CSV ก่อนออกเดินทาง</p>
+</div>
+</li>
+</ol>
+<figure class="closeout-preview">
+<img alt="หน้ารายงานการปิดการขายพร้อมหลักฐานรายการที่แก้ไขแล้วและการจัดรูปแบบที่พร้อมลงนาม" height="1404" src="/assets/reports/closeout-report-page.png?v=20260710-separated-samples" width="993"/>
+<figcaption>ปิดการขายหลักฐานรายงานพร้อมบันทึกการแก้ไข</figcaption>
+</figure>
+</div>
+</section>
+<section aria-labelledby="app-proof-title" class="section app-proof">
+<div class="section-heading">
+<div>
+<p class="eyebrow">หลักฐานจากแอป</p>
+<h2 id="app-proof-title">สร้างขึ้นเพื่อการเดินสำรวจไซต์ ไม่ใช่ผู้ดูแลระบบสำนักงาน</h2>
+</div>
+<p>นี่คือหน้าจอผลิตภัณฑ์จริงจากรุ่นมือถือปัจจุบัน การบันทึก ความรับผิดชอบ และการรายงานจะเชื่อมโยงกันตั้งแต่ภาพถ่ายแรกไปจนถึงการส่งมอบขั้นสุดท้าย</p>
+</div>
+<div class="app-proof-grid">
+<article>
+<img alt="เวิร์กโฟลว์มาร์กอัปรูปภาพบนมือถือ SiteReportKit พร้อมหลักฐานการก่อสร้าง" height="2868" src="/assets/app/photo-markup.png" width="1320"/>
+<div><span>จับภาพ</span><h3>ทำเครื่องหมายข้อบกพร่องที่แน่นอน</h3><p>รักษาหลักฐานต้นฉบับพร้อมเพิ่มมาร์กอัปภาพที่ชัดเจนสำหรับผู้ที่ทำงาน</p></div>
+</article>
+<article>
+<img alt="ตัวเลือกการส่งออกรายการการดำเนินการของผู้รับเหมามือถือ SiteReportKit" height="2868" src="/assets/app/action-lists.png" width="1320"/>
+<div><span>มอบหมาย</span><h3>ขอบข่ายงานตามเจ้าของหรือพื้นที่</h3><p>มอบรายการโฟกัสให้ผู้รับเหมาแต่ละรายโดยไม่เปิดเผยรายการโครงการที่ไม่เกี่ยวข้อง</p></div>
+</article>
+<article>
+<img alt="ดูตัวอย่างรายงาน PDF บนมือถือ SiteReportKit และเวิร์กโฟลว์การส่งออก" height="2868" src="/assets/app/pdf-export.png" width="1320"/>
+<div><span>ส่งออก</span><h3>ดูตัวอย่างรายงานบนเว็บไซต์</h3><p>ตรวจสอบ PDF ของไคลเอ็นต์ก่อนแชร์ ในขณะที่บริบทคำแนะนำยังคงใหม่อยู่</p></div>
+</article>
+</div>
+</section>
+<section aria-labelledby="markets-title" class="section markets" id="markets">
+<div class="section-heading">
+<div>
+<p class="eyebrow">สร้างขึ้นสำหรับคำศัพท์ท้องถิ่น</p>
+<h2 id="markets-title">ขั้นตอนการทำงานภาคสนามเดียวกัน แสดงให้เห็นวิธีการทำงานของตลาดของคุณ</h2>
+</div>
+<p>เลือกคำศัพท์และรูปแบบกระดาษที่ลูกค้าและผู้รับเหมาของคุณคาดหวัง หน้าเหล่านี้อธิบายการตั้งค่าและตัวอย่างผลิตภัณฑ์ ไม่ใช่การรับรองตามกฎระเบียบท้องถิ่น</p>
+</div>
+<div class="market-grid">
+<a data-campaign="homepage-market-us" data-cta="market-entry" data-destination="guide" data-market="us" data-placement="homepage" href="/th/us/punch-list-app/">
+<span>สหรัฐอเมริกา</span>
+<strong>รายการเจาะ · ตัวอักษร</strong>
+<small>สำหรับการเดินต่อย การเป็นเจ้าของการค้า และการปิดรับเหมาช่วง</small>
+</a>
+<a data-campaign="homepage-market-uk" data-cta="market-entry" data-destination="guide" data-market="uk" data-placement="homepage" href="/th/uk/snagging-app/">
+<span>สหราชอาณาจักร</span>
+<strong>ปัญหา · A4</strong>
+<small>สำหรับการส่งมอบงานสร้างใหม่ การตรวจสอบสถานที่ และรายงานอุปสรรค</small>
+</a>
+<a data-campaign="homepage-market-au" data-cta="market-entry" data-destination="guide" data-market="au" data-placement="homepage" href="/th/au/defect-list-app/">
+<span>ออสเตรเลีย</span>
+<strong>รายการข้อบกพร่อง · A4</strong>
+<small>สำหรับการดำเนินการของผู้สร้าง ขอบเขตการค้า และการเดินปฏิบัติจนเสร็จสิ้น</small>
+</a>
+</div>
+</section>
+<section aria-labelledby="features-title" class="section features">
+<div class="section-heading compact">
+<p class="eyebrow">ทำไมทีมถึงเลือกมัน</p>
+<h2 id="features-title">เครื่องมือการรายงานที่มุ่งเน้นแทนชุดการก่อสร้างอื่น</h2>
+</div>
+<div class="feature-grid">
+<article>
+<h3>ออฟไลน์ก่อนตามค่าเริ่มต้น</h3>
+<p>โปรเจ็กต์และสื่อยังคงอยู่ในเครื่องระหว่างการจับภาพ ดังนั้นสัญญาณบนไซต์ที่ไม่ดีจึงไม่บล็อกรายงาน</p>
+</article>
+<article>
+<h3>หลักฐานตามรอยมืออาชีพ</h3>
+<p>เก็บรักษาต้นฉบับด้วยบันทึกความสมบูรณ์ของ SHA-256 เบลอรายละเอียดส่วนตัว เพิ่มการวัด และเก็บมาร์กอัปที่แก้ไขแล้วไว้ข้างๆ หลักฐานการปิดการขาย</p>
+</article>
+<article>
+<h3>คำศัพท์ที่ยืดหยุ่น</h3>
+<p>รองรับรายการการเจาะ รายงานที่ขัดขวาง รายการข้อบกพร่อง การสังเกต การตรวจสอบไซต์ และการเดินการบำรุงรักษา</p>
+</article>
+<article>
+<h3>แฮนด์ออฟที่ดำเนินการได้</h3>
+<p>ส่งการมอบหมายปัญหาที่ถูกล็อค รวมการอัปเดตที่ส่งคืน ติดตามความคิดเห็นและกิจกรรมที่มีการประทับเวลา จากนั้นส่งออกการลงทะเบียน XLSX ที่มีขอบเขตหรือแพ็คการปิดการขาย</p>
+</article>
+<article>
+<h3>การลงชื่อออกที่ยืดหยุ่น</h3>
+<p>วาดลายเซ็น สร้างลายเซ็นจากชื่อที่พิมพ์ หรือนำเข้ารูปภาพลายเซ็นที่ได้รับอนุมัติสำหรับผู้ตรวจสอบและลูกค้า</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="use-cases-title" class="section use-cases" id="use-cases">
+<div class="section-heading">
+<p class="eyebrow">กรณีการใช้งาน</p>
+<h2 id="use-cases-title">สำหรับผู้ที่ต้องการรายงานให้เสร็จสิ้นในขณะที่การเยี่ยมชมยังสดอยู่</h2>
+</div>
+<div class="use-case-grid">
+<article>
+<h3>เจ้าหน้าที่ตรวจสอบอาคาร</h3>
+<p>สร้างไฟล์ PDF ไคลเอนต์ที่สวยงามพร้อมใบปะหน้าที่มีแบรนด์ ข้อความจำกัด ดัชนีปัญหา และหลักฐานภาพถ่าย</p>
+</article>
+<article>
+<h3>สถาปนิกและนักออกแบบ</h3>
+<p>บันทึกการสังเกตการณ์ไซต์ตามพื้นที่ และส่งรายการการดำเนินการที่สะอาดทั้งหมดให้ผู้รับเหมาโดยไม่ต้องล้างข้อมูลในสเปรดชีต</p>
+</article>
+<article>
+<h3>ผู้รับเหมาและผู้จัดการไซต์</h3>
+<p>ดำเนินการเดินเรื่องการส่งมอบ กำหนดความรับผิดชอบทางการค้า ติดตามการปิดการขาย และส่งออกรายการที่กำหนดขอบเขตสำหรับผู้รับเหมาช่วง</p>
+</article>
+<article>
+<h3>ทีมงานทรัพย์สินและสิ่งอำนวยความสะดวก</h3>
+<p>บันทึกปัญหาการบำรุงรักษา ก่อนและหลังหลักฐาน ข้อบกพร่องที่เกิดซ้ำ และบันทึกโครงการที่เก็บถาวรได้</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="downloads-title" class="section sample-downloads">
+<div>
+<p class="eyebrow">ตัวอย่างการดาวน์โหลด</p>
+<h2 id="downloads-title">ตรวจสอบผลลัพธ์ก่อนที่จะลองใช้แอป</h2>
+</div>
+<div class="download-list">
+<a href="/downloads/sample-interior-handover-report.pdf">
+<strong>รายงานการส่งมอบภายใน PDF</strong>
+<span>ห้าสิ่งของที่ขัดขวางในร่ม</span>
+</a>
+<a href="/downloads/sample-construction-defect-report.pdf">
+<strong>รายงานข้อบกพร่องในการก่อสร้าง PDF</strong>
+<span>ข้อบกพร่องในการก่อสร้างไซต์งานหกจุด</span>
+</a>
+<a href="/downloads/sample-snag-action-list.pdf">
+<strong>รายการการดำเนินการของผู้รับเหมา PDF</strong>
+<span>เปิดรายการสำหรับทีมงานจัดส่ง</span>
+</a>
+<a href="/downloads/sample-closeout-report.pdf">
+<strong>รายงานการปิดการขาย PDF</strong>
+<span>แก้ไขปัญหาและหลักฐานแล้ว</span>
+</a>
+<a href="/downloads/sample-issue-register.csv">
+<strong>ออก CSV การลงทะเบียน</strong>
+<span>ส่งออกสเปรดชีตรายงานภายใน</span>
+</a>
+<a href="/downloads/sample-construction-issue-register.csv">
+<strong>CSV การลงทะเบียนปัญหาการก่อสร้าง</strong>
+<span>ส่งออกสเปรดชีตรายงานการก่อสร้าง</span>
+</a>
+</div>
+</section>
+<section aria-labelledby="pricing-title" class="section pricing" id="pricing">
+<div class="pricing-copy">
+<p class="eyebrow">ราคาท้องถิ่นที่เรียบง่าย</p>
+<h2 id="pricing-title">เริ่มต้นฟรี. ปลดล็อกการส่งออกแบบมืออาชีพที่สะอาดตาเพียงครั้งเดียว</h2>
+<p>
+            ใช้เวิร์กโฟลว์ฟิลด์หลักทุกรายการในเครื่องโดยไม่ต้องสร้างบัญชี ฟรีรวมการส่งออกไฟล์ลายน้ำทั้งหมดสามไฟล์ การเปิดตัว Pro ที่วางแผนไว้คือการซื้อครั้งเดียวที่ราคา 9.99 ดอลลาร์สหรัฐฯ และสามารถกู้คืนร้านค้าได้บนบิลด์ร้านค้ามือถือที่รองรับ—ไม่ต้องสมัครสมาชิก ราคาหน้าร้านสุดท้ายที่แปลเป็นภาษาท้องถิ่นอาจแตกต่างกันไปตามภาษีและสกุลเงิน
+          </p>
+</div>
+<div aria-label="การเปรียบเทียบแบบฟรีและแบบ Pro" class="pricing-compare">
+<article class="plan-card">
+<p class="plan-label">ฟรี</p>
+<p class="price">$0 <span>การใช้งานเฉพาะที่</span></p>
+<ul>
+<li>โครงการและการแสดงตัวอย่างในท้องถิ่นไม่จำกัด</li>
+<li>การส่งออก PDF/XLSX/CSV ที่มีลายน้ำทั้งหมด 3 รายการ</li>
+<li>เทมเพลตรายงานพื้นฐานของฟิลด์</li>
+<li>รูปแบบภาพถ่ายมาตรฐาน</li>
+</ul>
+<a class="button button-secondary" data-campaign="homepage-pricing-sample" data-cta="sample-report" data-destination="pdf" data-placement="pricing" href="/downloads/sample-interior-handover-report.pdf">ตรวจสอบเอาต์พุต</a>
+</article>
+<article class="plan-card plan-card-pro">
+<p class="plan-label">โปรเฉพาะบุคคล</p>
+<p class="price">$9.99 <span>เป้าหมายการเปิดตัวครั้งเดียว</span></p>
+<ul>
+<li>การส่งออก PDF, XLSX และ CSV ไม่จำกัด</li>
+<li>โลโก้ที่กำหนดเองและตราสินค้าบริษัท</li>
+<li>ความเบลอของความเป็นส่วนตัว การวัดผล และความสมบูรณ์ของหลักฐาน</li>
+<li>ล็อคการส่งต่อปัญหาและประวัติกิจกรรม</li>
+<li>วาด พิมพ์ หรือนำเข้าลายเซ็น</li>
+</ul>
+<a class="button button-primary" data-campaign="homepage-pricing" data-cta="early-access" data-destination="email" data-placement="pricing" href="mailto:hello@sitereportkit.com?subject=SiteReportKit%20early%20access">ขอสิทธิ์เข้าถึงก่อนใคร</a>
+</article>
+<p class="launch-note">อยู่ระหว่างการเปิดตัว App Store ราคาหน้าร้านสุดท้ายและความพร้อมใช้งานจะได้รับการยืนยันในรายการสด Pro ไม่รวมบัญชี คลาวด์ซิงค์ หรือพื้นที่ทำงานของทีม</p>
+</div>
+</section>
+<section aria-labelledby="faq-title" class="section faq">
+<div class="section-heading compact">
+<p class="eyebrow">คำถามทั่วไป</p>
+<h2 id="faq-title">รู้ว่าแอปทำอะไรก่อนนำไปใช้บนเว็บไซต์</h2>
+</div>
+<div class="faq-list">
+<details>
+<summary>SiteReportKit ทำงานโดยไม่มีบัญชีหรือไม่</summary>
+<p>ใช่ การจับภาพโปรเจ็กต์หลัก พื้นที่จัดเก็บในเครื่อง การแสดงตัวอย่างรายงาน และเวิร์กโฟลว์ตัวอย่างไม่จำเป็นต้องมีบัญชี</p>
+</details>
+<details>
+<summary>ฉันสามารถทำงานแบบออฟไลน์ได้หรือไม่?</summary>
+<p>ใช่ การจับภาพโปรเจ็กต์ รูปภาพ มาร์กอัป และการสร้างรายงานได้รับการออกแบบมาให้ทำงานในพื้นที่ ยังคงจำเป็นต้องมีการเชื่อมต่อเครือข่ายสำหรับการซื้อหรือกู้คืนร้านค้า</p>
+</details>
+<details>
+<summary>การส่งออกฟรีประกอบด้วยอะไรบ้าง</summary>
+<p>ฟรีรวมการส่งออกไฟล์ PDF, XLSX หรือ CSV ทั้งหมดสามไฟล์พร้อมการสร้างแบรนด์ SiteReportKit ฟรี การแสดงตัวอย่างและโปรเจ็กต์ในท้องถิ่นยังคงไม่จำกัด</p>
+</details>
+<details>
+<summary>SiteReportKit เป็นแพลตฟอร์มการจัดการการก่อสร้างเต็มรูปแบบหรือไม่</summary>
+<p>ไม่ มีเจตนามุ่งเน้นไปที่การบันทึกข้อมูลภาคสนามอย่างรวดเร็วและรายงานการส่งมอบอย่างมืออาชีพ โดยไม่ต้องใช้ BIM, RFI, กำหนดการ หรือการประสานงานในทีมแบบเรียลไทม์</p>
+</details>
+</div>
+</section>
+<section aria-labelledby="phone-handoff-title" class="section phone-handoff">
+<div class="phone-handoff-copy">
+<p class="eyebrow">ดำเนินการต่อบนโทรศัพท์ของคุณ</p>
+<h2 id="phone-handoff-title">นำขั้นตอนการทำงานตัวอย่างติดตัวไปด้วย</h2>
+<p>สแกนโค้ดเพื่อเปิด SiteReportKit บนโทรศัพท์ของคุณ หรือเปิดข้อความที่กรอกไว้ล่วงหน้าซึ่งคุณสามารถส่งถึงตัวคุณเองได้ ลิงก์ทั้งสองใช้ป้ายกำกับแคมเปญโดยไม่มีคุกกี้ทางการตลาด</p>
+<div class="hero-actions">
+<a class="button button-primary" data-campaign="homepage-phone-handoff" data-cta="phone-handoff" data-destination="sms" data-placement="homepage" href="sms:?&amp;body=Open%20SiteReportKit%20on%20your%20phone%3A%20https%3A%2F%2Fsitereportkit.com%2F%3Fsrc%3Dsms%26campaign%3Dhomepage-phone-handoff">ส่งข้อความลิงค์ถึงตัวคุณเอง</a>
+<a class="button button-secondary" data-campaign="homepage-phone-handoff" data-cta="early-access" data-destination="email" data-placement="phone-handoff" href="mailto:hello@sitereportkit.com?subject=SiteReportKit%20launch%20updates">รับการอัปเดตการเปิดตัว</a>
+</div>
+<p class="handoff-note">ปุ่ม SMS จะเปิดเฉพาะผู้แต่งข้อความในอุปกรณ์ของคุณเท่านั้น SiteReportKit ไม่ได้รับหมายเลขโทรศัพท์ ลิงก์ร้านค้าที่ได้รับการยืนยันจะแทนที่ปลายทางก่อนการเปิดตัวนี้หลังจากได้รับอนุมัติ</p>
+</div>
+<figure>
+<img alt="รหัส QR เพื่อเปิดเว็บไซต์ SiteReportKit บนโทรศัพท์" height="232" src="/assets/brand/phone-handoff-qr.svg" width="232"/>
+<figcaption>เปิดไซต์ก่อนการเปิดตัวบนโทรศัพท์ของคุณ</figcaption>
+</figure>
+</section>
+<section aria-labelledby="final-cta-title" class="final-cta">
+<img alt="" height="103" src="/assets/brand/sitereportkit-mark.png?v=20260708-exact-logo" width="64"/>
+<h2 id="final-cta-title">สร้างรายงานก่อนที่งานจะหลุดลอยไป</h2>
+<p>SiteReportKit เปิดตัวเป็นอันดับแรกเกี่ยวกับการรายงานไซต์บนมือถือระดับมืออาชีพที่รวดเร็วในท้องถิ่น โดยมีเวิร์กโฟลว์เดสก์ท็อปและเว็บที่วางแผนไว้หลังจากเวิร์กโฟลว์ภาคสนามหลักมีเสถียรภาพ</p>
+<div class="hero-actions">
+<a class="button button-primary" data-cta="final_interior_sample" href="/downloads/sample-interior-handover-report.pdf">ตัวอย่างภายใน</a>
+<a class="button button-secondary" data-cta="final_construction_sample" href="/downloads/sample-construction-defect-report.pdf">ตัวอย่างงานก่อสร้าง</a>
+<a class="button button-secondary" data-cta="final_contact" href="mailto:hello@sitereportkit.com">ติดต่อ</a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div>
+<img alt="SiteReportKit" height="40" src="/assets/brand/sitereportkit-wordmark.png?v=20260708-exact-logo" width="184"/>
+<p>การรายงานรายการเจาะแรกแบบออฟไลน์ อุปสรรค ข้อบกพร่อง และการปิดการขาย</p>
+</div>
+<nav aria-label="การนำทางส่วนท้าย">
+<a href="#reports">รายงาน</a>
+<a href="#workflow">เวิร์กโฟลว์</a>
+<a href="#use-cases">กรณีการใช้งาน</a>
+<a href="/th/sample-reports/">รายงานตัวอย่าง</a>
+<a href="/th/resources/punch-list-vs-snag-list-vs-defect-list/">คู่มือคำศัพท์เฉพาะทาง</a>
+<a href="/th/pricing/">ราคา</a>
+<a href="/downloads/sample-snagging-report.pdf">ตัวอย่าง PDF</a>
+<a href="/th/support/">รองรับ</a>
+<a href="/th/privacy/">ความเป็นส่วนตัว</a>
+</nav>
+</footer>
 </body>
 </html>
+

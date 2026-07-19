@@ -1,61 +1,485 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="tr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Saha kontrolü ve PDF raporu | SiteReportKit</title>
-  <meta name="description" content="Saha kusurlarını fotoğraf ve işaretlerle kaydedin, eksik listesini düzenleyin, yerinde PDF veya CSV raporu oluşturun.">
-  <link rel="canonical" href="https://sitereportkit.com/tr/">
-  <link rel="alternate" hreflang="x-default" href="https://sitereportkit.com/">
-  <link rel="alternate" hreflang="ar-SA" href="https://sitereportkit.com/ar-SA/">
-  <link rel="alternate" hreflang="ca" href="https://sitereportkit.com/ca/">
-  <link rel="alternate" hreflang="cs" href="https://sitereportkit.com/cs/">
-  <link rel="alternate" hreflang="da" href="https://sitereportkit.com/da/">
-  <link rel="alternate" hreflang="de-DE" href="https://sitereportkit.com/de-DE/">
-  <link rel="alternate" hreflang="el" href="https://sitereportkit.com/el/">
-  <link rel="alternate" hreflang="en-US" href="https://sitereportkit.com/en-US/">
-  <link rel="alternate" hreflang="es-MX" href="https://sitereportkit.com/es-MX/">
-  <link rel="alternate" hreflang="fi" href="https://sitereportkit.com/fi/">
-  <link rel="alternate" hreflang="fr-FR" href="https://sitereportkit.com/fr-FR/">
-  <link rel="alternate" hreflang="he" href="https://sitereportkit.com/he/">
-  <link rel="alternate" hreflang="hi" href="https://sitereportkit.com/hi/">
-  <link rel="alternate" hreflang="hr" href="https://sitereportkit.com/hr/">
-  <link rel="alternate" hreflang="hu" href="https://sitereportkit.com/hu/">
-  <link rel="alternate" hreflang="id" href="https://sitereportkit.com/id/">
-  <link rel="alternate" hreflang="it" href="https://sitereportkit.com/it/">
-  <link rel="alternate" hreflang="ja" href="https://sitereportkit.com/ja/">
-  <link rel="alternate" hreflang="ko" href="https://sitereportkit.com/ko/">
-  <link rel="alternate" hreflang="ms" href="https://sitereportkit.com/ms/">
-  <link rel="alternate" hreflang="nl-NL" href="https://sitereportkit.com/nl-NL/">
-  <link rel="alternate" hreflang="no" href="https://sitereportkit.com/no/">
-  <link rel="alternate" hreflang="pl" href="https://sitereportkit.com/pl/">
-  <link rel="alternate" hreflang="pt-BR" href="https://sitereportkit.com/pt-BR/">
-  <link rel="alternate" hreflang="ro" href="https://sitereportkit.com/ro/">
-  <link rel="alternate" hreflang="ru" href="https://sitereportkit.com/ru/">
-  <link rel="alternate" hreflang="sk" href="https://sitereportkit.com/sk/">
-  <link rel="alternate" hreflang="sv" href="https://sitereportkit.com/sv/">
-  <link rel="alternate" hreflang="th" href="https://sitereportkit.com/th/">
-  <link rel="alternate" hreflang="tr" href="https://sitereportkit.com/tr/">
-  <link rel="alternate" hreflang="uk" href="https://sitereportkit.com/uk/">
-  <link rel="alternate" hreflang="vi" href="https://sitereportkit.com/vi/">
-  <link rel="alternate" hreflang="zh-Hans" href="https://sitereportkit.com/zh-Hans/">
-  <link rel="alternate" hreflang="zh-Hant" href="https://sitereportkit.com/zh-Hant/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="SiteReportKit">
-  <meta property="og:title" content="Saha kontrolü ve PDF raporu | SiteReportKit">
-  <meta property="og:description" content="Saha kusurlarını fotoğraf ve işaretlerle kaydedin, eksik listesini düzenleyin, yerinde PDF veya CSV raporu oluşturun.">
-  <meta property="og:url" content="https://sitereportkit.com/tr/">
-  <meta property="og:image" content="https://sitereportkit.com/assets/reports/samples/en-US/report-cover.png">
-  <link rel="icon" href="../assets/brand/sitereportkit-favicon.png">
-  <link rel="stylesheet" href="../marketing-pages.css?v=20260711">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SiteReportKit","applicationCategory":"BusinessApplication","operatingSystem":"iOS","description":"Saha kusurlarını fotoğraf ve işaretlerle kaydedin, eksik listesini düzenleyin, yerinde PDF veya CSV raporu oluşturun.","url":"https://sitereportkit.com/tr/"}</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>SiteReportKit | Profesyonel yumruk listesi ve takılma raporları</title>
+<meta content="SiteReportKit, gizlilik açısından güvenli fotoğraf işaretleme, ölçümler, denetlenebilir aktarımlar ve profesyonel PDF, XLSX ve CSV dışa aktarımlarıyla çevrimdışı ek listeler oluşturur." name="description"/>
+<meta content="#0A2342" name="theme-color"/>
+<meta content="SiteReportKit" property="og:title"/>
+<meta content="Siteden ayrılmadan önce profesyonel yanıt listesi PDF'leri oluşturun." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://sitereportkit.com/tr/" property="og:url"/>
+<meta content="https://sitereportkit.com/assets/reports/report-cover.png?v=20260710-separated-samples" property="og:image"/>
+<link href="https://sitereportkit.com/tr/" rel="canonical"/><link href="https://sitereportkit.com/" hreflang="x-default" rel="alternate"/><link href="https://sitereportkit.com/ar-SA/" hreflang="ar-SA" rel="alternate"/><link href="https://sitereportkit.com/ca/" hreflang="ca" rel="alternate"/><link href="https://sitereportkit.com/cs/" hreflang="cs" rel="alternate"/><link href="https://sitereportkit.com/da/" hreflang="da" rel="alternate"/><link href="https://sitereportkit.com/de-DE/" hreflang="de-DE" rel="alternate"/><link href="https://sitereportkit.com/el/" hreflang="el" rel="alternate"/><link href="https://sitereportkit.com/en-US/" hreflang="en-US" rel="alternate"/><link href="https://sitereportkit.com/es-MX/" hreflang="es-MX" rel="alternate"/><link href="https://sitereportkit.com/fi/" hreflang="fi" rel="alternate"/><link href="https://sitereportkit.com/fr-FR/" hreflang="fr-FR" rel="alternate"/><link href="https://sitereportkit.com/he/" hreflang="he" rel="alternate"/><link href="https://sitereportkit.com/hi/" hreflang="hi" rel="alternate"/><link href="https://sitereportkit.com/hr/" hreflang="hr" rel="alternate"/><link href="https://sitereportkit.com/hu/" hreflang="hu" rel="alternate"/><link href="https://sitereportkit.com/id/" hreflang="id" rel="alternate"/><link href="https://sitereportkit.com/it/" hreflang="it" rel="alternate"/><link href="https://sitereportkit.com/ja/" hreflang="ja" rel="alternate"/><link href="https://sitereportkit.com/ko/" hreflang="ko" rel="alternate"/><link href="https://sitereportkit.com/ms/" hreflang="ms" rel="alternate"/><link href="https://sitereportkit.com/nl-NL/" hreflang="nl-NL" rel="alternate"/><link href="https://sitereportkit.com/no/" hreflang="no" rel="alternate"/><link href="https://sitereportkit.com/pl/" hreflang="pl" rel="alternate"/><link href="https://sitereportkit.com/pt-BR/" hreflang="pt-BR" rel="alternate"/><link href="https://sitereportkit.com/ro/" hreflang="ro" rel="alternate"/><link href="https://sitereportkit.com/ru/" hreflang="ru" rel="alternate"/><link href="https://sitereportkit.com/sk/" hreflang="sk" rel="alternate"/><link href="https://sitereportkit.com/sv/" hreflang="sv" rel="alternate"/><link href="https://sitereportkit.com/th/" hreflang="th" rel="alternate"/><link href="https://sitereportkit.com/tr/" hreflang="tr" rel="alternate"/><link href="https://sitereportkit.com/uk-UA/" hreflang="uk" rel="alternate"/><link href="https://sitereportkit.com/vi/" hreflang="vi" rel="alternate"/><link href="https://sitereportkit.com/zh-Hans/" hreflang="zh-Hans" rel="alternate"/><link href="https://sitereportkit.com/zh-Hant/" hreflang="zh-Hant" rel="alternate"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/assets/brand/sitereportkit-favicon.png?v=20260708-exact-logo" rel="icon" type="image/png"/>
+<link href="/styles.css?v=20260710-separated-samples" rel="stylesheet"/>
+<script defer="" src="/script.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SiteReportKit","applicationCategory":"İşUygulaması","operatingSystem":"iOS","description":"Profesyonel PDF, XLSX ve CSV dışa aktarmalarıyla çevrimdışı öncelikli ek liste, takılma, kusur ve kapanış raporlaması.","url":"https://sitereportkit.com/tr/","featureList":["Çevrimdışı sorun yakalama","Tahribatsız fotoğraf işaretleme","PDF, XLSX ve CSV dışa aktarmaları","Gizlilik bulanıklığı ve ölçüm açıklamaları","Zaman damgalı etkinlik ve kilitli sorun aktarımları","Üç imza giriş yöntemi","SHA-256 kanıt bütünlüğü kayıtları","Yüklenici eylem listeleri","Kapanış kanıtı","Yerel proje arşivleri"],"publisher":{"@type":"Organization","name":"SiteReportKit","url":"https://sitereportkit.com/tr/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"SiteReportKit hesap olmadan çalışır mı?","acceptedAnswer":{"@type":"Answer","text":"Evet. Temel proje yakalama, yerel depolama, rapor önizleme ve örnek iş akışları hesap gerektirmez."}},{"@type":"Question","name":"Çevrimdışı çalışabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Evet. Proje yakalama, fotoğraflar, işaretleme ve rapor oluşturma yerel olarak çalışacak şekilde tasarlanmıştır. Mağaza satın alma veya geri yükleme için hâlâ bir ağ bağlantısı gereklidir."}},{"@type":"Question","name":"Ücretsiz ihracat neleri içerir?","acceptedAnswer":{"@type":"Answer","text":"Ücretsiz, SiteReportKit Ücretsiz markasıyla toplam üç PDF, XLSX veya CSV dosyası dışa aktarımını içerir. Önizlemeler ve yerel projeler sınırsız kalır."}}]}</script>
 </head>
 <body>
-  <header class="site-header"><a class="brand" href="../"><img src="../assets/brand/sitereportkit-wordmark.png" alt="SiteReportKit" width="224" height="49"></a><label><span class="sr-only">Language</span><select onchange="if(this.value)location.href=this.value"><option value="/ar-SA/">العربية</option><option value="/ca/">Català</option><option value="/cs/">Čeština</option><option value="/da/">Dansk</option><option value="/de-DE/">Deutsch</option><option value="/el/">Ελληνικά</option><option value="/en-US/">English</option><option value="/es-MX/">Español</option><option value="/fi/">Suomi</option><option value="/fr-FR/">Français</option><option value="/he/">עברית</option><option value="/hi/">हिन्दी</option><option value="/hr/">Hrvatski</option><option value="/hu/">Magyar</option><option value="/id/">Bahasa Indonesia</option><option value="/it/">Italiano</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/ms/">Bahasa Melayu</option><option value="/nl-NL/">Nederlands</option><option value="/no/">Norsk</option><option value="/pl/">Polski</option><option value="/pt-BR/">Português</option><option value="/ro/">Română</option><option value="/ru/">Русский</option><option value="/sk/">Slovenčina</option><option value="/sv/">Svenska</option><option value="/th/">ไทย</option><option value="/tr/" selected>Türkçe</option><option value="/uk/">Українська</option><option value="/vi/">Tiếng Việt</option><option value="/zh-Hans/">简体中文</option><option value="/zh-Hant/">繁體中文</option></select></label></header>
-  <main>
-    <section class="hero"><div class="hero-inner"><div><p class="eyebrow">SiteReportKit</p><h1>Saha kontrolü ve PDF raporu</h1><p class="hero-lede">Saha kusurlarını fotoğraf ve işaretlerle kaydedin, eksik listesini düzenleyin, yerinde PDF veya CSV raporu oluşturun.</p><div class="actions"><a class="button button-primary" href="https://apps.apple.com/app/id6788361013">App Store</a><a class="button button-secondary" href="../downloads/samples/en-US/sample-report.pdf">PDF</a></div></div><img src="../assets/reports/samples/en-US/report-cover.png" alt="SiteReportKit" width="993" height="1404"></div></section>
-    <section class="section section-white"><div class="section-inner"><div class="related-grid"><article class="related-card"><h2>Sahada kusurları kaydedin</h2></article><article class="related-card"><h2>Eksik listesini düzenleyin</h2></article><article class="related-card"><h2>Profesyonel PDF oluşturun</h2></article></div><div class="prose"><p>Saha gezisini açık ve profesyonel bir rapora dönüştürün. SiteReportKit çevrimdışı çalışmaya öncelik verir; saha kontrolleri, eksik ve kusur listeleri, teslim ve kapanış için tasarlanmıştır.</p><p>Her kayda konum, iş kolu, önem derecesi, sorumlu, son tarih, durum, kanıt fotoğrafları, açıklama ve orijinal görüntüyü değiştirmeyen işaretlemeler ekleyin. Listede arama ve filtreleme yapın, birden çok kaydı güncelleyin, düzeltme notlarıyla inceleme geçmişini düzenli tutun.</p><p>Profesyonel PDF raporları, yüklenici eylem listeleri, kapanış raporları ve CSV kusur kayıtları dışa aktarın. Düzeni seçin, şirket kimliğinizi ekleyin ve alan ya da sorumlu bazında listeler hazırlayın. Temel yerel iş akışı için hesap gerekmez.</p><p>Temel işaretlemenin ötesinde gizlilik bulanıklaştırma ve ölçüm açıklamalarını kullanın. PDF ve CSV yanında düzenlenebilir XLSX çalışma kitaplarını dışa aktarın, zaman damgalı yorumları ve etkinlikleri izleyin, dönen güncellemeleri birleştiren kilitli devir paketlerini paylaşın. İmzayı çizin, yazın veya içe aktarın. Özgün kanıtlar SHA-256 bütünlük kayıtlarıyla korunur.</p></div></div></section>
-  </main>
-  <footer class="site-footer"><div class="footer-inner"><strong>SiteReportKit</strong><nav class="footer-links"><a href="../privacy/">Privacy</a><a href="../support/">Support</a></nav></div></footer>
+<header class="site-header" data-header="">
+<a aria-label="SiteReportKit ana sayfası" class="brand" href="#top">
+<img alt="SiteReportKit" class="brand-logo" height="49" src="/assets/brand/sitereportkit-wordmark.png?v=20260708-exact-logo" width="224"/>
+</a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" data-nav-toggle="" type="button">
+<span class="sr-only">Gezinmeyi aç</span>
+<span></span>
+<span></span>
+<span></span>
+</button>
+<nav class="site-nav" data-nav="" id="site-nav">
+<a href="#reports">Raporlar</a>
+<a href="#workflow">İş Akışı</a>
+<a href="/tr/sample-reports/">Örnekler</a>
+<a href="#markets">Piyasalar</a>
+<a href="#pricing">Fiyatlandırma</a>
+
+<label class="language-switcher"><span aria-hidden="true" class="language-switcher-icon">🌐</span><span class="sr-only">Language</span><select aria-label="Language" onchange="if(this.value)location.href=this.value"><option value="/ar-SA/">العربية</option><option value="/ca/">Català</option><option value="/cs/">Čeština</option><option value="/da/">Dansk</option><option value="/de-DE/">Deutsch</option><option value="/el/">Ελληνικά</option><option value="/en-US/">English</option><option value="/es-MX/">Español</option><option value="/fi/">Suomi</option><option value="/fr-FR/">Français</option><option value="/he/">עברית</option><option value="/hi/">हिन्दी</option><option value="/hr/">Hrvatski</option><option value="/hu/">Magyar</option><option value="/id/">Bahasa Indonesia</option><option value="/it/">Italiano</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/ms/">Bahasa Melayu</option><option value="/nl-NL/">Nederlands</option><option value="/no/">Norsk</option><option value="/pl/">Polski</option><option value="/pt-BR/">Português</option><option value="/ro/">Română</option><option value="/ru/">Русский</option><option value="/sk/">Slovenčina</option><option value="/sv/">Svenska</option><option value="/th/">ไทย</option><option selected="" value="/tr/">Türkçe</option><option value="/uk-UA/">Українська</option><option value="/vi/">Tiếng Việt</option><option value="/zh-Hans/">简体中文</option><option value="/zh-Hant/">繁體中文</option></select></label><a class="nav-cta" data-campaign="homepage-nav" data-cta="sample-report" data-destination="pdf" data-placement="header" href="/downloads/sample-snagging-report.pdf">Örnek PDF</a>
+</nav>
+</header>
+
+<main id="top">
+<section aria-labelledby="hero-title" class="hero">
+<div aria-hidden="true" class="hero-media">
+<img alt="" class="hero-page hero-page-main" src="/assets/reports/report-cover.png?v=20260710-separated-samples"/>
+<img alt="" class="hero-page hero-page-side" src="/assets/reports/report-issue-evidence.png?v=20260710-separated-samples"/>
+<img alt="" class="hero-page hero-page-back" src="/assets/reports/action-list-cover.png?v=20260710-separated-samples"/>
+</div>
+<div class="hero-copy">
+<p class="eyebrow">Çevrimdışı öncelikli saha raporlaması</p>
+<h1 id="hero-title">İzlenecek yolu tamamlayın. Ayrılmadan önce raporu gönderin.</h1>
+<p class="hero-lede">SiteReportKit, saha kanıtlarını profesyonel bir aktarıma dönüştürür.</p>
+<p class="hero-support">
+            Savunulabilir kanıtları yakalayın, sorumluluğu atayın ve markalı PDF, XLSX veya CSV çıktılarını çevrimdışı olarak, hesap gerektirmeden dışa aktarın.
+          </p>
+<div aria-label="Birincil işlemler" class="hero-actions">
+<a class="button button-primary" data-campaign="homepage-hero-sample" data-cta="sample-report" data-destination="pdf" data-placement="hero" data-report-kind="interior-handover" href="/downloads/sample-interior-handover-report.pdf">Örnek raporu indir</a>
+<a class="button button-secondary" data-campaign="homepage-hero-action-list" data-cta="sample-report" data-destination="pdf" data-placement="hero" data-report-kind="contractor-action-list" href="/downloads/sample-snag-action-list.pdf">Yüklenici eylem listesine bakın</a>
+</div>
+<dl aria-label="Ürünün öne çıkanları" class="hero-proof">
+<div>
+<dt>Çevrimdışı çalışıyor</dt>
+<dd>Sinyal düştüğünde yürümeye devam edin</dd>
+</div>
+<div>
+<dt>Hesap gerekmez</dt>
+<dd>Yerel olarak yakalayın ve hazır olduğunuzda dışa aktarın</dd>
+</div>
+<div>
+<dt>PDF + XLSX + CSV</dt>
+<dd>Raporlar, düzenlenebilir çalışma kitapları ve kayıtlar</dd>
+</div>
+</dl>
+</div>
+</section>
+<section aria-label="Temel ürün vaadi" class="trust-strip">
+<p>Saha kanıtlarını yakalayın.</p>
+<p>Sorumluluğu atayın.</p>
+<p>Aktarımı dışa aktarın.</p>
+</section>
+<section aria-labelledby="reports-title" class="section report-showcase" id="reports">
+<div class="section-heading">
+<p class="eyebrow">Gerçek örnek çıktısı</p>
+<h2 id="reports-title">Çok farklı iki site ziyareti için iki farklı rapor.</h2>
+<p>
+            İç devir ve aktif inşaat denetimi, ihracat yoluyla yakalamadan ayrı kalır. Her birinin kendi projesi, sorun dizini, kanıt seti, eylem listesi ve indirilebilir raporu vardır.
+          </p>
+</div>
+<div aria-label="Örnek rapor türleri" class="report-edition-grid">
+<article class="report-edition">
+<div class="report-edition-media">
+<img alt="Maple Row iç devir teslim raporu kapağı" height="1404" src="/assets/reports/report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<div class="report-edition-copy">
+<p class="report-type">İç mekan devri</p>
+<h3>Akçaağaç Satırının Devri</h3>
+<p>Kaplamaları, boyayı, elektrik kontrollerini, kapıları ve müşteri değişiklik talebini kapsayan beş iç takılma öğesi.</p>
+<div aria-label="İç mekan rapor özeti" class="report-edition-facts">
+<span>5 engel</span>
+<span>9 sayfa</span>
+<span>Yalnızca iç kanıt</span>
+</div>
+<div class="report-edition-actions">
+<a class="button button-primary" href="/downloads/sample-interior-handover-report.pdf">İç Mekan PDF</a>
+<a class="button button-secondary" href="/downloads/sample-snag-action-list.pdf">İç mekan eylem listesi</a>
+</div>
+</div>
+</article>
+<article class="report-edition report-edition-construction">
+<div class="report-edition-media">
+<img alt="Liman Noktası inşaat denetimi kusur raporu kapağı" height="1404" src="/assets/reports/construction-report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<div class="report-edition-copy">
+<p class="report-type">Aktif inşaat</p>
+<h3>Liman Noktası İnşaat Denetimi</h3>
+<p>Cephe yangın durdurma, beton, drenaj, geçici işler, duvarcılık ve çatı su yalıtımını kapsayan altı inşaat kusuru.</p>
+<div aria-label="İnşaat raporu özeti" class="report-edition-facts">
+<span>6 kusur</span>
+<span>10 sayfa</span>
+<span>Yalnızca inşaat kanıtı</span>
+</div>
+<div class="report-edition-actions">
+<a class="button button-primary" href="/downloads/sample-construction-defect-report.pdf">İnşaat PDF'si</a>
+<a class="button button-secondary" href="/downloads/sample-construction-defect-action-list.pdf">İnşaat eylemi listesi</a>
+</div>
+</div>
+</article>
+</div>
+<div class="report-lab">
+<figure class="report-preview">
+<div class="report-preview-top">
+<span>Örnek istemci PDF'si</span>
+<a href="/downloads/sample-interior-handover-report.pdf">İndir</a>
+</div>
+<div class="document-frame">
+<img alt="Özet ve sorun dizini içeren SiteReportKit örnek iç takılma raporu kapağı" height="1404" src="/assets/reports/report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<figcaption>
+<strong>Tam müşteri raporu</strong>
+<span>Kapak, özet, ek dizin, sayı ayrıntıları, kanıt fotoğrafları ve imzaya hazır biçimlendirme.</span>
+</figcaption>
+</figure>
+<div aria-label="Örnek rapor görünümleri" class="sample-stack">
+<div class="sample-stack-heading">
+<p class="eyebrow">Dışa aktarmanın içinde</p>
+<h3>Yapılandırılmış kanıt, PDF'ye aktarılan bir kamera rulosu değil.</h3>
+</div>
+<article class="sample-row">
+<img alt="Gereken eylemi, kanıt fotoğrafını, sahibini, durumunu ve teslim tarihini gösteren iç sorun ayrıntı sayfası" height="1404" src="/assets/reports/report-issue-evidence.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Sorun kanıtı</h4>
+<p>Her engel, fotoğrafı, başlığı, sahibini, önem derecesini, durumunu ve gerekli eylemi bir arada tutar.</p>
+</div>
+</article>
+<article class="sample-row">
+<img alt="İç yüklenici eylem listesi PDF kapağı ve SiteReportKit tarafından oluşturulan olağanüstü sorun özeti" height="1404" src="/assets/reports/action-list-cover.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Yüklenici eylem listesi</h4>
+<p>Yalnızca öğeleri açmak için filtreleyin ve her ticarete odaklanmış bir çalışma kapsamı verin.</p>
+</div>
+</article>
+<article class="sample-row">
+<img alt="Fotoğraf ve çözüm notundan sonra gösterilen iç mekan kapanış kanıt sayfası" height="1404" src="/assets/reports/report-after-evidence.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Kapanış kanıtı</h4>
+<p>Çözümlenen öğeler, temiz bir devir teslim süreci için kabul notlarını ve işlem sonrası fotoğrafları içerir.</p>
+</div>
+</article>
+<div aria-label="Örnek indirmeler" class="sample-actions">
+<a class="button button-primary" href="/downloads/sample-interior-handover-report.pdf">İç Mekan PDF</a>
+<a class="button button-secondary" href="/downloads/sample-snag-action-list.pdf">Eylem listesi</a>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="workflow-title" class="section workflow" id="workflow">
+<div class="section-heading compact">
+<p class="eyebrow">Sahada yürüyüşler için tasarlandı</p>
+<h2 id="workflow-title">Saha kanıtlarından üç adımda rapora.</h2>
+</div>
+<div class="workflow-layout">
+<ol class="workflow-list">
+<li>
+<span>01</span>
+<div>
+<h3>Saha kanıtlarını yakalayın</h3>
+<p>Yürürken, fotoğraflarla, tahribatsız işaretlemeyle, alanla, ticaretle, ciddiyetle ve gereken net eylemle sorunları ekleyin.</p>
+</div>
+</li>
+<li>
+<span>02</span>
+<div>
+<h3>Sorumluluğu atayın</h3>
+<p>Sahibi, son tarihi, önceliği ve durumu ayarlayın, ardından işi yükleniciye, ticarete veya bölgeye göre filtreleyin.</p>
+</div>
+</li>
+<li>
+<span>03</span>
+<div>
+<h3>Aktarımı dışa aktar</h3>
+<p>Ayrılmadan önce tam istemci PDF'sini, kapsamlı yüklenici eylem listesini, kapanış raporunu veya CSV sorun kaydını önizleyin ve paylaşın.</p>
+</div>
+</li>
+</ol>
+<figure class="closeout-preview">
+<img alt="Çözümlenmiş öğe kanıtlarını ve imzalanmaya hazır biçimlendirmeyi içeren kapanış raporu sayfası" height="1404" src="/assets/reports/closeout-report-page.png?v=20260710-separated-samples" width="993"/>
+<figcaption>Çözüm notlarıyla birlikte kapanış raporu kanıtı.</figcaption>
+</figure>
+</div>
+</section>
+<section aria-labelledby="app-proof-title" class="section app-proof">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Uygulamadan kanıt</p>
+<h2 id="app-proof-title">Ofis yöneticisinin değil, sitenin yürüyüş alanının etrafında inşa edilmiştir.</h2>
+</div>
+<p>Bunlar mevcut mobil yapıya ait gerçek ürün ekranlarıdır. Yakalama, sorumluluk ve raporlama, ilk fotoğraftan son teslime kadar bağlantılı kalır.</p>
+</div>
+<div class="app-proof-grid">
+<article>
+<img alt="Yapım kanıtlarıyla SiteReportKit mobil fotoğraf işaretleme iş akışı" height="2868" src="/assets/app/photo-markup.png" width="1320"/>
+<div><span>Yakalama</span><h3>Tam kusuru işaretleyin</h3><p>İşi yapan kişi için net bir görsel işaretleme eklerken orijinal kanıtları koruyun.</p></div>
+</article>
+<article>
+<img alt="SiteReportKit mobil yüklenici eylem listesi dışa aktarma seçenekleri" height="2868" src="/assets/app/action-lists.png" width="1320"/>
+<div><span>Ata</span><h3>Sahibine veya bölgeye göre işin kapsamı</h3><p>İlgisiz proje öğelerini açığa çıkarmadan her yükleniciye odaklanmış bir liste verin.</p></div>
+</article>
+<article>
+<img alt="SiteReportKit mobil PDF raporu önizleme ve dışa aktarma iş akışı" height="2868" src="/assets/app/pdf-export.png" width="1320"/>
+<div><span>Dışa Aktarma</span><h3>Raporu sitede önizleyin</h3><p>İzlenecek yol bağlamı hâlâ güncelken, paylaşmadan önce istemci PDF'sini inceleyin.</p></div>
+</article>
+</div>
+</section>
+<section aria-labelledby="markets-title" class="section markets" id="markets">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Yerel terminolojiye göre tasarlandı</p>
+<h2 id="markets-title">Aynı saha iş akışı, pazarınızın çalışma şeklini ifade ediyordu.</h2>
+</div>
+<p>Müşterilerinizin ve yüklenicilerinizin beklediği terminolojiyi ve kağıt formatını seçin. Bu sayfalarda yerel düzenleyici sertifikalar değil, ürün ayarları ve örnekleri açıklanmaktadır.</p>
+</div>
+<div class="market-grid">
+<a data-campaign="homepage-market-us" data-cta="market-entry" data-destination="guide" data-market="us" data-placement="homepage" href="/tr/us/punch-list-app/">
+<span>Amerika Birleşik Devletleri</span>
+<strong>Delgeç listeleri · Mektup</strong>
+<small>Zımba yürüyüşleri, ticari mülkiyet ve taşeron kapanışı için.</small>
+</a>
+<a data-campaign="homepage-market-uk" data-cta="market-entry" data-destination="guide" data-market="uk" data-placement="homepage" href="/tr/uk/snagging-app/">
+<span>Birleşik Krallık</span>
+<strong>Takılma · A4</strong>
+<small>Yeni inşa devir teslimleri, saha denetimleri ve arıza raporları için.</small>
+</a>
+<a data-campaign="homepage-market-au" data-cta="market-entry" data-destination="guide" data-market="au" data-placement="homepage" href="/tr/au/defect-list-app/">
+<span>Avustralya</span>
+<strong>Kusur listeleri · A4</strong>
+<small>İnşaatçı eylemleri, ticaret kapsamları ve pratik tamamlama yürüyüşleri için.</small>
+</a>
+</div>
+</section>
+<section aria-labelledby="features-title" class="section features">
+<div class="section-heading compact">
+<p class="eyebrow">Ekipler neden bunu seçiyor?</p>
+<h2 id="features-title">Başka bir inşaat paketi yerine odaklanmış bir raporlama aracı.</h2>
+</div>
+<div class="feature-grid">
+<article>
+<h3>Varsayılan olarak önce çevrimdışı</h3>
+<p>Projeler ve medya, yakalama sırasında yerel kalır, bu nedenle sahadaki zayıf sinyal, raporu engellemez.</p>
+</article>
+<article>
+<h3>Profesyonel kanıt izi</h3>
+<p>Orijinalleri SHA-256 bütünlük kayıtlarıyla koruyun, özel ayrıntıları bulanıklaştırın, ölçümler ekleyin ve kapanış kanıtlarının yanında düzenlenmiş işaretlemeleri saklayın.</p>
+</article>
+<article>
+<h3>Esnek terminoloji</h3>
+<p>Eksik listeleri, takılma raporlarını, kusur listelerini, gözlemleri, saha denetimlerini ve bakım yürüyüşlerini destekleyin.</p>
+</article>
+<article>
+<h3>İşlem yapılabilir aktarımlar</h3>
+<p>Kilitli sorun aktarımlarını gönderin, geri dönen güncellemeleri birleştirin, zaman damgalı yorumları ve etkinlikleri takip edin, ardından kapsamlı XLSX kayıtlarını veya kapanış paketlerini dışa aktarın.</p>
+</article>
+<article>
+<h3>Esnek oturum açma</h3>
+<p>Bir imza çizin, yazılan bir addan bir imza oluşturun veya denetçi ve müşteri imzası için onaylanmış bir imza görüntüsünü içe aktarın.</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="use-cases-title" class="section use-cases" id="use-cases">
+<div class="section-heading">
+<p class="eyebrow">Kullanım durumları</p>
+<h2 id="use-cases-title">Ziyaret henüz tazeyken raporun tamamlanmasına ihtiyaç duyanlar için.</h2>
+</div>
+<div class="use-case-grid">
+<article>
+<h3>Bina müfettişleri</h3>
+<p>Markalı kapak sayfaları, sınırlama metinleri, sorun dizinleri ve fotoğraf kanıtlarıyla gösterişli istemci PDF'leri üretin.</p>
+</article>
+<article>
+<h3>Mimarlar ve tasarımcılar</h3>
+<p>Alana göre saha gözlemlerini yakalayın ve yüklenicilere elektronik tablo temizliği olmadan temiz bir eylem listesi gönderin.</p>
+</article>
+<article>
+<h3>Yükleniciler ve saha yöneticileri</h3>
+<p>Taşeronlar için devir yürüyüşleri gerçekleştirin, ticaret sorumluluğunu atayın, kapanışı takip edin ve kapsamlı listeleri dışa aktarın.</p>
+</article>
+<article>
+<h3>Mülk ve tesis ekipleri</h3>
+<p>Bakım sorunlarını, kanıtlardan önce ve sonra, yinelenen kusurları ve arşivlenebilir proje kayıtlarını belgeleyin.</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="downloads-title" class="section sample-downloads">
+<div>
+<p class="eyebrow">Örnek indirmeler</p>
+<h2 id="downloads-title">Uygulamayı denemeden önce çıktıyı inceleyin.</h2>
+</div>
+<div class="download-list">
+<a href="/downloads/sample-interior-handover-report.pdf">
+<strong>İç mekan teslim raporu PDF</strong>
+<span>Beş adet iç mekan takılma eşyası</span>
+</a>
+<a href="/downloads/sample-construction-defect-report.pdf">
+<strong>İnşaat kusur raporu PDF</strong>
+<span>Altı aktif saha inşaat hatası</span>
+</a>
+<a href="/downloads/sample-snag-action-list.pdf">
+<strong>Yüklenici eylem listesi PDF</strong>
+<span>Teslimat ekipleri için öğeleri açın</span>
+</a>
+<a href="/downloads/sample-closeout-report.pdf">
+<strong>Kapanış raporu PDF'si</strong>
+<span>Çözülmüş sorunlar ve kanıtlar</span>
+</a>
+<a href="/downloads/sample-issue-register.csv">
+<strong>Sayı kaydı CSV'si</strong>
+<span>İç mekan rapor e-tablosunu dışa aktarma</span>
+</a>
+<a href="/downloads/sample-construction-issue-register.csv">
+<strong>İnşaat sorunu kaydı CSV</strong>
+<span>İnşaat raporu e-tablosunu dışa aktarma</span>
+</a>
+</div>
+</section>
+<section aria-labelledby="pricing-title" class="section pricing" id="pricing">
+<div class="pricing-copy">
+<p class="eyebrow">Basit yerel fiyatlandırma</p>
+<h2 id="pricing-title">Ücretsiz başlayın. Temiz profesyonel dışa aktarımların kilidini bir kez açın.</h2>
+<p>
+            Hesap oluşturmadan her temel alan iş akışını yerel olarak kullanın. Ücretsiz, toplam üç filigranlı dosya aktarımını içerir. Planlanan Pro lansmanı, desteklenen mobil mağaza sürümlerinde tek seferlik 9,99 ABD doları değerinde, mağaza tarafından geri yüklenebilir bir satın alma işlemidir; abonelik gerektirmez. Nihai yerelleştirilmiş vitrin fiyatlandırması vergiye ve para birimine göre değişiklik gösterebilir.
+          </p>
+</div>
+<div aria-label="Ücretsiz ve Pro karşılaştırması" class="pricing-compare">
+<article class="plan-card">
+<p class="plan-label">Ücretsiz</p>
+<p class="price">$0 <span>yerel kullanım</span></p>
+<ul>
+<li>Sınırsız yerel proje ve önizleme</li>
+<li>Toplam 3 filigranlı PDF/XLSX/CSV dışa aktarımı</li>
+<li>Saha temel rapor şablonu</li>
+<li>Standart fotoğraf düzeni</li>
+</ul>
+<a class="button button-secondary" data-campaign="homepage-pricing-sample" data-cta="sample-report" data-destination="pdf" data-placement="pricing" href="/downloads/sample-interior-handover-report.pdf">Çıkışı inceleyin</a>
+</article>
+<article class="plan-card plan-card-pro">
+<p class="plan-label">Bireysel Pro</p>
+<p class="price">$9.99 <span>tek seferlik fırlatma hedefi</span></p>
+<ul>
+<li>Sınırsız temiz PDF, XLSX ve CSV dışa aktarımı</li>
+<li>Özel logo ve şirket markası</li>
+<li>Gizlilik bulanıklığı, ölçümler ve kanıt bütünlüğü</li>
+<li>Kilitli sorun aktarımları ve etkinlik geçmişi</li>
+<li>Çizilmiş, yazılmış veya içe aktarılmış imzalar</li>
+</ul>
+<a class="button button-primary" data-campaign="homepage-pricing" data-cta="early-access" data-destination="email" data-placement="pricing" href="mailto:hello@sitereportkit.com?subject=SiteReportKit%20early%20access">Erken erişim iste</a>
+</article>
+<p class="launch-note">App Store lansmanı devam ediyor. Nihai vitrin fiyatı ve stok durumu, canlı listelemede doğrulanacaktır. Pro, hesapları, bulut senkronizasyonunu veya ekip çalışma alanlarını içermez.</p>
+</div>
+</section>
+<section aria-labelledby="faq-title" class="section faq">
+<div class="section-heading compact">
+<p class="eyebrow">Sık sorulan sorular</p>
+<h2 id="faq-title">Uygulamayı siteye almadan önce uygulamanın ne yaptığını öğrenin.</h2>
+</div>
+<div class="faq-list">
+<details>
+<summary>SiteReportKit hesap olmadan çalışır mı?</summary>
+<p>Evet. Temel proje yakalama, yerel depolama, rapor önizleme ve örnek iş akışları hesap gerektirmez.</p>
+</details>
+<details>
+<summary>Çevrimdışı çalışabilir miyim?</summary>
+<p>Evet. Proje yakalama, fotoğraflar, işaretleme ve rapor oluşturma yerel olarak çalışacak şekilde tasarlanmıştır. Mağaza satın alma veya geri yükleme için hâlâ bir ağ bağlantısı gereklidir.</p>
+</details>
+<details>
+<summary>Ücretsiz ihracat neleri içerir?</summary>
+<p>Ücretsiz, SiteReportKit Ücretsiz markasıyla toplam üç PDF, XLSX veya CSV dosyası dışa aktarımını içerir. Önizlemeler ve yerel projeler sınırsız kalır.</p>
+</details>
+<details>
+<summary>SiteReportKit tam kapsamlı bir inşaat yönetimi platformu mudur?</summary>
+<p>Hayır. BIM, RFI'ler, programlar veya gerçek zamanlı ekip koordinasyonu olmadan, kasıtlı olarak hızlı saha yakalama ve profesyonel aktarım raporlarına odaklanır.</p>
+</details>
+</div>
+</section>
+<section aria-labelledby="phone-handoff-title" class="section phone-handoff">
+<div class="phone-handoff-copy">
+<p class="eyebrow">Telefonunuzda devam edin</p>
+<h2 id="phone-handoff-title">Örnek iş akışını yanınıza alın.</h2>
+<p>Telefonunuzda SiteReportKit'i açmak için kodu tarayın veya kendinize gönderebileceğiniz önceden doldurulmuş bir kısa mesajı açın. Her iki bağlantı da pazarlama çerezleri olmadan kampanya etiketleri kullanır.</p>
+<div class="hero-actions">
+<a class="button button-primary" data-campaign="homepage-phone-handoff" data-cta="phone-handoff" data-destination="sms" data-placement="homepage" href="sms:?&amp;body=Open%20SiteReportKit%20on%20your%20phone%3A%20https%3A%2F%2Fsitereportkit.com%2F%3Fsrc%3Dsms%26campaign%3Dhomepage-phone-handoff">Bağlantıyı kendinize kısa mesajla gönderin</a>
+<a class="button button-secondary" data-campaign="homepage-phone-handoff" data-cta="early-access" data-destination="email" data-placement="phone-handoff" href="mailto:hello@sitereportkit.com?subject=SiteReportKit%20launch%20updates">Lansman güncellemelerini alın</a>
+</div>
+<p class="handoff-note">SMS düğmesi yalnızca cihazınızın mesaj oluşturucusunu açar. SiteReportKit bir telefon numarası almıyor. Onaylandıktan sonra, doğrulanmış mağaza bağlantısı bu lansman öncesi hedefin yerini alacak.</p>
+</div>
+<figure>
+<img alt="Telefonda SiteReportKit web sitesini açmak için QR kodu" height="232" src="/assets/brand/phone-handoff-qr.svg" width="232"/>
+<figcaption>Telefonunuzda lansman öncesi sitesini açın</figcaption>
+</figure>
+</section>
+<section aria-labelledby="final-cta-title" class="final-cta">
+<img alt="" height="103" src="/assets/brand/sitereportkit-mark.png?v=20260708-exact-logo" width="64"/>
+<h2 id="final-cta-title">İş aklınızdan çıkmadan raporu oluşturun.</h2>
+<p>SiteReportKit, temel saha iş akışının stabil hale gelmesinden sonra planlanan masaüstü ve web özellikli iş akışlarıyla ilk olarak hızlı, yerel, profesyonel mobil site raporlaması etrafında piyasaya sürülüyor.</p>
+<div class="hero-actions">
+<a class="button button-primary" data-cta="final_interior_sample" href="/downloads/sample-interior-handover-report.pdf">İç mekan örneği</a>
+<a class="button button-secondary" data-cta="final_construction_sample" href="/downloads/sample-construction-defect-report.pdf">İnşaat örneği</a>
+<a class="button button-secondary" data-cta="final_contact" href="mailto:hello@sitereportkit.com">İletişim</a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div>
+<img alt="SiteReportKit" height="40" src="/assets/brand/sitereportkit-wordmark.png?v=20260708-exact-logo" width="184"/>
+<p>Çevrimdışı ilk delme listesi, takılma, kusur ve kapanma raporlaması.</p>
+</div>
+<nav aria-label="Altbilgide gezinme">
+<a href="#reports">Raporlar</a>
+<a href="#workflow">İş Akışı</a>
+<a href="#use-cases">Kullanım durumları</a>
+<a href="/tr/sample-reports/">Örnek raporlar</a>
+<a href="/tr/resources/punch-list-vs-snag-list-vs-defect-list/">Terminoloji kılavuzu</a>
+<a href="/tr/pricing/">Fiyatlandırma</a>
+<a href="/downloads/sample-snagging-report.pdf">Örnek PDF</a>
+<a href="/tr/support/">Destek</a>
+<a href="/tr/privacy/">Gizlilik</a>
+</nav>
+</footer>
 </body>
 </html>
+

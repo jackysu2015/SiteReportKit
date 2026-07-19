@@ -1,61 +1,485 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="da">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Tilsyn og PDF-rapporter | SiteReportKit</title>
-  <meta name="description" content="Registrer fejl med fotos og markeringer, organiser mangellisten, og opret professionelle PDF- eller CSV-rapporter på stedet.">
-  <link rel="canonical" href="https://sitereportkit.com/da/">
-  <link rel="alternate" hreflang="x-default" href="https://sitereportkit.com/">
-  <link rel="alternate" hreflang="ar-SA" href="https://sitereportkit.com/ar-SA/">
-  <link rel="alternate" hreflang="ca" href="https://sitereportkit.com/ca/">
-  <link rel="alternate" hreflang="cs" href="https://sitereportkit.com/cs/">
-  <link rel="alternate" hreflang="da" href="https://sitereportkit.com/da/">
-  <link rel="alternate" hreflang="de-DE" href="https://sitereportkit.com/de-DE/">
-  <link rel="alternate" hreflang="el" href="https://sitereportkit.com/el/">
-  <link rel="alternate" hreflang="en-US" href="https://sitereportkit.com/en-US/">
-  <link rel="alternate" hreflang="es-MX" href="https://sitereportkit.com/es-MX/">
-  <link rel="alternate" hreflang="fi" href="https://sitereportkit.com/fi/">
-  <link rel="alternate" hreflang="fr-FR" href="https://sitereportkit.com/fr-FR/">
-  <link rel="alternate" hreflang="he" href="https://sitereportkit.com/he/">
-  <link rel="alternate" hreflang="hi" href="https://sitereportkit.com/hi/">
-  <link rel="alternate" hreflang="hr" href="https://sitereportkit.com/hr/">
-  <link rel="alternate" hreflang="hu" href="https://sitereportkit.com/hu/">
-  <link rel="alternate" hreflang="id" href="https://sitereportkit.com/id/">
-  <link rel="alternate" hreflang="it" href="https://sitereportkit.com/it/">
-  <link rel="alternate" hreflang="ja" href="https://sitereportkit.com/ja/">
-  <link rel="alternate" hreflang="ko" href="https://sitereportkit.com/ko/">
-  <link rel="alternate" hreflang="ms" href="https://sitereportkit.com/ms/">
-  <link rel="alternate" hreflang="nl-NL" href="https://sitereportkit.com/nl-NL/">
-  <link rel="alternate" hreflang="no" href="https://sitereportkit.com/no/">
-  <link rel="alternate" hreflang="pl" href="https://sitereportkit.com/pl/">
-  <link rel="alternate" hreflang="pt-BR" href="https://sitereportkit.com/pt-BR/">
-  <link rel="alternate" hreflang="ro" href="https://sitereportkit.com/ro/">
-  <link rel="alternate" hreflang="ru" href="https://sitereportkit.com/ru/">
-  <link rel="alternate" hreflang="sk" href="https://sitereportkit.com/sk/">
-  <link rel="alternate" hreflang="sv" href="https://sitereportkit.com/sv/">
-  <link rel="alternate" hreflang="th" href="https://sitereportkit.com/th/">
-  <link rel="alternate" hreflang="tr" href="https://sitereportkit.com/tr/">
-  <link rel="alternate" hreflang="uk" href="https://sitereportkit.com/uk/">
-  <link rel="alternate" hreflang="vi" href="https://sitereportkit.com/vi/">
-  <link rel="alternate" hreflang="zh-Hans" href="https://sitereportkit.com/zh-Hans/">
-  <link rel="alternate" hreflang="zh-Hant" href="https://sitereportkit.com/zh-Hant/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="SiteReportKit">
-  <meta property="og:title" content="Tilsyn og PDF-rapporter | SiteReportKit">
-  <meta property="og:description" content="Registrer fejl med fotos og markeringer, organiser mangellisten, og opret professionelle PDF- eller CSV-rapporter på stedet.">
-  <meta property="og:url" content="https://sitereportkit.com/da/">
-  <meta property="og:image" content="https://sitereportkit.com/assets/reports/samples/en-US/report-cover.png">
-  <link rel="icon" href="../assets/brand/sitereportkit-favicon.png">
-  <link rel="stylesheet" href="../marketing-pages.css?v=20260711">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SiteReportKit","applicationCategory":"BusinessApplication","operatingSystem":"iOS","description":"Registrer fejl med fotos og markeringer, organiser mangellisten, og opret professionelle PDF- eller CSV-rapporter på stedet.","url":"https://sitereportkit.com/da/"}</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>SiteReportKit | Professionel punch liste og snagende rapporter</title>
+<meta content="SiteReportKit opretter offline punch-lister med privatsikker fotomarkering, målinger, reviderbare overdragelser og professionel PDF-, XLSX- og CSV-eksport." name="description"/>
+<meta content="#0A2342" name="theme-color"/>
+<meta content="SiteReportKit" property="og:title"/>
+<meta content="Opret professionelle punchliste PDF'er, før du forlader webstedet." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://sitereportkit.com/da/" property="og:url"/>
+<meta content="https://sitereportkit.com/assets/reports/report-cover.png?v=20260710-separated-samples" property="og:image"/>
+<link href="https://sitereportkit.com/da/" rel="canonical"/><link href="https://sitereportkit.com/" hreflang="x-default" rel="alternate"/><link href="https://sitereportkit.com/ar-SA/" hreflang="ar-SA" rel="alternate"/><link href="https://sitereportkit.com/ca/" hreflang="ca" rel="alternate"/><link href="https://sitereportkit.com/cs/" hreflang="cs" rel="alternate"/><link href="https://sitereportkit.com/da/" hreflang="da" rel="alternate"/><link href="https://sitereportkit.com/de-DE/" hreflang="de-DE" rel="alternate"/><link href="https://sitereportkit.com/el/" hreflang="el" rel="alternate"/><link href="https://sitereportkit.com/en-US/" hreflang="en-US" rel="alternate"/><link href="https://sitereportkit.com/es-MX/" hreflang="es-MX" rel="alternate"/><link href="https://sitereportkit.com/fi/" hreflang="fi" rel="alternate"/><link href="https://sitereportkit.com/fr-FR/" hreflang="fr-FR" rel="alternate"/><link href="https://sitereportkit.com/he/" hreflang="he" rel="alternate"/><link href="https://sitereportkit.com/hi/" hreflang="hi" rel="alternate"/><link href="https://sitereportkit.com/hr/" hreflang="hr" rel="alternate"/><link href="https://sitereportkit.com/hu/" hreflang="hu" rel="alternate"/><link href="https://sitereportkit.com/id/" hreflang="id" rel="alternate"/><link href="https://sitereportkit.com/it/" hreflang="it" rel="alternate"/><link href="https://sitereportkit.com/ja/" hreflang="ja" rel="alternate"/><link href="https://sitereportkit.com/ko/" hreflang="ko" rel="alternate"/><link href="https://sitereportkit.com/ms/" hreflang="ms" rel="alternate"/><link href="https://sitereportkit.com/nl-NL/" hreflang="nl-NL" rel="alternate"/><link href="https://sitereportkit.com/no/" hreflang="no" rel="alternate"/><link href="https://sitereportkit.com/pl/" hreflang="pl" rel="alternate"/><link href="https://sitereportkit.com/pt-BR/" hreflang="pt-BR" rel="alternate"/><link href="https://sitereportkit.com/ro/" hreflang="ro" rel="alternate"/><link href="https://sitereportkit.com/ru/" hreflang="ru" rel="alternate"/><link href="https://sitereportkit.com/sk/" hreflang="sk" rel="alternate"/><link href="https://sitereportkit.com/sv/" hreflang="sv" rel="alternate"/><link href="https://sitereportkit.com/th/" hreflang="th" rel="alternate"/><link href="https://sitereportkit.com/tr/" hreflang="tr" rel="alternate"/><link href="https://sitereportkit.com/uk-UA/" hreflang="uk" rel="alternate"/><link href="https://sitereportkit.com/vi/" hreflang="vi" rel="alternate"/><link href="https://sitereportkit.com/zh-Hans/" hreflang="zh-Hans" rel="alternate"/><link href="https://sitereportkit.com/zh-Hant/" hreflang="zh-Hant" rel="alternate"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/assets/brand/sitereportkit-favicon.png?v=20260708-exact-logo" rel="icon" type="image/png"/>
+<link href="/styles.css?v=20260710-separated-samples" rel="stylesheet"/>
+<script defer="" src="/script.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SiteReportKit","applicationCategory":"Forretningsapplikation","operatingSystem":"iOS","description":"Offline-første punch-liste, snagging, defekt- og afslutningsrapportering med professionel PDF-, XLSX- og CSV-eksport.","url":"https://sitereportkit.com/da/","featureList":["Offline problemfangst","Ikke-destruktiv billedopmærkning","PDF-, XLSX- og CSV-eksporter","Sløring af privatliv og måleannoteringer","Tidsstemplet aktivitet og låste problemoverdragelser","Tre signaturindtastningsmetoder","SHA-256 bevisintegritetsregistreringer","Entreprenørhandlingslister","Afslutningsbeviser","Lokale projektarkiver"],"publisher":{"@type":"Organization","name":"SiteReportKit","url":"https://sitereportkit.com/da/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Fungerer SiteReportKit uden en konto?","acceptedAnswer":{"@type":"Answer","text":"Ja. Opsamling af kerneprojekt, lokal lagring, rapporteksempel og eksempler på arbejdsgange kræver ikke en konto."}},{"@type":"Question","name":"Kan jeg arbejde offline?","acceptedAnswer":{"@type":"Answer","text":"Ja. Projektoptagelse, fotos, markeringer og rapportgenerering er designet til at fungere lokalt. En netværksforbindelse er stadig påkrævet for butikskøb eller gendannelse."}},{"@type":"Question","name":"Hvad omfatter en gratis eksport?","acceptedAnswer":{"@type":"Answer","text":"Gratis inkluderer tre samlede PDF-, XLSX- eller CSV-fileksporter med SiteReportKit Free branding. Forhåndsvisninger og lokale projekter forbliver ubegrænsede."}}]}</script>
 </head>
 <body>
-  <header class="site-header"><a class="brand" href="../"><img src="../assets/brand/sitereportkit-wordmark.png" alt="SiteReportKit" width="224" height="49"></a><label><span class="sr-only">Language</span><select onchange="if(this.value)location.href=this.value"><option value="/ar-SA/">العربية</option><option value="/ca/">Català</option><option value="/cs/">Čeština</option><option value="/da/" selected>Dansk</option><option value="/de-DE/">Deutsch</option><option value="/el/">Ελληνικά</option><option value="/en-US/">English</option><option value="/es-MX/">Español</option><option value="/fi/">Suomi</option><option value="/fr-FR/">Français</option><option value="/he/">עברית</option><option value="/hi/">हिन्दी</option><option value="/hr/">Hrvatski</option><option value="/hu/">Magyar</option><option value="/id/">Bahasa Indonesia</option><option value="/it/">Italiano</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/ms/">Bahasa Melayu</option><option value="/nl-NL/">Nederlands</option><option value="/no/">Norsk</option><option value="/pl/">Polski</option><option value="/pt-BR/">Português</option><option value="/ro/">Română</option><option value="/ru/">Русский</option><option value="/sk/">Slovenčina</option><option value="/sv/">Svenska</option><option value="/th/">ไทย</option><option value="/tr/">Türkçe</option><option value="/uk/">Українська</option><option value="/vi/">Tiếng Việt</option><option value="/zh-Hans/">简体中文</option><option value="/zh-Hant/">繁體中文</option></select></label></header>
-  <main>
-    <section class="hero"><div class="hero-inner"><div><p class="eyebrow">SiteReportKit</p><h1>Tilsyn og PDF-rapporter</h1><p class="hero-lede">Registrer fejl med fotos og markeringer, organiser mangellisten, og opret professionelle PDF- eller CSV-rapporter på stedet.</p><div class="actions"><a class="button button-primary" href="https://apps.apple.com/app/id6788361013">App Store</a><a class="button button-secondary" href="../downloads/samples/en-US/sample-report.pdf">PDF</a></div></div><img src="../assets/reports/samples/en-US/report-cover.png" alt="SiteReportKit" width="993" height="1404"></div></section>
-    <section class="section section-white"><div class="section-inner"><div class="related-grid"><article class="related-card"><h2>Registrer fejl på stedet</h2></article><article class="related-card"><h2>Skab overblik over mangler</h2></article><article class="related-card"><h2>Eksporter skarpe PDF-rapporter</h2></article></div><div class="prose"><p>Gør en byggepladsrunde til en klar og professionel rapport. SiteReportKit fungerer offline og er udviklet til tilsyn, mangellister, afleveringer og slutkontrol.</p><p>Registrer hvert punkt med placering, fag, alvor, ansvarlig, frist, status, fotos, billedtekster og markeringer uden at ændre originalbilledet. Søg og filtrer listen, opdater flere punkter, og hold styr på udbedringsnoter og kontrolhistorik.</p><p>Eksporter professionelle PDF-rapporter, handlingslister til entreprenører, afleveringsdokumentation og CSV-mangellister. Vælg layout, tilføj virksomhedsprofil, og afgræns lister efter område eller ansvarlig. De vigtigste funktioner kræver ingen konto.</p><p>Gå videre end almindelige markeringer med sløring af private oplysninger og målangivelser. Eksporter redigerbare XLSX-projektmapper samt PDF og CSV, følg tidsstemplede kommentarer og aktivitet, og udveksl låste overdragelser, der fletter returnerede opdateringer ind. Tegn, skriv eller importer underskrifter. Original dokumentation bevares med SHA-256-integritetsregistrering.</p></div></div></section>
-  </main>
-  <footer class="site-footer"><div class="footer-inner"><strong>SiteReportKit</strong><nav class="footer-links"><a href="../privacy/">Privacy</a><a href="../support/">Support</a></nav></div></footer>
+<header class="site-header" data-header="">
+<a aria-label="SiteReportKit hjem" class="brand" href="#top">
+<img alt="SiteReportKit" class="brand-logo" height="49" src="/assets/brand/sitereportkit-wordmark.png?v=20260708-exact-logo" width="224"/>
+</a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" data-nav-toggle="" type="button">
+<span class="sr-only">Åbn navigation</span>
+<span></span>
+<span></span>
+<span></span>
+</button>
+<nav class="site-nav" data-nav="" id="site-nav">
+<a href="#reports">Rapporter</a>
+<a href="#workflow">Arbejdsgang</a>
+<a href="/da/sample-reports/">Prøver</a>
+<a href="#markets">Markeder</a>
+<a href="#pricing">Prissætning</a>
+
+<label class="language-switcher"><span aria-hidden="true" class="language-switcher-icon">🌐</span><span class="sr-only">Language</span><select aria-label="Language" onchange="if(this.value)location.href=this.value"><option value="/ar-SA/">العربية</option><option value="/ca/">Català</option><option value="/cs/">Čeština</option><option selected="" value="/da/">Dansk</option><option value="/de-DE/">Deutsch</option><option value="/el/">Ελληνικά</option><option value="/en-US/">English</option><option value="/es-MX/">Español</option><option value="/fi/">Suomi</option><option value="/fr-FR/">Français</option><option value="/he/">עברית</option><option value="/hi/">हिन्दी</option><option value="/hr/">Hrvatski</option><option value="/hu/">Magyar</option><option value="/id/">Bahasa Indonesia</option><option value="/it/">Italiano</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/ms/">Bahasa Melayu</option><option value="/nl-NL/">Nederlands</option><option value="/no/">Norsk</option><option value="/pl/">Polski</option><option value="/pt-BR/">Português</option><option value="/ro/">Română</option><option value="/ru/">Русский</option><option value="/sk/">Slovenčina</option><option value="/sv/">Svenska</option><option value="/th/">ไทย</option><option value="/tr/">Türkçe</option><option value="/uk-UA/">Українська</option><option value="/vi/">Tiếng Việt</option><option value="/zh-Hans/">简体中文</option><option value="/zh-Hant/">繁體中文</option></select></label><a class="nav-cta" data-campaign="homepage-nav" data-cta="sample-report" data-destination="pdf" data-placement="header" href="/downloads/sample-snagging-report.pdf">Eksempel på PDF</a>
+</nav>
+</header>
+
+<main id="top">
+<section aria-labelledby="hero-title" class="hero">
+<div aria-hidden="true" class="hero-media">
+<img alt="" class="hero-page hero-page-main" src="/assets/reports/report-cover.png?v=20260710-separated-samples"/>
+<img alt="" class="hero-page hero-page-side" src="/assets/reports/report-issue-evidence.png?v=20260710-separated-samples"/>
+<img alt="" class="hero-page hero-page-back" src="/assets/reports/action-list-cover.png?v=20260710-separated-samples"/>
+</div>
+<div class="hero-copy">
+<p class="eyebrow">Offline-første feltrapportering</p>
+<h1 id="hero-title">Afslut gennemgangen. Send rapporten inden du rejser.</h1>
+<p class="hero-lede">SiteReportKit gør webstedsbevis til en professionel overdragelse.</p>
+<p class="hero-support">
+            Indhent forsvarlige beviser, tildel ansvar, og eksporter brandede PDF-, XLSX- eller CSV-leverancer – offline uden behov for konto.
+          </p>
+<div aria-label="Primære handlinger" class="hero-actions">
+<a class="button button-primary" data-campaign="homepage-hero-sample" data-cta="sample-report" data-destination="pdf" data-placement="hero" data-report-kind="interior-handover" href="/downloads/sample-interior-handover-report.pdf">Download eksempelrapport</a>
+<a class="button button-secondary" data-campaign="homepage-hero-action-list" data-cta="sample-report" data-destination="pdf" data-placement="hero" data-report-kind="contractor-action-list" href="/downloads/sample-snag-action-list.pdf">Se entreprenørens handlingsliste</a>
+</div>
+<dl aria-label="Produkthøjdepunkter" class="hero-proof">
+<div>
+<dt>Fungerer offline</dt>
+<dd>Fortsæt med at gå, når signalet falder</dd>
+</div>
+<div>
+<dt>Ingen konto påkrævet</dt>
+<dd>Optag lokalt og eksporter, når du er klar</dd>
+</div>
+<div>
+<dt>PDF + XLSX + CSV</dt>
+<dd>Rapporter, redigerbare projektmapper og registre</dd>
+</div>
+</dl>
+</div>
+</section>
+<section aria-label="Kerneproduktløfte" class="trust-strip">
+<p>Optag beviser fra stedet.</p>
+<p>Tildel ansvar.</p>
+<p>Eksporter overdragelsen.</p>
+</section>
+<section aria-labelledby="reports-title" class="section report-showcase" id="reports">
+<div class="section-heading">
+<p class="eyebrow">Ægte prøveoutput</p>
+<h2 id="reports-title">To adskilte rapporter for to meget forskellige besøg på stedet.</h2>
+<p>
+            Den indvendige overdragelse og den aktive konstruktionsinspektion forbliver adskilt fra fangst gennem eksport. Hver har sit eget projekt, problemindeks, bevissæt, handlingsliste og rapport, der kan downloades.
+          </p>
+</div>
+<div aria-label="Eksempel på rapporttyper" class="report-edition-grid">
+<article class="report-edition">
+<div class="report-edition-media">
+<img alt="Maple Row indvendig overdragelsesrapportomslag" height="1404" src="/assets/reports/report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<div class="report-edition-copy">
+<p class="report-type">Indvendig overdragelse</p>
+<h3>Maple Row Overdragelse</h3>
+<p>Fem indvendige genstande, der dækker finish, lak, elektriske kontroller, døre og en anmodning om ændring af kunden.</p>
+<div aria-label="Sammendrag af interiørrapport" class="report-edition-facts">
+<span>5 snags</span>
+<span>9 sider</span>
+<span>Kun indvendige beviser</span>
+</div>
+<div class="report-edition-actions">
+<a class="button button-primary" href="/downloads/sample-interior-handover-report.pdf">Interiør PDF</a>
+<a class="button button-secondary" href="/downloads/sample-snag-action-list.pdf">Interiør handlingsliste</a>
+</div>
+</div>
+</article>
+<article class="report-edition report-edition-construction">
+<div class="report-edition-media">
+<img alt="Harbor Point konstruktionsinspektionsrapport omslag" height="1404" src="/assets/reports/construction-report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<div class="report-edition-copy">
+<p class="report-type">Aktiv konstruktion</p>
+<h3>Harbor Point Construction Inspection</h3>
+<p>Seks konstruktionsfejl, der dækker facadebrandstop, beton, dræning, midlertidige arbejder, murværk og vandtætning af tag.</p>
+<div aria-label="Opsummering af byggerapport" class="report-edition-facts">
+<span>6 defekter</span>
+<span>10 sider</span>
+<span>Kun konstruktionsbevis</span>
+</div>
+<div class="report-edition-actions">
+<a class="button button-primary" href="/downloads/sample-construction-defect-report.pdf">Konstruktion PDF</a>
+<a class="button button-secondary" href="/downloads/sample-construction-defect-action-list.pdf">Byggehandlingsliste</a>
+</div>
+</div>
+</article>
+</div>
+<div class="report-lab">
+<figure class="report-preview">
+<div class="report-preview-top">
+<span>Eksempel på klient-PDF</span>
+<a href="/downloads/sample-interior-handover-report.pdf">Download</a>
+</div>
+<div class="document-frame">
+<img alt="SiteReportKit eksempel på indvendig snagging-rapportomslag med resumé og snag-indeks" height="1404" src="/assets/reports/report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<figcaption>
+<strong>Fuld klientrapport</strong>
+<span>Forside, resumé, snag-indeks, problemdetaljer, bevisbilleder og formatering klar til afmelding.</span>
+</figcaption>
+</figure>
+<div aria-label="Eksempel på rapportvisninger" class="sample-stack">
+<div class="sample-stack-heading">
+<p class="eyebrow">Inde i eksporten</p>
+<h3>Struktureret bevis, ikke en kamerarulle dumpet ind i en PDF.</h3>
+</div>
+<article class="sample-row">
+<img alt="Oplysningsside for interiørproblem, der viser påkrævet handling, bevisbillede, ejer, status og forfaldsdato" height="1404" src="/assets/reports/report-issue-evidence.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Udsted beviser</h4>
+<p>Hver hage holder billedet, billedteksten, ejeren, alvoren, status og den påkrævede handling sammen.</p>
+</div>
+</article>
+<article class="sample-row">
+<img alt="Handlingsliste for interiørentreprenører PDF-omslag og enestående snag-oversigt genereret af SiteReportKit" height="1404" src="/assets/reports/action-list-cover.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Entreprenørhandlingsliste</h4>
+<p>Filtrer for kun at åbne varer og give hver handel et fokuseret arbejdsområde.</p>
+</div>
+</article>
+<article class="sample-row">
+<img alt="Indvendig afslutningsbevisside, der viser efter foto og beslutningsnotat" height="1404" src="/assets/reports/report-after-evidence.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Lukningsbevis</h4>
+<p>Løste punkter inkluderer acceptsedler og efterbilleder for en ren overdragelsessti.</p>
+</div>
+</article>
+<div aria-label="Eksempel på downloads" class="sample-actions">
+<a class="button button-primary" href="/downloads/sample-interior-handover-report.pdf">Interiør PDF</a>
+<a class="button button-secondary" href="/downloads/sample-snag-action-list.pdf">Handlingsliste</a>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="workflow-title" class="section workflow" id="workflow">
+<div class="section-heading compact">
+<p class="eyebrow">Bygget til vandreture på stedet</p>
+<h2 id="workflow-title">Fra webstedsbevis til en rapport i tre trin.</h2>
+</div>
+<div class="workflow-layout">
+<ol class="workflow-list">
+<li>
+<span>01</span>
+<div>
+<h3>Indfangningssted beviser</h3>
+<p>Tilføj problemer, mens du går, med billeder, ikke-destruktiv markering, område, handel, alvorlighed og en klar handling påkrævet.</p>
+</div>
+</li>
+<li>
+<span>02</span>
+<div>
+<h3>Tildel ansvar</h3>
+<p>Indstil ejer, forfaldsdato, prioritet og status, og filtrer derefter arbejdet efter entreprenør, branche eller område.</p>
+</div>
+</li>
+<li>
+<span>03</span>
+<div>
+<h3>Eksporter overdragelsen</h3>
+<p>Se en forhåndsvisning og del en komplet klient-PDF, liste over entreprenørhandlinger, afslutningsrapport eller CSV-problemregister, før du tager afsted.</p>
+</div>
+</li>
+</ol>
+<figure class="closeout-preview">
+<img alt="Slutrapportside med løst varebevis og formatering klar til sign-off" height="1404" src="/assets/reports/closeout-report-page.png?v=20260710-separated-samples" width="993"/>
+<figcaption>Slutrapportbeviser med resolutionsnotater.</figcaption>
+</figure>
+</div>
+</section>
+<section aria-labelledby="app-proof-title" class="section app-proof">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Bevis fra appen</p>
+<h2 id="app-proof-title">Bygget omkring stedets gang, ikke kontoradministrator.</h2>
+</div>
+<p>Dette er rigtige produktskærme fra den nuværende mobilversion. Optagelse, ansvar og rapportering forbliver forbundet fra det første billede til den endelige overdragelse.</p>
+</div>
+<div class="app-proof-grid">
+<article>
+<img alt="SiteReportKit mobil fotomarkering arbejdsgang med konstruktionsbevis" height="2868" src="/assets/app/photo-markup.png" width="1320"/>
+<div><span>Optag</span><h3>Marker den nøjagtige defekt</h3><p>Bevar det originale bevis, mens du tilføjer tydelig visuel markering for den person, der udfører arbejdet.</p></div>
+</article>
+<article>
+<img alt="Eksportmuligheder for SiteReportKit mobilentreprenørhandlingsliste" height="2868" src="/assets/app/action-lists.png" width="1320"/>
+<div><span>Tildel</span><h3>Omfang arbejde efter ejer eller område</h3><p>Giv hver entreprenør en fokuseret liste uden at afsløre ikke-relaterede projektpunkter.</p></div>
+</article>
+<article>
+<img alt="SiteReportKit mobil PDF-rapport forhåndsvisning og eksport workflow" height="2868" src="/assets/app/pdf-export.png" width="1320"/>
+<div><span>Eksporter</span><h3>Forhåndsvisning af rapporten på stedet</h3><p>Gennemgå klient-PDF'en, før du deler den, mens gennemgangskonteksten stadig er frisk.</p></div>
+</article>
+</div>
+</section>
+<section aria-labelledby="markets-title" class="section markets" id="markets">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Bygget til lokal terminologi</p>
+<h2 id="markets-title">Den samme feltarbejdsgang, udtrykte måden dit marked fungerer på.</h2>
+</div>
+<p>Vælg den terminologi og det papirformat, som dine kunder og entreprenører forventer. Disse sider beskriver produktindstillinger og eksempler, ikke lokal lovgivningsmæssig certificering.</p>
+</div>
+<div class="market-grid">
+<a data-campaign="homepage-market-us" data-cta="market-entry" data-destination="guide" data-market="us" data-placement="homepage" href="/da/us/punch-list-app/">
+<span>USA</span>
+<strong>Hulningslister · Bogstav</strong>
+<small>Til punch walks, handelsejerskab og underleverandørafslutning.</small>
+</a>
+<a data-campaign="homepage-market-uk" data-cta="market-entry" data-destination="guide" data-market="uk" data-placement="homepage" href="/da/uk/snagging-app/">
+<span>Storbritannien</span>
+<strong>Snagging · A4</strong>
+<small>Til nybygningsoverdragelser, inspektioner på stedet og rapporter om problemer.</small>
+</a>
+<a data-campaign="homepage-market-au" data-cta="market-entry" data-destination="guide" data-market="au" data-placement="homepage" href="/da/au/defect-list-app/">
+<span>Australien</span>
+<strong>Fejllister · A4</strong>
+<small>Til bygherrer, handleområder og praktiske afslutningsvandringer.</small>
+</a>
+</div>
+</section>
+<section aria-labelledby="features-title" class="section features">
+<div class="section-heading compact">
+<p class="eyebrow">Hvorfor hold vælger det</p>
+<h2 id="features-title">Et fokuseret rapporteringsværktøj i stedet for en anden byggepakke.</h2>
+</div>
+<div class="feature-grid">
+<article>
+<h3>Offline-først som standard</h3>
+<p>Projekter og medier forbliver lokale under optagelse, så dårligt signal på stedet blokerer ikke rapporten.</p>
+</article>
+<article>
+<h3>Professionelt bevisspor</h3>
+<p>Bevar originaler med SHA-256-integritetsregistreringer, slør private detaljer, tilføj mål, og behold redigerede markeringer ved siden af ​​lukkebeviser.</p>
+</article>
+<article>
+<h3>Fleksibel terminologi</h3>
+<p>Understøtter punch-lister, snagging-rapporter, defektlister, observationer, siterevisioner og vedligeholdelsesvandringer.</p>
+</article>
+<article>
+<h3>Hand-offs</h3>
+<p>Send låste problemoverdragelser, flet returnerede opdateringer, følg tidsstemplede kommentarer og aktivitet, og eksporter derefter XLSX-registre eller lukkepakker.</p>
+</article>
+<article>
+<h3>Fleksibel afmelding</h3>
+<p>Tegn en signatur, generer en fra et indtastet navn, eller importer et godkendt signaturbillede til inspektør- og klientsign-off.</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="use-cases-title" class="section use-cases" id="use-cases">
+<div class="section-heading">
+<p class="eyebrow">Use cases</p>
+<h2 id="use-cases-title">Til de mennesker, der har brug for rapporten færdig, mens besøget stadig er frisk.</h2>
+</div>
+<div class="use-case-grid">
+<article>
+<h3>Bygningsinspektører</h3>
+<p>Fremstil polerede klient-PDF'er med varemærkeforsider, begrænsningstekst, udstedelsesindekser og fotobeviser.</p>
+</article>
+<article>
+<h3>Arkitekter og designere</h3>
+<p>Optag observationer efter område og send entreprenører en ren handlingsliste uden oprydning i regneark.</p>
+</article>
+<article>
+<h3>Entreprenører og byggeledere</h3>
+<p>Kør overdragelsesvandringer, tildel handelsansvar, spor afslutning og eksporter scoped-lister for underleverandører.</p>
+</article>
+<article>
+<h3>Ejendoms- og faciliteterhold</h3>
+<p>Dokumentvedligeholdelsesproblemer, før og efter bevis, tilbagevendende defekter og arkiverbare projektregistreringer.</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="downloads-title" class="section sample-downloads">
+<div>
+<p class="eyebrow">Eksempel på downloads</p>
+<h2 id="downloads-title">Undersøg outputtet, før du prøver appen.</h2>
+</div>
+<div class="download-list">
+<a href="/downloads/sample-interior-handover-report.pdf">
+<strong>Indvendig overdragelsesrapport PDF</strong>
+<span>Fem indendørs genstande</span>
+</a>
+<a href="/downloads/sample-construction-defect-report.pdf">
+<strong>Rapport om konstruktionsfejl PDF</strong>
+<span>Seks konstruktionsfejl på det aktive sted</span>
+</a>
+<a href="/downloads/sample-snag-action-list.pdf">
+<strong>Entreprenørhandlingsliste PDF</strong>
+<span>Åbne varer for leveringshold</span>
+</a>
+<a href="/downloads/sample-closeout-report.pdf">
+<strong>Afslutningsrapport PDF</strong>
+<span>Løste problemer og beviser</span>
+</a>
+<a href="/downloads/sample-issue-register.csv">
+<strong>Udstedelsesregister CSV</strong>
+<span>Eksport af regneark til interiørrapport</span>
+</a>
+<a href="/downloads/sample-construction-issue-register.csv">
+<strong>Byggeproblemregister CSV</strong>
+<span>Konstruktionsrapport regneark eksport</span>
+</a>
+</div>
+</section>
+<section aria-labelledby="pricing-title" class="section pricing" id="pricing">
+<div class="pricing-copy">
+<p class="eyebrow">Enkel lokal prisfastsættelse</p>
+<h2 id="pricing-title">Start gratis. Lås op for ren professionel eksport én gang.</h2>
+<p>
+            Brug alle kernearbejdsgange lokalt uden at oprette en konto. Gratis inkluderer tre samlede vandmærkede fileksporter. Den planlagte Pro-lancering er et engangskøb på 9,99 USD, der kan gendannes i butikken på understøttede mobile butiksbygninger – intet abonnement. Endelige lokaliserede butiksfacadepriser kan variere afhængigt af skat og valuta.
+          </p>
+</div>
+<div aria-label="Gratis og Pro-sammenligning" class="pricing-compare">
+<article class="plan-card">
+<p class="plan-label">Gratis</p>
+<p class="price">$0 <span>lokal brug</span></p>
+<ul>
+<li>Ubegrænset lokale projekter og forhåndsvisninger</li>
+<li>3 samlede vandmærkede PDF/XLSX/CSV-eksporter</li>
+<li>Grundskabelon for feltrapport</li>
+<li>Standard fotolayout</li>
+</ul>
+<a class="button button-secondary" data-campaign="homepage-pricing-sample" data-cta="sample-report" data-destination="pdf" data-placement="pricing" href="/downloads/sample-interior-handover-report.pdf">Inspicer outputtet</a>
+</article>
+<article class="plan-card plan-card-pro">
+<p class="plan-label">Individuel Pro</p>
+<p class="price">$9.99 <span>engangs-lanceringsmål</span></p>
+<ul>
+<li>Ubegrænset rene PDF-, XLSX- og CSV-eksporter</li>
+<li>Brugerdefineret logo og firmabranding</li>
+<li>Sløring af privatlivets fred, målinger og bevisintegritet</li>
+<li>Låste problemoverdragelser og aktivitetshistorik</li>
+<li>Tegnede, indtastede eller importerede signaturer</li>
+</ul>
+<a class="button button-primary" data-campaign="homepage-pricing" data-cta="early-access" data-destination="email" data-placement="pricing" href="mailto:hello@sitereportkit.com?subject=SiteReportKit%20early%20access">Anmod om tidlig adgang</a>
+</article>
+<p class="launch-note">App Store-lanceringen er i gang. Den endelige butiksfrontpris og tilgængelighed vil blive bekræftet på den levende fortegnelse. Pro inkluderer ikke konti, skysynkronisering eller teamarbejdsområder.</p>
+</div>
+</section>
+<section aria-labelledby="faq-title" class="section faq">
+<div class="section-heading compact">
+<p class="eyebrow">Almindelige spørgsmål</p>
+<h2 id="faq-title">Ved, hvad appen gør, før du tager den på stedet.</h2>
+</div>
+<div class="faq-list">
+<details>
+<summary>Fungerer SiteReportKit uden en konto?</summary>
+<p>Ja. Opsamling af kerneprojekt, lokal lagring, rapporteksempel og eksempler på arbejdsgange kræver ikke en konto.</p>
+</details>
+<details>
+<summary>Kan jeg arbejde offline?</summary>
+<p>Ja. Projektoptagelse, fotos, markeringer og rapportgenerering er designet til at fungere lokalt. En netværksforbindelse er stadig påkrævet for butikskøb eller gendannelse.</p>
+</details>
+<details>
+<summary>Hvad omfatter en gratis eksport?</summary>
+<p>Gratis inkluderer tre samlede PDF-, XLSX- eller CSV-fileksporter med SiteReportKit Free branding. Forhåndsvisninger og lokale projekter forbliver ubegrænsede.</p>
+</details>
+<details>
+<summary>Er SiteReportKit en komplet byggestyringsplatform?</summary>
+<p>Nej. Det er bevidst fokuseret på hurtig feltfangst og professionelle overdragelsesrapporter uden BIM, RFI'er, tidsplaner eller teamkoordinering i realtid.</p>
+</details>
+</div>
+</section>
+<section aria-labelledby="phone-handoff-title" class="section phone-handoff">
+<div class="phone-handoff-copy">
+<p class="eyebrow">Fortsæt på din telefon</p>
+<h2 id="phone-handoff-title">Tag prøven af arbejdsgangen med dig.</h2>
+<p>Scan koden for at åbne SiteReportKit på din telefon, eller åbn en forududfyldt tekstbesked, du kan sende til dig selv. Begge links bruger kampagneetiketter uden marketingcookies.</p>
+<div class="hero-actions">
+<a class="button button-primary" data-campaign="homepage-phone-handoff" data-cta="phone-handoff" data-destination="sms" data-placement="homepage" href="sms:?&amp;body=Open%20SiteReportKit%20on%20your%20phone%3A%20https%3A%2F%2Fsitereportkit.com%2F%3Fsrc%3Dsms%26campaign%3Dhomepage-phone-handoff">Sms linket til dig selv</a>
+<a class="button button-secondary" data-campaign="homepage-phone-handoff" data-cta="early-access" data-destination="email" data-placement="phone-handoff" href="mailto:hello@sitereportkit.com?subject=SiteReportKit%20launch%20updates">Få lanceringsopdateringer</a>
+</div>
+<p class="handoff-note">SMS-knappen åbner kun din enheds beskedskriver. SiteReportKit modtager ikke et telefonnummer. Det bekræftede butikslink erstatter denne før-lanceringsdestination efter godkendelse.</p>
+</div>
+<figure>
+<img alt="QR-kode for at åbne SiteReportKit-webstedet på en telefon" height="232" src="/assets/brand/phone-handoff-qr.svg" width="232"/>
+<figcaption>Åbn pre-lanceringssiden på din telefon</figcaption>
+</figure>
+</section>
+<section aria-labelledby="final-cta-title" class="final-cta">
+<img alt="" height="103" src="/assets/brand/sitereportkit-mark.png?v=20260708-exact-logo" width="64"/>
+<h2 id="final-cta-title">Opret rapporten, før jobbet forlader dit hoved.</h2>
+<p>SiteReportKit lancerer først omkring hurtig, lokal, professionel mobilsiderapportering, med desktop- og web-kompatible workflows, der er planlagt, efter at kerneworkflowet er stabilt.</p>
+<div class="hero-actions">
+<a class="button button-primary" data-cta="final_interior_sample" href="/downloads/sample-interior-handover-report.pdf">Indvendig prøve</a>
+<a class="button button-secondary" data-cta="final_construction_sample" href="/downloads/sample-construction-defect-report.pdf">Konstruktionsprøve</a>
+<a class="button button-secondary" data-cta="final_contact" href="mailto:hello@sitereportkit.com">Kontakt</a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div>
+<img alt="SiteReportKit" height="40" src="/assets/brand/sitereportkit-wordmark.png?v=20260708-exact-logo" width="184"/>
+<p>Offline-første punch-liste, snagging, defekt- og afslutningsrapportering.</p>
+</div>
+<nav aria-label="Sidefodnavigation">
+<a href="#reports">Rapporter</a>
+<a href="#workflow">Arbejdsgang</a>
+<a href="#use-cases">Use cases</a>
+<a href="/da/sample-reports/">Prøverapporter</a>
+<a href="/da/resources/punch-list-vs-snag-list-vs-defect-list/">Terminologivejledning</a>
+<a href="/da/pricing/">Prissætning</a>
+<a href="/downloads/sample-snagging-report.pdf">Eksempel på PDF</a>
+<a href="/da/support/">Support</a>
+<a href="/da/privacy/">Fortrolighed</a>
+</nav>
+</footer>
 </body>
 </html>
+

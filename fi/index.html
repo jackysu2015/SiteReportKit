@@ -1,61 +1,485 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="fi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Työmaatarkastus ja PDF:t | SiteReportKit</title>
-  <meta name="description" content="Kirjaa puutteet kuvin ja merkinnöin, järjestä korjauslista ja luo ammattimaiset PDF- tai CSV-raportit työmaalla.">
-  <link rel="canonical" href="https://sitereportkit.com/fi/">
-  <link rel="alternate" hreflang="x-default" href="https://sitereportkit.com/">
-  <link rel="alternate" hreflang="ar-SA" href="https://sitereportkit.com/ar-SA/">
-  <link rel="alternate" hreflang="ca" href="https://sitereportkit.com/ca/">
-  <link rel="alternate" hreflang="cs" href="https://sitereportkit.com/cs/">
-  <link rel="alternate" hreflang="da" href="https://sitereportkit.com/da/">
-  <link rel="alternate" hreflang="de-DE" href="https://sitereportkit.com/de-DE/">
-  <link rel="alternate" hreflang="el" href="https://sitereportkit.com/el/">
-  <link rel="alternate" hreflang="en-US" href="https://sitereportkit.com/en-US/">
-  <link rel="alternate" hreflang="es-MX" href="https://sitereportkit.com/es-MX/">
-  <link rel="alternate" hreflang="fi" href="https://sitereportkit.com/fi/">
-  <link rel="alternate" hreflang="fr-FR" href="https://sitereportkit.com/fr-FR/">
-  <link rel="alternate" hreflang="he" href="https://sitereportkit.com/he/">
-  <link rel="alternate" hreflang="hi" href="https://sitereportkit.com/hi/">
-  <link rel="alternate" hreflang="hr" href="https://sitereportkit.com/hr/">
-  <link rel="alternate" hreflang="hu" href="https://sitereportkit.com/hu/">
-  <link rel="alternate" hreflang="id" href="https://sitereportkit.com/id/">
-  <link rel="alternate" hreflang="it" href="https://sitereportkit.com/it/">
-  <link rel="alternate" hreflang="ja" href="https://sitereportkit.com/ja/">
-  <link rel="alternate" hreflang="ko" href="https://sitereportkit.com/ko/">
-  <link rel="alternate" hreflang="ms" href="https://sitereportkit.com/ms/">
-  <link rel="alternate" hreflang="nl-NL" href="https://sitereportkit.com/nl-NL/">
-  <link rel="alternate" hreflang="no" href="https://sitereportkit.com/no/">
-  <link rel="alternate" hreflang="pl" href="https://sitereportkit.com/pl/">
-  <link rel="alternate" hreflang="pt-BR" href="https://sitereportkit.com/pt-BR/">
-  <link rel="alternate" hreflang="ro" href="https://sitereportkit.com/ro/">
-  <link rel="alternate" hreflang="ru" href="https://sitereportkit.com/ru/">
-  <link rel="alternate" hreflang="sk" href="https://sitereportkit.com/sk/">
-  <link rel="alternate" hreflang="sv" href="https://sitereportkit.com/sv/">
-  <link rel="alternate" hreflang="th" href="https://sitereportkit.com/th/">
-  <link rel="alternate" hreflang="tr" href="https://sitereportkit.com/tr/">
-  <link rel="alternate" hreflang="uk" href="https://sitereportkit.com/uk/">
-  <link rel="alternate" hreflang="vi" href="https://sitereportkit.com/vi/">
-  <link rel="alternate" hreflang="zh-Hans" href="https://sitereportkit.com/zh-Hans/">
-  <link rel="alternate" hreflang="zh-Hant" href="https://sitereportkit.com/zh-Hant/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="SiteReportKit">
-  <meta property="og:title" content="Työmaatarkastus ja PDF:t | SiteReportKit">
-  <meta property="og:description" content="Kirjaa puutteet kuvin ja merkinnöin, järjestä korjauslista ja luo ammattimaiset PDF- tai CSV-raportit työmaalla.">
-  <meta property="og:url" content="https://sitereportkit.com/fi/">
-  <meta property="og:image" content="https://sitereportkit.com/assets/reports/samples/en-US/report-cover.png">
-  <link rel="icon" href="../assets/brand/sitereportkit-favicon.png">
-  <link rel="stylesheet" href="../marketing-pages.css?v=20260711">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SiteReportKit","applicationCategory":"BusinessApplication","operatingSystem":"iOS","description":"Kirjaa puutteet kuvin ja merkinnöin, järjestä korjauslista ja luo ammattimaiset PDF- tai CSV-raportit työmaalla.","url":"https://sitereportkit.com/fi/"}</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>SiteReportKit | Ammattimainen lyöntilista ja nappaavia raportteja</title>
+<meta content="SiteReportKit luo offline-rei'itysluetteloita, joissa on yksityisyyttä turvaavat valokuvamerkinnät, mittaukset, tarkastettavat kanavanvaihdot ja ammattimaiset PDF-, XLSX- ja CSV-vientit." name="description"/>
+<meta content="#0A2342" name="theme-color"/>
+<meta content="SiteReportKit" property="og:title"/>
+<meta content="Luo ammattimaisia rei'itysluettelo PDF-tiedostoja ennen kuin poistut sivustolta." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://sitereportkit.com/fi/" property="og:url"/>
+<meta content="https://sitereportkit.com/assets/reports/report-cover.png?v=20260710-separated-samples" property="og:image"/>
+<link href="https://sitereportkit.com/fi/" rel="canonical"/><link href="https://sitereportkit.com/" hreflang="x-default" rel="alternate"/><link href="https://sitereportkit.com/ar-SA/" hreflang="ar-SA" rel="alternate"/><link href="https://sitereportkit.com/ca/" hreflang="ca" rel="alternate"/><link href="https://sitereportkit.com/cs/" hreflang="cs" rel="alternate"/><link href="https://sitereportkit.com/da/" hreflang="da" rel="alternate"/><link href="https://sitereportkit.com/de-DE/" hreflang="de-DE" rel="alternate"/><link href="https://sitereportkit.com/el/" hreflang="el" rel="alternate"/><link href="https://sitereportkit.com/en-US/" hreflang="en-US" rel="alternate"/><link href="https://sitereportkit.com/es-MX/" hreflang="es-MX" rel="alternate"/><link href="https://sitereportkit.com/fi/" hreflang="fi" rel="alternate"/><link href="https://sitereportkit.com/fr-FR/" hreflang="fr-FR" rel="alternate"/><link href="https://sitereportkit.com/he/" hreflang="he" rel="alternate"/><link href="https://sitereportkit.com/hi/" hreflang="hi" rel="alternate"/><link href="https://sitereportkit.com/hr/" hreflang="hr" rel="alternate"/><link href="https://sitereportkit.com/hu/" hreflang="hu" rel="alternate"/><link href="https://sitereportkit.com/id/" hreflang="id" rel="alternate"/><link href="https://sitereportkit.com/it/" hreflang="it" rel="alternate"/><link href="https://sitereportkit.com/ja/" hreflang="ja" rel="alternate"/><link href="https://sitereportkit.com/ko/" hreflang="ko" rel="alternate"/><link href="https://sitereportkit.com/ms/" hreflang="ms" rel="alternate"/><link href="https://sitereportkit.com/nl-NL/" hreflang="nl-NL" rel="alternate"/><link href="https://sitereportkit.com/no/" hreflang="no" rel="alternate"/><link href="https://sitereportkit.com/pl/" hreflang="pl" rel="alternate"/><link href="https://sitereportkit.com/pt-BR/" hreflang="pt-BR" rel="alternate"/><link href="https://sitereportkit.com/ro/" hreflang="ro" rel="alternate"/><link href="https://sitereportkit.com/ru/" hreflang="ru" rel="alternate"/><link href="https://sitereportkit.com/sk/" hreflang="sk" rel="alternate"/><link href="https://sitereportkit.com/sv/" hreflang="sv" rel="alternate"/><link href="https://sitereportkit.com/th/" hreflang="th" rel="alternate"/><link href="https://sitereportkit.com/tr/" hreflang="tr" rel="alternate"/><link href="https://sitereportkit.com/uk-UA/" hreflang="uk" rel="alternate"/><link href="https://sitereportkit.com/vi/" hreflang="vi" rel="alternate"/><link href="https://sitereportkit.com/zh-Hans/" hreflang="zh-Hans" rel="alternate"/><link href="https://sitereportkit.com/zh-Hant/" hreflang="zh-Hant" rel="alternate"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/assets/brand/sitereportkit-favicon.png?v=20260708-exact-logo" rel="icon" type="image/png"/>
+<link href="/styles.css?v=20260710-separated-samples" rel="stylesheet"/>
+<script defer="" src="/script.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SiteReportKit","applicationCategory":"BusinessApplication","operatingSystem":"iOS","description":"Offline-ensimmäinen rei'ityslista, takertuminen, viat ja loppuraportointi ammattimaisella PDF-, XLSX- ja CSV-viennillä.","url":"https://sitereportkit.com/fi/","featureList":["Offline-ongelman kaappaus","Ei-hajottava valokuvamerkintä","PDF-, XLSX- ja CSV-vientit","Yksityisyyden sumennus ja mittausmerkinnät","Aikaleimattu toiminta ja lukittujen kysymysten vaihdot","Kolme allekirjoituksen syöttötapaa","SHA-256-todistusten eheystietueet","Urakoitsijan toimenpideluettelot","Lopputodisteet","Paikalliset projektiarkistot"],"publisher":{"@type":"Organization","name":"SiteReportKit","url":"https://sitereportkit.com/fi/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Toimiiko SiteReportKit ilman tiliä?","acceptedAnswer":{"@type":"Answer","text":"Kyllä. Ydinprojektin kaappaus, paikallinen tallennus, raporttien esikatselu ja mallityönkulut eivät vaadi tiliä."}},{"@type":"Question","name":"Voinko työskennellä offline-tilassa?","acceptedAnswer":{"@type":"Answer","text":"Kyllä. Projektikaappaus, valokuvat, merkinnät ja raporttien luominen on suunniteltu toimimaan paikallisesti. Verkkoyhteys tarvitaan edelleen kaupasta ostamiseen tai palauttamiseen."}},{"@type":"Question","name":"Mitä ilmainen vienti sisältää?","acceptedAnswer":{"@type":"Answer","text":"Free sisältää yhteensä kolme PDF-, XLSX- tai CSV-tiedoston vientiä SiteReportKit Free -brändäyksellä. Esikatselut ja paikalliset projektit ovat rajattomat."}}]}</script>
 </head>
 <body>
-  <header class="site-header"><a class="brand" href="../"><img src="../assets/brand/sitereportkit-wordmark.png" alt="SiteReportKit" width="224" height="49"></a><label><span class="sr-only">Language</span><select onchange="if(this.value)location.href=this.value"><option value="/ar-SA/">العربية</option><option value="/ca/">Català</option><option value="/cs/">Čeština</option><option value="/da/">Dansk</option><option value="/de-DE/">Deutsch</option><option value="/el/">Ελληνικά</option><option value="/en-US/">English</option><option value="/es-MX/">Español</option><option value="/fi/" selected>Suomi</option><option value="/fr-FR/">Français</option><option value="/he/">עברית</option><option value="/hi/">हिन्दी</option><option value="/hr/">Hrvatski</option><option value="/hu/">Magyar</option><option value="/id/">Bahasa Indonesia</option><option value="/it/">Italiano</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/ms/">Bahasa Melayu</option><option value="/nl-NL/">Nederlands</option><option value="/no/">Norsk</option><option value="/pl/">Polski</option><option value="/pt-BR/">Português</option><option value="/ro/">Română</option><option value="/ru/">Русский</option><option value="/sk/">Slovenčina</option><option value="/sv/">Svenska</option><option value="/th/">ไทย</option><option value="/tr/">Türkçe</option><option value="/uk/">Українська</option><option value="/vi/">Tiếng Việt</option><option value="/zh-Hans/">简体中文</option><option value="/zh-Hant/">繁體中文</option></select></label></header>
-  <main>
-    <section class="hero"><div class="hero-inner"><div><p class="eyebrow">SiteReportKit</p><h1>Työmaatarkastus ja PDF:t</h1><p class="hero-lede">Kirjaa puutteet kuvin ja merkinnöin, järjestä korjauslista ja luo ammattimaiset PDF- tai CSV-raportit työmaalla.</p><div class="actions"><a class="button button-primary" href="https://apps.apple.com/app/id6788361013">App Store</a><a class="button button-secondary" href="../downloads/samples/en-US/sample-report.pdf">PDF</a></div></div><img src="../assets/reports/samples/en-US/report-cover.png" alt="SiteReportKit" width="993" height="1404"></div></section>
-    <section class="section section-white"><div class="section-inner"><div class="related-grid"><article class="related-card"><h2>Kirjaa puutteet työmaalla</h2></article><article class="related-card"><h2>Järjestä korjaustehtävät</h2></article><article class="related-card"><h2>Vie viimeistellyt PDF-raportit</h2></article></div><div class="prose"><p>Muuta työmaakierros selkeäksi ja ammattimaiseksi raportiksi. SiteReportKit toimii ilman verkkoyhteyttä ja sopii tarkastuksiin, puutelistoihin, luovutuksiin ja loppukatselmuksiin.</p><p>Kirjaa jokaiseen kohtaan sijainti, työala, vakavuus, vastuuhenkilö, määräaika, tila, kuvat, kuvatekstit ja merkinnät alkuperäistä kuvaa muuttamatta. Hae ja suodata listaa, päivitä useita kohtia sekä pidä korjausmuistiinpanot ja tarkastushistoria järjestyksessä.</p><p>Vie ammattimaiset PDF-raportit, urakoitsijoiden toimenpidelistat, luovutusaineistot ja CSV-puuteluettelot. Valitse asettelu, lisää yritysilme ja laadi listoja alueen tai vastuuhenkilön mukaan. Tärkeimmät toiminnot eivät vaadi käyttäjätiliä.</p><p>Käytä perusmerkintöjen lisäksi yksityisyyssumennusta ja mittamerkintöjä. Vie muokattavia XLSX-työkirjoja sekä PDF- ja CSV-tiedostoja, seuraa aikaleimattuja kommentteja ja tapahtumia ja vaihda lukittuja luovutuspaketteja, jotka yhdistävät palautetut päivitykset. Piirrä, kirjoita tai tuo allekirjoitukset. Alkuperäiset todisteet säilyttävät SHA-256-eheystiedot.</p></div></div></section>
-  </main>
-  <footer class="site-footer"><div class="footer-inner"><strong>SiteReportKit</strong><nav class="footer-links"><a href="../privacy/">Privacy</a><a href="../support/">Support</a></nav></div></footer>
+<header class="site-header" data-header="">
+<a aria-label="SiteReportKitin etusivu" class="brand" href="#top">
+<img alt="SiteReportKit" class="brand-logo" height="49" src="/assets/brand/sitereportkit-wordmark.png?v=20260708-exact-logo" width="224"/>
+</a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" data-nav-toggle="" type="button">
+<span class="sr-only">Avaa navigointi</span>
+<span></span>
+<span></span>
+<span></span>
+</button>
+<nav class="site-nav" data-nav="" id="site-nav">
+<a href="#reports">Raportit</a>
+<a href="#workflow">Työnkulku</a>
+<a href="/fi/sample-reports/">Näytteitä</a>
+<a href="#markets">Markkinat</a>
+<a href="#pricing">Hinnoittelu</a>
+
+<label class="language-switcher"><span aria-hidden="true" class="language-switcher-icon">🌐</span><span class="sr-only">Language</span><select aria-label="Language" onchange="if(this.value)location.href=this.value"><option value="/ar-SA/">العربية</option><option value="/ca/">Català</option><option value="/cs/">Čeština</option><option value="/da/">Dansk</option><option value="/de-DE/">Deutsch</option><option value="/el/">Ελληνικά</option><option value="/en-US/">English</option><option value="/es-MX/">Español</option><option selected="" value="/fi/">Suomi</option><option value="/fr-FR/">Français</option><option value="/he/">עברית</option><option value="/hi/">हिन्दी</option><option value="/hr/">Hrvatski</option><option value="/hu/">Magyar</option><option value="/id/">Bahasa Indonesia</option><option value="/it/">Italiano</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/ms/">Bahasa Melayu</option><option value="/nl-NL/">Nederlands</option><option value="/no/">Norsk</option><option value="/pl/">Polski</option><option value="/pt-BR/">Português</option><option value="/ro/">Română</option><option value="/ru/">Русский</option><option value="/sk/">Slovenčina</option><option value="/sv/">Svenska</option><option value="/th/">ไทย</option><option value="/tr/">Türkçe</option><option value="/uk-UA/">Українська</option><option value="/vi/">Tiếng Việt</option><option value="/zh-Hans/">简体中文</option><option value="/zh-Hant/">繁體中文</option></select></label><a class="nav-cta" data-campaign="homepage-nav" data-cta="sample-report" data-destination="pdf" data-placement="header" href="/downloads/sample-snagging-report.pdf">PDF-esimerkki</a>
+</nav>
+</header>
+
+<main id="top">
+<section aria-labelledby="hero-title" class="hero">
+<div aria-hidden="true" class="hero-media">
+<img alt="" class="hero-page hero-page-main" src="/assets/reports/report-cover.png?v=20260710-separated-samples"/>
+<img alt="" class="hero-page hero-page-side" src="/assets/reports/report-issue-evidence.png?v=20260710-separated-samples"/>
+<img alt="" class="hero-page hero-page-back" src="/assets/reports/action-list-cover.png?v=20260710-separated-samples"/>
+</div>
+<div class="hero-copy">
+<p class="eyebrow">Offline-ensimmäinen kenttäraportointi</p>
+<h1 id="hero-title">Viimeistele läpikulku. Lähetä raportti ennen lähtöä.</h1>
+<p class="hero-lede">SiteReportKit muuttaa sivuston todisteet ammattimaiseksi kanavanvaihdoksi.</p>
+<p class="hero-support">
+            Kaappaa puolustettavia todisteita, määritä vastuu ja vie tuotemerkityt PDF-, XLSX- tai CSV-toimitukset offline-tilassa ilman tiliä.
+          </p>
+<div aria-label="Ensisijaiset toimet" class="hero-actions">
+<a class="button button-primary" data-campaign="homepage-hero-sample" data-cta="sample-report" data-destination="pdf" data-placement="hero" data-report-kind="interior-handover" href="/downloads/sample-interior-handover-report.pdf">Lataa esimerkkiraportti</a>
+<a class="button button-secondary" data-campaign="homepage-hero-action-list" data-cta="sample-report" data-destination="pdf" data-placement="hero" data-report-kind="contractor-action-list" href="/downloads/sample-snag-action-list.pdf">Katso urakoitsijan toimenpideluettelo</a>
+</div>
+<dl aria-label="Tuotteen kohokohdat" class="hero-proof">
+<div>
+<dt>Toimii offline-tilassa</dt>
+<dd>Jatka kävelyä, kun signaali heikkenee</dd>
+</div>
+<div>
+<dt>Tiliä ei vaadita</dt>
+<dd>Kaappaa paikallisesti ja vie, kun olet valmis</dd>
+</div>
+<div>
+<dt>PDF + XLSX + CSV</dt>
+<dd>Raportit, muokattavat työkirjat ja rekisterit</dd>
+</div>
+</dl>
+</div>
+</section>
+<section aria-label="Ydintuotteen lupaus" class="trust-strip">
+<p>Kaappaa sivuston todisteet.</p>
+<p>Määritä vastuu.</p>
+<p>Vie kanavanvaihto.</p>
+</section>
+<section aria-labelledby="reports-title" class="section report-showcase" id="reports">
+<div class="section-heading">
+<p class="eyebrow">Todellinen näytelähtö</p>
+<h2 id="reports-title">Kaksi erillistä raporttia kahdesta hyvin erilaisesta sivustokäynnistä.</h2>
+<p>
+            Sisätilojen luovutus ja aktiivinen rakennustarkastus pysyvät erillään sieppauksesta vientiin. Jokaisella on oma projekti, ongelmahakemisto, todisteet, toimintaluettelo ja ladattava raportti.
+          </p>
+</div>
+<div aria-label="Esimerkkiraporttityypit" class="report-edition-grid">
+<article class="report-edition">
+<div class="report-edition-media">
+<img alt="Maple Rown sisätilojen vaihtoraportin kansi" height="1404" src="/assets/reports/report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<div class="report-edition-copy">
+<p class="report-type">Sisätilojen luovutus</p>
+<h3>Maple Row Handover</h3>
+<p>Viisi sisätilojen hankausta sisältäen viimeistelyt, maalipinnat, sähkötarkastukset, ovet ja asiakkaan muutospyynnön.</p>
+<div aria-label="Sisustusraportin yhteenveto" class="report-edition-facts">
+<span>5 puutetta</span>
+<span>9 sivua</span>
+<span>Vain sisäiset todisteet</span>
+</div>
+<div class="report-edition-actions">
+<a class="button button-primary" href="/downloads/sample-interior-handover-report.pdf">Sisustus PDF</a>
+<a class="button button-secondary" href="/downloads/sample-snag-action-list.pdf">Luettelo sisätiloista</a>
+</div>
+</div>
+</article>
+<article class="report-edition report-edition-construction">
+<div class="report-edition-media">
+<img alt="Harbour Pointin rakennustarkastuksen vikaraportin kansi" height="1404" src="/assets/reports/construction-report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<div class="report-edition-copy">
+<p class="report-type">Rakentaminen käynnissä</p>
+<h3>Harbour Pointin rakennustarkastus</h3>
+<p>Kuusi rakennusvirhettä, jotka kattavat julkisivupalonsammutus-, betoni-, salaojituksen, tilapäistyöt, muurauksen ja katon vesieristyksen.</p>
+<div aria-label="Rakennusraportin yhteenveto" class="report-edition-facts">
+<span>6 vikaa</span>
+<span>10 sivua</span>
+<span>Vain rakennustodisteet</span>
+</div>
+<div class="report-edition-actions">
+<a class="button button-primary" href="/downloads/sample-construction-defect-report.pdf">Rakentaminen PDF</a>
+<a class="button button-secondary" href="/downloads/sample-construction-defect-action-list.pdf">Rakennustoimenpiteiden luettelo</a>
+</div>
+</div>
+</article>
+</div>
+<div class="report-lab">
+<figure class="report-preview">
+<div class="report-preview-top">
+<span>PDF-esimerkki</span>
+<a href="/downloads/sample-interior-handover-report.pdf">Lataa</a>
+</div>
+<div class="document-frame">
+<img alt="SiteReportKit-esimerkki sisätilojen tarttumisraportin kannesta, jossa on yhteenveto ja häiriöindeksi" height="1404" src="/assets/reports/report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<figcaption>
+<strong>Asiakasraportti kokonaisuudessaan</strong>
+<span>Kansi, yhteenveto, hakemisto, ongelman tiedot, todisteet valokuvat ja kirjautumisvalmis muotoilu.</span>
+</figcaption>
+</figure>
+<div aria-label="Esimerkkiraporttinäkymät" class="sample-stack">
+<div class="sample-stack-heading">
+<p class="eyebrow">Viennin sisällä</p>
+<h3>Strukturoitu todiste, ei PDF-tiedostoon upotettu kamerarulla.</h3>
+</div>
+<article class="sample-row">
+<img alt="Sisätilojen ongelmatietosivu, joka näyttää vaadittavat toimet, todistekuvan, omistajan, tilan ja eräpäivän" height="1404" src="/assets/reports/report-issue-evidence.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Esitä todisteet</h4>
+<p>Kukin pätkä säilyttää kuvan, kuvatekstin, omistajan, vakavuuden, tilan ja vaaditun toimenpiteen yhdessä.</p>
+</div>
+</article>
+<article class="sample-row">
+<img alt="SiteReportKitin luoma sisustusurakoitsijoiden toimintaluettelo PDF-kansi ja erinomainen tiivistelmä" height="1404" src="/assets/reports/action-list-cover.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Urakoitsijan toimien luettelo</h4>
+<p>Suodata vain avataksesi tuotteet ja anna jokaiselle kaupalle kohdennettu työalue.</p>
+</div>
+</article>
+<article class="sample-row">
+<img alt="Sisätilojen sulkemistodistussivu, joka näkyy valokuvan ja tarkkuuden jälkeen" height="1404" src="/assets/reports/report-after-evidence.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Loppuvedos</h4>
+<p>Ratkaistut kohteet sisältävät hyväksymisilmoitukset ja jälkikuvat puhtaasta luovutuspolusta.</p>
+</div>
+</article>
+<div aria-label="Esimerkkilataukset" class="sample-actions">
+<a class="button button-primary" href="/downloads/sample-interior-handover-report.pdf">Sisustus PDF</a>
+<a class="button button-secondary" href="/downloads/sample-snag-action-list.pdf">Toimintojen luettelo</a>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="workflow-title" class="section workflow" id="workflow">
+<div class="section-heading compact">
+<p class="eyebrow">Rakennettu työmaakävelyihin</p>
+<h2 id="workflow-title">Sivuston todisteista raporttiin kolmessa vaiheessa.</h2>
+</div>
+<div class="workflow-layout">
+<ol class="workflow-list">
+<li>
+<span>01</span>
+<div>
+<h3>Kaappaa sivuston todisteet</h3>
+<p>Lisää ongelmia kävellessäsi valokuvilla, tuhoamattomilla merkinnöillä, alueella, kaupalla, vakavuusasteikolla ja vaaditulla selkeällä toimenpiteellä.</p>
+</div>
+</li>
+<li>
+<span>02</span>
+<div>
+<h3>Määritä vastuu</h3>
+<p>Aseta omistaja, eräpäivä, prioriteetti ja tila ja suodata sitten työ urakoitsijan, kaupan tai alueen mukaan.</p>
+</div>
+</li>
+<li>
+<span>03</span>
+<div>
+<h3>Vie kanavanvaihto</h3>
+<p>Esikatsele ja jaa asiakkaan PDF-tiedosto, kattava urakoitsijoiden toimintoluettelo, sulkemisraportti tai CSV-ongelmarekisteri ennen lähtöä.</p>
+</div>
+</li>
+</ol>
+<figure class="closeout-preview">
+<img alt="Loppuraporttisivu, jossa on ratkaistu tuotetodisteet ja kirjautumisvalmis muotoilu" height="1404" src="/assets/reports/closeout-report-page.png?v=20260710-separated-samples" width="993"/>
+<figcaption>Päätösraportin todisteet päätösmuistiinpanoista.</figcaption>
+</figure>
+</div>
+</section>
+<section aria-labelledby="app-proof-title" class="section app-proof">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Todiste sovelluksesta</p>
+<h2 id="app-proof-title">Rakennettu sivuston kävellen, ei toimiston ylläpitäjän ympärille.</h2>
+</div>
+<p>Nämä ovat todellisia tuotenäyttöjä nykyisestä mobiiliversiosta. Kuvaus, vastuu ja raportointi pysyvät yhteydessä ensimmäisestä valokuvasta viimeiseen vaihtoon.</p>
+</div>
+<div class="app-proof-grid">
+<article>
+<img alt="SiteReportKit -mobiilivalokuvien merkintätyönkulku ja rakennustodisteet" height="2868" src="/assets/app/photo-markup.png" width="1320"/>
+<div><span>Kaappaa</span><h3>Merkitse tarkka vika</h3><p>Säilytä alkuperäiset todisteet ja lisää samalla selkeä visuaalinen merkintä työn tekijälle.</p></div>
+</article>
+<article>
+<img alt="SiteReportKit-mobiiliurakoitsijan toimintaluettelon vientivaihtoehdot" height="2868" src="/assets/app/action-lists.png" width="1320"/>
+<div><span>Määritä</span><h3>Työn laajuus omistajan tai alueen mukaan</h3><p>Anna kullekin urakoitsijalle kohdennettu luettelo paljastamatta projektiin liittyviä aiheita.</p></div>
+</article>
+<article>
+<img alt="SiteReportKit mobiili PDF -raportin esikatselu ja vientityönkulku" height="2868" src="/assets/app/pdf-export.png" width="1320"/>
+<div><span>Vie</span><h3>Esikatsele raportti paikan päällä</h3><p>Tarkista asiakas-PDF ennen sen jakamista, kun esittelykonteksti on vielä tuore.</p></div>
+</article>
+</div>
+</section>
+<section aria-labelledby="markets-title" class="section markets" id="markets">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Tehty paikallista terminologiaa varten</p>
+<h2 id="markets-title">Sama kenttätyönkulku, joka ilmaisi markkinasi toimintatavan.</h2>
+</div>
+<p>Valitse asiakkaasi ja urakoitsijasi odottama terminologia ja paperimuoto. Näillä sivuilla kuvataan tuoteasetuksia ja esimerkkejä, ei paikallisia viranomaissertifiointeja.</p>
+</div>
+<div class="market-grid">
+<a data-campaign="homepage-market-us" data-cta="market-entry" data-destination="guide" data-market="us" data-placement="homepage" href="/fi/us/punch-list-app/">
+<span>Yhdysvallat</span>
+<strong>Leimauslistat · Letter</strong>
+<small>Lyöntikävelyyn, kaupan omistukseen ja alihankkijan sulkemiseen.</small>
+</a>
+<a data-campaign="homepage-market-uk" data-cta="market-entry" data-destination="guide" data-market="uk" data-placement="homepage" href="/fi/uk/snagging-app/">
+<span>Yhdistynyt kuningaskunta</span>
+<strong>Snagging · A4</strong>
+<small>Uusien rakennusten luovutuksiin, työmaatarkastuksiin ja häiriöraportteihin.</small>
+</a>
+<a data-campaign="homepage-market-au" data-cta="market-entry" data-destination="guide" data-market="au" data-placement="homepage" href="/fi/au/defect-list-app/">
+<span>Australia</span>
+<strong>Vikaluettelot · A4</strong>
+<small>Rakennustöihin, vaihtoihin ja käytännön viimeistelykävelyihin.</small>
+</a>
+</div>
+</section>
+<section aria-labelledby="features-title" class="section features">
+<div class="section-heading compact">
+<p class="eyebrow">Miksi joukkueet valitsevat sen</p>
+<h2 id="features-title">Kohdistettu raportointityökalu toisen rakennussarjan sijaan.</h2>
+</div>
+<div class="feature-grid">
+<article>
+<h3>Offline-ensin oletusarvoisesti</h3>
+<p>Projektit ja media pysyvät paikallisina kaappauksen aikana, joten huono signaali paikan päällä ei estä raporttia.</p>
+</article>
+<article>
+<h3>Ammattimainen todisteet</h3>
+<p>Säilytä alkuperäiset SHA-256-eheystietueilla, sumenna yksityisiä yksityiskohtia, lisää mittauksia ja säilytä muokatut merkinnät sulkemistodistusten vieressä.</p>
+</article>
+<article>
+<h3>Joustava terminologia</h3>
+<p>Tukee rei'itysluetteloita, tartuntaraportteja, vikaluetteloita, havaintoja, sivuston tarkastuksia ja huoltokävelyjä.</p>
+</article>
+<article>
+<h3>Toimivat kanavanvaihdot</h3>
+<p>Lähetä lukittujen kysymysten vaihtoja, yhdistä palautetut päivitykset, seuraa aikaleimattuja kommentteja ja aktiviteetteja ja vie sitten suojattuja XLSX-rekistereitä tai sulkemispaketteja.</p>
+</article>
+<article>
+<h3>Joustava allekirjoitus</h3>
+<p>Piirrä allekirjoitus, luo se kirjoitetusta nimestä tai tuo hyväksytty allekirjoituskuva tarkastajan ja asiakkaan kirjautumista varten.</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="use-cases-title" class="section use-cases" id="use-cases">
+<div class="section-heading">
+<p class="eyebrow">Käyttötapaukset</p>
+<h2 id="use-cases-title">Ihmisille, jotka tarvitsevat raportin valmiiksi, kun käynti on vielä tuoreena.</h2>
+</div>
+<div class="use-case-grid">
+<article>
+<h3>Rakennustarkastajat</h3>
+<p>Tuota viimeisteltyjä asiakas-PDF-tiedostoja, joissa on brändätyt kansilehdet, rajoitusteksti, numerohakemistot ja valokuvatodisteet.</p>
+</article>
+<article>
+<h3>Arkkitehdit ja suunnittelijat</h3>
+<p>Tallenna sivuston havainnot alueittain ja lähetä urakoitsijoille puhdas toimintoluettelo ilman laskentataulukon puhdistusta.</p>
+</article>
+<article>
+<h3>Urakoitsijat ja työmaapäälliköt</h3>
+<p>Suorita luovutuskävelyjä, määritä kauppavastuu, seuraa sulkemista ja vie alihankkijoiden luetteloita.</p>
+</article>
+<article>
+<h3>Kiinteistö- ja tilattiimit</h3>
+<p>Asiakirjojen ylläpitoongelmia, ennen ja jälkeen todisteita, toistuvat viat ja arkistoitavissa olevat projektitietueet.</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="downloads-title" class="section sample-downloads">
+<div>
+<p class="eyebrow">Esimerkkilataukset</p>
+<h2 id="downloads-title">Tarkista lähtö ennen kuin kokeilet sovellusta.</h2>
+</div>
+<div class="download-list">
+<a href="/downloads/sample-interior-handover-report.pdf">
+<strong>Sisätilojen luovutusraportti PDF</strong>
+<span>Viisi sisätiloissa tarttuvaa esinettä</span>
+</a>
+<a href="/downloads/sample-construction-defect-report.pdf">
+<strong>Rakennusvirheraportti PDF</strong>
+<span>Kuusi aktiivista rakennusvirhettä</span>
+</a>
+<a href="/downloads/sample-snag-action-list.pdf">
+<strong>Urakoitsijan toimenpideluettelo PDF</strong>
+<span>Avoimet tuotteet jakelutiimille</span>
+</a>
+<a href="/downloads/sample-closeout-report.pdf">
+<strong>Loppuraportti PDF</strong>
+<span>Ratkaistut ongelmat ja todisteet</span>
+</a>
+<a href="/downloads/sample-issue-register.csv">
+<strong>Ongelmarekisteri CSV</strong>
+<span>Sisäpuolen raportin laskentataulukon vienti</span>
+</a>
+<a href="/downloads/sample-construction-issue-register.csv">
+<strong>Rakennusongelmarekisteri CSV</strong>
+<span>Rakennusraporttien laskentataulukon vienti</span>
+</a>
+</div>
+</section>
+<section aria-labelledby="pricing-title" class="section pricing" id="pricing">
+<div class="pricing-copy">
+<p class="eyebrow">Yksinkertainen paikallinen hinnoittelu</p>
+<h2 id="pricing-title">Aloita ilmaiseksi. Avaa puhdas ammattimainen vienti kerran.</h2>
+<p>
+            Käytä jokaista ydinkentän työnkulkua paikallisesti luomatta tiliä. Ilmainen sisältää kolme vesileimatiedoston vientiä. Suunniteltu Pro -julkaisu on USD 9,99:n kertaluonteinen, kaupasta palautettavissa oleva ostos tuetuissa mobiilikaupoissa – ei tilausta. Lopullinen lokalisoitu julkisivun hinnoittelu voi vaihdella veron ja valuutan mukaan.
+          </p>
+</div>
+<div aria-label="Ilmainen ja Pro vertailu" class="pricing-compare">
+<article class="plan-card">
+<p class="plan-label">Ilmainen</p>
+<p class="price">$0 <span>paikalliseen käyttöön</span></p>
+<ul>
+<li>Rajoittamaton määrä paikallisia projekteja ja esikatseluita</li>
+<li>Yhteensä 3 vesileimattua PDF-/XLSX-/CSV-vientiä</li>
+<li>Kentän perusraporttimalli</li>
+<li>Valokuvan vakioasettelu</li>
+</ul>
+<a class="button button-secondary" data-campaign="homepage-pricing-sample" data-cta="sample-report" data-destination="pdf" data-placement="pricing" href="/downloads/sample-interior-handover-report.pdf">Tarkista lähtö</a>
+</article>
+<article class="plan-card plan-card-pro">
+<p class="plan-label">Yksilöllinen Pro</p>
+<p class="price">$9.99 <span>kertaluonteinen laukaisukohde</span></p>
+<ul>
+<li>Rajoittamaton puhdas PDF-, XLSX- ja CSV-vienti</li>
+<li>Mukautettu logo ja yrityksen brändäys</li>
+<li>Yksityisyyden hämärtyminen, mittaukset ja todisteiden eheys</li>
+<li>Lukitun ongelman vaihdot ja toimintahistoria</li>
+<li>Piirretyt, kirjoitetut tai tuodut allekirjoitukset</li>
+</ul>
+<a class="button button-primary" data-campaign="homepage-pricing" data-cta="early-access" data-destination="email" data-placement="pricing" href="mailto:hello@sitereportkit.com?subject=SiteReportKit%20early%20access">Pyydä ennakkokäyttöä</a>
+</article>
+<p class="launch-note">App Storen julkaisu käynnissä. Lopullinen myymälän hinta ja saatavuus vahvistetaan live-listalla. Pro ei sisällä tilejä, pilvisynkronointia tai tiimityötiloja.</p>
+</div>
+</section>
+<section aria-labelledby="faq-title" class="section faq">
+<div class="section-heading compact">
+<p class="eyebrow">Yleisiä kysymyksiä</p>
+<h2 id="faq-title">Tiedä, mitä sovellus tekee, ennen kuin otat sen käyttöön.</h2>
+</div>
+<div class="faq-list">
+<details>
+<summary>Toimiiko SiteReportKit ilman tiliä?</summary>
+<p>Kyllä. Ydinprojektin kaappaus, paikallinen tallennus, raporttien esikatselu ja mallityönkulut eivät vaadi tiliä.</p>
+</details>
+<details>
+<summary>Voinko työskennellä offline-tilassa?</summary>
+<p>Kyllä. Projektikaappaus, valokuvat, merkinnät ja raporttien luominen on suunniteltu toimimaan paikallisesti. Verkkoyhteys tarvitaan edelleen kaupasta ostamiseen tai palauttamiseen.</p>
+</details>
+<details>
+<summary>Mitä ilmainen vienti sisältää?</summary>
+<p>Free sisältää yhteensä kolme PDF-, XLSX- tai CSV-tiedoston vientiä SiteReportKit Free -brändäyksellä. Esikatselut ja paikalliset projektit ovat rajattomat.</p>
+</details>
+<details>
+<summary>Onko SiteReportKit täydellinen rakentamisen hallintaalusta?</summary>
+<p>Ei. Se on tarkoituksella keskittynyt nopeisiin kenttäkaappauksiin ja ammattimaisiin kanavanvaihtoraportteihin ilman BIM:iä, RFI:itä, aikatauluja tai reaaliaikaista tiimikoordinointia.</p>
+</details>
+</div>
+</section>
+<section aria-labelledby="phone-handoff-title" class="section phone-handoff">
+<div class="phone-handoff-copy">
+<p class="eyebrow">Jatka puhelimellasi</p>
+<h2 id="phone-handoff-title">Ota mallityönkulku mukaasi.</h2>
+<p>Skannaa koodi avataksesi SiteReportKit-sovelluksen puhelimessasi tai avaa esitäytetty tekstiviesti, jonka voit lähettää itsellesi. Molemmat linkit käyttävät kampanjatunnisteita ilman markkinointievästeitä.</p>
+<div class="hero-actions">
+<a class="button button-primary" data-campaign="homepage-phone-handoff" data-cta="phone-handoff" data-destination="sms" data-placement="homepage" href="sms:?&amp;body=Open%20SiteReportKit%20on%20your%20phone%3A%20https%3A%2F%2Fsitereportkit.com%2F%3Fsrc%3Dsms%26campaign%3Dhomepage-phone-handoff">Lähetä linkki tekstiviestillä itsellesi</a>
+<a class="button button-secondary" data-campaign="homepage-phone-handoff" data-cta="early-access" data-destination="email" data-placement="phone-handoff" href="mailto:hello@sitereportkit.com?subject=SiteReportKit%20launch%20updates">Hanki käynnistyspäivitykset</a>
+</div>
+<p class="handoff-note">Tekstiviestipainike avaa vain laitteesi viestin kirjoittajan. SiteReportKit ei saa puhelinnumeroa. Vahvistettu kauppalinkki korvaa tämän julkaisua edeltävän kohteen hyväksymisen jälkeen.</p>
+</div>
+<figure>
+<img alt="QR-koodi SiteReportKit-sivuston avaamiseksi puhelimella" height="232" src="/assets/brand/phone-handoff-qr.svg" width="232"/>
+<figcaption>Avaa julkaisua edeltävä sivusto puhelimellasi</figcaption>
+</figure>
+</section>
+<section aria-labelledby="final-cta-title" class="final-cta">
+<img alt="" height="103" src="/assets/brand/sitereportkit-mark.png?v=20260708-exact-logo" width="64"/>
+<h2 id="final-cta-title">Luo raportti ennen kuin työ lähtee päähän.</h2>
+<p>SiteReportKit lanseerataan ensimmäisenä nopean, paikallisen ja ammattimaisen mobiilisivustoraportoinnin ympärillä. Työpöytä- ja verkkokäyttöiset työnkulkuja suunnitellaan sen jälkeen, kun kenttätyönkulku on vakaa.</p>
+<div class="hero-actions">
+<a class="button button-primary" data-cta="final_interior_sample" href="/downloads/sample-interior-handover-report.pdf">Sisustusnäyte</a>
+<a class="button button-secondary" data-cta="final_construction_sample" href="/downloads/sample-construction-defect-report.pdf">Rakennusnäyte</a>
+<a class="button button-secondary" data-cta="final_contact" href="mailto:hello@sitereportkit.com">Ota yhteyttä</a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div>
+<img alt="SiteReportKit" height="40" src="/assets/brand/sitereportkit-wordmark.png?v=20260708-exact-logo" width="184"/>
+<p>Offline-ensimmäinen lyöntiluettelo, takertuminen, vika ja sulkemisraportointi.</p>
+</div>
+<nav aria-label="Alatunnisteen navigointi">
+<a href="#reports">Raportit</a>
+<a href="#workflow">Työnkulku</a>
+<a href="#use-cases">Käyttötapaukset</a>
+<a href="/fi/sample-reports/">Esimerkkiraportit</a>
+<a href="/fi/resources/punch-list-vs-snag-list-vs-defect-list/">Terminologiaopas</a>
+<a href="/fi/pricing/">Hinnoittelu</a>
+<a href="/downloads/sample-snagging-report.pdf">PDF-esimerkki</a>
+<a href="/fi/support/">Tuki</a>
+<a href="/fi/privacy/">Yksityisyys</a>
+</nav>
+</footer>
 </body>
 </html>
+

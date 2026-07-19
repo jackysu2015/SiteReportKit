@@ -1,61 +1,485 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="nl-NL">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Inspecties en PDF-rapporten | SiteReportKit</title>
-  <meta name="description" content="Leg gebreken vast met foto's en markeringen, orden de opleverpunten en maak op locatie professionele PDF- of CSV-rapporten.">
-  <link rel="canonical" href="https://sitereportkit.com/nl-NL/">
-  <link rel="alternate" hreflang="x-default" href="https://sitereportkit.com/">
-  <link rel="alternate" hreflang="ar-SA" href="https://sitereportkit.com/ar-SA/">
-  <link rel="alternate" hreflang="ca" href="https://sitereportkit.com/ca/">
-  <link rel="alternate" hreflang="cs" href="https://sitereportkit.com/cs/">
-  <link rel="alternate" hreflang="da" href="https://sitereportkit.com/da/">
-  <link rel="alternate" hreflang="de-DE" href="https://sitereportkit.com/de-DE/">
-  <link rel="alternate" hreflang="el" href="https://sitereportkit.com/el/">
-  <link rel="alternate" hreflang="en-US" href="https://sitereportkit.com/en-US/">
-  <link rel="alternate" hreflang="es-MX" href="https://sitereportkit.com/es-MX/">
-  <link rel="alternate" hreflang="fi" href="https://sitereportkit.com/fi/">
-  <link rel="alternate" hreflang="fr-FR" href="https://sitereportkit.com/fr-FR/">
-  <link rel="alternate" hreflang="he" href="https://sitereportkit.com/he/">
-  <link rel="alternate" hreflang="hi" href="https://sitereportkit.com/hi/">
-  <link rel="alternate" hreflang="hr" href="https://sitereportkit.com/hr/">
-  <link rel="alternate" hreflang="hu" href="https://sitereportkit.com/hu/">
-  <link rel="alternate" hreflang="id" href="https://sitereportkit.com/id/">
-  <link rel="alternate" hreflang="it" href="https://sitereportkit.com/it/">
-  <link rel="alternate" hreflang="ja" href="https://sitereportkit.com/ja/">
-  <link rel="alternate" hreflang="ko" href="https://sitereportkit.com/ko/">
-  <link rel="alternate" hreflang="ms" href="https://sitereportkit.com/ms/">
-  <link rel="alternate" hreflang="nl-NL" href="https://sitereportkit.com/nl-NL/">
-  <link rel="alternate" hreflang="no" href="https://sitereportkit.com/no/">
-  <link rel="alternate" hreflang="pl" href="https://sitereportkit.com/pl/">
-  <link rel="alternate" hreflang="pt-BR" href="https://sitereportkit.com/pt-BR/">
-  <link rel="alternate" hreflang="ro" href="https://sitereportkit.com/ro/">
-  <link rel="alternate" hreflang="ru" href="https://sitereportkit.com/ru/">
-  <link rel="alternate" hreflang="sk" href="https://sitereportkit.com/sk/">
-  <link rel="alternate" hreflang="sv" href="https://sitereportkit.com/sv/">
-  <link rel="alternate" hreflang="th" href="https://sitereportkit.com/th/">
-  <link rel="alternate" hreflang="tr" href="https://sitereportkit.com/tr/">
-  <link rel="alternate" hreflang="uk" href="https://sitereportkit.com/uk/">
-  <link rel="alternate" hreflang="vi" href="https://sitereportkit.com/vi/">
-  <link rel="alternate" hreflang="zh-Hans" href="https://sitereportkit.com/zh-Hans/">
-  <link rel="alternate" hreflang="zh-Hant" href="https://sitereportkit.com/zh-Hant/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="SiteReportKit">
-  <meta property="og:title" content="Inspecties en PDF-rapporten | SiteReportKit">
-  <meta property="og:description" content="Leg gebreken vast met foto's en markeringen, orden de opleverpunten en maak op locatie professionele PDF- of CSV-rapporten.">
-  <meta property="og:url" content="https://sitereportkit.com/nl-NL/">
-  <meta property="og:image" content="https://sitereportkit.com/assets/reports/samples/en-US/report-cover.png">
-  <link rel="icon" href="../assets/brand/sitereportkit-favicon.png">
-  <link rel="stylesheet" href="../marketing-pages.css?v=20260711">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SiteReportKit","applicationCategory":"BusinessApplication","operatingSystem":"iOS","description":"Leg gebreken vast met foto's en markeringen, orden de opleverpunten en maak op locatie professionele PDF- of CSV-rapporten.","url":"https://sitereportkit.com/nl-NL/"}</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>SiteReportKit | Professionele punchlist en vastgelopen rapporten</title>
+<meta content="SiteReportKit maakt offline opleveringslijsten met privacyveilige foto-opmaak, metingen, controleerbare overdrachten en professionele PDF-, XLSX- en CSV-exports." name="description"/>
+<meta content="#0A2342" name="theme-color"/>
+<meta content="SiteReportKit" property="og:title"/>
+<meta content="Maak professionele PDF's met opleveringslijsten voordat u de locatie verlaat." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://sitereportkit.com/nl-NL/" property="og:url"/>
+<meta content="https://sitereportkit.com/assets/reports/report-cover.png?v=20260710-separated-samples" property="og:image"/>
+<link href="https://sitereportkit.com/nl-NL/" rel="canonical"/><link href="https://sitereportkit.com/" hreflang="x-default" rel="alternate"/><link href="https://sitereportkit.com/ar-SA/" hreflang="ar-SA" rel="alternate"/><link href="https://sitereportkit.com/ca/" hreflang="ca" rel="alternate"/><link href="https://sitereportkit.com/cs/" hreflang="cs" rel="alternate"/><link href="https://sitereportkit.com/da/" hreflang="da" rel="alternate"/><link href="https://sitereportkit.com/de-DE/" hreflang="de-DE" rel="alternate"/><link href="https://sitereportkit.com/el/" hreflang="el" rel="alternate"/><link href="https://sitereportkit.com/en-US/" hreflang="en-US" rel="alternate"/><link href="https://sitereportkit.com/es-MX/" hreflang="es-MX" rel="alternate"/><link href="https://sitereportkit.com/fi/" hreflang="fi" rel="alternate"/><link href="https://sitereportkit.com/fr-FR/" hreflang="fr-FR" rel="alternate"/><link href="https://sitereportkit.com/he/" hreflang="he" rel="alternate"/><link href="https://sitereportkit.com/hi/" hreflang="hi" rel="alternate"/><link href="https://sitereportkit.com/hr/" hreflang="hr" rel="alternate"/><link href="https://sitereportkit.com/hu/" hreflang="hu" rel="alternate"/><link href="https://sitereportkit.com/id/" hreflang="id" rel="alternate"/><link href="https://sitereportkit.com/it/" hreflang="it" rel="alternate"/><link href="https://sitereportkit.com/ja/" hreflang="ja" rel="alternate"/><link href="https://sitereportkit.com/ko/" hreflang="ko" rel="alternate"/><link href="https://sitereportkit.com/ms/" hreflang="ms" rel="alternate"/><link href="https://sitereportkit.com/nl-NL/" hreflang="nl-NL" rel="alternate"/><link href="https://sitereportkit.com/no/" hreflang="no" rel="alternate"/><link href="https://sitereportkit.com/pl/" hreflang="pl" rel="alternate"/><link href="https://sitereportkit.com/pt-BR/" hreflang="pt-BR" rel="alternate"/><link href="https://sitereportkit.com/ro/" hreflang="ro" rel="alternate"/><link href="https://sitereportkit.com/ru/" hreflang="ru" rel="alternate"/><link href="https://sitereportkit.com/sk/" hreflang="sk" rel="alternate"/><link href="https://sitereportkit.com/sv/" hreflang="sv" rel="alternate"/><link href="https://sitereportkit.com/th/" hreflang="th" rel="alternate"/><link href="https://sitereportkit.com/tr/" hreflang="tr" rel="alternate"/><link href="https://sitereportkit.com/uk-UA/" hreflang="uk" rel="alternate"/><link href="https://sitereportkit.com/vi/" hreflang="vi" rel="alternate"/><link href="https://sitereportkit.com/zh-Hans/" hreflang="zh-Hans" rel="alternate"/><link href="https://sitereportkit.com/zh-Hant/" hreflang="zh-Hant" rel="alternate"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/assets/brand/sitereportkit-favicon.png?v=20260708-exact-logo" rel="icon" type="image/png"/>
+<link href="/styles.css?v=20260710-separated-samples" rel="stylesheet"/>
+<script defer="" src="/script.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SiteReportKit","applicationCategory":"Bedrijfsapplicatie","operatingSystem":"iOS","description":"Offline-eerste opleveringsrapportage, vastlopen, defecten en afsluitingsrapportage met professionele PDF-, XLSX- en CSV-exports.","url":"https://sitereportkit.com/nl-NL/","featureList":["Vastleggen van offline problemen","Niet-destructieve foto-opmaak","PDF-, XLSX- en CSV-exports","Privacyvervaging en annotaties met metingen","Activiteit met tijdstempel en vergrendelde overdracht van problemen","Drie invoermethoden voor handtekeningen","SHA-256 bewijsintegriteitsrecords","Actielijsten aannemer","Closeout-bewijs","Lokale projectarchieven"],"publisher":{"@type":"Organization","name":"SiteReportKit","url":"https://sitereportkit.com/nl-NL/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Werkt SiteReportKit zonder account?","acceptedAnswer":{"@type":"Answer","text":"Ja. Voor het vastleggen van kernprojecten, lokale opslag, rapportvoorbeelden en voorbeeldworkflows is geen account vereist."}},{"@type":"Question","name":"Kan ik offline werken?","acceptedAnswer":{"@type":"Answer","text":"Ja. Projectregistratie, foto's, markeringen en het genereren van rapporten zijn ontworpen om lokaal te werken. Er is nog steeds een netwerkverbinding vereist voor winkelaankopen of -herstel."}},{"@type":"Question","name":"Wat houdt een gratis export in?","acceptedAnswer":{"@type":"Answer","text":"Gratis omvat in totaal drie PDF-, XLSX- of CSV-bestandsexports met SiteReportKit Free-branding. Previews en lokale projecten blijven onbeperkt."}}]}</script>
 </head>
 <body>
-  <header class="site-header"><a class="brand" href="../"><img src="../assets/brand/sitereportkit-wordmark.png" alt="SiteReportKit" width="224" height="49"></a><label><span class="sr-only">Language</span><select onchange="if(this.value)location.href=this.value"><option value="/ar-SA/">العربية</option><option value="/ca/">Català</option><option value="/cs/">Čeština</option><option value="/da/">Dansk</option><option value="/de-DE/">Deutsch</option><option value="/el/">Ελληνικά</option><option value="/en-US/">English</option><option value="/es-MX/">Español</option><option value="/fi/">Suomi</option><option value="/fr-FR/">Français</option><option value="/he/">עברית</option><option value="/hi/">हिन्दी</option><option value="/hr/">Hrvatski</option><option value="/hu/">Magyar</option><option value="/id/">Bahasa Indonesia</option><option value="/it/">Italiano</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/ms/">Bahasa Melayu</option><option value="/nl-NL/" selected>Nederlands</option><option value="/no/">Norsk</option><option value="/pl/">Polski</option><option value="/pt-BR/">Português</option><option value="/ro/">Română</option><option value="/ru/">Русский</option><option value="/sk/">Slovenčina</option><option value="/sv/">Svenska</option><option value="/th/">ไทย</option><option value="/tr/">Türkçe</option><option value="/uk/">Українська</option><option value="/vi/">Tiếng Việt</option><option value="/zh-Hans/">简体中文</option><option value="/zh-Hant/">繁體中文</option></select></label></header>
-  <main>
-    <section class="hero"><div class="hero-inner"><div><p class="eyebrow">SiteReportKit</p><h1>Inspecties en PDF-rapporten</h1><p class="hero-lede">Leg gebreken vast met foto's en markeringen, orden de opleverpunten en maak op locatie professionele PDF- of CSV-rapporten.</p><div class="actions"><a class="button button-primary" href="https://apps.apple.com/app/id6788361013">App Store</a><a class="button button-secondary" href="../downloads/samples/en-US/sample-report.pdf">PDF</a></div></div><img src="../assets/reports/samples/en-US/report-cover.png" alt="SiteReportKit" width="993" height="1404"></div></section>
-    <section class="section section-white"><div class="section-inner"><div class="related-grid"><article class="related-card"><h2>Leg gebreken vast op locatie</h2></article><article class="related-card"><h2>Orden alle opleverpunten</h2></article><article class="related-card"><h2>Maak verzorgde PDF-rapporten</h2></article></div><div class="prose"><p>Zet een bouwplaatsronde om in een helder, professioneel rapport. SiteReportKit werkt offline en is bedoeld voor inspecties, gebrekenlijsten, opleveringen en eindcontroles.</p><p>Leg per punt locatie, vakgebied, ernst, verantwoordelijke, deadline, status, foto's, bijschriften en markeringen met behoud van de originele foto vast. Zoek en filter de lijst, werk meerdere punten bij en beheer herstelnotities en de controlehistorie.</p><p>Exporteer verzorgde PDF-rapporten, actielijsten voor aannemers, opleverrapporten en CSV-registers. Kies een indeling, voeg de huisstijl toe en maak lijsten per gebied of verantwoordelijke. Voor de belangrijkste lokale functies is geen account nodig.</p><p>Ga verder dan gewone markeringen met privacyvervaging en meetannotaties. Exporteer bewerkbare XLSX-werkmappen naast PDF en CSV, volg opmerkingen en activiteiten met tijdstempel en wissel vergrendelde overdrachten uit die teruggestuurde updates samenvoegen. Teken, typ of importeer handtekeningen. Origineel bewijsmateriaal behoudt SHA-256-integriteitsregistraties.</p></div></div></section>
-  </main>
-  <footer class="site-footer"><div class="footer-inner"><strong>SiteReportKit</strong><nav class="footer-links"><a href="../privacy/">Privacy</a><a href="../support/">Support</a></nav></div></footer>
+<header class="site-header" data-header="">
+<a aria-label="SiteReportKit-startpagina" class="brand" href="#top">
+<img alt="SiteReportKit" class="brand-logo" height="49" src="/assets/brand/sitereportkit-wordmark.png?v=20260708-exact-logo" width="224"/>
+</a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" data-nav-toggle="" type="button">
+<span class="sr-only">Navigatie openen</span>
+<span></span>
+<span></span>
+<span></span>
+</button>
+<nav class="site-nav" data-nav="" id="site-nav">
+<a href="#reports">Rapporten</a>
+<a href="#workflow">Werkstroom</a>
+<a href="/nl-NL/sample-reports/">Voorbeelden</a>
+<a href="#markets">Markten</a>
+<a href="#pricing">Prijzen</a>
+
+<label class="language-switcher"><span aria-hidden="true" class="language-switcher-icon">🌐</span><span class="sr-only">Language</span><select aria-label="Language" onchange="if(this.value)location.href=this.value"><option value="/ar-SA/">العربية</option><option value="/ca/">Català</option><option value="/cs/">Čeština</option><option value="/da/">Dansk</option><option value="/de-DE/">Deutsch</option><option value="/el/">Ελληνικά</option><option value="/en-US/">English</option><option value="/es-MX/">Español</option><option value="/fi/">Suomi</option><option value="/fr-FR/">Français</option><option value="/he/">עברית</option><option value="/hi/">हिन्दी</option><option value="/hr/">Hrvatski</option><option value="/hu/">Magyar</option><option value="/id/">Bahasa Indonesia</option><option value="/it/">Italiano</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/ms/">Bahasa Melayu</option><option selected="" value="/nl-NL/">Nederlands</option><option value="/no/">Norsk</option><option value="/pl/">Polski</option><option value="/pt-BR/">Português</option><option value="/ro/">Română</option><option value="/ru/">Русский</option><option value="/sk/">Slovenčina</option><option value="/sv/">Svenska</option><option value="/th/">ไทย</option><option value="/tr/">Türkçe</option><option value="/uk-UA/">Українська</option><option value="/vi/">Tiếng Việt</option><option value="/zh-Hans/">简体中文</option><option value="/zh-Hant/">繁體中文</option></select></label><a class="nav-cta" data-campaign="homepage-nav" data-cta="sample-report" data-destination="pdf" data-placement="header" href="/downloads/sample-snagging-report.pdf">Voorbeeld PDF</a>
+</nav>
+</header>
+
+<main id="top">
+<section aria-labelledby="hero-title" class="hero">
+<div aria-hidden="true" class="hero-media">
+<img alt="" class="hero-page hero-page-main" src="/assets/reports/report-cover.png?v=20260710-separated-samples"/>
+<img alt="" class="hero-page hero-page-side" src="/assets/reports/report-issue-evidence.png?v=20260710-separated-samples"/>
+<img alt="" class="hero-page hero-page-back" src="/assets/reports/action-list-cover.png?v=20260710-separated-samples"/>
+</div>
+<div class="hero-copy">
+<p class="eyebrow">Offline-eerste veldrapportage</p>
+<h1 id="hero-title">Voltooi de walkthrough. Stuur het rapport voordat u vertrekt.</h1>
+<p class="hero-lede">SiteReportKit maakt van locatiebewijs een professionele overdracht.</p>
+<p class="hero-support">
+            Leg verdedigbaar bewijsmateriaal vast, wijs verantwoordelijkheid toe en exporteer branded PDF-, XLSX- of CSV-producten – offline, zonder dat een account vereist is.
+          </p>
+<div aria-label="Primaire acties" class="hero-actions">
+<a class="button button-primary" data-campaign="homepage-hero-sample" data-cta="sample-report" data-destination="pdf" data-placement="hero" data-report-kind="interior-handover" href="/downloads/sample-interior-handover-report.pdf">Download voorbeeldrapport</a>
+<a class="button button-secondary" data-campaign="homepage-hero-action-list" data-cta="sample-report" data-destination="pdf" data-placement="hero" data-report-kind="contractor-action-list" href="/downloads/sample-snag-action-list.pdf">Zie actielijst aannemer</a>
+</div>
+<dl aria-label="Producthoogtepunten" class="hero-proof">
+<div>
+<dt>Werkt offline</dt>
+<dd>Blijf lopen als het signaal wegvalt</dd>
+</div>
+<div>
+<dt>Geen account vereist</dt>
+<dd>Lokaal vastleggen en exporteren wanneer u klaar bent</dd>
+</div>
+<div>
+<dt>PDF + XLSX + CSV</dt>
+<dd>Rapporten, bewerkbare werkmappen en registers</dd>
+</div>
+</dl>
+</div>
+</section>
+<section aria-label="Kernproductbelofte" class="trust-strip">
+<p>Leg bewijsmateriaal van de locatie vast.</p>
+<p>Verantwoordelijkheid toekennen.</p>
+<p>Exporteer de overdracht.</p>
+</section>
+<section aria-labelledby="reports-title" class="section report-showcase" id="reports">
+<div class="section-heading">
+<p class="eyebrow">Echte sample-uitvoer</p>
+<h2 id="reports-title">Twee verschillende rapporten voor twee zeer verschillende locatiebezoeken.</h2>
+<p>
+            De binnenoplevering en actieve bouwinspectie blijven gescheiden van vastlegging via export. Elk heeft zijn eigen project, probleemindex, bewijsmateriaal, actielijst en downloadbaar rapport.
+          </p>
+</div>
+<div aria-label="Voorbeeldrapporttypen" class="report-edition-grid">
+<article class="report-edition">
+<div class="report-edition-media">
+<img alt="Maple Row binnenomslag voor overdrachtsrapport" height="1404" src="/assets/reports/report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<div class="report-edition-copy">
+<p class="report-type">Oplevering interieur</p>
+<h3>Maple Row-overdracht</h3>
+<p>Vijf interieurproblemen die betrekking hebben op afwerkingen, lakwerk, elektrische controles, deuren en een wijzigingsverzoek van een klant.</p>
+<div aria-label="Samenvatting van het interieurrapport" class="report-edition-facts">
+<span>5 haken en ogen</span>
+<span>9 pagina's</span>
+<span>Alleen intern bewijsmateriaal</span>
+</div>
+<div class="report-edition-actions">
+<a class="button button-primary" href="/downloads/sample-interior-handover-report.pdf">Interieur PDF</a>
+<a class="button button-secondary" href="/downloads/sample-snag-action-list.pdf">Actielijst interieur</a>
+</div>
+</div>
+</article>
+<article class="report-edition report-edition-construction">
+<div class="report-edition-media">
+<img alt="Omslagrapport voor bouwinspectie van Harbor Point" height="1404" src="/assets/reports/construction-report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<div class="report-edition-copy">
+<p class="report-type">Actieve constructie</p>
+<h3>Bouwinspectie Havenpunt</h3>
+<p>Zes constructiefouten met betrekking tot brandwerende gevels, beton, drainage, tijdelijke werkzaamheden, metselwerk en dakwaterdichting.</p>
+<div aria-label="Samenvatting bouwrapport" class="report-edition-facts">
+<span>6 gebreken</span>
+<span>10 pagina's</span>
+<span>Alleen constructiebewijs</span>
+</div>
+<div class="report-edition-actions">
+<a class="button button-primary" href="/downloads/sample-construction-defect-report.pdf">Constructie PDF</a>
+<a class="button button-secondary" href="/downloads/sample-construction-defect-action-list.pdf">Bouwactielijst</a>
+</div>
+</div>
+</article>
+</div>
+<div class="report-lab">
+<figure class="report-preview">
+<div class="report-preview-top">
+<span>Voorbeeldclient PDF</span>
+<a href="/downloads/sample-interior-handover-report.pdf">Downloaden</a>
+</div>
+<div class="document-frame">
+<img alt="SiteReportKit voorbeeld van interne rapportomslag met samenvatting en addertje onder het gras index" height="1404" src="/assets/reports/report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<figcaption>
+<strong>Volledig klantenrapport</strong>
+<span>Omslag, samenvatting, addertje onder het gras, details van het probleem, bewijsfoto's en opmaak die gereed is voor aftekening.</span>
+</figcaption>
+</figure>
+<div aria-label="Voorbeeldrapportweergaven" class="sample-stack">
+<div class="sample-stack-heading">
+<p class="eyebrow">Binnen de export</p>
+<h3>Gestructureerd bewijsmateriaal, geen camerarol die in een PDF is gedumpt.</h3>
+</div>
+<article class="sample-row">
+<img alt="Detailpagina van het interne probleem met de vereiste actie, bewijsfoto, eigenaar, status en vervaldatum" height="1404" src="/assets/reports/report-issue-evidence.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Bewijsmateriaal afgeven</h4>
+<p>Elk probleem houdt de foto, het bijschrift, de eigenaar, de ernst, de status en de vereiste actie bij elkaar.</p>
+</div>
+</article>
+<article class="sample-row">
+<img alt="Actielijst interieuraannemer PDF-omslag en samenvatting van openstaande problemen gegenereerd door SiteReportKit" height="1404" src="/assets/reports/action-list-cover.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Actielijst aannemer</h4>
+<p>Filter om alleen items te openen en geef elke transactie een gericht werkgebied.</p>
+</div>
+</article>
+<article class="sample-row">
+<img alt="Bewijspagina binnenkant close-up met na-foto en resolutienotitie" height="1404" src="/assets/reports/report-after-evidence.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Closeout-bewijs</h4>
+<p>Opgeloste items bevatten acceptatienotities en nafoto's voor een duidelijk overdrachtstraject.</p>
+</div>
+</article>
+<div aria-label="Voorbeelddownloads" class="sample-actions">
+<a class="button button-primary" href="/downloads/sample-interior-handover-report.pdf">Interieur PDF</a>
+<a class="button button-secondary" href="/downloads/sample-snag-action-list.pdf">Actielijst</a>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="workflow-title" class="section workflow" id="workflow">
+<div class="section-heading compact">
+<p class="eyebrow">Gebouwd voor wandelingen op locatie</p>
+<h2 id="workflow-title">Van locatiebewijs naar rapport in drie stappen.</h2>
+</div>
+<div class="workflow-layout">
+<ol class="workflow-list">
+<li>
+<span>01</span>
+<div>
+<h3>Leg bewijsmateriaal van de locatie vast</h3>
+<p>Voeg problemen toe terwijl je loopt, met foto's, niet-destructieve markeringen, oppervlakte, handel, ernst en een duidelijke actie vereist.</p>
+</div>
+</li>
+<li>
+<span>02</span>
+<div>
+<h3>Verantwoordelijkheid toekennen</h3>
+<p>Stel de eigenaar, vervaldatum, prioriteit en status in en filter vervolgens het werk op aannemer, vak of gebied.</p>
+</div>
+</li>
+<li>
+<span>03</span>
+<div>
+<h3>Exporteer de overdracht</h3>
+<p>Bekijk en deel een volledige klant PDF, de actielijst van de contractant, het afsluitingsrapport of het CSV uitgifteregister voordat u vertrekt.</p>
+</div>
+</li>
+</ol>
+<figure class="closeout-preview">
+<img alt="Afsluitingsrapportpagina met opgelost itembewijs en opmaak klaar voor aftekening" height="1404" src="/assets/reports/closeout-report-page.png?v=20260710-separated-samples" width="993"/>
+<figcaption>Bewijs van het afsluitende rapport met resolutienotities.</figcaption>
+</figure>
+</div>
+</section>
+<section aria-labelledby="app-proof-title" class="section app-proof">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Bewijs uit de app</p>
+<h2 id="app-proof-title">Gebouwd rond de locatiewandeling, niet rond de kantoorbeheerder.</h2>
+</div>
+<p>Dit zijn echte productschermen uit de huidige mobiele versie. Vastlegging, verantwoordelijkheid en rapportage blijven verbonden vanaf de eerste foto tot de uiteindelijke overdracht.</p>
+</div>
+<div class="app-proof-grid">
+<article>
+<img alt="SiteReportKit mobiele workflow voor het markeren van foto's met constructiebewijs" height="2868" src="/assets/app/photo-markup.png" width="1320"/>
+<div><span>Vastleggen</span><h3>Markeer het exacte defect</h3><p>Bewaar het originele bewijsmateriaal en voeg duidelijke visuele markeringen toe voor de persoon die het werk doet.</p></div>
+</article>
+<article>
+<img alt="SiteReportKit mobiele aannemer actielijst exportopties" height="2868" src="/assets/app/action-lists.png" width="1320"/>
+<div><span>Toewijzen</span><h3>Werk per eigenaar of gebied reiken</h3><p>Geef elke aannemer een gerichte lijst zonder niet-gerelateerde projectitems bloot te leggen.</p></div>
+</article>
+<article>
+<img alt="SiteReportKit mobiele PDF-rapportvoorbeeld en exportworkflow" height="2868" src="/assets/app/pdf-export.png" width="1320"/>
+<div><span>Exporteren</span><h3>Bekijk een voorbeeld van het rapport ter plaatse</h3><p>Controleer de client-PDF voordat u deze deelt, terwijl de walkthrough-context nog vers is.</p></div>
+</article>
+</div>
+</section>
+<section aria-labelledby="markets-title" class="section markets" id="markets">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Gebouwd voor lokale terminologie</p>
+<h2 id="markets-title">Dezelfde veldworkflow, uitgedrukt in de manier waarop uw markt werkt.</h2>
+</div>
+<p>Kies de terminologie en het papierformaat dat uw klanten en opdrachtnemers verwachten. Op deze pagina's worden productinstellingen en voorbeelden beschreven, en niet de plaatselijke wettelijke certificering.</p>
+</div>
+<div class="market-grid">
+<a data-campaign="homepage-market-us" data-cta="market-entry" data-destination="guide" data-market="us" data-placement="homepage" href="/nl-NL/us/punch-list-app/">
+<span>Verenigde Staten</span>
+<strong>Opleveringslijsten · Brief</strong>
+<small>Voor punchwalks, handelseigendom en afsluiting van onderaannemers.</small>
+</a>
+<a data-campaign="homepage-market-uk" data-cta="market-entry" data-destination="guide" data-market="uk" data-placement="homepage" href="/nl-NL/uk/snagging-app/">
+<span>Verenigd Koninkrijk</span>
+<strong>Vastlopen · A4</strong>
+<small>Voor nieuwbouwopleveringen, locatie-inspecties en probleemrapporten.</small>
+</a>
+<a data-campaign="homepage-market-au" data-cta="market-entry" data-destination="guide" data-market="au" data-placement="homepage" href="/nl-NL/au/defect-list-app/">
+<span>Australië</span>
+<strong>Lijsten met defecten · A4</strong>
+<small>Voor bouwacties, handelsactiviteiten en praktische invulwandelingen.</small>
+</a>
+</div>
+</section>
+<section aria-labelledby="features-title" class="section features">
+<div class="section-heading compact">
+<p class="eyebrow">Waarom teams ervoor kiezen</p>
+<h2 id="features-title">Een gerichte rapportagetool in plaats van een ander bouwpakket.</h2>
+</div>
+<div class="feature-grid">
+<article>
+<h3>Standaard eerst offline</h3>
+<p>Projecten en media blijven lokaal tijdens de opname, dus een slecht signaal ter plaatse blokkeert de melding niet.</p>
+</article>
+<article>
+<h3>Professioneel bewijstraject</h3>
+<p>Bewaar originelen met SHA-256-integriteitsrecords, vervaag privégegevens, voeg metingen toe en bewaar bewerkte markeringen naast sluitend bewijsmateriaal.</p>
+</article>
+<article>
+<h3>Flexibele terminologie</h3>
+<p>Ondersteuning van opleverlijsten, vastlooprapporten, defectlijsten, observaties, locatie-audits en onderhoudswandelingen.</p>
+</article>
+<article>
+<h3>Bruikbare overdrachten</h3>
+<p>Verzend vergrendelde overdrachten van problemen, voeg geretourneerde updates samen, volg opmerkingen en activiteiten met tijdstempel en exporteer vervolgens XLSX-registers met bereik of closeout-pakketten.</p>
+</article>
+<article>
+<h3>Flexibel afmelden</h3>
+<p>Teken een handtekening, genereer er een op basis van een getypte naam, of importeer een goedgekeurde handtekeningafbeelding voor ondertekening door inspecteur en klant.</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="use-cases-title" class="section use-cases" id="use-cases">
+<div class="section-heading">
+<p class="eyebrow">Gebruiksscenario's</p>
+<h2 id="use-cases-title">Voor de mensen die het rapport klaar willen hebben terwijl het bezoek nog vers is.</h2>
+</div>
+<div class="use-case-grid">
+<article>
+<h3>Bouwinspecteurs</h3>
+<p>Produceer verzorgde PDF's voor klanten met merkvoorbladen, tekst met beperkingen, indexen van uitgaven en bewijsmateriaal met foto's.</p>
+</article>
+<article>
+<h3>Architecten en ontwerpers</h3>
+<p>Leg locatieobservaties vast per gebied en stuur aannemers een overzichtelijke actielijst zonder spreadsheetopschoning.</p>
+</article>
+<article>
+<h3>Aannemers en terreinbeheerders</h3>
+<p>Voer overdrachtswandelingen uit, wijs handelsverantwoordelijkheid toe, volg de afsluiting en exporteer bereiklijsten voor onderaannemers.</p>
+</article>
+<article>
+<h3>Vastgoed- en facilitaire teams</h3>
+<p>Documentonderhoudsproblemen, bewijsmateriaal voor en na, terugkerende defecten en archiveerbare projectrecords.</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="downloads-title" class="section sample-downloads">
+<div>
+<p class="eyebrow">Voorbeelddownloads</p>
+<h2 id="downloads-title">Inspecteer de uitvoer voordat u de app probeert.</h2>
+</div>
+<div class="download-list">
+<a href="/downloads/sample-interior-handover-report.pdf">
+<strong>Opleveringsrapport interieur PDF</strong>
+<span>Vijf voorwerpen om binnenshuis mee te haken</span>
+</a>
+<a href="/downloads/sample-construction-defect-report.pdf">
+<strong>Bouwfoutrapport PDF</strong>
+<span>Zes constructiefouten op actieve locaties</span>
+</a>
+<a href="/downloads/sample-snag-action-list.pdf">
+<strong>Actielijst aannemer PDF</strong>
+<span>Openstaande posten voor bezorgteams</span>
+</a>
+<a href="/downloads/sample-closeout-report.pdf">
+<strong>Afsluitingsrapport PDF</strong>
+<span>Problemen en bewijsmateriaal opgelost</span>
+</a>
+<a href="/downloads/sample-issue-register.csv">
+<strong>Uitgifteregister CSV</strong>
+<span>Export van spreadsheet binnenrapport</span>
+</a>
+<a href="/downloads/sample-construction-issue-register.csv">
+<strong>Bouwuitgifteregister CSV</strong>
+<span>Spreadsheet-export bouwrapport</span>
+</a>
+</div>
+</section>
+<section aria-labelledby="pricing-title" class="section pricing" id="pricing">
+<div class="pricing-copy">
+<p class="eyebrow">Eenvoudige lokale prijzen</p>
+<h2 id="pricing-title">Begin gratis. Ontgrendel eenmalig schone professionele exporten.</h2>
+<p>
+            Gebruik elke kernveldworkflow lokaal zonder een account aan te maken. Gratis omvat in totaal drie bestandsexports met watermerk. De geplande Pro-lancering is een eenmalige, in de winkel herstelbare aankoop van $ 9,99 op ondersteunde mobiele winkelbuilds – geen abonnement. De definitieve gelokaliseerde winkelprijzen kunnen variëren per belasting en valuta.
+          </p>
+</div>
+<div aria-label="Gratis en Pro-vergelijking" class="pricing-compare">
+<article class="plan-card">
+<p class="plan-label">Gratis</p>
+<p class="price">$0 <span>lokaal gebruik</span></p>
+<ul>
+<li>Onbeperkt lokale projecten en previews</li>
+<li>In totaal 3 PDF/XLSX/CSV-exports met watermerk</li>
+<li>Basisrapportsjabloon voor velden</li>
+<li>Standaard foto-indeling</li>
+</ul>
+<a class="button button-secondary" data-campaign="homepage-pricing-sample" data-cta="sample-report" data-destination="pdf" data-placement="pricing" href="/downloads/sample-interior-handover-report.pdf">Inspecteer de uitvoer</a>
+</article>
+<article class="plan-card plan-card-pro">
+<p class="plan-label">Individueel Pro</p>
+<p class="price">$9.99 <span>eenmalig lanceringsdoel</span></p>
+<ul>
+<li>Onbeperkt schone PDF-, XLSX- en CSV-exports</li>
+<li>Aangepast logo en bedrijfsbranding</li>
+<li>Privacyvervaging, metingen en bewijsintegriteit</li>
+<li>Vergrendelde probleemoverdrachten en activiteitengeschiedenis</li>
+<li>Getekende, getypte of geïmporteerde handtekeningen</li>
+</ul>
+<a class="button button-primary" data-campaign="homepage-pricing" data-cta="early-access" data-destination="email" data-placement="pricing" href="mailto:hello@sitereportkit.com?subject=SiteReportKit%20early%20access">Vraag vroege toegang aan</a>
+</article>
+<p class="launch-note">Lancering van de App Store wordt uitgevoerd. De definitieve winkelprijs en beschikbaarheid worden bevestigd op de live vermelding. Pro omvat geen accounts, cloudsynchronisatie of teamwerkruimtes.</p>
+</div>
+</section>
+<section aria-labelledby="faq-title" class="section faq">
+<div class="section-heading compact">
+<p class="eyebrow">Veelgestelde vragen</p>
+<h2 id="faq-title">Weet wat de app doet voordat u deze ter plaatse gebruikt.</h2>
+</div>
+<div class="faq-list">
+<details>
+<summary>Werkt SiteReportKit zonder account?</summary>
+<p>Ja. Voor het vastleggen van kernprojecten, lokale opslag, rapportvoorbeelden en voorbeeldworkflows is geen account vereist.</p>
+</details>
+<details>
+<summary>Kan ik offline werken?</summary>
+<p>Ja. Projectregistratie, foto's, markeringen en het genereren van rapporten zijn ontworpen om lokaal te werken. Er is nog steeds een netwerkverbinding vereist voor winkelaankopen of -herstel.</p>
+</details>
+<details>
+<summary>Wat houdt een gratis export in?</summary>
+<p>Gratis omvat in totaal drie PDF-, XLSX- of CSV-bestandsexports met SiteReportKit Free-branding. Previews en lokale projecten blijven onbeperkt.</p>
+</details>
+<details>
+<summary>Is SiteReportKit een volledig bouwbeheerplatform?</summary>
+<p>Nee. Het is opzettelijk gericht op snelle veldregistratie en professionele overdrachtsrapporten, zonder BIM, RFI's, schema's of realtime teamcoördinatie.</p>
+</details>
+</div>
+</section>
+<section aria-labelledby="phone-handoff-title" class="section phone-handoff">
+<div class="phone-handoff-copy">
+<p class="eyebrow">Ga verder op je telefoon</p>
+<h2 id="phone-handoff-title">Neem de voorbeeldworkflow mee.</h2>
+<p>Scan de code om SiteReportKit op uw telefoon te openen, of open een vooraf ingevuld sms-bericht dat u naar uzelf kunt sturen. Beide links gebruiken campagnelabels zonder marketingcookies.</p>
+<div class="hero-actions">
+<a class="button button-primary" data-campaign="homepage-phone-handoff" data-cta="phone-handoff" data-destination="sms" data-placement="homepage" href="sms:?&amp;body=Open%20SiteReportKit%20on%20your%20phone%3A%20https%3A%2F%2Fsitereportkit.com%2F%3Fsrc%3Dsms%26campaign%3Dhomepage-phone-handoff">Sms de link naar jezelf</a>
+<a class="button button-secondary" data-campaign="homepage-phone-handoff" data-cta="early-access" data-destination="email" data-placement="phone-handoff" href="mailto:hello@sitereportkit.com?subject=SiteReportKit%20launch%20updates">Ontvang lanceringsupdates</a>
+</div>
+<p class="handoff-note">De SMS-knop opent alleen de berichtencomponist van uw apparaat. SiteReportKit ontvangt geen telefoonnummer. De geverifieerde winkellink vervangt na goedkeuring deze pre-lanceringsbestemming.</p>
+</div>
+<figure>
+<img alt="QR-code om de SiteReportKit-website op een telefoon te openen" height="232" src="/assets/brand/phone-handoff-qr.svg" width="232"/>
+<figcaption>Open de pre-lanceringssite op uw telefoon</figcaption>
+</figure>
+</section>
+<section aria-labelledby="final-cta-title" class="final-cta">
+<img alt="" height="103" src="/assets/brand/sitereportkit-mark.png?v=20260708-exact-logo" width="64"/>
+<h2 id="final-cta-title">Maak het rapport voordat de taak uw hoofd verlaat.</h2>
+<p>SiteReportKit wordt als eerste gelanceerd op het gebied van snelle, lokale, professionele rapportage van mobiele sites, met desktop- en web-compatibele workflows gepland nadat de kernworkflow in het veld stabiel is.</p>
+<div class="hero-actions">
+<a class="button button-primary" data-cta="final_interior_sample" href="/downloads/sample-interior-handover-report.pdf">Interieurvoorbeeld</a>
+<a class="button button-secondary" data-cta="final_construction_sample" href="/downloads/sample-construction-defect-report.pdf">Constructievoorbeeld</a>
+<a class="button button-secondary" data-cta="final_contact" href="mailto:hello@sitereportkit.com">Contactpersoon</a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div>
+<img alt="SiteReportKit" height="40" src="/assets/brand/sitereportkit-wordmark.png?v=20260708-exact-logo" width="184"/>
+<p>Offline-eerste opleveringsrapportage, vastlopen, defecten en close-outrapportage.</p>
+</div>
+<nav aria-label="Voettekstnavigatie">
+<a href="#reports">Rapporten</a>
+<a href="#workflow">Werkstroom</a>
+<a href="#use-cases">Gebruiksscenario's</a>
+<a href="/nl-NL/sample-reports/">Voorbeeldrapporten</a>
+<a href="/nl-NL/resources/punch-list-vs-snag-list-vs-defect-list/">Terminologiegids</a>
+<a href="/nl-NL/pricing/">Prijzen</a>
+<a href="/downloads/sample-snagging-report.pdf">Voorbeeld PDF</a>
+<a href="/nl-NL/support/">Ondersteuning</a>
+<a href="/nl-NL/privacy/">Privacy</a>
+</nav>
+</footer>
 </body>
 </html>
+

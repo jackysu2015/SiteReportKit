@@ -1,61 +1,485 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Inspeksi dan laporan PDF | SiteReportKit</title>
-  <meta name="description" content="Catat temuan dengan foto dan penandaan, rapikan daftar perbaikan, lalu buat laporan PDF atau CSV langsung dari lokasi.">
-  <link rel="canonical" href="https://sitereportkit.com/id/">
-  <link rel="alternate" hreflang="x-default" href="https://sitereportkit.com/">
-  <link rel="alternate" hreflang="ar-SA" href="https://sitereportkit.com/ar-SA/">
-  <link rel="alternate" hreflang="ca" href="https://sitereportkit.com/ca/">
-  <link rel="alternate" hreflang="cs" href="https://sitereportkit.com/cs/">
-  <link rel="alternate" hreflang="da" href="https://sitereportkit.com/da/">
-  <link rel="alternate" hreflang="de-DE" href="https://sitereportkit.com/de-DE/">
-  <link rel="alternate" hreflang="el" href="https://sitereportkit.com/el/">
-  <link rel="alternate" hreflang="en-US" href="https://sitereportkit.com/en-US/">
-  <link rel="alternate" hreflang="es-MX" href="https://sitereportkit.com/es-MX/">
-  <link rel="alternate" hreflang="fi" href="https://sitereportkit.com/fi/">
-  <link rel="alternate" hreflang="fr-FR" href="https://sitereportkit.com/fr-FR/">
-  <link rel="alternate" hreflang="he" href="https://sitereportkit.com/he/">
-  <link rel="alternate" hreflang="hi" href="https://sitereportkit.com/hi/">
-  <link rel="alternate" hreflang="hr" href="https://sitereportkit.com/hr/">
-  <link rel="alternate" hreflang="hu" href="https://sitereportkit.com/hu/">
-  <link rel="alternate" hreflang="id" href="https://sitereportkit.com/id/">
-  <link rel="alternate" hreflang="it" href="https://sitereportkit.com/it/">
-  <link rel="alternate" hreflang="ja" href="https://sitereportkit.com/ja/">
-  <link rel="alternate" hreflang="ko" href="https://sitereportkit.com/ko/">
-  <link rel="alternate" hreflang="ms" href="https://sitereportkit.com/ms/">
-  <link rel="alternate" hreflang="nl-NL" href="https://sitereportkit.com/nl-NL/">
-  <link rel="alternate" hreflang="no" href="https://sitereportkit.com/no/">
-  <link rel="alternate" hreflang="pl" href="https://sitereportkit.com/pl/">
-  <link rel="alternate" hreflang="pt-BR" href="https://sitereportkit.com/pt-BR/">
-  <link rel="alternate" hreflang="ro" href="https://sitereportkit.com/ro/">
-  <link rel="alternate" hreflang="ru" href="https://sitereportkit.com/ru/">
-  <link rel="alternate" hreflang="sk" href="https://sitereportkit.com/sk/">
-  <link rel="alternate" hreflang="sv" href="https://sitereportkit.com/sv/">
-  <link rel="alternate" hreflang="th" href="https://sitereportkit.com/th/">
-  <link rel="alternate" hreflang="tr" href="https://sitereportkit.com/tr/">
-  <link rel="alternate" hreflang="uk" href="https://sitereportkit.com/uk/">
-  <link rel="alternate" hreflang="vi" href="https://sitereportkit.com/vi/">
-  <link rel="alternate" hreflang="zh-Hans" href="https://sitereportkit.com/zh-Hans/">
-  <link rel="alternate" hreflang="zh-Hant" href="https://sitereportkit.com/zh-Hant/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="SiteReportKit">
-  <meta property="og:title" content="Inspeksi dan laporan PDF | SiteReportKit">
-  <meta property="og:description" content="Catat temuan dengan foto dan penandaan, rapikan daftar perbaikan, lalu buat laporan PDF atau CSV langsung dari lokasi.">
-  <meta property="og:url" content="https://sitereportkit.com/id/">
-  <meta property="og:image" content="https://sitereportkit.com/assets/reports/samples/en-US/report-cover.png">
-  <link rel="icon" href="../assets/brand/sitereportkit-favicon.png">
-  <link rel="stylesheet" href="../marketing-pages.css?v=20260711">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SiteReportKit","applicationCategory":"BusinessApplication","operatingSystem":"iOS","description":"Catat temuan dengan foto dan penandaan, rapikan daftar perbaikan, lalu buat laporan PDF atau CSV langsung dari lokasi.","url":"https://sitereportkit.com/id/"}</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>SiteReportKit | Daftar pukulan profesional dan laporan tersangkut</title>
+<meta content="SiteReportKit membuat daftar punch offline dengan markup foto yang menjaga privasi, pengukuran, penyerahan yang dapat diaudit, dan ekspor PDF, XLSX, dan CSV profesional." name="description"/>
+<meta content="#0A2342" name="theme-color"/>
+<meta content="SiteReportKit" property="og:title"/>
+<meta content="Buat PDF daftar punch profesional sebelum meninggalkan situs." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://sitereportkit.com/id/" property="og:url"/>
+<meta content="https://sitereportkit.com/assets/reports/report-cover.png?v=20260710-separated-samples" property="og:image"/>
+<link href="https://sitereportkit.com/id/" rel="canonical"/><link href="https://sitereportkit.com/" hreflang="x-default" rel="alternate"/><link href="https://sitereportkit.com/ar-SA/" hreflang="ar-SA" rel="alternate"/><link href="https://sitereportkit.com/ca/" hreflang="ca" rel="alternate"/><link href="https://sitereportkit.com/cs/" hreflang="cs" rel="alternate"/><link href="https://sitereportkit.com/da/" hreflang="da" rel="alternate"/><link href="https://sitereportkit.com/de-DE/" hreflang="de-DE" rel="alternate"/><link href="https://sitereportkit.com/el/" hreflang="el" rel="alternate"/><link href="https://sitereportkit.com/en-US/" hreflang="en-US" rel="alternate"/><link href="https://sitereportkit.com/es-MX/" hreflang="es-MX" rel="alternate"/><link href="https://sitereportkit.com/fi/" hreflang="fi" rel="alternate"/><link href="https://sitereportkit.com/fr-FR/" hreflang="fr-FR" rel="alternate"/><link href="https://sitereportkit.com/he/" hreflang="he" rel="alternate"/><link href="https://sitereportkit.com/hi/" hreflang="hi" rel="alternate"/><link href="https://sitereportkit.com/hr/" hreflang="hr" rel="alternate"/><link href="https://sitereportkit.com/hu/" hreflang="hu" rel="alternate"/><link href="https://sitereportkit.com/id/" hreflang="id" rel="alternate"/><link href="https://sitereportkit.com/it/" hreflang="it" rel="alternate"/><link href="https://sitereportkit.com/ja/" hreflang="ja" rel="alternate"/><link href="https://sitereportkit.com/ko/" hreflang="ko" rel="alternate"/><link href="https://sitereportkit.com/ms/" hreflang="ms" rel="alternate"/><link href="https://sitereportkit.com/nl-NL/" hreflang="nl-NL" rel="alternate"/><link href="https://sitereportkit.com/no/" hreflang="no" rel="alternate"/><link href="https://sitereportkit.com/pl/" hreflang="pl" rel="alternate"/><link href="https://sitereportkit.com/pt-BR/" hreflang="pt-BR" rel="alternate"/><link href="https://sitereportkit.com/ro/" hreflang="ro" rel="alternate"/><link href="https://sitereportkit.com/ru/" hreflang="ru" rel="alternate"/><link href="https://sitereportkit.com/sk/" hreflang="sk" rel="alternate"/><link href="https://sitereportkit.com/sv/" hreflang="sv" rel="alternate"/><link href="https://sitereportkit.com/th/" hreflang="th" rel="alternate"/><link href="https://sitereportkit.com/tr/" hreflang="tr" rel="alternate"/><link href="https://sitereportkit.com/uk-UA/" hreflang="uk" rel="alternate"/><link href="https://sitereportkit.com/vi/" hreflang="vi" rel="alternate"/><link href="https://sitereportkit.com/zh-Hans/" hreflang="zh-Hans" rel="alternate"/><link href="https://sitereportkit.com/zh-Hant/" hreflang="zh-Hant" rel="alternate"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/assets/brand/sitereportkit-favicon.png?v=20260708-exact-logo" rel="icon" type="image/png"/>
+<link href="/styles.css?v=20260710-separated-samples" rel="stylesheet"/>
+<script defer="" src="/script.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SiteReportKit","applicationCategory":"Aplikasi Bisnis","operatingSystem":"iOS","description":"Pelaporan daftar pukulan pertama, tersangkut, cacat, dan obral offline dengan ekspor PDF, XLSX, dan CSV profesional.","url":"https://sitereportkit.com/id/","featureList":["Pengambilan masalah offline","Markup foto yang tidak merusak","Ekspor PDF, XLSX, dan CSV","Kekaburan privasi dan anotasi pengukuran","Aktivitas yang diberi stempel waktu dan penyerahan masalah yang dikunci","Tiga metode masukan tanda tangan","Catatan integritas bukti SHA-256","Daftar tindakan kontraktor","Bukti obral","Arsip proyek lokal"],"publisher":{"@type":"Organization","name":"SiteReportKit","url":"https://sitereportkit.com/id/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Apakah SiteReportKit berfungsi tanpa akun?","acceptedAnswer":{"@type":"Answer","text":"Ya. Pengambilan proyek inti, penyimpanan lokal, pratinjau laporan, dan contoh alur kerja tidak memerlukan akun."}},{"@type":"Question","name":"Bisakah saya bekerja secara offline?","acceptedAnswer":{"@type":"Answer","text":"Ya. Pengambilan proyek, foto, markup, dan pembuatan laporan dirancang untuk berfungsi secara lokal. Koneksi jaringan masih diperlukan untuk pembelian atau pemulihan toko."}},{"@type":"Question","name":"Apa saja yang termasuk dalam Ekspor Gratis?","acceptedAnswer":{"@type":"Answer","text":"Gratis mencakup tiga total ekspor file PDF, XLSX, atau CSV dengan branding SiteReportKit Gratis. Pratinjau dan proyek lokal tetap tidak terbatas."}}]}</script>
 </head>
 <body>
-  <header class="site-header"><a class="brand" href="../"><img src="../assets/brand/sitereportkit-wordmark.png" alt="SiteReportKit" width="224" height="49"></a><label><span class="sr-only">Language</span><select onchange="if(this.value)location.href=this.value"><option value="/ar-SA/">العربية</option><option value="/ca/">Català</option><option value="/cs/">Čeština</option><option value="/da/">Dansk</option><option value="/de-DE/">Deutsch</option><option value="/el/">Ελληνικά</option><option value="/en-US/">English</option><option value="/es-MX/">Español</option><option value="/fi/">Suomi</option><option value="/fr-FR/">Français</option><option value="/he/">עברית</option><option value="/hi/">हिन्दी</option><option value="/hr/">Hrvatski</option><option value="/hu/">Magyar</option><option value="/id/" selected>Bahasa Indonesia</option><option value="/it/">Italiano</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/ms/">Bahasa Melayu</option><option value="/nl-NL/">Nederlands</option><option value="/no/">Norsk</option><option value="/pl/">Polski</option><option value="/pt-BR/">Português</option><option value="/ro/">Română</option><option value="/ru/">Русский</option><option value="/sk/">Slovenčina</option><option value="/sv/">Svenska</option><option value="/th/">ไทย</option><option value="/tr/">Türkçe</option><option value="/uk/">Українська</option><option value="/vi/">Tiếng Việt</option><option value="/zh-Hans/">简体中文</option><option value="/zh-Hant/">繁體中文</option></select></label></header>
-  <main>
-    <section class="hero"><div class="hero-inner"><div><p class="eyebrow">SiteReportKit</p><h1>Inspeksi dan laporan PDF</h1><p class="hero-lede">Catat temuan dengan foto dan penandaan, rapikan daftar perbaikan, lalu buat laporan PDF atau CSV langsung dari lokasi.</p><div class="actions"><a class="button button-primary" href="https://apps.apple.com/app/id6788361013">App Store</a><a class="button button-secondary" href="../downloads/samples/en-US/sample-report.pdf">PDF</a></div></div><img src="../assets/reports/samples/en-US/report-cover.png" alt="SiteReportKit" width="993" height="1404"></div></section>
-    <section class="section section-white"><div class="section-inner"><div class="related-grid"><article class="related-card"><h2>Catat temuan di lokasi</h2></article><article class="related-card"><h2>Rapikan daftar perbaikan</h2></article><article class="related-card"><h2>Buat laporan PDF profesional</h2></article></div><div class="prose"><p>Ubah peninjauan lokasi menjadi laporan yang jelas dan profesional. SiteReportKit mengutamakan penggunaan luring untuk inspeksi, daftar cacat, serah terima, dan penutupan pekerjaan.</p><p>Catat setiap temuan beserta lokasi, bidang pekerjaan, tingkat keparahan, penanggung jawab, tenggat, status, foto bukti, keterangan, dan penandaan yang tidak mengubah gambar asli. Cari dan saring daftar, perbarui beberapa item, serta simpan catatan perbaikan dan riwayat tinjauan dengan rapi.</p><p>Ekspor laporan PDF, daftar tindakan kontraktor, laporan penutupan, dan register temuan CSV. Pilih tata letak, tambahkan identitas perusahaan, dan buat daftar menurut area atau penanggung jawab. Alur kerja lokal utama tidak memerlukan akun.</p><p>Gunakan lebih dari penandaan biasa dengan pemburaman privasi dan anotasi pengukuran. Ekspor buku kerja XLSX yang dapat diedit selain PDF dan CSV, ikuti komentar dan aktivitas berstempel waktu, serta tukarkan paket serah terima terkunci yang menggabungkan pembaruan hasil pengembalian. Gambar, ketik, atau impor tanda tangan. Bukti asli disimpan dengan catatan integritas SHA-256.</p></div></div></section>
-  </main>
-  <footer class="site-footer"><div class="footer-inner"><strong>SiteReportKit</strong><nav class="footer-links"><a href="../privacy/">Privacy</a><a href="../support/">Support</a></nav></div></footer>
+<header class="site-header" data-header="">
+<a aria-label="Beranda SiteReportKit" class="brand" href="#top">
+<img alt="SiteReportKit" class="brand-logo" height="49" src="/assets/brand/sitereportkit-wordmark.png?v=20260708-exact-logo" width="224"/>
+</a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" data-nav-toggle="" type="button">
+<span class="sr-only">Buka navigasi</span>
+<span></span>
+<span></span>
+<span></span>
+</button>
+<nav class="site-nav" data-nav="" id="site-nav">
+<a href="#reports">Laporan</a>
+<a href="#workflow">Alur Kerja</a>
+<a href="/id/sample-reports/">Sampel</a>
+<a href="#markets">Pasar</a>
+<a href="#pricing">Harga</a>
+
+<label class="language-switcher"><span aria-hidden="true" class="language-switcher-icon">🌐</span><span class="sr-only">Language</span><select aria-label="Language" onchange="if(this.value)location.href=this.value"><option value="/ar-SA/">العربية</option><option value="/ca/">Català</option><option value="/cs/">Čeština</option><option value="/da/">Dansk</option><option value="/de-DE/">Deutsch</option><option value="/el/">Ελληνικά</option><option value="/en-US/">English</option><option value="/es-MX/">Español</option><option value="/fi/">Suomi</option><option value="/fr-FR/">Français</option><option value="/he/">עברית</option><option value="/hi/">हिन्दी</option><option value="/hr/">Hrvatski</option><option value="/hu/">Magyar</option><option selected="" value="/id/">Bahasa Indonesia</option><option value="/it/">Italiano</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/ms/">Bahasa Melayu</option><option value="/nl-NL/">Nederlands</option><option value="/no/">Norsk</option><option value="/pl/">Polski</option><option value="/pt-BR/">Português</option><option value="/ro/">Română</option><option value="/ru/">Русский</option><option value="/sk/">Slovenčina</option><option value="/sv/">Svenska</option><option value="/th/">ไทย</option><option value="/tr/">Türkçe</option><option value="/uk-UA/">Українська</option><option value="/vi/">Tiếng Việt</option><option value="/zh-Hans/">简体中文</option><option value="/zh-Hant/">繁體中文</option></select></label><a class="nav-cta" data-campaign="homepage-nav" data-cta="sample-report" data-destination="pdf" data-placement="header" href="/downloads/sample-snagging-report.pdf">Contoh PDF</a>
+</nav>
+</header>
+
+<main id="top">
+<section aria-labelledby="hero-title" class="hero">
+<div aria-hidden="true" class="hero-media">
+<img alt="" class="hero-page hero-page-main" src="/assets/reports/report-cover.png?v=20260710-separated-samples"/>
+<img alt="" class="hero-page hero-page-side" src="/assets/reports/report-issue-evidence.png?v=20260710-separated-samples"/>
+<img alt="" class="hero-page hero-page-back" src="/assets/reports/action-list-cover.png?v=20260710-separated-samples"/>
+</div>
+<div class="hero-copy">
+<p class="eyebrow">Pelaporan lapangan yang mengutamakan offline</p>
+<h1 id="hero-title">Selesaikan panduannya. Kirim laporan sebelum Anda pergi.</h1>
+<p class="hero-lede">SiteReportKit mengubah bukti situs menjadi penyerahan profesional.</p>
+<p class="hero-support">
+            Tangkap bukti yang dapat dipertahankan, tetapkan tanggung jawab, dan ekspor kiriman PDF, XLSX, atau CSV bermerek — offline, tanpa memerlukan akun.
+          </p>
+<div aria-label="Tindakan utama" class="hero-actions">
+<a class="button button-primary" data-campaign="homepage-hero-sample" data-cta="sample-report" data-destination="pdf" data-placement="hero" data-report-kind="interior-handover" href="/downloads/sample-interior-handover-report.pdf">Unduh contoh laporan</a>
+<a class="button button-secondary" data-campaign="homepage-hero-action-list" data-cta="sample-report" data-destination="pdf" data-placement="hero" data-report-kind="contractor-action-list" href="/downloads/sample-snag-action-list.pdf">Lihat daftar tindakan kontraktor</a>
+</div>
+<dl aria-label="Sorotan produk" class="hero-proof">
+<div>
+<dt>Bekerja offline</dt>
+<dd>Teruslah berjalan ketika sinyalnya turun</dd>
+</div>
+<div>
+<dt>Tidak diperlukan akun</dt>
+<dd>Tangkap secara lokal dan ekspor jika sudah siap</dd>
+</div>
+<div>
+<dt>PDF + XLSX + CSV</dt>
+<dd>Laporan, buku kerja dan register yang dapat diedit</dd>
+</div>
+</dl>
+</div>
+</section>
+<section aria-label="Janji produk inti" class="trust-strip">
+<p>Tangkap bukti lokasi.</p>
+<p>Tetapkan tanggung jawab.</p>
+<p>Ekspor handoff.</p>
+</section>
+<section aria-labelledby="reports-title" class="section report-showcase" id="reports">
+<div class="section-heading">
+<p class="eyebrow">keluaran sampel nyata</p>
+<h2 id="reports-title">Dua laporan berbeda untuk dua kunjungan situs yang sangat berbeda.</h2>
+<p>
+            Serah terima interior dan inspeksi konstruksi aktif tetap terpisah dari penangkapan melalui ekspor. Masing-masing memiliki proyeknya sendiri, indeks masalah, kumpulan bukti, daftar tindakan, dan laporan yang dapat diunduh.
+          </p>
+</div>
+<div aria-label="Contoh jenis laporan" class="report-edition-grid">
+<article class="report-edition">
+<div class="report-edition-media">
+<img alt="Sampul laporan serah terima interior Maple Row" height="1404" src="/assets/reports/report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<div class="report-edition-copy">
+<p class="report-type">Serah terima interior</p>
+<h3>Penyerahan Baris Maple</h3>
+<p>Lima item interior yang tersangkut meliputi penyelesaian akhir, pengecatan, pemeriksaan kelistrikan, pintu, dan permintaan penggantian klien.</p>
+<div aria-label="Ringkasan laporan interior" class="report-edition-facts">
+<span>5 hambatan</span>
+<span>9 halaman</span>
+<span>Hanya bukti dalam negeri</span>
+</div>
+<div class="report-edition-actions">
+<a class="button button-primary" href="/downloads/sample-interior-handover-report.pdf">PDF Interior</a>
+<a class="button button-secondary" href="/downloads/sample-snag-action-list.pdf">Daftar tindakan interior</a>
+</div>
+</div>
+</article>
+<article class="report-edition report-edition-construction">
+<div class="report-edition-media">
+<img alt="Sampul laporan kerusakan inspeksi konstruksi Harbour Point" height="1404" src="/assets/reports/construction-report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<div class="report-edition-copy">
+<p class="report-type">Konstruksi aktif</p>
+<h3>Inspeksi Konstruksi Harbour Point</h3>
+<p>Enam cacat konstruksi meliputi pemadaman kebakaran fasad, beton, drainase, pekerjaan sementara, pasangan bata, dan kedap air atap.</p>
+<div aria-label="Ringkasan laporan konstruksi" class="report-edition-facts">
+<span>6 cacat</span>
+<span>10 halaman</span>
+<span>Bukti konstruksi saja</span>
+</div>
+<div class="report-edition-actions">
+<a class="button button-primary" href="/downloads/sample-construction-defect-report.pdf">Konstruksi PDF</a>
+<a class="button button-secondary" href="/downloads/sample-construction-defect-action-list.pdf">Daftar tindakan konstruksi</a>
+</div>
+</div>
+</article>
+</div>
+<div class="report-lab">
+<figure class="report-preview">
+<div class="report-preview-top">
+<span>Contoh PDF klien</span>
+<a href="/downloads/sample-interior-handover-report.pdf">Unduh</a>
+</div>
+<div class="document-frame">
+<img alt="Sampul laporan snagging interior sampel SiteReportKit dengan ringkasan dan indeks sobekan" height="1404" src="/assets/reports/report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<figcaption>
+<strong>Laporan klien lengkap</strong>
+<span>Sampul, ringkasan, indeks halangan, detail terbitan, foto bukti, dan format siap tandatangan.</span>
+</figcaption>
+</figure>
+<div aria-label="Contoh tampilan laporan" class="sample-stack">
+<div class="sample-stack-heading">
+<p class="eyebrow">Di dalam ekspor</p>
+<h3>Bukti terstruktur, bukan rol kamera yang dimasukkan ke dalam PDF.</h3>
+</div>
+<article class="sample-row">
+<img alt="Halaman detail masalah interior yang menunjukkan tindakan yang diperlukan, foto bukti, pemilik, status, dan tanggal jatuh tempo" height="1404" src="/assets/reports/report-issue-evidence.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Mengeluarkan bukti</h4>
+<p>Setiap tangkapan menyatukan foto, keterangan, pemilik, tingkat keparahan, status, dan tindakan yang diperlukan.</p>
+</div>
+</article>
+<article class="sample-row">
+<img alt="Sampul PDF daftar tindakan kontraktor interior dan ringkasan hambatan luar biasa yang dihasilkan oleh SiteReportKit" height="1404" src="/assets/reports/action-list-cover.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Daftar tindakan kontraktor</h4>
+<p>Filter untuk membuka item saja dan berikan setiap perdagangan lingkup pekerjaan yang terfokus.</p>
+</div>
+</article>
+<article class="sample-row">
+<img alt="Halaman bukti obral interior ditampilkan setelah foto dan catatan resolusi" height="1404" src="/assets/reports/report-after-evidence.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Bukti obral</h4>
+<p>Item yang diselesaikan termasuk catatan penerimaan dan foto setelahnya untuk jejak serah terima yang bersih.</p>
+</div>
+</article>
+<div aria-label="Contoh unduhan" class="sample-actions">
+<a class="button button-primary" href="/downloads/sample-interior-handover-report.pdf">PDF Interior</a>
+<a class="button button-secondary" href="/downloads/sample-snag-action-list.pdf">Daftar tindakan</a>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="workflow-title" class="section workflow" id="workflow">
+<div class="section-heading compact">
+<p class="eyebrow">Dibangun untuk berjalan-jalan di lokasi</p>
+<h2 id="workflow-title">Dari bukti lokasi hingga laporan dalam tiga langkah.</h2>
+</div>
+<div class="workflow-layout">
+<ol class="workflow-list">
+<li>
+<span>01</span>
+<div>
+<h3>Tangkap bukti lokasi</h3>
+<p>Tambahkan masalah saat Anda berjalan, dengan foto, marka non-destruktif, area, perdagangan, tingkat keparahan, dan diperlukan tindakan yang jelas.</p>
+</div>
+</li>
+<li>
+<span>02</span>
+<div>
+<h3>Tetapkan tanggung jawab</h3>
+<p>Tetapkan pemilik, tanggal jatuh tempo, prioritas dan status, lalu saring pekerjaan berdasarkan kontraktor, perdagangan, atau wilayah.</p>
+</div>
+</li>
+<li>
+<span>03</span>
+<div>
+<h3>Ekspor handoff</h3>
+<p>Pratinjau dan bagikan PDF klien lengkap, daftar tindakan kontraktor tercakup, laporan obral, atau daftar masalah CSV sebelum berangkat.</p>
+</div>
+</li>
+</ol>
+<figure class="closeout-preview">
+<img alt="Halaman laporan obral dengan bukti item terselesaikan dan format siap ditandatangani" height="1404" src="/assets/reports/closeout-report-page.png?v=20260710-separated-samples" width="993"/>
+<figcaption>Bukti laporan obral dengan catatan resolusi.</figcaption>
+</figure>
+</div>
+</section>
+<section aria-labelledby="app-proof-title" class="section app-proof">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Bukti dari aplikasi</p>
+<h2 id="app-proof-title">Dibangun di sekitar lokasi berjalan, bukan admin kantor.</h2>
+</div>
+<p>Ini adalah layar produk nyata dari versi seluler saat ini. Pengambilan gambar, tanggung jawab, dan pelaporan tetap terhubung dari foto pertama hingga serah terima akhir.</p>
+</div>
+<div class="app-proof-grid">
+<article>
+<img alt="Alur kerja markup foto seluler SiteReportKit dengan bukti konstruksi" height="2868" src="/assets/app/photo-markup.png" width="1320"/>
+<div><span>Tangkap</span><h3>Tandai cacat yang sebenarnya</h3><p>Pertahankan bukti asli sambil menambahkan markup visual yang jelas untuk orang yang melakukan pekerjaan.</p></div>
+</article>
+<article>
+<img alt="Opsi ekspor daftar tindakan kontraktor seluler SiteReportKit" height="2868" src="/assets/app/action-lists.png" width="1320"/>
+<div><span>Tetapkan</span><h3>Lingkup pekerjaan berdasarkan pemilik atau area</h3><p>Berikan setiap kontraktor daftar terfokus tanpa memaparkan item proyek yang tidak terkait.</p></div>
+</article>
+<article>
+<img alt="Pratinjau laporan PDF seluler SiteReportKit dan alur kerja ekspor" height="2868" src="/assets/app/pdf-export.png" width="1320"/>
+<div><span>Ekspor</span><h3>Pratinjau laporan di situs</h3><p>Tinjau PDF klien sebelum membagikannya, selagi konteks panduannya masih segar.</p></div>
+</article>
+</div>
+</section>
+<section aria-labelledby="markets-title" class="section markets" id="markets">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Dibuat untuk terminologi lokal</p>
+<h2 id="markets-title">Alur kerja lapangan yang sama, mengungkapkan cara kerja pasar Anda.</h2>
+</div>
+<p>Pilih terminologi dan format makalah yang diharapkan klien dan kontraktor Anda. Halaman ini menjelaskan pengaturan dan contoh produk, bukan sertifikasi peraturan setempat.</p>
+</div>
+<div class="market-grid">
+<a data-campaign="homepage-market-us" data-cta="market-entry" data-destination="guide" data-market="us" data-placement="homepage" href="/id/us/punch-list-app/">
+<span>Amerika Serikat</span>
+<strong>Daftar pukulan · Surat</strong>
+<small>Untuk jalan-jalan, kepemilikan dagang, dan obralan subkontraktor.</small>
+</a>
+<a data-campaign="homepage-market-uk" data-cta="market-entry" data-destination="guide" data-market="uk" data-placement="homepage" href="/id/uk/snagging-app/">
+<span>Inggris</span>
+<strong>Tersangkut · A4</strong>
+<small>Untuk serah terima bangunan baru, inspeksi lokasi, dan laporan halangan.</small>
+</a>
+<a data-campaign="homepage-market-au" data-cta="market-entry" data-destination="guide" data-market="au" data-placement="homepage" href="/id/au/defect-list-app/">
+<span>Australia</span>
+<strong>Daftar cacat · A4</strong>
+<small>Untuk tindakan pembangun, cakupan perdagangan, dan jalan penyelesaian praktis.</small>
+</a>
+</div>
+</section>
+<section aria-labelledby="features-title" class="section features">
+<div class="section-heading compact">
+<p class="eyebrow">Mengapa tim memilihnya</p>
+<h2 id="features-title">Alat pelaporan yang terfokus, bukan rangkaian konstruksi lainnya.</h2>
+</div>
+<div class="feature-grid">
+<article>
+<h3>Offline-dulu secara default</h3>
+<p>Proyek dan media tetap bersifat lokal selama pengambilan gambar, sehingga sinyal yang buruk di lokasi tidak menghalangi laporan.</p>
+</article>
+<article>
+<h3>Jejak bukti profesional</h3>
+<p>Pertahankan dokumen asli dengan catatan integritas SHA-256, buramkan detail pribadi, tambahkan pengukuran, dan simpan markup yang telah diedit di samping bukti obral.</p>
+</article>
+<article>
+<h3>Terminologi yang fleksibel</h3>
+<p>Mendukung daftar pukulan, laporan tersangkut, daftar cacat, observasi, audit lokasi, dan jalan pemeliharaan.</p>
+</article>
+<article>
+<h3>Penyerahan yang dapat ditindaklanjuti</h3>
+<p>Kirim serah terima masalah yang terkunci, gabungkan pembaruan yang dikembalikan, ikuti komentar dan aktivitas yang diberi stempel waktu, lalu ekspor register XLSX atau paket obral.</p>
+</article>
+<article>
+<h3>Penandatanganan yang fleksibel</h3>
+<p>Buat tanda tangan, buat tanda tangan dari nama yang diketik, atau impor gambar tanda tangan yang disetujui untuk persetujuan inspektur dan klien.</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="use-cases-title" class="section use-cases" id="use-cases">
+<div class="section-heading">
+<p class="eyebrow">Kasus penggunaan</p>
+<h2 id="use-cases-title">Bagi masyarakat yang memerlukan laporan selesai dalam keadaan kunjungan masih segar.</h2>
+</div>
+<div class="use-case-grid">
+<article>
+<h3>Inspektur bangunan</h3>
+<p>Menghasilkan PDF klien yang disempurnakan dengan halaman sampul bermerek, teks batasan, indeks masalah, dan bukti foto.</p>
+</article>
+<article>
+<h3>Arsitek dan desainer</h3>
+<p>Catat pengamatan lokasi berdasarkan area dan kirimkan daftar tindakan bersih kepada kontraktor tanpa pembersihan spreadsheet.</p>
+</article>
+<article>
+<h3>Kontraktor dan manajer lokasi</h3>
+<p>Jalankan proses serah terima, tetapkan tanggung jawab perdagangan, lacak obralan, dan ekspor daftar cakupan untuk subkontraktor.</p>
+</article>
+<article>
+<h3>Tim properti dan fasilitas</h3>
+<p>Masalah pemeliharaan dokumen, sebelum dan sesudah bukti, cacat berulang, dan catatan proyek yang dapat diarsipkan.</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="downloads-title" class="section sample-downloads">
+<div>
+<p class="eyebrow">Contoh unduhan</p>
+<h2 id="downloads-title">Periksa hasilnya sebelum Anda mencoba aplikasi.</h2>
+</div>
+<div class="download-list">
+<a href="/downloads/sample-interior-handover-report.pdf">
+<strong>Laporan serah terima interior PDF</strong>
+<span>Lima benda tersangkut di dalam ruangan</span>
+</a>
+<a href="/downloads/sample-construction-defect-report.pdf">
+<strong>Laporan cacat konstruksi PDF</strong>
+<span>Enam cacat konstruksi lokasi aktif</span>
+</a>
+<a href="/downloads/sample-snag-action-list.pdf">
+<strong>PDF daftar tindakan kontraktor</strong>
+<span>Buka item untuk tim pengiriman</span>
+</a>
+<a href="/downloads/sample-closeout-report.pdf">
+<strong>Laporan obral PDF</strong>
+<span>Masalah dan bukti terselesaikan</span>
+</a>
+<a href="/downloads/sample-issue-register.csv">
+<strong>Keluarkan CSV register</strong>
+<span>Ekspor spreadsheet laporan interior</span>
+</a>
+<a href="/downloads/sample-construction-issue-register.csv">
+<strong>CSV daftar masalah konstruksi</strong>
+<span>Ekspor spreadsheet laporan konstruksi</span>
+</a>
+</div>
+</section>
+<section aria-labelledby="pricing-title" class="section pricing" id="pricing">
+<div class="pricing-copy">
+<p class="eyebrow">Harga lokal sederhana</p>
+<h2 id="pricing-title">Mulai gratis. Buka kunci ekspor profesional yang bersih satu kali.</h2>
+<p>
+            Gunakan setiap alur kerja bidang inti secara lokal tanpa membuat akun. Gratis mencakup tiga total ekspor file yang diberi watermark. Peluncuran Pro yang direncanakan adalah pembelian satu kali senilai USD 9,99 yang dapat dipulihkan di toko pada versi toko seluler yang didukung—tanpa berlangganan. Harga akhir etalase yang dilokalkan dapat bervariasi menurut pajak dan mata uang.
+          </p>
+</div>
+<div aria-label="Perbandingan gratis dan Pro" class="pricing-compare">
+<article class="plan-card">
+<p class="plan-label">Gratis</p>
+<p class="price">$0 <span>penggunaan lokal</span></p>
+<ul>
+<li>Proyek dan pratinjau lokal tanpa batas</li>
+<li>3 total ekspor PDF/XLSX/CSV yang diberi watermark</li>
+<li>Templat laporan dasar lapangan</li>
+<li>Tata letak foto standar</li>
+</ul>
+<a class="button button-secondary" data-campaign="homepage-pricing-sample" data-cta="sample-report" data-destination="pdf" data-placement="pricing" href="/downloads/sample-interior-handover-report.pdf">Periksa hasilnya</a>
+</article>
+<article class="plan-card plan-card-pro">
+<p class="plan-label">Pro Individu</p>
+<p class="price">$9.99 <span>target peluncuran satu kali</span></p>
+<ul>
+<li>Ekspor PDF, XLSX, dan CSV bersih tanpa batas</li>
+<li>Logo kustom dan branding perusahaan</li>
+<li>Kekaburan privasi, pengukuran, dan integritas bukti</li>
+<li>Masalah serah terima dan riwayat aktivitas terkunci</li>
+<li>Tanda tangan yang digambar, diketik, atau diimpor</li>
+</ul>
+<a class="button button-primary" data-campaign="homepage-pricing" data-cta="early-access" data-destination="email" data-placement="pricing" href="mailto:hello@sitereportkit.com?subject=SiteReportKit%20early%20access">Minta akses awal</a>
+</article>
+<p class="launch-note">Peluncuran App Store sedang berlangsung. Harga dan ketersediaan etalase akhir akan dikonfirmasi pada daftar langsung. Pro tidak mencakup akun, sinkronisasi cloud, atau ruang kerja tim.</p>
+</div>
+</section>
+<section aria-labelledby="faq-title" class="section faq">
+<div class="section-heading compact">
+<p class="eyebrow">Pertanyaan umum</p>
+<h2 id="faq-title">Ketahui fungsi aplikasi sebelum menggunakannya di lokasi.</h2>
+</div>
+<div class="faq-list">
+<details>
+<summary>Apakah SiteReportKit berfungsi tanpa akun?</summary>
+<p>Ya. Pengambilan proyek inti, penyimpanan lokal, pratinjau laporan, dan contoh alur kerja tidak memerlukan akun.</p>
+</details>
+<details>
+<summary>Bisakah saya bekerja secara offline?</summary>
+<p>Ya. Pengambilan proyek, foto, markup, dan pembuatan laporan dirancang untuk berfungsi secara lokal. Koneksi jaringan masih diperlukan untuk pembelian atau pemulihan toko.</p>
+</details>
+<details>
+<summary>Apa saja yang termasuk dalam Ekspor Gratis?</summary>
+<p>Gratis mencakup tiga total ekspor file PDF, XLSX, atau CSV dengan branding SiteReportKit Gratis. Pratinjau dan proyek lokal tetap tidak terbatas.</p>
+</details>
+<details>
+<summary>Apakah SiteReportKit merupakan platform manajemen konstruksi lengkap?</summary>
+<p>Tidak. Ini sengaja difokuskan pada penangkapan lapangan yang cepat dan laporan serah terima profesional, tanpa BIM, RFI, jadwal, atau koordinasi tim waktu nyata.</p>
+</details>
+</div>
+</section>
+<section aria-labelledby="phone-handoff-title" class="section phone-handoff">
+<div class="phone-handoff-copy">
+<p class="eyebrow">Lanjutkan di ponsel Anda</p>
+<h2 id="phone-handoff-title">Bawalah contoh alur kerja bersama Anda.</h2>
+<p>Pindai kode untuk membuka SiteReportKit di ponsel Anda, atau buka pesan teks yang sudah diisi sebelumnya yang dapat Anda kirim ke diri Anda sendiri. Kedua tautan tersebut menggunakan label kampanye tanpa cookie pemasaran.</p>
+<div class="hero-actions">
+<a class="button button-primary" data-campaign="homepage-phone-handoff" data-cta="phone-handoff" data-destination="sms" data-placement="homepage" href="sms:?&amp;body=Open%20SiteReportKit%20on%20your%20phone%3A%20https%3A%2F%2Fsitereportkit.com%2F%3Fsrc%3Dsms%26campaign%3Dhomepage-phone-handoff">Kirimkan tautannya ke diri Anda sendiri</a>
+<a class="button button-secondary" data-campaign="homepage-phone-handoff" data-cta="early-access" data-destination="email" data-placement="phone-handoff" href="mailto:hello@sitereportkit.com?subject=SiteReportKit%20launch%20updates">Dapatkan pembaruan peluncuran</a>
+</div>
+<p class="handoff-note">Tombol SMS hanya membuka pembuat pesan perangkat Anda. SiteReportKit tidak menerima nomor telepon. Tautan toko terverifikasi akan menggantikan tujuan pra-peluncuran ini setelah disetujui.</p>
+</div>
+<figure>
+<img alt="Kode QR untuk membuka situs web SiteReportKit di ponsel" height="232" src="/assets/brand/phone-handoff-qr.svg" width="232"/>
+<figcaption>Buka situs pra-peluncuran di ponsel Anda</figcaption>
+</figure>
+</section>
+<section aria-labelledby="final-cta-title" class="final-cta">
+<img alt="" height="103" src="/assets/brand/sitereportkit-mark.png?v=20260708-exact-logo" width="64"/>
+<h2 id="final-cta-title">Buat laporan sebelum pekerjaan itu hilang dari pikiran Anda.</h2>
+<p>SiteReportKit diluncurkan pertama kali dengan pelaporan situs seluler yang cepat, lokal, dan profesional, dengan alur kerja berkemampuan desktop dan web yang direncanakan setelah alur kerja bidang inti stabil.</p>
+<div class="hero-actions">
+<a class="button button-primary" data-cta="final_interior_sample" href="/downloads/sample-interior-handover-report.pdf">Contoh interior</a>
+<a class="button button-secondary" data-cta="final_construction_sample" href="/downloads/sample-construction-defect-report.pdf">Contoh konstruksi</a>
+<a class="button button-secondary" data-cta="final_contact" href="mailto:hello@sitereportkit.com">Kontak</a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div>
+<img alt="SiteReportKit" height="40" src="/assets/brand/sitereportkit-wordmark.png?v=20260708-exact-logo" width="184"/>
+<p>Pelaporan daftar pukulan pertama, tersangkut, cacat, dan obral secara offline.</p>
+</div>
+<nav aria-label="Navigasi catatan kaki">
+<a href="#reports">Laporan</a>
+<a href="#workflow">Alur Kerja</a>
+<a href="#use-cases">Kasus penggunaan</a>
+<a href="/id/sample-reports/">Contoh laporan</a>
+<a href="/id/resources/punch-list-vs-snag-list-vs-defect-list/">Panduan terminologi</a>
+<a href="/id/pricing/">Harga</a>
+<a href="/downloads/sample-snagging-report.pdf">Contoh PDF</a>
+<a href="/id/support/">Dukungan</a>
+<a href="/id/privacy/">Privasi</a>
+</nav>
+</footer>
 </body>
 </html>
+

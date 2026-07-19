@@ -1,61 +1,485 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="vi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Kiểm tra và báo cáo PDF | SiteReportKit</title>
-  <meta name="description" content="Ghi nhận lỗi bằng ảnh và đánh dấu, sắp xếp danh sách khắc phục rồi tạo báo cáo PDF hoặc CSV ngay tại công trường.">
-  <link rel="canonical" href="https://sitereportkit.com/vi/">
-  <link rel="alternate" hreflang="x-default" href="https://sitereportkit.com/">
-  <link rel="alternate" hreflang="ar-SA" href="https://sitereportkit.com/ar-SA/">
-  <link rel="alternate" hreflang="ca" href="https://sitereportkit.com/ca/">
-  <link rel="alternate" hreflang="cs" href="https://sitereportkit.com/cs/">
-  <link rel="alternate" hreflang="da" href="https://sitereportkit.com/da/">
-  <link rel="alternate" hreflang="de-DE" href="https://sitereportkit.com/de-DE/">
-  <link rel="alternate" hreflang="el" href="https://sitereportkit.com/el/">
-  <link rel="alternate" hreflang="en-US" href="https://sitereportkit.com/en-US/">
-  <link rel="alternate" hreflang="es-MX" href="https://sitereportkit.com/es-MX/">
-  <link rel="alternate" hreflang="fi" href="https://sitereportkit.com/fi/">
-  <link rel="alternate" hreflang="fr-FR" href="https://sitereportkit.com/fr-FR/">
-  <link rel="alternate" hreflang="he" href="https://sitereportkit.com/he/">
-  <link rel="alternate" hreflang="hi" href="https://sitereportkit.com/hi/">
-  <link rel="alternate" hreflang="hr" href="https://sitereportkit.com/hr/">
-  <link rel="alternate" hreflang="hu" href="https://sitereportkit.com/hu/">
-  <link rel="alternate" hreflang="id" href="https://sitereportkit.com/id/">
-  <link rel="alternate" hreflang="it" href="https://sitereportkit.com/it/">
-  <link rel="alternate" hreflang="ja" href="https://sitereportkit.com/ja/">
-  <link rel="alternate" hreflang="ko" href="https://sitereportkit.com/ko/">
-  <link rel="alternate" hreflang="ms" href="https://sitereportkit.com/ms/">
-  <link rel="alternate" hreflang="nl-NL" href="https://sitereportkit.com/nl-NL/">
-  <link rel="alternate" hreflang="no" href="https://sitereportkit.com/no/">
-  <link rel="alternate" hreflang="pl" href="https://sitereportkit.com/pl/">
-  <link rel="alternate" hreflang="pt-BR" href="https://sitereportkit.com/pt-BR/">
-  <link rel="alternate" hreflang="ro" href="https://sitereportkit.com/ro/">
-  <link rel="alternate" hreflang="ru" href="https://sitereportkit.com/ru/">
-  <link rel="alternate" hreflang="sk" href="https://sitereportkit.com/sk/">
-  <link rel="alternate" hreflang="sv" href="https://sitereportkit.com/sv/">
-  <link rel="alternate" hreflang="th" href="https://sitereportkit.com/th/">
-  <link rel="alternate" hreflang="tr" href="https://sitereportkit.com/tr/">
-  <link rel="alternate" hreflang="uk" href="https://sitereportkit.com/uk/">
-  <link rel="alternate" hreflang="vi" href="https://sitereportkit.com/vi/">
-  <link rel="alternate" hreflang="zh-Hans" href="https://sitereportkit.com/zh-Hans/">
-  <link rel="alternate" hreflang="zh-Hant" href="https://sitereportkit.com/zh-Hant/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="SiteReportKit">
-  <meta property="og:title" content="Kiểm tra và báo cáo PDF | SiteReportKit">
-  <meta property="og:description" content="Ghi nhận lỗi bằng ảnh và đánh dấu, sắp xếp danh sách khắc phục rồi tạo báo cáo PDF hoặc CSV ngay tại công trường.">
-  <meta property="og:url" content="https://sitereportkit.com/vi/">
-  <meta property="og:image" content="https://sitereportkit.com/assets/reports/samples/en-US/report-cover.png">
-  <link rel="icon" href="../assets/brand/sitereportkit-favicon.png">
-  <link rel="stylesheet" href="../marketing-pages.css?v=20260711">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SiteReportKit","applicationCategory":"BusinessApplication","operatingSystem":"iOS","description":"Ghi nhận lỗi bằng ảnh và đánh dấu, sắp xếp danh sách khắc phục rồi tạo báo cáo PDF hoặc CSV ngay tại công trường.","url":"https://sitereportkit.com/vi/"}</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>SiteReportKit | Danh sách cú đấm chuyên nghiệp và các báo cáo hấp dẫn</title>
+<meta content="SiteReportKit tạo danh sách ngoại tuyến với tính năng đánh dấu ảnh, số đo, chuyển giao có thể kiểm tra và xuất PDF, XLSX và CSV chuyên nghiệp." name="description"/>
+<meta content="#0A2342" name="theme-color"/>
+<meta content="SiteReportKit" property="og:title"/>
+<meta content="Tạo các bản PDF danh sách cú đấm chuyên nghiệp trước khi rời khỏi trang web." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://sitereportkit.com/vi/" property="og:url"/>
+<meta content="https://sitereportkit.com/assets/reports/report-cover.png?v=20260710-separated-samples" property="og:image"/>
+<link href="https://sitereportkit.com/vi/" rel="canonical"/><link href="https://sitereportkit.com/" hreflang="x-default" rel="alternate"/><link href="https://sitereportkit.com/ar-SA/" hreflang="ar-SA" rel="alternate"/><link href="https://sitereportkit.com/ca/" hreflang="ca" rel="alternate"/><link href="https://sitereportkit.com/cs/" hreflang="cs" rel="alternate"/><link href="https://sitereportkit.com/da/" hreflang="da" rel="alternate"/><link href="https://sitereportkit.com/de-DE/" hreflang="de-DE" rel="alternate"/><link href="https://sitereportkit.com/el/" hreflang="el" rel="alternate"/><link href="https://sitereportkit.com/en-US/" hreflang="en-US" rel="alternate"/><link href="https://sitereportkit.com/es-MX/" hreflang="es-MX" rel="alternate"/><link href="https://sitereportkit.com/fi/" hreflang="fi" rel="alternate"/><link href="https://sitereportkit.com/fr-FR/" hreflang="fr-FR" rel="alternate"/><link href="https://sitereportkit.com/he/" hreflang="he" rel="alternate"/><link href="https://sitereportkit.com/hi/" hreflang="hi" rel="alternate"/><link href="https://sitereportkit.com/hr/" hreflang="hr" rel="alternate"/><link href="https://sitereportkit.com/hu/" hreflang="hu" rel="alternate"/><link href="https://sitereportkit.com/id/" hreflang="id" rel="alternate"/><link href="https://sitereportkit.com/it/" hreflang="it" rel="alternate"/><link href="https://sitereportkit.com/ja/" hreflang="ja" rel="alternate"/><link href="https://sitereportkit.com/ko/" hreflang="ko" rel="alternate"/><link href="https://sitereportkit.com/ms/" hreflang="ms" rel="alternate"/><link href="https://sitereportkit.com/nl-NL/" hreflang="nl-NL" rel="alternate"/><link href="https://sitereportkit.com/no/" hreflang="no" rel="alternate"/><link href="https://sitereportkit.com/pl/" hreflang="pl" rel="alternate"/><link href="https://sitereportkit.com/pt-BR/" hreflang="pt-BR" rel="alternate"/><link href="https://sitereportkit.com/ro/" hreflang="ro" rel="alternate"/><link href="https://sitereportkit.com/ru/" hreflang="ru" rel="alternate"/><link href="https://sitereportkit.com/sk/" hreflang="sk" rel="alternate"/><link href="https://sitereportkit.com/sv/" hreflang="sv" rel="alternate"/><link href="https://sitereportkit.com/th/" hreflang="th" rel="alternate"/><link href="https://sitereportkit.com/tr/" hreflang="tr" rel="alternate"/><link href="https://sitereportkit.com/uk-UA/" hreflang="uk" rel="alternate"/><link href="https://sitereportkit.com/vi/" hreflang="vi" rel="alternate"/><link href="https://sitereportkit.com/zh-Hans/" hreflang="zh-Hans" rel="alternate"/><link href="https://sitereportkit.com/zh-Hant/" hreflang="zh-Hant" rel="alternate"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/assets/brand/sitereportkit-favicon.png?v=20260708-exact-logo" rel="icon" type="image/png"/>
+<link href="/styles.css?v=20260710-separated-samples" rel="stylesheet"/>
+<script defer="" src="/script.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SiteReportKit","applicationCategory":"Ứng dụng kinh doanh","operatingSystem":"iOS","description":"Danh sách cú đấm đầu tiên ngoại tuyến, báo cáo giật, lỗi và kết thúc bằng các bản xuất PDF, XLSX và CSV chuyên nghiệp.","url":"https://sitereportkit.com/vi/","featureList":["Ghi lại sự cố ngoại tuyến","Đánh dấu ảnh không phá hủy","Xuất PDF, XLSX và CSV","Chú thích đo lường và làm mờ quyền riêng tư","Hoạt động được đánh dấu thời gian và chuyển giao vấn đề bị khóa","Ba phương thức nhập chữ ký","Bản ghi toàn vẹn bằng chứng SHA-256","Danh sách hành động của nhà thầu","Bằng chứng khóa sổ","Lưu trữ dự án địa phương"],"publisher":{"@type":"Organization","name":"SiteReportKit","url":"https://sitereportkit.com/vi/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"SiteReportKit có hoạt động mà không cần tài khoản không?","acceptedAnswer":{"@type":"Answer","text":"Có. Chụp dự án cốt lõi, lưu trữ cục bộ, xem trước báo cáo và quy trình làm việc mẫu không yêu cầu tài khoản."}},{"@type":"Question","name":"Tôi có thể làm việc ngoại tuyến không?","acceptedAnswer":{"@type":"Answer","text":"Có. Chụp dự án, ảnh, đánh dấu và tạo báo cáo được thiết kế để hoạt động cục bộ. Vẫn cần có kết nối mạng để mua hoặc khôi phục tại cửa hàng."}},{"@type":"Question","name":"Xuất khẩu miễn phí bao gồm những gì?","acceptedAnswer":{"@type":"Answer","text":"Miễn phí bao gồm tổng cộng ba lần xuất tệp PDF, XLSX hoặc CSV với nhãn hiệu SiteReportKit Free. Bản xem trước và các dự án địa phương vẫn không giới hạn."}}]}</script>
 </head>
 <body>
-  <header class="site-header"><a class="brand" href="../"><img src="../assets/brand/sitereportkit-wordmark.png" alt="SiteReportKit" width="224" height="49"></a><label><span class="sr-only">Language</span><select onchange="if(this.value)location.href=this.value"><option value="/ar-SA/">العربية</option><option value="/ca/">Català</option><option value="/cs/">Čeština</option><option value="/da/">Dansk</option><option value="/de-DE/">Deutsch</option><option value="/el/">Ελληνικά</option><option value="/en-US/">English</option><option value="/es-MX/">Español</option><option value="/fi/">Suomi</option><option value="/fr-FR/">Français</option><option value="/he/">עברית</option><option value="/hi/">हिन्दी</option><option value="/hr/">Hrvatski</option><option value="/hu/">Magyar</option><option value="/id/">Bahasa Indonesia</option><option value="/it/">Italiano</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/ms/">Bahasa Melayu</option><option value="/nl-NL/">Nederlands</option><option value="/no/">Norsk</option><option value="/pl/">Polski</option><option value="/pt-BR/">Português</option><option value="/ro/">Română</option><option value="/ru/">Русский</option><option value="/sk/">Slovenčina</option><option value="/sv/">Svenska</option><option value="/th/">ไทย</option><option value="/tr/">Türkçe</option><option value="/uk/">Українська</option><option value="/vi/" selected>Tiếng Việt</option><option value="/zh-Hans/">简体中文</option><option value="/zh-Hant/">繁體中文</option></select></label></header>
-  <main>
-    <section class="hero"><div class="hero-inner"><div><p class="eyebrow">SiteReportKit</p><h1>Kiểm tra và báo cáo PDF</h1><p class="hero-lede">Ghi nhận lỗi bằng ảnh và đánh dấu, sắp xếp danh sách khắc phục rồi tạo báo cáo PDF hoặc CSV ngay tại công trường.</p><div class="actions"><a class="button button-primary" href="https://apps.apple.com/app/id6788361013">App Store</a><a class="button button-secondary" href="../downloads/samples/en-US/sample-report.pdf">PDF</a></div></div><img src="../assets/reports/samples/en-US/report-cover.png" alt="SiteReportKit" width="993" height="1404"></div></section>
-    <section class="section section-white"><div class="section-inner"><div class="related-grid"><article class="related-card"><h2>Ghi nhận lỗi tại công trường</h2></article><article class="related-card"><h2>Sắp xếp việc cần khắc phục</h2></article><article class="related-card"><h2>Xuất báo cáo PDF chuyên nghiệp</h2></article></div><div class="prose"><p>Biến một vòng kiểm tra công trường thành báo cáo rõ ràng, chuyên nghiệp. SiteReportKit ưu tiên hoạt động ngoại tuyến, phù hợp cho kiểm tra, danh sách lỗi, bàn giao và hoàn tất công việc.</p><p>Ghi từng vấn đề với vị trí, hạng mục, mức độ, người phụ trách, hạn xử lý, trạng thái, ảnh minh chứng, chú thích và phần đánh dấu không làm thay đổi ảnh gốc. Tìm kiếm, lọc danh sách, cập nhật nhiều mục và lưu ghi chú khắc phục cùng lịch sử rà soát có hệ thống.</p><p>Xuất báo cáo PDF, danh sách hành động cho nhà thầu, báo cáo hoàn tất và sổ theo dõi vấn đề dạng CSV. Chọn bố cục, thêm nhận diện công ty và tạo danh sách theo khu vực hoặc người phụ trách. Quy trình cục bộ chính không cần tài khoản.</p><p>Không chỉ đánh dấu cơ bản: hãy dùng làm mờ riêng tư và chú thích đo lường. Xuất sổ làm việc XLSX có thể chỉnh sửa cùng PDF và CSV, theo dõi bình luận và hoạt động có dấu thời gian, đồng thời trao đổi gói bàn giao đã khóa để hợp nhất cập nhật gửi lại. Vẽ, nhập tên hoặc nhập ảnh chữ ký. Bằng chứng gốc được lưu cùng hồ sơ toàn vẹn SHA-256.</p></div></div></section>
-  </main>
-  <footer class="site-footer"><div class="footer-inner"><strong>SiteReportKit</strong><nav class="footer-links"><a href="../privacy/">Privacy</a><a href="../support/">Support</a></nav></div></footer>
+<header class="site-header" data-header="">
+<a aria-label="Trang chủ SiteReportKit" class="brand" href="#top">
+<img alt="SiteReportKit" class="brand-logo" height="49" src="/assets/brand/sitereportkit-wordmark.png?v=20260708-exact-logo" width="224"/>
+</a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" data-nav-toggle="" type="button">
+<span class="sr-only">Mở điều hướng</span>
+<span></span>
+<span></span>
+<span></span>
+</button>
+<nav class="site-nav" data-nav="" id="site-nav">
+<a href="#reports">Báo cáo</a>
+<a href="#workflow">Quy trình làm việc</a>
+<a href="/vi/sample-reports/">Mẫu</a>
+<a href="#markets">Thị trường</a>
+<a href="#pricing">Giá cả</a>
+
+<label class="language-switcher"><span aria-hidden="true" class="language-switcher-icon">🌐</span><span class="sr-only">Language</span><select aria-label="Language" onchange="if(this.value)location.href=this.value"><option value="/ar-SA/">العربية</option><option value="/ca/">Català</option><option value="/cs/">Čeština</option><option value="/da/">Dansk</option><option value="/de-DE/">Deutsch</option><option value="/el/">Ελληνικά</option><option value="/en-US/">English</option><option value="/es-MX/">Español</option><option value="/fi/">Suomi</option><option value="/fr-FR/">Français</option><option value="/he/">עברית</option><option value="/hi/">हिन्दी</option><option value="/hr/">Hrvatski</option><option value="/hu/">Magyar</option><option value="/id/">Bahasa Indonesia</option><option value="/it/">Italiano</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/ms/">Bahasa Melayu</option><option value="/nl-NL/">Nederlands</option><option value="/no/">Norsk</option><option value="/pl/">Polski</option><option value="/pt-BR/">Português</option><option value="/ro/">Română</option><option value="/ru/">Русский</option><option value="/sk/">Slovenčina</option><option value="/sv/">Svenska</option><option value="/th/">ไทย</option><option value="/tr/">Türkçe</option><option value="/uk-UA/">Українська</option><option selected="" value="/vi/">Tiếng Việt</option><option value="/zh-Hans/">简体中文</option><option value="/zh-Hant/">繁體中文</option></select></label><a class="nav-cta" data-campaign="homepage-nav" data-cta="sample-report" data-destination="pdf" data-placement="header" href="/downloads/sample-snagging-report.pdf">PDF mẫu</a>
+</nav>
+</header>
+
+<main id="top">
+<section aria-labelledby="hero-title" class="hero">
+<div aria-hidden="true" class="hero-media">
+<img alt="" class="hero-page hero-page-main" src="/assets/reports/report-cover.png?v=20260710-separated-samples"/>
+<img alt="" class="hero-page hero-page-side" src="/assets/reports/report-issue-evidence.png?v=20260710-separated-samples"/>
+<img alt="" class="hero-page hero-page-back" src="/assets/reports/action-list-cover.png?v=20260710-separated-samples"/>
+</div>
+<div class="hero-copy">
+<p class="eyebrow">Báo cáo trường ngoại tuyến đầu tiên</p>
+<h1 id="hero-title">Hãy hoàn thành phần hướng dẫn. Gửi báo cáo trước khi bạn rời đi.</h1>
+<p class="hero-lede">SiteReportKit biến bằng chứng trang web thành một bản chuyển giao chuyên nghiệp.</p>
+<p class="hero-support">
+            Thu thập bằng chứng có thể bảo vệ, phân công trách nhiệm và xuất các bản phân phối PDF, XLSX hoặc CSV có thương hiệu — ngoại tuyến, không cần tài khoản.
+          </p>
+<div aria-label="Hành động chính" class="hero-actions">
+<a class="button button-primary" data-campaign="homepage-hero-sample" data-cta="sample-report" data-destination="pdf" data-placement="hero" data-report-kind="interior-handover" href="/downloads/sample-interior-handover-report.pdf">Tải xuống báo cáo mẫu</a>
+<a class="button button-secondary" data-campaign="homepage-hero-action-list" data-cta="sample-report" data-destination="pdf" data-placement="hero" data-report-kind="contractor-action-list" href="/downloads/sample-snag-action-list.pdf">Xem danh sách hành động của nhà thầu</a>
+</div>
+<dl aria-label="Điểm nổi bật của sản phẩm" class="hero-proof">
+<div>
+<dt>Hoạt động ngoại tuyến</dt>
+<dd>Tiếp tục đi bộ khi tín hiệu giảm</dd>
+</div>
+<div>
+<dt>Không cần tài khoản</dt>
+<dd>Chụp cục bộ và xuất khi sẵn sàng</dd>
+</div>
+<div>
+<dt>PDF + XLSX + CSV</dt>
+<dd>Báo cáo, sổ làm việc và sổ đăng ký có thể chỉnh sửa</dd>
+</div>
+</dl>
+</div>
+</section>
+<section aria-label="Lời hứa về sản phẩm cốt lõi" class="trust-strip">
+<p>Ghi lại bằng chứng tại hiện trường.</p>
+<p>Giao trách nhiệm.</p>
+<p>Xuất bản chuyển giao.</p>
+</section>
+<section aria-labelledby="reports-title" class="section report-showcase" id="reports">
+<div class="section-heading">
+<p class="eyebrow">Đầu ra mẫu thực</p>
+<h2 id="reports-title">Hai báo cáo riêng biệt cho hai lượt truy cập địa điểm rất khác nhau.</h2>
+<p>
+            Việc bàn giao nội thất và chủ động kiểm tra xây dựng tách biệt với việc thu thập thông qua xuất khẩu. Mỗi dự án đều có dự án riêng, chỉ mục vấn đề, bộ bằng chứng, danh sách hành động và báo cáo có thể tải xuống.
+          </p>
+</div>
+<div aria-label="Các loại báo cáo mẫu" class="report-edition-grid">
+<article class="report-edition">
+<div class="report-edition-media">
+<img alt="Bìa biên bản bàn giao nội thất Maple Row" height="1404" src="/assets/reports/report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<div class="report-edition-copy">
+<p class="report-type">Bàn giao nội thất</p>
+<h3>Chuyển giao Maple Row</h3>
+<p>Năm hạng mục quan trọng trong nội thất bao gồm hoàn thiện, sơn, kiểm tra điện, cửa và yêu cầu thay đổi của khách hàng.</p>
+<div aria-label="Tóm tắt báo cáo nội thất" class="report-edition-facts">
+<span>5 lỗi</span>
+<span>9 trang</span>
+<span>Chỉ bằng chứng bên trong</span>
+</div>
+<div class="report-edition-actions">
+<a class="button button-primary" href="/downloads/sample-interior-handover-report.pdf">PDF nội thất</a>
+<a class="button button-secondary" href="/downloads/sample-snag-action-list.pdf">Danh sách hành động nội thất</a>
+</div>
+</div>
+</article>
+<article class="report-edition report-edition-construction">
+<div class="report-edition-media">
+<img alt="Bìa báo cáo lỗi kiểm tra xây dựng của Harbor Point" height="1404" src="/assets/reports/construction-report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<div class="report-edition-copy">
+<p class="report-type">Xây dựng tích cực</p>
+<h3>Thanh tra xây dựng Harbor Point</h3>
+<p>Sáu lỗi xây dựng bao gồm chống cháy mặt tiền, bê tông, thoát nước, công trình tạm thời, khối xây và chống thấm mái nhà.</p>
+<div aria-label="Tóm tắt báo cáo thi công" class="report-edition-facts">
+<span>6 lỗi</span>
+<span>10 trang</span>
+<span>Chỉ bằng chứng xây dựng</span>
+</div>
+<div class="report-edition-actions">
+<a class="button button-primary" href="/downloads/sample-construction-defect-report.pdf">PDF xây dựng</a>
+<a class="button button-secondary" href="/downloads/sample-construction-defect-action-list.pdf">Danh sách hành động xây dựng</a>
+</div>
+</div>
+</article>
+</div>
+<div class="report-lab">
+<figure class="report-preview">
+<div class="report-preview-top">
+<span>PDF khách hàng mẫu</span>
+<a href="/downloads/sample-interior-handover-report.pdf">Tải xuống</a>
+</div>
+<div class="document-frame">
+<img alt="Bìa báo cáo nội thất mẫu SiteReportKit có chỉ mục tóm tắt và chỉ mục" height="1404" src="/assets/reports/report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<figcaption>
+<strong>Báo cáo khách hàng đầy đủ</strong>
+<span>Bìa, tóm tắt, chỉ mục, chi tiết vấn đề, ảnh bằng chứng và định dạng sẵn sàng đăng xuất.</span>
+</figcaption>
+</figure>
+<div aria-label="Chế độ xem báo cáo mẫu" class="sample-stack">
+<div class="sample-stack-heading">
+<p class="eyebrow">Bên trong bản xuất</p>
+<h3>Bằng chứng có cấu trúc, không phải cuộn camera được chuyển thành bản PDF.</h3>
+</div>
+<article class="sample-row">
+<img alt="Trang chi tiết về vấn đề nội thất hiển thị hành động cần thực hiện, ảnh bằng chứng, chủ sở hữu, trạng thái và ngày đến hạn" height="1404" src="/assets/reports/report-issue-evidence.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Đưa ra bằng chứng</h4>
+<p>Mỗi lỗi giữ ảnh, chú thích, chủ sở hữu, mức độ nghiêm trọng, trạng thái và hành động bắt buộc cùng nhau.</p>
+</div>
+</article>
+<article class="sample-row">
+<img alt="Danh sách hành động của nhà thầu nội thất Bìa PDF và bản tóm tắt lỗi nổi bật được tạo bởi SiteReportKit" height="1404" src="/assets/reports/action-list-cover.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Danh sách hành động của nhà thầu</h4>
+<p>Chỉ lọc để mở các mục và giao cho mỗi giao dịch một phạm vi công việc tập trung.</p>
+</div>
+</article>
+<article class="sample-row">
+<img alt="Trang bằng chứng khóa sổ nội thất hiển thị sau ảnh và ghi chú giải pháp" height="1404" src="/assets/reports/report-after-evidence.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Bằng chứng khóa sổ</h4>
+<p>Các mục đã giải quyết bao gồm ghi chú chấp nhận và ảnh sau để có đường dẫn chuyển giao rõ ràng.</p>
+</div>
+</article>
+<div aria-label="Tải xuống mẫu" class="sample-actions">
+<a class="button button-primary" href="/downloads/sample-interior-handover-report.pdf">PDF nội thất</a>
+<a class="button button-secondary" href="/downloads/sample-snag-action-list.pdf">Danh sách hành động</a>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="workflow-title" class="section workflow" id="workflow">
+<div class="section-heading compact">
+<p class="eyebrow">Được xây dựng để đi dạo công trường</p>
+<h2 id="workflow-title">Từ bằng chứng tại hiện trường đến báo cáo theo ba bước.</h2>
+</div>
+<div class="workflow-layout">
+<ol class="workflow-list">
+<li>
+<span>01</span>
+<div>
+<h3>Ghi lại bằng chứng tại hiện trường</h3>
+<p>Thêm các vấn đề khi bạn đi bộ, kèm theo ảnh, đánh dấu không phá hủy, khu vực, giao dịch, mức độ nghiêm trọng và yêu cầu hành động rõ ràng.</p>
+</div>
+</li>
+<li>
+<span>02</span>
+<div>
+<h3>Phân công trách nhiệm</h3>
+<p>Đặt chủ sở hữu, ngày đến hạn, mức độ ưu tiên và trạng thái, sau đó lọc công việc theo nhà thầu, ngành nghề hoặc khu vực.</p>
+</div>
+</li>
+<li>
+<span>03</span>
+<div>
+<h3>Xuất bản chuyển giao</h3>
+<p>Xem trước và chia sẻ bản PDF đầy đủ của khách hàng, danh sách hành động của nhà thầu trong phạm vi, báo cáo kết thúc hoặc đăng ký vấn đề CSV trước khi rời đi.</p>
+</div>
+</li>
+</ol>
+<figure class="closeout-preview">
+<img alt="Trang báo cáo kết thúc với bằng chứng mục đã được giải quyết và định dạng sẵn sàng phê duyệt" height="1404" src="/assets/reports/closeout-report-page.png?v=20260710-separated-samples" width="993"/>
+<figcaption>Bằng chứng báo cáo khóa sổ kèm theo ghi chú giải quyết.</figcaption>
+</figure>
+</div>
+</section>
+<section aria-labelledby="app-proof-title" class="section app-proof">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Bằng chứng từ ứng dụng</p>
+<h2 id="app-proof-title">Được xây dựng xung quanh công trường, không phải quản trị viên văn phòng.</h2>
+</div>
+<p>Đây là những màn hình sản phẩm thực tế từ phiên bản di động hiện tại. Việc chụp ảnh, trách nhiệm và báo cáo luôn được kết nối từ bức ảnh đầu tiên đến bàn giao cuối cùng.</p>
+</div>
+<div class="app-proof-grid">
+<article>
+<img alt="Quy trình đánh dấu ảnh trên thiết bị di động SiteReportKit với bằng chứng xây dựng" height="2868" src="/assets/app/photo-markup.png" width="1320"/>
+<div><span>Chụp</span><h3>Đánh dấu lỗi chính xác</h3><p>Bảo quản bằng chứng gốc đồng thời thêm đánh dấu trực quan rõ ràng cho người thực hiện công việc.</p></div>
+</article>
+<article>
+<img alt="Tùy chọn xuất danh sách hành động của nhà thầu di động SiteReportKit" height="2868" src="/assets/app/action-lists.png" width="1320"/>
+<div><span>Chỉ định</span><h3>Phạm vi công việc theo chủ sở hữu hoặc khu vực</h3><p>Cung cấp cho mỗi nhà thầu một danh sách tập trung mà không để lộ các hạng mục dự án không liên quan.</p></div>
+</article>
+<article>
+<img alt="Quy trình xuất và xem trước báo cáo PDF trên thiết bị di động SiteReportKit" height="2868" src="/assets/app/pdf-export.png" width="1320"/>
+<div><span>Xuất</span><h3>Xem trước báo cáo trên trang web</h3><p>Xem lại bản PDF của máy khách trước khi chia sẻ nó, trong khi ngữ cảnh hướng dẫn vẫn còn mới.</p></div>
+</article>
+</div>
+</section>
+<section aria-labelledby="markets-title" class="section markets" id="markets">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Được xây dựng cho thuật ngữ địa phương</p>
+<h2 id="markets-title">Quy trình làm việc tương tự trong lĩnh vực này, thể hiện cách hoạt động của thị trường của bạn.</h2>
+</div>
+<p>Chọn thuật ngữ và định dạng giấy mà khách hàng và nhà thầu của bạn mong đợi. Các trang này mô tả các ví dụ và cài đặt sản phẩm, không phải chứng nhận theo quy định của địa phương.</p>
+</div>
+<div class="market-grid">
+<a data-campaign="homepage-market-us" data-cta="market-entry" data-destination="guide" data-market="us" data-placement="homepage" href="/vi/us/punch-list-app/">
+<span>Hoa Kỳ</span>
+<strong>Danh sách cú đấm · Chữ cái</strong>
+<small>Dành cho các bước đột phá, quyền sở hữu thương mại và kết thúc nhà thầu phụ.</small>
+</a>
+<a data-campaign="homepage-market-uk" data-cta="market-entry" data-destination="guide" data-market="uk" data-placement="homepage" href="/vi/uk/snagging-app/">
+<span>Vương quốc Anh</span>
+<strong>Rắc rối · A4</strong>
+<small>Để bàn giao công trình mới, kiểm tra địa điểm và báo cáo sự cố.</small>
+</a>
+<a data-campaign="homepage-market-au" data-cta="market-entry" data-destination="guide" data-market="au" data-placement="homepage" href="/vi/au/defect-list-app/">
+<span>Úc</span>
+<strong>Danh sách lỗi · A4</strong>
+<small>Dành cho các hành động của người xây dựng, phạm vi giao dịch và các bước hoàn thành thực tế.</small>
+</a>
+</div>
+</section>
+<section aria-labelledby="features-title" class="section features">
+<div class="section-heading compact">
+<p class="eyebrow">Tại sao các đội chọn nó</p>
+<h2 id="features-title">Một công cụ báo cáo tập trung thay vì một bộ công cụ xây dựng khác.</h2>
+</div>
+<div class="feature-grid">
+<article>
+<h3>Ngoại tuyến đầu tiên theo mặc định</h3>
+<p>Các dự án và phương tiện vẫn giữ nguyên cục bộ trong quá trình thu thập, do đó, tín hiệu kém trên cơ sở sẽ không chặn báo cáo.</p>
+</article>
+<article>
+<h3>Dấu vết bằng chứng chuyên nghiệp</h3>
+<p>Bảo quản bản gốc với bản ghi toàn vẹn SHA-256, làm mờ các chi tiết riêng tư, thêm phép đo và giữ các đánh dấu đã chỉnh sửa bên cạnh bằng chứng khóa sổ.</p>
+</article>
+<article>
+<h3>Thuật ngữ linh hoạt</h3>
+<p>Hỗ trợ danh sách cú đấm, báo cáo thu thập được, danh sách lỗi, quan sát, kiểm tra địa điểm và các bước bảo trì.</p>
+</article>
+<article>
+<h3>Chuyển giao có thể thực hiện được</h3>
+<p>Gửi các bản chuyển giao vấn đề bị khóa, hợp nhất các bản cập nhật được trả về, theo dõi các nhận xét và hoạt động được đánh dấu thời gian, sau đó xuất các gói đăng ký XLSX hoặc gói đóng trong phạm vi.</p>
+</article>
+<article>
+<h3>Đăng xuất linh hoạt</h3>
+<p>Vẽ chữ ký, tạo chữ ký từ tên đã nhập hoặc nhập hình ảnh chữ ký đã được phê duyệt để thanh tra viên và khách hàng đăng xuất.</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="use-cases-title" class="section use-cases" id="use-cases">
+<div class="section-heading">
+<p class="eyebrow">Các trường hợp sử dụng</p>
+<h2 id="use-cases-title">Dành cho những người cần hoàn thành báo cáo trong khi chuyến thăm vẫn còn mới.</h2>
+</div>
+<div class="use-case-grid">
+<article>
+<h3>Thanh tra xây dựng</h3>
+<p>Tạo các tệp PDF khách hàng bóng bẩy với các trang bìa có thương hiệu, văn bản giới hạn, chỉ mục vấn đề và bằng chứng ảnh.</p>
+</article>
+<article>
+<h3>Kiến trúc sư và nhà thiết kế</h3>
+<p>Ghi lại các quan sát địa điểm theo khu vực và gửi cho nhà thầu một danh sách hành động rõ ràng mà không cần dọn dẹp bảng tính.</p>
+</article>
+<article>
+<h3>Nhà thầu và người quản lý công trường</h3>
+<p>Chạy các bước bàn giao, phân công trách nhiệm thương mại, theo dõi kết thúc và xuất danh sách phạm vi cho các nhà thầu phụ.</p>
+</article>
+<article>
+<h3>Nhóm tài sản và cơ sở vật chất</h3>
+<p>Ghi lại các vấn đề về bảo trì, trước và sau bằng chứng, các lỗi tái diễn và hồ sơ dự án có thể lưu trữ.</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="downloads-title" class="section sample-downloads">
+<div>
+<p class="eyebrow">Tải xuống mẫu</p>
+<h2 id="downloads-title">Kiểm tra đầu ra trước khi bạn dùng thử ứng dụng.</h2>
+</div>
+<div class="download-list">
+<a href="/downloads/sample-interior-handover-report.pdf">
+<strong>Báo cáo bàn giao nội thất PDF</strong>
+<span>Năm món đồ treo trong nhà</span>
+</a>
+<a href="/downloads/sample-construction-defect-report.pdf">
+<strong>Báo cáo lỗi xây dựng PDF</strong>
+<span>Sáu lỗi xây dựng tại địa điểm đang hoạt động</span>
+</a>
+<a href="/downloads/sample-snag-action-list.pdf">
+<strong>Danh sách hành động của nhà thầu PDF</strong>
+<span>Mở đồ cho đội giao hàng</span>
+</a>
+<a href="/downloads/sample-closeout-report.pdf">
+<strong>PDF báo cáo khóa sổ</strong>
+<span>Các vấn đề và bằng chứng đã được giải quyết</span>
+</a>
+<a href="/downloads/sample-issue-register.csv">
+<strong>CSV đăng ký phát hành</strong>
+<span>Xuất bảng tính báo cáo nội thất</span>
+</a>
+<a href="/downloads/sample-construction-issue-register.csv">
+<strong>CSV đăng ký vấn đề xây dựng</strong>
+<span>Xuất bảng tính báo cáo thi công</span>
+</a>
+</div>
+</section>
+<section aria-labelledby="pricing-title" class="section pricing" id="pricing">
+<div class="pricing-copy">
+<p class="eyebrow">Định giá địa phương đơn giản</p>
+<h2 id="pricing-title">Bắt đầu miễn phí. Mở khóa xuất khẩu sạch sẽ chuyên nghiệp một lần.</h2>
+<p>
+            Sử dụng cục bộ mọi quy trình làm việc của trường cốt lõi mà không cần tạo tài khoản. Miễn phí bao gồm ba lần xuất tập tin có hình mờ tổng cộng. Chương trình ra mắt Pro theo kế hoạch là giao dịch mua một lần trị giá 9,99 USD, có thể khôi phục tại cửa hàng trên các bản dựng cửa hàng di động được hỗ trợ—không cần đăng ký. Giá cuối cùng của mặt tiền cửa hàng được bản địa hóa có thể thay đổi tùy theo thuế và đơn vị tiền tệ.
+          </p>
+</div>
+<div aria-label="So sánh miễn phí và chuyên nghiệp" class="pricing-compare">
+<article class="plan-card">
+<p class="plan-label">Miễn phí</p>
+<p class="price">$0 <span>sử dụng cục bộ</span></p>
+<ul>
+<li>Các dự án và bản xem trước cục bộ không giới hạn</li>
+<li>Tổng cộng 3 lần xuất PDF/XLSX/CSV có hình mờ</li>
+<li>Mẫu báo cáo hiện trường cơ bản</li>
+<li>Bố cục ảnh chuẩn</li>
+</ul>
+<a class="button button-secondary" data-campaign="homepage-pricing-sample" data-cta="sample-report" data-destination="pdf" data-placement="pricing" href="/downloads/sample-interior-handover-report.pdf">Kiểm tra đầu ra</a>
+</article>
+<article class="plan-card plan-card-pro">
+<p class="plan-label">Cá nhân chuyên nghiệp</p>
+<p class="price">$9.99 <span>mục tiêu phóng một lần</span></p>
+<ul>
+<li>Xuất PDF, XLSX và CSV sạch không giới hạn</li>
+<li>Logo và thương hiệu công ty tùy chỉnh</li>
+<li>Sự mờ nhạt về quyền riêng tư, số đo và tính toàn vẹn của bằng chứng</li>
+<li>Lịch sử hoạt động và chuyển giao vấn đề đã bị khóa</li>
+<li>Chữ ký được vẽ, đánh máy hoặc nhập</li>
+</ul>
+<a class="button button-primary" data-campaign="homepage-pricing" data-cta="early-access" data-destination="email" data-placement="pricing" href="mailto:hello@sitereportkit.com?subject=SiteReportKit%20early%20access">Yêu cầu quyền truy cập sớm</a>
+</article>
+<p class="launch-note">App Store đang được khởi chạy. Giá cuối cùng và tình trạng còn hàng tại cửa hàng sẽ được xác nhận trên danh sách trực tiếp. Pro không bao gồm tài khoản, đồng bộ hóa đám mây hoặc không gian làm việc nhóm.</p>
+</div>
+</section>
+<section aria-labelledby="faq-title" class="section faq">
+<div class="section-heading compact">
+<p class="eyebrow">Các câu hỏi thường gặp</p>
+<h2 id="faq-title">Biết chức năng của ứng dụng trước khi đưa nó vào trang web.</h2>
+</div>
+<div class="faq-list">
+<details>
+<summary>SiteReportKit có hoạt động mà không cần tài khoản không?</summary>
+<p>Có. Chụp dự án cốt lõi, lưu trữ cục bộ, xem trước báo cáo và quy trình làm việc mẫu không yêu cầu tài khoản.</p>
+</details>
+<details>
+<summary>Tôi có thể làm việc ngoại tuyến không?</summary>
+<p>Có. Chụp dự án, ảnh, đánh dấu và tạo báo cáo được thiết kế để hoạt động cục bộ. Vẫn cần có kết nối mạng để mua hoặc khôi phục tại cửa hàng.</p>
+</details>
+<details>
+<summary>Xuất khẩu miễn phí bao gồm những gì?</summary>
+<p>Miễn phí bao gồm tổng cộng ba lần xuất tệp PDF, XLSX hoặc CSV với nhãn hiệu SiteReportKit Free. Bản xem trước và các dự án địa phương vẫn không giới hạn.</p>
+</details>
+<details>
+<summary>SiteReportKit có phải là nền tảng quản lý xây dựng đầy đủ không?</summary>
+<p>Không. Nó chủ đích tập trung vào việc thu thập hiện trường nhanh và báo cáo bàn giao chuyên nghiệp mà không có BIM, RFI, lịch trình hoặc phối hợp nhóm theo thời gian thực.</p>
+</details>
+</div>
+</section>
+<section aria-labelledby="phone-handoff-title" class="section phone-handoff">
+<div class="phone-handoff-copy">
+<p class="eyebrow">Tiếp tục trên điện thoại của bạn</p>
+<h2 id="phone-handoff-title">Mang theo quy trình làm việc mẫu bên mình.</h2>
+<p>Quét mã để mở SiteReportKit trên điện thoại của bạn hoặc mở tin nhắn văn bản điền sẵn mà bạn có thể gửi cho chính mình. Cả hai liên kết đều sử dụng nhãn chiến dịch mà không có cookie tiếp thị.</p>
+<div class="hero-actions">
+<a class="button button-primary" data-campaign="homepage-phone-handoff" data-cta="phone-handoff" data-destination="sms" data-placement="homepage" href="sms:?&amp;body=Open%20SiteReportKit%20on%20your%20phone%3A%20https%3A%2F%2Fsitereportkit.com%2F%3Fsrc%3Dsms%26campaign%3Dhomepage-phone-handoff">Nhắn tin liên kết cho chính bạn</a>
+<a class="button button-secondary" data-campaign="homepage-phone-handoff" data-cta="early-access" data-destination="email" data-placement="phone-handoff" href="mailto:hello@sitereportkit.com?subject=SiteReportKit%20launch%20updates">Nhận thông tin cập nhật khi ra mắt</a>
+</div>
+<p class="handoff-note">Nút SMS chỉ mở trình soạn tin nhắn trên thiết bị của bạn. SiteReportKit không nhận được số điện thoại. Đường liên kết cửa hàng đã được xác minh sẽ thay thế điểm đến trước khi ra mắt này sau khi được phê duyệt.</p>
+</div>
+<figure>
+<img alt="Mã QR để mở trang web SiteReportKit trên điện thoại" height="232" src="/assets/brand/phone-handoff-qr.svg" width="232"/>
+<figcaption>Mở trang web giới thiệu trước trên điện thoại của bạn</figcaption>
+</figure>
+</section>
+<section aria-labelledby="final-cta-title" class="final-cta">
+<img alt="" height="103" src="/assets/brand/sitereportkit-mark.png?v=20260708-exact-logo" width="64"/>
+<h2 id="final-cta-title">Tạo báo cáo trước khi công việc rời khỏi đầu bạn.</h2>
+<p>SiteReportKit lần đầu tiên ra mắt tính năng báo cáo trang web di động chuyên nghiệp, cục bộ, nhanh chóng, với quy trình làm việc dành cho máy tính để bàn và web được lên kế hoạch sau khi quy trình làm việc của trường cốt lõi ổn định.</p>
+<div class="hero-actions">
+<a class="button button-primary" data-cta="final_interior_sample" href="/downloads/sample-interior-handover-report.pdf">Mẫu nội thất</a>
+<a class="button button-secondary" data-cta="final_construction_sample" href="/downloads/sample-construction-defect-report.pdf">Mẫu thi công</a>
+<a class="button button-secondary" data-cta="final_contact" href="mailto:hello@sitereportkit.com">Liên hệ</a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div>
+<img alt="SiteReportKit" height="40" src="/assets/brand/sitereportkit-wordmark.png?v=20260708-exact-logo" width="184"/>
+<p>Danh sách cú đấm đầu tiên ngoại tuyến, báo cáo về lỗi, lỗi và kết thúc.</p>
+</div>
+<nav aria-label="Điều hướng chân trang">
+<a href="#reports">Báo cáo</a>
+<a href="#workflow">Quy trình làm việc</a>
+<a href="#use-cases">Các trường hợp sử dụng</a>
+<a href="/vi/sample-reports/">Báo cáo mẫu</a>
+<a href="/vi/resources/punch-list-vs-snag-list-vs-defect-list/">Hướng dẫn thuật ngữ</a>
+<a href="/vi/pricing/">Giá cả</a>
+<a href="/downloads/sample-snagging-report.pdf">PDF mẫu</a>
+<a href="/vi/support/">Hỗ trợ</a>
+<a href="/vi/privacy/">Quyền riêng tư</a>
+</nav>
+</footer>
 </body>
 </html>
+

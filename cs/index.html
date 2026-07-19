@@ -1,61 +1,485 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="cs">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Kontroly a PDF protokoly | SiteReportKit</title>
-  <meta name="description" content="Zaznamenejte závady pomocí fotek a značek, uspořádejte soupis vad a vytvořte PDF nebo CSV protokol přímo na stavbě.">
-  <link rel="canonical" href="https://sitereportkit.com/cs/">
-  <link rel="alternate" hreflang="x-default" href="https://sitereportkit.com/">
-  <link rel="alternate" hreflang="ar-SA" href="https://sitereportkit.com/ar-SA/">
-  <link rel="alternate" hreflang="ca" href="https://sitereportkit.com/ca/">
-  <link rel="alternate" hreflang="cs" href="https://sitereportkit.com/cs/">
-  <link rel="alternate" hreflang="da" href="https://sitereportkit.com/da/">
-  <link rel="alternate" hreflang="de-DE" href="https://sitereportkit.com/de-DE/">
-  <link rel="alternate" hreflang="el" href="https://sitereportkit.com/el/">
-  <link rel="alternate" hreflang="en-US" href="https://sitereportkit.com/en-US/">
-  <link rel="alternate" hreflang="es-MX" href="https://sitereportkit.com/es-MX/">
-  <link rel="alternate" hreflang="fi" href="https://sitereportkit.com/fi/">
-  <link rel="alternate" hreflang="fr-FR" href="https://sitereportkit.com/fr-FR/">
-  <link rel="alternate" hreflang="he" href="https://sitereportkit.com/he/">
-  <link rel="alternate" hreflang="hi" href="https://sitereportkit.com/hi/">
-  <link rel="alternate" hreflang="hr" href="https://sitereportkit.com/hr/">
-  <link rel="alternate" hreflang="hu" href="https://sitereportkit.com/hu/">
-  <link rel="alternate" hreflang="id" href="https://sitereportkit.com/id/">
-  <link rel="alternate" hreflang="it" href="https://sitereportkit.com/it/">
-  <link rel="alternate" hreflang="ja" href="https://sitereportkit.com/ja/">
-  <link rel="alternate" hreflang="ko" href="https://sitereportkit.com/ko/">
-  <link rel="alternate" hreflang="ms" href="https://sitereportkit.com/ms/">
-  <link rel="alternate" hreflang="nl-NL" href="https://sitereportkit.com/nl-NL/">
-  <link rel="alternate" hreflang="no" href="https://sitereportkit.com/no/">
-  <link rel="alternate" hreflang="pl" href="https://sitereportkit.com/pl/">
-  <link rel="alternate" hreflang="pt-BR" href="https://sitereportkit.com/pt-BR/">
-  <link rel="alternate" hreflang="ro" href="https://sitereportkit.com/ro/">
-  <link rel="alternate" hreflang="ru" href="https://sitereportkit.com/ru/">
-  <link rel="alternate" hreflang="sk" href="https://sitereportkit.com/sk/">
-  <link rel="alternate" hreflang="sv" href="https://sitereportkit.com/sv/">
-  <link rel="alternate" hreflang="th" href="https://sitereportkit.com/th/">
-  <link rel="alternate" hreflang="tr" href="https://sitereportkit.com/tr/">
-  <link rel="alternate" hreflang="uk" href="https://sitereportkit.com/uk/">
-  <link rel="alternate" hreflang="vi" href="https://sitereportkit.com/vi/">
-  <link rel="alternate" hreflang="zh-Hans" href="https://sitereportkit.com/zh-Hans/">
-  <link rel="alternate" hreflang="zh-Hant" href="https://sitereportkit.com/zh-Hant/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="SiteReportKit">
-  <meta property="og:title" content="Kontroly a PDF protokoly | SiteReportKit">
-  <meta property="og:description" content="Zaznamenejte závady pomocí fotek a značek, uspořádejte soupis vad a vytvořte PDF nebo CSV protokol přímo na stavbě.">
-  <meta property="og:url" content="https://sitereportkit.com/cs/">
-  <meta property="og:image" content="https://sitereportkit.com/assets/reports/samples/en-US/report-cover.png">
-  <link rel="icon" href="../assets/brand/sitereportkit-favicon.png">
-  <link rel="stylesheet" href="../marketing-pages.css?v=20260711">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SiteReportKit","applicationCategory":"BusinessApplication","operatingSystem":"iOS","description":"Zaznamenejte závady pomocí fotek a značek, uspořádejte soupis vad a vytvořte PDF nebo CSV protokol přímo na stavbě.","url":"https://sitereportkit.com/cs/"}</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>SiteReportKit | Profesionální seznam děr a záchytné zprávy</title>
+<meta content="SiteReportKit vytváří offline seznamy děr se značkováním fotografií, měřením, auditovatelnými předáváními a profesionálními exporty do PDF, XLSX a CSV, které je bezpečné pro ochranu soukromí." name="description"/>
+<meta content="#0A2342" name="theme-color"/>
+<meta content="SiteReportKit" property="og:title"/>
+<meta content="Před opuštěním webu vytvořte profesionální děrovací soubory PDF." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://sitereportkit.com/cs/" property="og:url"/>
+<meta content="https://sitereportkit.com/assets/reports/report-cover.png?v=20260710-separated-samples" property="og:image"/>
+<link href="https://sitereportkit.com/cs/" rel="canonical"/><link href="https://sitereportkit.com/" hreflang="x-default" rel="alternate"/><link href="https://sitereportkit.com/ar-SA/" hreflang="ar-SA" rel="alternate"/><link href="https://sitereportkit.com/ca/" hreflang="ca" rel="alternate"/><link href="https://sitereportkit.com/cs/" hreflang="cs" rel="alternate"/><link href="https://sitereportkit.com/da/" hreflang="da" rel="alternate"/><link href="https://sitereportkit.com/de-DE/" hreflang="de-DE" rel="alternate"/><link href="https://sitereportkit.com/el/" hreflang="el" rel="alternate"/><link href="https://sitereportkit.com/en-US/" hreflang="en-US" rel="alternate"/><link href="https://sitereportkit.com/es-MX/" hreflang="es-MX" rel="alternate"/><link href="https://sitereportkit.com/fi/" hreflang="fi" rel="alternate"/><link href="https://sitereportkit.com/fr-FR/" hreflang="fr-FR" rel="alternate"/><link href="https://sitereportkit.com/he/" hreflang="he" rel="alternate"/><link href="https://sitereportkit.com/hi/" hreflang="hi" rel="alternate"/><link href="https://sitereportkit.com/hr/" hreflang="hr" rel="alternate"/><link href="https://sitereportkit.com/hu/" hreflang="hu" rel="alternate"/><link href="https://sitereportkit.com/id/" hreflang="id" rel="alternate"/><link href="https://sitereportkit.com/it/" hreflang="it" rel="alternate"/><link href="https://sitereportkit.com/ja/" hreflang="ja" rel="alternate"/><link href="https://sitereportkit.com/ko/" hreflang="ko" rel="alternate"/><link href="https://sitereportkit.com/ms/" hreflang="ms" rel="alternate"/><link href="https://sitereportkit.com/nl-NL/" hreflang="nl-NL" rel="alternate"/><link href="https://sitereportkit.com/no/" hreflang="no" rel="alternate"/><link href="https://sitereportkit.com/pl/" hreflang="pl" rel="alternate"/><link href="https://sitereportkit.com/pt-BR/" hreflang="pt-BR" rel="alternate"/><link href="https://sitereportkit.com/ro/" hreflang="ro" rel="alternate"/><link href="https://sitereportkit.com/ru/" hreflang="ru" rel="alternate"/><link href="https://sitereportkit.com/sk/" hreflang="sk" rel="alternate"/><link href="https://sitereportkit.com/sv/" hreflang="sv" rel="alternate"/><link href="https://sitereportkit.com/th/" hreflang="th" rel="alternate"/><link href="https://sitereportkit.com/tr/" hreflang="tr" rel="alternate"/><link href="https://sitereportkit.com/uk-UA/" hreflang="uk" rel="alternate"/><link href="https://sitereportkit.com/vi/" hreflang="vi" rel="alternate"/><link href="https://sitereportkit.com/zh-Hans/" hreflang="zh-Hans" rel="alternate"/><link href="https://sitereportkit.com/zh-Hant/" hreflang="zh-Hant" rel="alternate"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/assets/brand/sitereportkit-favicon.png?v=20260708-exact-logo" rel="icon" type="image/png"/>
+<link href="/styles.css?v=20260710-separated-samples" rel="stylesheet"/>
+<script defer="" src="/script.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SiteReportKit","applicationCategory":"Obchodní aplikace","operatingSystem":"iOS","description":"První seznam děr v režimu offline, hlášení zádrhelů, defektů a uzavření s profesionálními exporty PDF, XLSX a CSV.","url":"https://sitereportkit.com/cs/","featureList":["Offline zachycení problému","Nedestruktivní značkování fotografií","Exporty PDF, XLSX a CSV","Poznámky k rozostření soukromí a měření","Aktivita s časovým razítkem a předání uzamčeného problému","Tři metody zadávání podpisu","Záznamy integrity důkazů SHA-256","Seznam akcí dodavatele","Důkazy o uzavření","Lokální archivy projektů"],"publisher":{"@type":"Organization","name":"SiteReportKit","url":"https://sitereportkit.com/cs/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Funguje SiteReportKit bez účtu?","acceptedAnswer":{"@type":"Answer","text":"Ano. Zachycování hlavních projektů, místní úložiště, náhled sestav a vzorové pracovní postupy nevyžadují účet."}},{"@type":"Question","name":"Mohu pracovat offline?","acceptedAnswer":{"@type":"Answer","text":"Ano. Zachycení projektu, fotografie, označení a generování zpráv jsou navrženy tak, aby fungovaly lokálně. Pro nákup v obchodě nebo obnovení je stále vyžadováno síťové připojení."}},{"@type":"Question","name":"Co zahrnuje bezplatný export?","acceptedAnswer":{"@type":"Answer","text":"Free obsahuje celkem tři exporty souborů PDF, XLSX nebo CSV se značkou SiteReportKit Free. Náhledy a lokální projekty zůstávají neomezené."}}]}</script>
 </head>
 <body>
-  <header class="site-header"><a class="brand" href="../"><img src="../assets/brand/sitereportkit-wordmark.png" alt="SiteReportKit" width="224" height="49"></a><label><span class="sr-only">Language</span><select onchange="if(this.value)location.href=this.value"><option value="/ar-SA/">العربية</option><option value="/ca/">Català</option><option value="/cs/" selected>Čeština</option><option value="/da/">Dansk</option><option value="/de-DE/">Deutsch</option><option value="/el/">Ελληνικά</option><option value="/en-US/">English</option><option value="/es-MX/">Español</option><option value="/fi/">Suomi</option><option value="/fr-FR/">Français</option><option value="/he/">עברית</option><option value="/hi/">हिन्दी</option><option value="/hr/">Hrvatski</option><option value="/hu/">Magyar</option><option value="/id/">Bahasa Indonesia</option><option value="/it/">Italiano</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/ms/">Bahasa Melayu</option><option value="/nl-NL/">Nederlands</option><option value="/no/">Norsk</option><option value="/pl/">Polski</option><option value="/pt-BR/">Português</option><option value="/ro/">Română</option><option value="/ru/">Русский</option><option value="/sk/">Slovenčina</option><option value="/sv/">Svenska</option><option value="/th/">ไทย</option><option value="/tr/">Türkçe</option><option value="/uk/">Українська</option><option value="/vi/">Tiếng Việt</option><option value="/zh-Hans/">简体中文</option><option value="/zh-Hant/">繁體中文</option></select></label></header>
-  <main>
-    <section class="hero"><div class="hero-inner"><div><p class="eyebrow">SiteReportKit</p><h1>Kontroly a PDF protokoly</h1><p class="hero-lede">Zaznamenejte závady pomocí fotek a značek, uspořádejte soupis vad a vytvořte PDF nebo CSV protokol přímo na stavbě.</p><div class="actions"><a class="button button-primary" href="https://apps.apple.com/app/id6788361013">App Store</a><a class="button button-secondary" href="../downloads/samples/en-US/sample-report.pdf">PDF</a></div></div><img src="../assets/reports/samples/en-US/report-cover.png" alt="SiteReportKit" width="993" height="1404"></div></section>
-    <section class="section section-white"><div class="section-inner"><div class="related-grid"><article class="related-card"><h2>Zaznamenejte závady na místě</h2></article><article class="related-card"><h2>Uspořádejte soupis vad</h2></article><article class="related-card"><h2>Vytvořte profesionální PDF</h2></article></div><div class="prose"><p>Proměňte obchůzku stavby v přehledný profesionální protokol. SiteReportKit funguje bez připojení a hodí se pro kontroly, soupisy vad, předání stavby a závěrečné prohlídky.</p><p>U každé položky uložte místo, profesi, závažnost, odpovědnou osobu, termín, stav, fotografie, popisky a značky bez úpravy původního snímku. V seznamu vyhledávejte a filtrujte, hromadně měňte stav a spravujte poznámky k odstranění vad i historii kontrol.</p><p>Exportujte profesionální PDF protokoly, seznamy úkolů pro dodavatele, předávací dokumentaci a evidence vad ve formátu CSV. Vyberte rozvržení, přidejte firemní grafiku a připravte seznamy podle oblasti či odpovědné osoby. Základní práce nevyžaduje účet.</p><p>Kromě běžných značek použijte rozmazání citlivých údajů a měřicí anotace. Exportujte upravitelné sešity XLSX i soubory PDF a CSV, sledujte komentáře a činnosti s časem a vyměňujte uzamčené balíčky předání, které sloučí vrácené změny. Podpis nakreslete, napište nebo importujte. Původní důkazy uchovávají záznamy integrity SHA-256.</p></div></div></section>
-  </main>
-  <footer class="site-footer"><div class="footer-inner"><strong>SiteReportKit</strong><nav class="footer-links"><a href="../privacy/">Privacy</a><a href="../support/">Support</a></nav></div></footer>
+<header class="site-header" data-header="">
+<a aria-label="Domovská stránka SiteReportKit" class="brand" href="#top">
+<img alt="SiteReportKit" class="brand-logo" height="49" src="/assets/brand/sitereportkit-wordmark.png?v=20260708-exact-logo" width="224"/>
+</a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" data-nav-toggle="" type="button">
+<span class="sr-only">Otevřete navigaci</span>
+<span></span>
+<span></span>
+<span></span>
+</button>
+<nav class="site-nav" data-nav="" id="site-nav">
+<a href="#reports">Zprávy</a>
+<a href="#workflow">Pracovní postup</a>
+<a href="/cs/sample-reports/">Ukázky</a>
+<a href="#markets">Trhy</a>
+<a href="#pricing">Ceny</a>
+
+<label class="language-switcher"><span aria-hidden="true" class="language-switcher-icon">🌐</span><span class="sr-only">Language</span><select aria-label="Language" onchange="if(this.value)location.href=this.value"><option value="/ar-SA/">العربية</option><option value="/ca/">Català</option><option selected="" value="/cs/">Čeština</option><option value="/da/">Dansk</option><option value="/de-DE/">Deutsch</option><option value="/el/">Ελληνικά</option><option value="/en-US/">English</option><option value="/es-MX/">Español</option><option value="/fi/">Suomi</option><option value="/fr-FR/">Français</option><option value="/he/">עברית</option><option value="/hi/">हिन्दी</option><option value="/hr/">Hrvatski</option><option value="/hu/">Magyar</option><option value="/id/">Bahasa Indonesia</option><option value="/it/">Italiano</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/ms/">Bahasa Melayu</option><option value="/nl-NL/">Nederlands</option><option value="/no/">Norsk</option><option value="/pl/">Polski</option><option value="/pt-BR/">Português</option><option value="/ro/">Română</option><option value="/ru/">Русский</option><option value="/sk/">Slovenčina</option><option value="/sv/">Svenska</option><option value="/th/">ไทย</option><option value="/tr/">Türkçe</option><option value="/uk-UA/">Українська</option><option value="/vi/">Tiếng Việt</option><option value="/zh-Hans/">简体中文</option><option value="/zh-Hant/">繁體中文</option></select></label><a class="nav-cta" data-campaign="homepage-nav" data-cta="sample-report" data-destination="pdf" data-placement="header" href="/downloads/sample-snagging-report.pdf">Ukázka PDF</a>
+</nav>
+</header>
+
+<main id="top">
+<section aria-labelledby="hero-title" class="hero">
+<div aria-hidden="true" class="hero-media">
+<img alt="" class="hero-page hero-page-main" src="/assets/reports/report-cover.png?v=20260710-separated-samples"/>
+<img alt="" class="hero-page hero-page-side" src="/assets/reports/report-issue-evidence.png?v=20260710-separated-samples"/>
+<img alt="" class="hero-page hero-page-back" src="/assets/reports/action-list-cover.png?v=20260710-separated-samples"/>
+</div>
+<div class="hero-copy">
+<p class="eyebrow">Hlášení prvního pole offline</p>
+<h1 id="hero-title">Dokončete návod. Odešlete zprávu před odjezdem.</h1>
+<p class="hero-lede">SiteReportKit promění důkazy o webu v profesionální předání.</p>
+<p class="hero-support">
+            Zachyťte obhajitelné důkazy, přidělte odpovědnost a exportujte značkové dokumenty PDF, XLSX nebo CSV – offline, bez nutnosti účtu.
+          </p>
+<div aria-label="Primární akce" class="hero-actions">
+<a class="button button-primary" data-campaign="homepage-hero-sample" data-cta="sample-report" data-destination="pdf" data-placement="hero" data-report-kind="interior-handover" href="/downloads/sample-interior-handover-report.pdf">Stáhněte si vzorovou zprávu</a>
+<a class="button button-secondary" data-campaign="homepage-hero-action-list" data-cta="sample-report" data-destination="pdf" data-placement="hero" data-report-kind="contractor-action-list" href="/downloads/sample-snag-action-list.pdf">Viz seznam akcí dodavatele</a>
+</div>
+<dl aria-label="Hlavní přednosti produktu" class="hero-proof">
+<div>
+<dt>Funguje offline</dt>
+<dd>Když signál klesne, pokračujte v chůzi</dd>
+</div>
+<div>
+<dt>Není vyžadován žádný účet</dt>
+<dd>Zachyťte lokálně a exportujte, až budete připraveni</dd>
+</div>
+<div>
+<dt>PDF + XLSX + CSV</dt>
+<dd>Sestavy, editovatelné sešity a registry</dd>
+</div>
+</dl>
+</div>
+</section>
+<section aria-label="Slib hlavního produktu" class="trust-strip">
+<p>Zachyťte důkazy o místě.</p>
+<p>Přidělte odpovědnost.</p>
+<p>Exportujte předání.</p>
+</section>
+<section aria-labelledby="reports-title" class="section report-showcase" id="reports">
+<div class="section-heading">
+<p class="eyebrow">Výstup reálného vzorku</p>
+<h2 id="reports-title">Dva odlišné přehledy pro dvě velmi odlišné návštěvy webu.</h2>
+<p>
+            Předání interiéru a aktivní stavební kontrola zůstávají odděleny od zachycení prostřednictvím exportu. Každý má svůj vlastní projekt, index problému, sadu důkazů, seznam akcí a zprávu ke stažení.
+          </p>
+</div>
+<div aria-label="Ukázkové typy přehledů" class="report-edition-grid">
+<article class="report-edition">
+<div class="report-edition-media">
+<img alt="Obálka zprávy o předání interiéru Maple Row" height="1404" src="/assets/reports/report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<div class="report-edition-copy">
+<p class="report-type">Předání interiéru</p>
+<h3>Předání Maple Row</h3>
+<p>Pět zádrhelů v interiéru zahrnující povrchové úpravy, lak, elektrické kontroly, dveře a požadavek klienta na změnu.</p>
+<div aria-label="Souhrn zprávy o interiéru" class="report-edition-facts">
+<span>5 zádrhelů</span>
+<span>9 stran</span>
+<span>Pouze vnitřní důkazy</span>
+</div>
+<div class="report-edition-actions">
+<a class="button button-primary" href="/downloads/sample-interior-handover-report.pdf">Interiér PDF</a>
+<a class="button button-secondary" href="/downloads/sample-snag-action-list.pdf">Seznam akcí interiéru</a>
+</div>
+</div>
+</article>
+<article class="report-edition report-edition-construction">
+<div class="report-edition-media">
+<img alt="Kryt zprávy o závadě stavby přístavního bodu" height="1404" src="/assets/reports/construction-report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<div class="report-edition-copy">
+<p class="report-type">Aktivní konstrukce</p>
+<h3>Kontrola stavby přístavního bodu</h3>
+<p>Šest konstrukčních vad, které se týkají protipožárních opatření fasád, betonu, drenáže, provizorních prací, zdiva a hydroizolace střech.</p>
+<div aria-label="Shrnutí stavební zprávy" class="report-edition-facts">
+<span>6 závad</span>
+<span>10 stran</span>
+<span>Pouze stavební důkazy</span>
+</div>
+<div class="report-edition-actions">
+<a class="button button-primary" href="/downloads/sample-construction-defect-report.pdf">Stavební PDF</a>
+<a class="button button-secondary" href="/downloads/sample-construction-defect-action-list.pdf">Seznam stavebních akcí</a>
+</div>
+</div>
+</article>
+</div>
+<div class="report-lab">
+<figure class="report-preview">
+<div class="report-preview-top">
+<span>Ukázka PDF klienta</span>
+<a href="/downloads/sample-interior-handover-report.pdf">Stáhnout</a>
+</div>
+<div class="document-frame">
+<img alt="Ukázka zprávy o zádrhelech uvnitř SiteReportKit se shrnutím a indexem zádrhelů" height="1404" src="/assets/reports/report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<figcaption>
+<strong>Úplná zpráva klienta</strong>
+<span>Obálka, shrnutí, rejstřík zádrhelů, podrobnosti o vydání, fotografie důkazů a formátování připravené k odhlášení.</span>
+</figcaption>
+</figure>
+<div aria-label="Ukázkové zobrazení přehledu" class="sample-stack">
+<div class="sample-stack-heading">
+<p class="eyebrow">Uvnitř exportu</p>
+<h3>Strukturovaný důkaz, ne role fotoaparátu uložená do PDF.</h3>
+</div>
+<article class="sample-row">
+<img alt="Stránka s podrobnostmi o problému s interiérem zobrazující požadovanou akci, důkazní fotografii, vlastníka, stav a datum splatnosti" height="1404" src="/assets/reports/report-issue-evidence.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Vydejte důkazy</h4>
+<p>Každý zádrhel drží pohromadě fotografii, popisek, vlastníka, závažnost, stav a požadovanou akci.</p>
+</div>
+</article>
+<article class="sample-row">
+<img alt="Seznam akcí dodavatele interiéru ve formátu PDF obálka a shrnutí nevyřešených problémů vygenerované SiteReportKit" height="1404" src="/assets/reports/action-list-cover.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Seznam akcí dodavatele</h4>
+<p>Filtr pro otevření pouze položek a předání každého obchodu zaměřeného rozsahu práce.</p>
+</div>
+</article>
+<article class="sample-row">
+<img alt="Stránka s důkazy o uzavření interiéru po fotografii a poznámce k rozlišení" height="1404" src="/assets/reports/report-after-evidence.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Důkaz uzavření</h4>
+<p>Vyřešené položky zahrnují poznámky o převzetí a fotky po předání pro čistou stopu předání.</p>
+</div>
+</article>
+<div aria-label="Ukázky ke stažení" class="sample-actions">
+<a class="button button-primary" href="/downloads/sample-interior-handover-report.pdf">Interiér PDF</a>
+<a class="button button-secondary" href="/downloads/sample-snag-action-list.pdf">Seznam akcí</a>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="workflow-title" class="section workflow" id="workflow">
+<div class="section-heading compact">
+<p class="eyebrow">Vytvořeno pro procházky po webu</p>
+<h2 id="workflow-title">Od evidence místa ke zprávě ve třech krocích.</h2>
+</div>
+<div class="workflow-layout">
+<ol class="workflow-list">
+<li>
+<span>01</span>
+<div>
+<h3>Zachyťte důkazy o místě</h3>
+<p>Přidávejte problémy za pochodu, s fotografiemi, nedestruktivním značením, oblastí, obchodem, závažností a je vyžadována jasná akce.</p>
+</div>
+</li>
+<li>
+<span>02</span>
+<div>
+<h3>Přidělte odpovědnost</h3>
+<p>Nastavte vlastníka, datum splatnosti, prioritu a stav a poté filtrujte práci podle dodavatele, obchodu nebo oblasti.</p>
+</div>
+</li>
+<li>
+<span>03</span>
+<div>
+<h3>Exportujte předání</h3>
+<p>Před odjezdem si prohlédněte a sdílejte úplný soubor PDF klienta, rozsah činností dodavatele, zprávu o ukončení nebo registr problémů ve formátu CSV.</p>
+</div>
+</li>
+</ol>
+<figure class="closeout-preview">
+<img alt="Stránka se zprávou o uzavření s vyřešeným důkazem položky a formátováním připraveným k odhlášení" height="1404" src="/assets/reports/closeout-report-page.png?v=20260710-separated-samples" width="993"/>
+<figcaption>Důkaz hlášení o uzavření s poznámkami k řešení.</figcaption>
+</figure>
+</div>
+</section>
+<section aria-labelledby="app-proof-title" class="section app-proof">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Důkaz z aplikace</p>
+<h2 id="app-proof-title">Postaveno na procházce po webu, nikoli na správci kanceláře.</h2>
+</div>
+<p>Toto jsou obrazovky skutečných produktů ze současné mobilní verze. Zachycení, zodpovědnost a hlášení zůstanou v kontaktu od první fotografie až po poslední předání.</p>
+</div>
+<div class="app-proof-grid">
+<article>
+<img alt="Pracovní postup značkování mobilních fotografií SiteReportKit s důkazy o konstrukci" height="2868" src="/assets/app/photo-markup.png" width="1320"/>
+<div><span>Zachyťte</span><h3>Označte přesnou závadu</h3><p>Zachovejte původní důkazy a přidejte jasné vizuální označení pro osobu, která práci provádí.</p></div>
+</article>
+<article>
+<img alt="Možnosti exportu seznamu akcí mobilního dodavatele SiteReportKit" height="2868" src="/assets/app/action-lists.png" width="1320"/>
+<div><span>Přiřadit</span><h3>Rozsah práce podle vlastníka nebo oblasti</h3><p>Poskytněte každému dodavateli cílený seznam, aniž byste odhalili nesouvisející položky projektu.</p></div>
+</article>
+<article>
+<img alt="Pracovní postup pro náhled a export zpráv ve formátu PDF pro mobilní zařízení SiteReportKit" height="2868" src="/assets/app/pdf-export.png" width="1320"/>
+<div><span>Export</span><h3>Náhled zprávy na místě</h3><p>Zkontrolujte klientské PDF před jeho sdílením, dokud je kontext průvodce stále čerstvý.</p></div>
+</article>
+</div>
+</section>
+<section aria-labelledby="markets-title" class="section markets" id="markets">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Vytvořeno pro místní terminologii</p>
+<h2 id="markets-title">Stejný pracovní postup v terénu, vyjádřený tím, jak funguje váš trh.</h2>
+</div>
+<p>Vyberte terminologii a formát papíru, které vaši klienti a dodavatelé očekávají. Tyto stránky popisují nastavení a příklady produktů, nikoli místní regulační certifikaci.</p>
+</div>
+<div class="market-grid">
+<a data-campaign="homepage-market-us" data-cta="market-entry" data-destination="guide" data-market="us" data-placement="homepage" href="/cs/us/punch-list-app/">
+<span>Spojené státy americké</span>
+<strong>Seznamy děr · Letter</strong>
+<small>Pro punč, vlastnictví obchodu a uzavření subdodavatelů.</small>
+</a>
+<a data-campaign="homepage-market-uk" data-cta="market-entry" data-destination="guide" data-market="uk" data-placement="homepage" href="/cs/uk/snagging-app/">
+<span>Spojené království</span>
+<strong>Zasekávání · A4</strong>
+<small>Pro předání novostavby, prohlídky na místě a zprávy o zádrhelech.</small>
+</a>
+<a data-campaign="homepage-market-au" data-cta="market-entry" data-destination="guide" data-market="au" data-placement="homepage" href="/cs/au/defect-list-app/">
+<span>Austrálie</span>
+<strong>Seznamy závad · A4</strong>
+<small>Pro stavitelské akce, obchodní obory a praktické vycházky.</small>
+</a>
+</div>
+</section>
+<section aria-labelledby="features-title" class="section features">
+<div class="section-heading compact">
+<p class="eyebrow">Proč si to týmy vybírají</p>
+<h2 id="features-title">Cílený nástroj pro vytváření sestav namísto jiné konstrukční sady.</h2>
+</div>
+<div class="feature-grid">
+<article>
+<h3>Ve výchozím nastavení nejprve offline</h3>
+<p>Projekty a média zůstávají během zachycení lokální, takže špatný signál na místě neblokuje zprávu.</p>
+</article>
+<article>
+<h3>Profesionální důkazní stopa</h3>
+<p>Zachovejte originály pomocí záznamů integrity SHA-256, rozmazejte soukromé detaily, přidejte měření a uchovávejte upravená označení vedle důkazů o uzavření.</p>
+</article>
+<article>
+<h3>Flexibilní terminologie</h3>
+<p>Podpora seznamů děr, zpráv o zádrhelech, seznamů závad, pozorování, auditů místa a údržby.</p>
+</article>
+<article>
+<h3>Akční předání</h3>
+<p>Odesílejte předání uzamčeného problému, slučujte vrácené aktualizace, sledujte komentáře a aktivitu s časovým razítkem a poté exportujte registry XLSX nebo závěrečné balíčky s rozsahem.</p>
+</article>
+<article>
+<h3>Flexibilní odhlašování</h3>
+<p>Nakreslete podpis, vygenerujte jej ze zadaného jména nebo importujte schválený obrázek podpisu pro odhlášení inspektora a klienta.</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="use-cases-title" class="section use-cases" id="use-cases">
+<div class="section-heading">
+<p class="eyebrow">Případy použití</p>
+<h2 id="use-cases-title">Pro lidi, kteří potřebují zprávu dokončit, dokud je návštěva ještě čerstvá.</h2>
+</div>
+<div class="use-case-grid">
+<article>
+<h3>Stavební inspektoři</h3>
+<p>Vytvářejte vyleštěné klientské soubory PDF se značkovými titulními stránkami, textem omezení, rejstříky vydání a fotografickými důkazy.</p>
+</article>
+<article>
+<h3>Architekti a designéři</h3>
+<p>Zachyťte pozorování místa podle oblastí a pošlete dodavatelům čistý seznam akcí bez čištění tabulky.</p>
+</article>
+<article>
+<h3>Dodavatelé a stavbyvedoucí</h3>
+<p>Provádějte předání, přidělujte obchodní odpovědnost, sledujte uzavření a exportujte seznamy s rozsahem pro subdodavatele.</p>
+</article>
+<article>
+<h3>Týmy nemovitostí a zařízení</h3>
+<p>Problémy s údržbou dokumentů, před a po důkazech, opakující se závady a archivovatelné záznamy projektu.</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="downloads-title" class="section sample-downloads">
+<div>
+<p class="eyebrow">Ukázky ke stažení</p>
+<h2 id="downloads-title">Než aplikaci vyzkoušíte, zkontrolujte výstup.</h2>
+</div>
+<div class="download-list">
+<a href="/downloads/sample-interior-handover-report.pdf">
+<strong>Zpráva o předání interiéru PDF</strong>
+<span>Pět vnitřních zádrhelů</span>
+</a>
+<a href="/downloads/sample-construction-defect-report.pdf">
+<strong>Zpráva o konstrukční závadě PDF</strong>
+<span>Šest stavebních závad aktivního místa</span>
+</a>
+<a href="/downloads/sample-snag-action-list.pdf">
+<strong>Seznam akcí dodavatele PDF</strong>
+<span>Otevřené položky pro doručovací týmy</span>
+</a>
+<a href="/downloads/sample-closeout-report.pdf">
+<strong>Zpráva o uzavření PDF</strong>
+<span>Vyřešené problémy a důkazy</span>
+</a>
+<a href="/downloads/sample-issue-register.csv">
+<strong>CSV registru problémů</strong>
+<span>Export tabulky vnitřních sestav</span>
+</a>
+<a href="/downloads/sample-construction-issue-register.csv">
+<strong>Registr stavebních problémů CSV</strong>
+<span>Export tabulky stavebních zpráv</span>
+</a>
+</div>
+</section>
+<section aria-labelledby="pricing-title" class="section pricing" id="pricing">
+<div class="pricing-copy">
+<p class="eyebrow">Jednoduché místní stanovování cen</p>
+<h2 id="pricing-title">Začněte zdarma. Odemkněte čisté profesionální exporty jednou.</h2>
+<p>
+            Používejte každý pracovní postup základního pole lokálně bez vytvoření účtu. Zdarma zahrnuje tři celkové exporty souborů s vodoznakem. Plánované uvedení Pro je jednorázový nákup v obchodě obnovitelných 9,99 USD v podporovaných verzích mobilních obchodů – bez předplatného. Konečné ceny lokalizované výlohy se mohou lišit podle daně a měny.
+          </p>
+</div>
+<div aria-label="Porovnání zdarma a Pro" class="pricing-compare">
+<article class="plan-card">
+<p class="plan-label">Zdarma</p>
+<p class="price">$0 <span>místní použití</span></p>
+<ul>
+<li>Neomezené místní projekty a náhledy</li>
+<li>Celkem 3 exporty PDF/XLSX/CSV s vodoznakem</li>
+<li>Šablona základní zprávy pole</li>
+<li>Standardní rozložení fotografií</li>
+</ul>
+<a class="button button-secondary" data-campaign="homepage-pricing-sample" data-cta="sample-report" data-destination="pdf" data-placement="pricing" href="/downloads/sample-interior-handover-report.pdf">Zkontrolujte výstup</a>
+</article>
+<article class="plan-card plan-card-pro">
+<p class="plan-label">Individuální Pro</p>
+<p class="price">$9.99 <span>cíl jednorázového spuštění</span></p>
+<ul>
+<li>Neomezené čisté exporty PDF, XLSX a CSV</li>
+<li>Vlastní logo a firemní branding</li>
+<li>Rozostření soukromí, měření a integrita důkazů</li>
+<li>Uzamčené předání problému a historie aktivit</li>
+<li>Nakreslené, napsané nebo importované podpisy</li>
+</ul>
+<a class="button button-primary" data-campaign="homepage-pricing" data-cta="early-access" data-destination="email" data-placement="pricing" href="mailto:hello@sitereportkit.com?subject=SiteReportKit%20early%20access">Požádat o předběžný přístup</a>
+</article>
+<p class="launch-note">Probíhá spuštění App Store. Konečná cena a dostupnost na prodejně budou potvrzeny v aktuální nabídce. Pro nezahrnuje účty, cloudovou synchronizaci ani týmové pracovní prostory.</p>
+</div>
+</section>
+<section aria-labelledby="faq-title" class="section faq">
+<div class="section-heading compact">
+<p class="eyebrow">Běžné otázky</p>
+<h2 id="faq-title">Zjistěte, co aplikace dělá, než ji vezmete na místo.</h2>
+</div>
+<div class="faq-list">
+<details>
+<summary>Funguje SiteReportKit bez účtu?</summary>
+<p>Ano. Zachycování hlavních projektů, místní úložiště, náhled sestav a vzorové pracovní postupy nevyžadují účet.</p>
+</details>
+<details>
+<summary>Mohu pracovat offline?</summary>
+<p>Ano. Zachycení projektu, fotografie, označení a generování zpráv jsou navrženy tak, aby fungovaly lokálně. Pro nákup v obchodě nebo obnovení je stále vyžadováno síťové připojení.</p>
+</details>
+<details>
+<summary>Co zahrnuje bezplatný export?</summary>
+<p>Free obsahuje celkem tři exporty souborů PDF, XLSX nebo CSV se značkou SiteReportKit Free. Náhledy a lokální projekty zůstávají neomezené.</p>
+</details>
+<details>
+<summary>Je SiteReportKit úplnou platformou pro správu staveb?</summary>
+<p>Ne. Záměrně se zaměřuje na rychlé snímání v terénu a profesionální předávací zprávy bez BIM, RFI, plánů nebo týmové koordinace v reálném čase.</p>
+</details>
+</div>
+</section>
+<section aria-labelledby="phone-handoff-title" class="section phone-handoff">
+<div class="phone-handoff-copy">
+<p class="eyebrow">Pokračujte na telefonu</p>
+<h2 id="phone-handoff-title">Vezměte si s sebou ukázkový pracovní postup.</h2>
+<p>Naskenováním kódu otevřete SiteReportKit na svém telefonu nebo otevřete předvyplněnou textovou zprávu, kterou si můžete poslat. Oba odkazy používají štítky kampaní bez marketingových souborů cookie.</p>
+<div class="hero-actions">
+<a class="button button-primary" data-campaign="homepage-phone-handoff" data-cta="phone-handoff" data-destination="sms" data-placement="homepage" href="sms:?&amp;body=Open%20SiteReportKit%20on%20your%20phone%3A%20https%3A%2F%2Fsitereportkit.com%2F%3Fsrc%3Dsms%26campaign%3Dhomepage-phone-handoff">Pošlete odkaz sami sobě</a>
+<a class="button button-secondary" data-campaign="homepage-phone-handoff" data-cta="early-access" data-destination="email" data-placement="phone-handoff" href="mailto:hello@sitereportkit.com?subject=SiteReportKit%20launch%20updates">Získejte aktualizace spuštění</a>
+</div>
+<p class="handoff-note">Tlačítko SMS otevře pouze skladatel zpráv vašeho zařízení. SiteReportKit neobdrží telefonní číslo. Odkaz na ověřený obchod po schválení nahradí tento cíl před vydáním.</p>
+</div>
+<figure>
+<img alt="QR kód pro otevření webu SiteReportKit na telefonu" height="232" src="/assets/brand/phone-handoff-qr.svg" width="232"/>
+<figcaption>Otevřete v telefonu stránku předběžného spuštění</figcaption>
+</figure>
+</section>
+<section aria-labelledby="final-cta-title" class="final-cta">
+<img alt="" height="103" src="/assets/brand/sitereportkit-mark.png?v=20260708-exact-logo" width="64"/>
+<h2 id="final-cta-title">Vytvořte sestavu, než vám úloha opustí hlavu.</h2>
+<p>SiteReportKit se jako první spouští kolem rychlého, místního, profesionálního mobilního reportování stránek, s pracovními postupy pro stolní počítače a weby plánovanými poté, co bude základní pracovní postup stabilní.</p>
+<div class="hero-actions">
+<a class="button button-primary" data-cta="final_interior_sample" href="/downloads/sample-interior-handover-report.pdf">Ukázka interiéru</a>
+<a class="button button-secondary" data-cta="final_construction_sample" href="/downloads/sample-construction-defect-report.pdf">Ukázka konstrukce</a>
+<a class="button button-secondary" data-cta="final_contact" href="mailto:hello@sitereportkit.com">Kontakt</a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div>
+<img alt="SiteReportKit" height="40" src="/assets/brand/sitereportkit-wordmark.png?v=20260708-exact-logo" width="184"/>
+<p>Offline seznam prvních děr, zasekávání, defekty a hlášení o ukončení.</p>
+</div>
+<nav aria-label="Navigace v zápatí">
+<a href="#reports">Zprávy</a>
+<a href="#workflow">Pracovní postup</a>
+<a href="#use-cases">Případy použití</a>
+<a href="/cs/sample-reports/">Vzorové zprávy</a>
+<a href="/cs/resources/punch-list-vs-snag-list-vs-defect-list/">Terminologická příručka</a>
+<a href="/cs/pricing/">Ceny</a>
+<a href="/downloads/sample-snagging-report.pdf">Ukázka PDF</a>
+<a href="/cs/support/">Podpora</a>
+<a href="/cs/privacy/">Ochrana osobních údajů</a>
+</nav>
+</footer>
 </body>
 </html>
+

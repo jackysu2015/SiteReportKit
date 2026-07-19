@@ -1,61 +1,485 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ro">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Inspecții și rapoarte PDF | SiteReportKit</title>
-  <meta name="description" content="Înregistrați defecte cu fotografii și marcaje, organizați lista de remedieri și creați rapoarte PDF sau CSV direct pe șantier.">
-  <link rel="canonical" href="https://sitereportkit.com/ro/">
-  <link rel="alternate" hreflang="x-default" href="https://sitereportkit.com/">
-  <link rel="alternate" hreflang="ar-SA" href="https://sitereportkit.com/ar-SA/">
-  <link rel="alternate" hreflang="ca" href="https://sitereportkit.com/ca/">
-  <link rel="alternate" hreflang="cs" href="https://sitereportkit.com/cs/">
-  <link rel="alternate" hreflang="da" href="https://sitereportkit.com/da/">
-  <link rel="alternate" hreflang="de-DE" href="https://sitereportkit.com/de-DE/">
-  <link rel="alternate" hreflang="el" href="https://sitereportkit.com/el/">
-  <link rel="alternate" hreflang="en-US" href="https://sitereportkit.com/en-US/">
-  <link rel="alternate" hreflang="es-MX" href="https://sitereportkit.com/es-MX/">
-  <link rel="alternate" hreflang="fi" href="https://sitereportkit.com/fi/">
-  <link rel="alternate" hreflang="fr-FR" href="https://sitereportkit.com/fr-FR/">
-  <link rel="alternate" hreflang="he" href="https://sitereportkit.com/he/">
-  <link rel="alternate" hreflang="hi" href="https://sitereportkit.com/hi/">
-  <link rel="alternate" hreflang="hr" href="https://sitereportkit.com/hr/">
-  <link rel="alternate" hreflang="hu" href="https://sitereportkit.com/hu/">
-  <link rel="alternate" hreflang="id" href="https://sitereportkit.com/id/">
-  <link rel="alternate" hreflang="it" href="https://sitereportkit.com/it/">
-  <link rel="alternate" hreflang="ja" href="https://sitereportkit.com/ja/">
-  <link rel="alternate" hreflang="ko" href="https://sitereportkit.com/ko/">
-  <link rel="alternate" hreflang="ms" href="https://sitereportkit.com/ms/">
-  <link rel="alternate" hreflang="nl-NL" href="https://sitereportkit.com/nl-NL/">
-  <link rel="alternate" hreflang="no" href="https://sitereportkit.com/no/">
-  <link rel="alternate" hreflang="pl" href="https://sitereportkit.com/pl/">
-  <link rel="alternate" hreflang="pt-BR" href="https://sitereportkit.com/pt-BR/">
-  <link rel="alternate" hreflang="ro" href="https://sitereportkit.com/ro/">
-  <link rel="alternate" hreflang="ru" href="https://sitereportkit.com/ru/">
-  <link rel="alternate" hreflang="sk" href="https://sitereportkit.com/sk/">
-  <link rel="alternate" hreflang="sv" href="https://sitereportkit.com/sv/">
-  <link rel="alternate" hreflang="th" href="https://sitereportkit.com/th/">
-  <link rel="alternate" hreflang="tr" href="https://sitereportkit.com/tr/">
-  <link rel="alternate" hreflang="uk" href="https://sitereportkit.com/uk/">
-  <link rel="alternate" hreflang="vi" href="https://sitereportkit.com/vi/">
-  <link rel="alternate" hreflang="zh-Hans" href="https://sitereportkit.com/zh-Hans/">
-  <link rel="alternate" hreflang="zh-Hant" href="https://sitereportkit.com/zh-Hant/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="SiteReportKit">
-  <meta property="og:title" content="Inspecții și rapoarte PDF | SiteReportKit">
-  <meta property="og:description" content="Înregistrați defecte cu fotografii și marcaje, organizați lista de remedieri și creați rapoarte PDF sau CSV direct pe șantier.">
-  <meta property="og:url" content="https://sitereportkit.com/ro/">
-  <meta property="og:image" content="https://sitereportkit.com/assets/reports/samples/en-US/report-cover.png">
-  <link rel="icon" href="../assets/brand/sitereportkit-favicon.png">
-  <link rel="stylesheet" href="../marketing-pages.css?v=20260711">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SiteReportKit","applicationCategory":"BusinessApplication","operatingSystem":"iOS","description":"Înregistrați defecte cu fotografii și marcaje, organizați lista de remedieri și creați rapoarte PDF sau CSV direct pe șantier.","url":"https://sitereportkit.com/ro/"}</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>SiteReportKit | Punch list profesional și rapoarte de snagging</title>
+<meta content="SiteReportKit creează liste de performanțe offline cu markup foto sigure pentru confidențialitate, măsurători, transferuri auditabile și exporturi profesionale PDF, XLSX și CSV." name="description"/>
+<meta content="#0A2342" name="theme-color"/>
+<meta content="SiteReportKit" property="og:title"/>
+<meta content="Creați PDF-uri profesionale cu lista de performanțe înainte de a părăsi site-ul." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://sitereportkit.com/ro/" property="og:url"/>
+<meta content="https://sitereportkit.com/assets/reports/report-cover.png?v=20260710-separated-samples" property="og:image"/>
+<link href="https://sitereportkit.com/ro/" rel="canonical"/><link href="https://sitereportkit.com/" hreflang="x-default" rel="alternate"/><link href="https://sitereportkit.com/ar-SA/" hreflang="ar-SA" rel="alternate"/><link href="https://sitereportkit.com/ca/" hreflang="ca" rel="alternate"/><link href="https://sitereportkit.com/cs/" hreflang="cs" rel="alternate"/><link href="https://sitereportkit.com/da/" hreflang="da" rel="alternate"/><link href="https://sitereportkit.com/de-DE/" hreflang="de-DE" rel="alternate"/><link href="https://sitereportkit.com/el/" hreflang="el" rel="alternate"/><link href="https://sitereportkit.com/en-US/" hreflang="en-US" rel="alternate"/><link href="https://sitereportkit.com/es-MX/" hreflang="es-MX" rel="alternate"/><link href="https://sitereportkit.com/fi/" hreflang="fi" rel="alternate"/><link href="https://sitereportkit.com/fr-FR/" hreflang="fr-FR" rel="alternate"/><link href="https://sitereportkit.com/he/" hreflang="he" rel="alternate"/><link href="https://sitereportkit.com/hi/" hreflang="hi" rel="alternate"/><link href="https://sitereportkit.com/hr/" hreflang="hr" rel="alternate"/><link href="https://sitereportkit.com/hu/" hreflang="hu" rel="alternate"/><link href="https://sitereportkit.com/id/" hreflang="id" rel="alternate"/><link href="https://sitereportkit.com/it/" hreflang="it" rel="alternate"/><link href="https://sitereportkit.com/ja/" hreflang="ja" rel="alternate"/><link href="https://sitereportkit.com/ko/" hreflang="ko" rel="alternate"/><link href="https://sitereportkit.com/ms/" hreflang="ms" rel="alternate"/><link href="https://sitereportkit.com/nl-NL/" hreflang="nl-NL" rel="alternate"/><link href="https://sitereportkit.com/no/" hreflang="no" rel="alternate"/><link href="https://sitereportkit.com/pl/" hreflang="pl" rel="alternate"/><link href="https://sitereportkit.com/pt-BR/" hreflang="pt-BR" rel="alternate"/><link href="https://sitereportkit.com/ro/" hreflang="ro" rel="alternate"/><link href="https://sitereportkit.com/ru/" hreflang="ru" rel="alternate"/><link href="https://sitereportkit.com/sk/" hreflang="sk" rel="alternate"/><link href="https://sitereportkit.com/sv/" hreflang="sv" rel="alternate"/><link href="https://sitereportkit.com/th/" hreflang="th" rel="alternate"/><link href="https://sitereportkit.com/tr/" hreflang="tr" rel="alternate"/><link href="https://sitereportkit.com/uk-UA/" hreflang="uk" rel="alternate"/><link href="https://sitereportkit.com/vi/" hreflang="vi" rel="alternate"/><link href="https://sitereportkit.com/zh-Hans/" hreflang="zh-Hans" rel="alternate"/><link href="https://sitereportkit.com/zh-Hant/" hreflang="zh-Hant" rel="alternate"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/assets/brand/sitereportkit-favicon.png?v=20260708-exact-logo" rel="icon" type="image/png"/>
+<link href="/styles.css?v=20260710-separated-samples" rel="stylesheet"/>
+<script defer="" src="/script.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SiteReportKit","applicationCategory":"BusinessApplication","operatingSystem":"iOS","description":"Rapoarte offline pentru prima listă, obstacole, defecte și închidere cu exporturi profesionale PDF, XLSX și CSV.","url":"https://sitereportkit.com/ro/","featureList":["Captură offline a problemei","Markup foto nedistructiv","Exporturi PDF, XLSX și CSV","Confidențialitate estompare și adnotări de măsurare","Activitate marcată de timp și transferuri de probleme blocate","Trei metode de introducere a semnăturii","Înregistrările privind integritatea probelor SHA-256","Liste de acțiuni ale contractantului","Dovezi de închidere","Arhivele proiectelor locale"],"publisher":{"@type":"Organization","name":"SiteReportKit","url":"https://sitereportkit.com/ro/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"SiteReportKit funcționează fără un cont?","acceptedAnswer":{"@type":"Answer","text":"Da. Captarea proiectelor de bază, stocarea locală, previzualizarea rapoartelor și fluxurile de lucru eșantion nu necesită un cont."}},{"@type":"Question","name":"Pot lucra offline?","acceptedAnswer":{"@type":"Answer","text":"Da. Captura de proiecte, fotografiile, marcarea și generarea de rapoarte sunt concepute pentru a funcționa local. O conexiune la rețea este încă necesară pentru achiziționarea sau restaurarea din magazin."}},{"@type":"Question","name":"Ce include un export gratuit?","acceptedAnswer":{"@type":"Answer","text":"Gratuit include trei exporturi totale de fișiere PDF, XLSX sau CSV cu branding SiteReportKit Free. Previzualizările și proiectele locale rămân nelimitate."}}]}</script>
 </head>
 <body>
-  <header class="site-header"><a class="brand" href="../"><img src="../assets/brand/sitereportkit-wordmark.png" alt="SiteReportKit" width="224" height="49"></a><label><span class="sr-only">Language</span><select onchange="if(this.value)location.href=this.value"><option value="/ar-SA/">العربية</option><option value="/ca/">Català</option><option value="/cs/">Čeština</option><option value="/da/">Dansk</option><option value="/de-DE/">Deutsch</option><option value="/el/">Ελληνικά</option><option value="/en-US/">English</option><option value="/es-MX/">Español</option><option value="/fi/">Suomi</option><option value="/fr-FR/">Français</option><option value="/he/">עברית</option><option value="/hi/">हिन्दी</option><option value="/hr/">Hrvatski</option><option value="/hu/">Magyar</option><option value="/id/">Bahasa Indonesia</option><option value="/it/">Italiano</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/ms/">Bahasa Melayu</option><option value="/nl-NL/">Nederlands</option><option value="/no/">Norsk</option><option value="/pl/">Polski</option><option value="/pt-BR/">Português</option><option value="/ro/" selected>Română</option><option value="/ru/">Русский</option><option value="/sk/">Slovenčina</option><option value="/sv/">Svenska</option><option value="/th/">ไทย</option><option value="/tr/">Türkçe</option><option value="/uk/">Українська</option><option value="/vi/">Tiếng Việt</option><option value="/zh-Hans/">简体中文</option><option value="/zh-Hant/">繁體中文</option></select></label></header>
-  <main>
-    <section class="hero"><div class="hero-inner"><div><p class="eyebrow">SiteReportKit</p><h1>Inspecții și rapoarte PDF</h1><p class="hero-lede">Înregistrați defecte cu fotografii și marcaje, organizați lista de remedieri și creați rapoarte PDF sau CSV direct pe șantier.</p><div class="actions"><a class="button button-primary" href="https://apps.apple.com/app/id6788361013">App Store</a><a class="button button-secondary" href="../downloads/samples/en-US/sample-report.pdf">PDF</a></div></div><img src="../assets/reports/samples/en-US/report-cover.png" alt="SiteReportKit" width="993" height="1404"></div></section>
-    <section class="section section-white"><div class="section-inner"><div class="related-grid"><article class="related-card"><h2>Înregistrați defecte pe șantier</h2></article><article class="related-card"><h2>Organizați lucrările de remediere</h2></article><article class="related-card"><h2>Exportați rapoarte PDF clare</h2></article></div><div class="prose"><p>Transformați vizita pe șantier într-un raport clar și profesionist. SiteReportKit funcționează fără internet și este creat pentru inspecții, liste de defecte, predări și verificări finale.</p><p>Documentați fiecare punct cu amplasare, specialitate, gravitate, responsabil, termen, stare, fotografii, legende și marcaje care nu modifică originalul. Căutați și filtrați lista, actualizați mai multe puncte și păstrați ordonate notele de remediere și istoricul verificărilor.</p><p>Exportați rapoarte PDF profesionale, liste de lucrări pentru executanți, documentații de închidere și registre CSV de defecte. Alegeți aspectul, adăugați identitatea firmei și creați liste după zonă sau responsabil. Funcțiile principale nu necesită cont.</p><p>Folosiți mai mult decât marcaje de bază: estompare pentru confidențialitate și adnotări de măsurare. Exportați registre XLSX editabile, precum și PDF și CSV, urmăriți comentarii și activități cu marcaje temporale și schimbați pachete de predare blocate care îmbină actualizările returnate. Desenați, tastați sau importați semnături. Dovezile originale păstrează înregistrări de integritate SHA-256.</p></div></div></section>
-  </main>
-  <footer class="site-footer"><div class="footer-inner"><strong>SiteReportKit</strong><nav class="footer-links"><a href="../privacy/">Privacy</a><a href="../support/">Support</a></nav></div></footer>
+<header class="site-header" data-header="">
+<a aria-label="Acasă SiteReportKit" class="brand" href="#top">
+<img alt="SiteReportKit" class="brand-logo" height="49" src="/assets/brand/sitereportkit-wordmark.png?v=20260708-exact-logo" width="224"/>
+</a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" data-nav-toggle="" type="button">
+<span class="sr-only">Deschideți navigarea</span>
+<span></span>
+<span></span>
+<span></span>
+</button>
+<nav class="site-nav" data-nav="" id="site-nav">
+<a href="#reports">Rapoarte</a>
+<a href="#workflow">Flux de lucru</a>
+<a href="/ro/sample-reports/">Mostre</a>
+<a href="#markets">Piețe</a>
+<a href="#pricing">Preț</a>
+
+<label class="language-switcher"><span aria-hidden="true" class="language-switcher-icon">🌐</span><span class="sr-only">Language</span><select aria-label="Language" onchange="if(this.value)location.href=this.value"><option value="/ar-SA/">العربية</option><option value="/ca/">Català</option><option value="/cs/">Čeština</option><option value="/da/">Dansk</option><option value="/de-DE/">Deutsch</option><option value="/el/">Ελληνικά</option><option value="/en-US/">English</option><option value="/es-MX/">Español</option><option value="/fi/">Suomi</option><option value="/fr-FR/">Français</option><option value="/he/">עברית</option><option value="/hi/">हिन्दी</option><option value="/hr/">Hrvatski</option><option value="/hu/">Magyar</option><option value="/id/">Bahasa Indonesia</option><option value="/it/">Italiano</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/ms/">Bahasa Melayu</option><option value="/nl-NL/">Nederlands</option><option value="/no/">Norsk</option><option value="/pl/">Polski</option><option value="/pt-BR/">Português</option><option selected="" value="/ro/">Română</option><option value="/ru/">Русский</option><option value="/sk/">Slovenčina</option><option value="/sv/">Svenska</option><option value="/th/">ไทย</option><option value="/tr/">Türkçe</option><option value="/uk-UA/">Українська</option><option value="/vi/">Tiếng Việt</option><option value="/zh-Hans/">简体中文</option><option value="/zh-Hant/">繁體中文</option></select></label><a class="nav-cta" data-campaign="homepage-nav" data-cta="sample-report" data-destination="pdf" data-placement="header" href="/downloads/sample-snagging-report.pdf">Exemplu PDF</a>
+</nav>
+</header>
+
+<main id="top">
+<section aria-labelledby="hero-title" class="hero">
+<div aria-hidden="true" class="hero-media">
+<img alt="" class="hero-page hero-page-main" src="/assets/reports/report-cover.png?v=20260710-separated-samples"/>
+<img alt="" class="hero-page hero-page-side" src="/assets/reports/report-issue-evidence.png?v=20260710-separated-samples"/>
+<img alt="" class="hero-page hero-page-back" src="/assets/reports/action-list-cover.png?v=20260710-separated-samples"/>
+</div>
+<div class="hero-copy">
+<p class="eyebrow">Raportare offline pentru primul câmp</p>
+<h1 id="hero-title">Finalizați procedura. Trimite raportul înainte de a pleca.</h1>
+<p class="hero-lede">SiteReportKit transformă dovezile site-ului într-un transfer profesional.</p>
+<p class="hero-support">
+            Captați dovezi susceptibile, atribuiți responsabilitatea și exportați livrabile PDF, XLSX sau CSV de marcă — offline, fără a fi nevoie de cont.
+          </p>
+<div aria-label="Acțiuni primare" class="hero-actions">
+<a class="button button-primary" data-campaign="homepage-hero-sample" data-cta="sample-report" data-destination="pdf" data-placement="hero" data-report-kind="interior-handover" href="/downloads/sample-interior-handover-report.pdf">Descărcați exemplu de raport</a>
+<a class="button button-secondary" data-campaign="homepage-hero-action-list" data-cta="sample-report" data-destination="pdf" data-placement="hero" data-report-kind="contractor-action-list" href="/downloads/sample-snag-action-list.pdf">Consultați lista de acțiuni ale contractorului</a>
+</div>
+<dl aria-label="Evidențierea produsului" class="hero-proof">
+<div>
+<dt>Funcționează offline</dt>
+<dd>Continuați să mergeți când semnalul scade</dd>
+</div>
+<div>
+<dt>Nu este necesar un cont</dt>
+<dd>Capturați local și exportați când sunteți gata</dd>
+</div>
+<div>
+<dt>PDF + XLSX + CSV</dt>
+<dd>Rapoarte, registre de lucru editabile și registre</dd>
+</div>
+</dl>
+</div>
+</section>
+<section aria-label="Promisiunea principală a produsului" class="trust-strip">
+<p>Capturați dovezi ale site-ului.</p>
+<p>Atribuiți responsabilitatea.</p>
+<p>Exportați transferul.</p>
+</section>
+<section aria-labelledby="reports-title" class="section report-showcase" id="reports">
+<div class="section-heading">
+<p class="eyebrow">Ieșire eșantion reală</p>
+<h2 id="reports-title">Două rapoarte distincte pentru două vizite de site foarte diferite.</h2>
+<p>
+            Predarea interioară și inspecția activă a construcției rămân separate de capturare prin export. Fiecare are propriul proiect, index de probleme, set de dovezi, listă de acțiuni și raport care poate fi descărcat.
+          </p>
+</div>
+<div aria-label="Exemple de tipuri de rapoarte" class="report-edition-grid">
+<article class="report-edition">
+<div class="report-edition-media">
+<img alt="Coperta raportului de predare interioară Maple Row" height="1404" src="/assets/reports/report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<div class="report-edition-copy">
+<p class="report-type">Predare interioară</p>
+<h3>Maple Row Handover</h3>
+<p>Cinci obiecte care se prinde din interior, care acoperă finisaje, vopsea, verificări electrice, uși și o cerere de schimbare a clientului.</p>
+<div aria-label="Rezumatul raportului interior" class="report-edition-facts">
+<span>5 probleme</span>
+<span>9 pagini</span>
+<span>Doar dovezi interioare</span>
+</div>
+<div class="report-edition-actions">
+<a class="button button-primary" href="/downloads/sample-interior-handover-report.pdf">PDF interior</a>
+<a class="button button-secondary" href="/downloads/sample-snag-action-list.pdf">Lista de acțiuni interioare</a>
+</div>
+</div>
+</article>
+<article class="report-edition report-edition-construction">
+<div class="report-edition-media">
+<img alt="Coperta raportului de inspecție a construcțiilor Harbour Point" height="1404" src="/assets/reports/construction-report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<div class="report-edition-copy">
+<p class="report-type">Construcție activă</p>
+<h3>Inspecție în construcție Harbour Point</h3>
+<p>Șase defecte de construcție care acoperă oprirea incendiului de fațadă, beton, drenaj, lucrări temporare, zidărie și hidroizolarea acoperișului.</p>
+<div aria-label="Rezumatul raportului de construcție" class="report-edition-facts">
+<span>6 defecte</span>
+<span>10 pagini</span>
+<span>Doar dovezi de construcție</span>
+</div>
+<div class="report-edition-actions">
+<a class="button button-primary" href="/downloads/sample-construction-defect-report.pdf">PDF de construcție</a>
+<a class="button button-secondary" href="/downloads/sample-construction-defect-action-list.pdf">Lista acțiunilor de construcție</a>
+</div>
+</div>
+</article>
+</div>
+<div class="report-lab">
+<figure class="report-preview">
+<div class="report-preview-top">
+<span>Exemplu de PDF pentru client</span>
+<a href="/downloads/sample-interior-handover-report.pdf">Descărcați</a>
+</div>
+<div class="document-frame">
+<img alt="SiteReportKit eșantion de acoperire a raportului de avarie interioară cu rezumat și index de probleme" height="1404" src="/assets/reports/report-cover.png?v=20260710-separated-samples" width="993"/>
+</div>
+<figcaption>
+<strong>Raport complet al clientului</strong>
+<span>Coperta, rezumatul, indexul problemelor, detaliile problemei, fotografiile dovezilor și formatarea gata de semnare.</span>
+</figcaption>
+</figure>
+<div aria-label="Exemple de vizualizări ale raportului" class="sample-stack">
+<div class="sample-stack-heading">
+<p class="eyebrow">În interiorul exportului</p>
+<h3>Dovezi structurate, nu o rolă video aruncată într-un PDF.</h3>
+</div>
+<article class="sample-row">
+<img alt="Pagina cu detalii a problemei interioare care arată acțiunea necesară, fotografia cu dovezi, proprietarul, starea și data scadenței" height="1404" src="/assets/reports/report-issue-evidence.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Emite dovezi</h4>
+<p>Fiecare problema păstrează împreună fotografia, legenda, proprietarul, gravitatea, starea și acțiunea necesară.</p>
+</div>
+</article>
+<article class="sample-row">
+<img alt="Lista de acțiuni pentru antreprenori de interior Copertă PDF și rezumat remarcabil al problemelor generate de SiteReportKit" height="1404" src="/assets/reports/action-list-cover.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Lista de acțiuni ale contractorului</h4>
+<p>Filtrați pentru a deschide numai articole și oferiți fiecărei tranzacții un domeniu de activitate concentrat.</p>
+</div>
+</article>
+<article class="sample-row">
+<img alt="Pagina interioară cu dovezi de închidere care apare după fotografie și nota de rezoluție" height="1404" src="/assets/reports/report-after-evidence.png?v=20260710-separated-samples" width="993"/>
+<div>
+<h4>Dovada de închidere</h4>
+<p>Elementele rezolvate includ note de acceptare și fotografii de după pentru un traseu curat de predare.</p>
+</div>
+</article>
+<div aria-label="Exemple de descărcări" class="sample-actions">
+<a class="button button-primary" href="/downloads/sample-interior-handover-report.pdf">PDF interior</a>
+<a class="button button-secondary" href="/downloads/sample-snag-action-list.pdf">Lista de acțiuni</a>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="workflow-title" class="section workflow" id="workflow">
+<div class="section-heading compact">
+<p class="eyebrow">Construit pentru plimbări pe site</p>
+<h2 id="workflow-title">De la dovezile site-ului la un raport în trei pași.</h2>
+</div>
+<div class="workflow-layout">
+<ol class="workflow-list">
+<li>
+<span>01</span>
+<div>
+<h3>Capturați dovezi ale site-ului</h3>
+<p>Adăugați probleme în timp ce mergeți, cu fotografii, marcaj nedistructiv, zonă, comerț, gravitate și o acțiune clară necesară.</p>
+</div>
+</li>
+<li>
+<span>02</span>
+<div>
+<h3>Atribuiți responsabilitatea</h3>
+<p>Setați proprietarul, data scadenței, prioritatea și starea, apoi filtrați lucrarea după contractant, comerț sau zonă.</p>
+</div>
+</li>
+<li>
+<span>03</span>
+<div>
+<h3>Exportați transferul</h3>
+<p>Previzualizează și partajează un PDF complet al clientului, o listă de acțiuni ale contractorului, un raport de încheiere sau un registru de probleme CSV înainte de a pleca.</p>
+</div>
+</li>
+</ol>
+<figure class="closeout-preview">
+<img alt="Pagina raportului de închidere cu dovezi ale articolului rezolvat și formatare gata de semnare" height="1404" src="/assets/reports/closeout-report-page.png?v=20260710-separated-samples" width="993"/>
+<figcaption>Dovezi ale raportului de închidere cu note de rezoluție.</figcaption>
+</figure>
+</div>
+</section>
+<section aria-labelledby="app-proof-title" class="section app-proof">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Dovada din aplicație</p>
+<h2 id="app-proof-title">Construit în jurul site-ului, nu a administratorului de birou.</h2>
+</div>
+<p>Acestea sunt ecrane de produse reale din versiunea mobilă actuală. Captura, responsabilitatea și raportarea rămân conectate de la prima fotografie până la transferul final.</p>
+</div>
+<div class="app-proof-grid">
+<article>
+<img alt="Flux de lucru de marcare a fotografiilor mobile SiteReportKit cu dovezi de construcție" height="2868" src="/assets/app/photo-markup.png" width="1320"/>
+<div><span>Captură</span><h3>Marcați defectul exact</h3><p>Păstrați dovezile originale în timp ce adăugați un marcaj vizual clar pentru persoana care face munca.</p></div>
+</article>
+<article>
+<img alt="Opțiuni de export ale listei de acțiuni ale contractantului mobil SiteReportKit" height="2868" src="/assets/app/action-lists.png" width="1320"/>
+<div><span>Atribuiți</span><h3>Domeniul de activitate de către proprietar sau zonă</h3><p>Oferiți fiecărui contractant o listă concentrată fără a expune elementele de proiect care nu au legătură.</p></div>
+</article>
+<article>
+<img alt="SiteReportKit mobil pentru previzualizarea raportului PDF și fluxul de lucru de export" height="2868" src="/assets/app/pdf-export.png" width="1320"/>
+<div><span>Export</span><h3>Previzualizează raportul pe site</h3><p>Examinați PDF-ul client înainte de a-l partaja, în timp ce contextul explicației este încă proaspăt.</p></div>
+</article>
+</div>
+</section>
+<section aria-labelledby="markets-title" class="section markets" id="markets">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Creat pentru terminologia locală</p>
+<h2 id="markets-title">Același flux de lucru pe teren, exprimat modul în care funcționează piața dvs.</h2>
+</div>
+<p>Alegeți terminologia și formatul de hârtie pe care clienții și contractorii dvs. le așteaptă. Aceste pagini descriu setările și exemplele produsului, nu certificarea de reglementare locală.</p>
+</div>
+<div class="market-grid">
+<a data-campaign="homepage-market-us" data-cta="market-entry" data-destination="guide" data-market="us" data-placement="homepage" href="/ro/us/punch-list-app/">
+<span>Statele Unite ale Americii</span>
+<strong>Liste de perforare · Scrisoare</strong>
+<small>Pentru plimbări cu pumn, proprietatea comercială și închiderea subcontractanților.</small>
+</a>
+<a data-campaign="homepage-market-uk" data-cta="market-entry" data-destination="guide" data-market="uk" data-placement="homepage" href="/ro/uk/snagging-app/">
+<span>Regatul Unit</span>
+<strong>Strângere · A4</strong>
+<small>Pentru predarea noilor construcții, inspecții la fața locului și rapoarte de probleme.</small>
+</a>
+<a data-campaign="homepage-market-au" data-cta="market-entry" data-destination="guide" data-market="au" data-placement="homepage" href="/ro/au/defect-list-app/">
+<span>Australia</span>
+<strong>Liste cu defecte · A4</strong>
+<small>Pentru acțiuni ale constructorului, domenii comerciale și plimbări practice de finalizare.</small>
+</a>
+</div>
+</section>
+<section aria-labelledby="features-title" class="section features">
+<div class="section-heading compact">
+<p class="eyebrow">De ce o aleg echipele</p>
+<h2 id="features-title">Un instrument de raportare concentrat în loc de o altă suită de construcție.</h2>
+</div>
+<div class="feature-grid">
+<article>
+<h3>Offline-mai întâi în mod implicit</h3>
+<p>Proiectele și media rămân locale în timpul captării, astfel încât semnalul slab la fața locului nu blochează raportul.</p>
+</article>
+<article>
+<h3>Traseul dovezilor profesionale</h3>
+<p>Păstrează originalele cu înregistrări de integritate SHA-256, estompează detaliile private, adaugă măsurători și păstrează markupurile editate lângă dovezile de închidere.</p>
+</article>
+<article>
+<h3>Terminologie flexibilă</h3>
+<p>Sprijină liste de informații, rapoarte de obstacole, liste de defecte, observații, audituri ale șantierului și plimbări de întreținere.</p>
+</article>
+<article>
+<h3>Transferuri acționabile</h3>
+<p>Trimiteți transmiterea problemelor blocate, îmbinați actualizările returnate, urmăriți comentariile și activitatea marcate cu ora, apoi exportați registrele XLSX sau pachetele de închidere.</p>
+</article>
+<article>
+<h3>Închidere flexibilă</h3>
+<p>Desenați o semnătură, generați una dintr-un nume introdus sau importați o imagine de semnătură aprobată pentru semnarea inspectorului și a clientului.</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="use-cases-title" class="section use-cases" id="use-cases">
+<div class="section-heading">
+<p class="eyebrow">Cazuri de utilizare</p>
+<h2 id="use-cases-title">Pentru persoanele care au nevoie ca raportul să fie terminat în timp ce vizita este încă proaspătă.</h2>
+</div>
+<div class="use-case-grid">
+<article>
+<h3>Inspectori de construcții</h3>
+<p>Produceți fișiere PDF pentru clienți cu copertă de marcă, text cu limitări, indecși de probleme și dovezi foto.</p>
+</article>
+<article>
+<h3>Arhitecți și designeri</h3>
+<p>Captați observațiile site-ului în funcție de zonă și trimiteți contractorilor o listă de acțiuni curată fără curățarea foii de calcul.</p>
+</article>
+<article>
+<h3>Contractori și manageri de șantier</h3>
+<p>Desfășurați plimbări de predare, atribuiți responsabilitatea comercială, urmăriți închiderea și exportați liste pentru subcontractanți.</p>
+</article>
+<article>
+<h3>Echipe de proprietate și facilități</h3>
+<p>Probleme de întreținere a documentelor, înainte și după dovezi, defecte recurente și înregistrări ale proiectelor care pot fi arhivate.</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="downloads-title" class="section sample-downloads">
+<div>
+<p class="eyebrow">Exemple de descărcări</p>
+<h2 id="downloads-title">Inspectați rezultatul înainte de a încerca aplicația.</h2>
+</div>
+<div class="download-list">
+<a href="/downloads/sample-interior-handover-report.pdf">
+<strong>Raport de predare interioară PDF</strong>
+<span>Cinci obiecte de interior</span>
+</a>
+<a href="/downloads/sample-construction-defect-report.pdf">
+<strong>PDF Raport defect de construcție</strong>
+<span>Șase defecte de construcție pe șantier activ</span>
+</a>
+<a href="/downloads/sample-snag-action-list.pdf">
+<strong>PDF Lista de acțiuni ale contractorului</strong>
+<span>Articole deschise pentru echipele de livrare</span>
+</a>
+<a href="/downloads/sample-closeout-report.pdf">
+<strong>Raport de închidere PDF</strong>
+<span>Probleme și dovezi rezolvate</span>
+</a>
+<a href="/downloads/sample-issue-register.csv">
+<strong>Emite registrul CSV</strong>
+<span>Export de foi de calcul pentru raportul interior</span>
+</a>
+<a href="/downloads/sample-construction-issue-register.csv">
+<strong>Registrul problemelor de construcție CSV</strong>
+<span>Export foaie de calcul raport de construcție</span>
+</a>
+</div>
+</section>
+<section aria-labelledby="pricing-title" class="section pricing" id="pricing">
+<div class="pricing-copy">
+<p class="eyebrow">Prețuri locale simple</p>
+<h2 id="pricing-title">Începe gratuit. Deblocați exporturile profesionale curate o dată.</h2>
+<p>
+            Folosiți fiecare flux de lucru de bază la nivel local, fără a crea un cont. Gratuit include trei exporturi totale de fișiere cu filigran. Lansarea planificată a programului Pro este o achiziție unică de 9,99 USD, care poate fi restaurată în magazin, pe versiunile de magazine mobile acceptate, fără abonament. Prețul final pentru vitrină localizată poate varia în funcție de taxă și monedă.
+          </p>
+</div>
+<div aria-label="Comparație gratuită și profesională" class="pricing-compare">
+<article class="plan-card">
+<p class="plan-label">Gratuit</p>
+<p class="price">$0 <span>utilizare locală</span></p>
+<ul>
+<li>Proiecte și previzualizări locale nelimitate</li>
+<li>3 exporturi PDF/XLSX/CSV cu filigran în total</li>
+<li>Șablon de raport de bază de câmp</li>
+<li>Aspect foto standard</li>
+</ul>
+<a class="button button-secondary" data-campaign="homepage-pricing-sample" data-cta="sample-report" data-destination="pdf" data-placement="pricing" href="/downloads/sample-interior-handover-report.pdf">Inspectați ieșirea</a>
+</article>
+<article class="plan-card plan-card-pro">
+<p class="plan-label">Individual Pro</p>
+<p class="price">$9.99 <span>țintă de lansare unică</span></p>
+<ul>
+<li>Exporturi nelimitate de PDF curate, XLSX și CSV</li>
+<li>Logo personalizat și marca companiei</li>
+<li>Încețoșarea confidențialității, măsurătorile și integritatea dovezilor</li>
+<li>Transmiterea problemelor și istoricul activităților blocate</li>
+<li>Semnături desenate, tastate sau importate</li>
+</ul>
+<a class="button button-primary" data-campaign="homepage-pricing" data-cta="early-access" data-destination="email" data-placement="pricing" href="mailto:hello@sitereportkit.com?subject=SiteReportKit%20early%20access">Solicitați acces anticipat</a>
+</article>
+<p class="launch-note">Lansarea App Store este în curs. Prețul final și disponibilitatea magazinului vor fi confirmate pe lista live. Pro nu include conturi, sincronizare în cloud sau spații de lucru în echipă.</p>
+</div>
+</section>
+<section aria-labelledby="faq-title" class="section faq">
+<div class="section-heading compact">
+<p class="eyebrow">Întrebări frecvente</p>
+<h2 id="faq-title">Aflați ce face aplicația înainte de a o duce pe site.</h2>
+</div>
+<div class="faq-list">
+<details>
+<summary>SiteReportKit funcționează fără un cont?</summary>
+<p>Da. Captarea proiectelor de bază, stocarea locală, previzualizarea rapoartelor și fluxurile de lucru eșantion nu necesită un cont.</p>
+</details>
+<details>
+<summary>Pot lucra offline?</summary>
+<p>Da. Captura de proiecte, fotografiile, marcarea și generarea de rapoarte sunt concepute pentru a funcționa local. O conexiune la rețea este încă necesară pentru achiziționarea sau restaurarea din magazin.</p>
+</details>
+<details>
+<summary>Ce include un export gratuit?</summary>
+<p>Gratuit include trei exporturi totale de fișiere PDF, XLSX sau CSV cu branding SiteReportKit Free. Previzualizările și proiectele locale rămân nelimitate.</p>
+</details>
+<details>
+<summary>SiteReportKit este o platformă completă de management al construcțiilor?</summary>
+<p>Nu. Este concentrat în mod intenționat pe captarea rapidă pe teren și rapoartele profesionale de transfer, fără BIM, RFI, programe sau coordonarea echipei în timp real.</p>
+</details>
+</div>
+</section>
+<section aria-labelledby="phone-handoff-title" class="section phone-handoff">
+<div class="phone-handoff-copy">
+<p class="eyebrow">Continuați pe telefon</p>
+<h2 id="phone-handoff-title">Luați cu dvs. exemplul de flux de lucru.</h2>
+<p>Scanează codul pentru a deschide SiteReportKit pe telefonul tău sau deschide un mesaj text precompletat pe care ți-l poți trimite. Ambele link-uri folosesc etichete de campanie fără cookie-uri de marketing.</p>
+<div class="hero-actions">
+<a class="button button-primary" data-campaign="homepage-phone-handoff" data-cta="phone-handoff" data-destination="sms" data-placement="homepage" href="sms:?&amp;body=Open%20SiteReportKit%20on%20your%20phone%3A%20https%3A%2F%2Fsitereportkit.com%2F%3Fsrc%3Dsms%26campaign%3Dhomepage-phone-handoff">Text link-ul către tine</a>
+<a class="button button-secondary" data-campaign="homepage-phone-handoff" data-cta="early-access" data-destination="email" data-placement="phone-handoff" href="mailto:hello@sitereportkit.com?subject=SiteReportKit%20launch%20updates">Obțineți actualizări de lansare</a>
+</div>
+<p class="handoff-note">Butonul SMS deschide doar compozitorul de mesaje al dispozitivului dvs. SiteReportKit nu primește un număr de telefon. Link-ul de magazin verificat va înlocui această destinație înainte de lansare după aprobare.</p>
+</div>
+<figure>
+<img alt="Cod QR pentru a deschide site-ul SiteReportKit pe un telefon" height="232" src="/assets/brand/phone-handoff-qr.svg" width="232"/>
+<figcaption>Deschideți site-ul de pre-lansare pe telefon</figcaption>
+</figure>
+</section>
+<section aria-labelledby="final-cta-title" class="final-cta">
+<img alt="" height="103" src="/assets/brand/sitereportkit-mark.png?v=20260708-exact-logo" width="64"/>
+<h2 id="final-cta-title">Creați raportul înainte ca jobul să vă părăsească capul.</h2>
+<p>SiteReportKit se lansează mai întâi în jurul raportării rapide, locale, profesionale ale site-urilor mobile, cu fluxuri de lucru compatibile cu desktop și web, planificate după ce fluxul de lucru principal pe teren este stabil.</p>
+<div class="hero-actions">
+<a class="button button-primary" data-cta="final_interior_sample" href="/downloads/sample-interior-handover-report.pdf">Eșantion de interior</a>
+<a class="button button-secondary" data-cta="final_construction_sample" href="/downloads/sample-construction-defect-report.pdf">Exemplu de construcție</a>
+<a class="button button-secondary" data-cta="final_contact" href="mailto:hello@sitereportkit.com">Contact</a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div>
+<img alt="SiteReportKit" height="40" src="/assets/brand/sitereportkit-wordmark.png?v=20260708-exact-logo" width="184"/>
+<p>Offline-primul punct de listă, raportarea avariilor, defectelor și închiderii.</p>
+</div>
+<nav aria-label="Navigare subsol">
+<a href="#reports">Rapoarte</a>
+<a href="#workflow">Flux de lucru</a>
+<a href="#use-cases">Cazuri de utilizare</a>
+<a href="/ro/sample-reports/">Exemple de rapoarte</a>
+<a href="/ro/resources/punch-list-vs-snag-list-vs-defect-list/">Ghid de terminologie</a>
+<a href="/ro/pricing/">Preț</a>
+<a href="/downloads/sample-snagging-report.pdf">Exemplu PDF</a>
+<a href="/ro/support/">Asistență</a>
+<a href="/ro/privacy/">Confidențialitate</a>
+</nav>
+</footer>
 </body>
 </html>
+
